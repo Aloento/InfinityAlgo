@@ -1,206 +1,219 @@
 # 📱Mobile Setup
 
-[Got ideas?\
-Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
 Get Infinity Algo running on TradingView mobile app in minutes with our step-by-step guide.
 
-***
+---
 
-🚀 Quick Setup Process
+#### 🚀 Quick Setup Process
 
-{% stepper %}
-{% step %}
-### Step 1: Launch TradingView App
+{% tabs %}
+{% tab title="📊 Add Indicators" %}
+**Step 1: Launch TradingView App**
 
 Open the **TradingView app** on your iOS or Android device.
 
-![TradingView App](<../../.gitbook/assets/image (55)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FiXfHmA4C7byPs1OEiPeo%2FIMG_0634.jpg?alt=media&#x26;token=53c118e7-8fbe-4391-bb6c-83a309af6cf0" alt="TradingView App" width="111"><figcaption></figcaption></figure>
 
-_Available on App Store and Google Play_
-{% endstep %}
+<p align="center"><em>Available on App Store and Google Play</em></p>
 
-{% step %}
-### Step 2: Access Chart Settings
+---
+
+**Step 2: Access Chart Settings**
 
 Navigate to **Chart** view and tap the **Settings** icon.
 
-![TradingView mobile settings icon](<../../.gitbook/assets/image (57)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FXQw7hZnYCxMggFOWUuTo%2Fimage.png?alt=media&#x26;token=697fd8ea-e00d-4930-aca1-c08caca1f442" alt="TradingView mobile settings icon" width="375"><figcaption><p>Settings icon in top toolbar</p></figcaption></figure>
 
-_Settings icon in top toolbar_
-{% endstep %}
+---
 
-{% step %}
-### Step 3: Open Indicators Menu
+**Step 3: Open Indicators Menu**
 
 Tap on **Indicators** to view available trading tools.
 
-![Indicators menu in mobile app](<../../.gitbook/assets/image (58)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FZNm7qs9lHzcCM96tzVZC%2Fimage.png?alt=media&#x26;token=2076c0ff-e299-440b-8b3c-2f2a9f00c105" alt="Indicators menu in mobile app" width="375"><figcaption><p>Indicators option in settings menu</p></figcaption></figure>
 
-_Indicators option in settings menu_
-{% endstep %}
+---
 
-{% step %}
-### Step 4: Navigate to Invite-only Scripts
+**Step 4: Navigate to Invite-only Scripts**
 
 Select the **Invite-only scripts** tab to access your exclusive indicators.
 
-![Invite-only scripts tab selection](<../../.gitbook/assets/image (60)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FQzQ2NbGZu0YoDFGRGun3%2Fimage.png?alt=media&#x26;token=74d30aca-c3de-4653-a537-32f42d9defb7" alt="Invite-only scripts tab selection" width="375"><figcaption><p>Invite-only scripts tab at the top</p></figcaption></figure>
 
-_Invite-only scripts tab at the top_
-{% endstep %}
+---
 
-{% step %}
-### Step 5: Add Infinity Algo Suite
+**Step 5: Add Infinity Algo Suite**
 
 Tap to add all three indicators to your chart:
 
-![Infinity Algo scripts in the invite-only section](<../../.gitbook/assets/image (61)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FPTyWg0bhUQ9TrawJRekB%2Fimage.png?alt=media&#x26;token=fd195889-93fc-4e80-be85-e3001da2b6b3" alt="Infinity Algo scripts in the invite-only section" width="375"><figcaption><p>Select all three Infinity Algo indicators</p></figcaption></figure>
 
-Select all three Infinity Algo indicators
+{% hint style="success" %}
+**Pro Tip:** Tap the star icon ⭐ next to each indicator to add them to favorites for instant access!
+{% endhint %}
+{% endtab %}
+
+{% tab title="⚙️ Optimize Display" %}
+**Mobile Chart Optimization**
+
+**Tips for better mobile experience:**
+
+- **Rotate to landscape** for wider chart view
+- **Hide toolbar** for maximum chart space
+- **Use 1-2 indicators** at a time for clarity
+- **Adjust text size** in settings for readability
+
+---
+
+**Gesture Controls:**
+
+| Gesture        | Action              |
+| -------------- | ------------------- |
+| **Pinch**      | Zoom in/out         |
+| **Swipe**      | Scroll through time |
+| **Long press** | Open quick menu     |
+| **Double tap** | Reset zoom          |
 
 {% hint style="info" %}
-Pro Tip: Tap the star icon ⭐ next to each indicator to add them to favorites for instant access!
+**Battery Tip:** Enable "Low Power Mode" in app settings to conserve battery during extended trading sessions.
 {% endhint %}
-{% endstep %}
-{% endstepper %}
+{% endtab %}
 
-***
-
-Mobile Chart Optimization
-
-Tips for better mobile experience:
-
-* Rotate to landscape for wider chart view
-* Hide toolbar for maximum chart space
-* Use 1–2 indicators at a time for clarity
-* Adjust text size in settings for readability
-
-{% hint style="warning" %}
-Battery Tip: Enable "Low Power Mode" in app settings to conserve battery during extended trading sessions.
-{% endhint %}
-
-Boost Our Scripts for Notifications
+{% tab title="🔔 Get Updates" %}
+**Boost Our Scripts for Notifications**
 
 Boosting ensures you receive push notifications for updates directly to your phone!
 
-Tap to boost each script:
+**Tap to boost each script:**
 
-[![Logo](<../../.gitbook/assets/image (62)>)Infinity Algo — Indicator by InfinityAlgoTradingView](https://www.tradingview.com/script/1cxxjBoY-Infinity-Algo/)
+{% embed url="<https://www.tradingview.com/script/1cxxjBoY-Infinity-Algo/>" %}
 
-[![Logo](<../../.gitbook/assets/image (62)>)Infinity Algo Backtest — Strategy by InfinityAlgoTradingView](https://www.tradingview.com/script/oVURcLTp-Infinity-Algo-Backtest/)
+{% embed url="<https://www.tradingview.com/script/oVURcLTp-Infinity-Algo-Backtest/>" %}
 
-[![Logo](<../../.gitbook/assets/image (62)>)Infinity Algo Dashboard — Indicator by InfinityAlgoTradingView](https://www.tradingview.com/script/OHwMnBp7-Infinity-Algo-Dashboard/)
+{% embed url="<https://www.tradingview.com/script/OHwMnBp7-Infinity-Algo-Dashboard/>" %}
 
-Why boost? Get push notifications when we:
+{% hint style="info" %}
+**Why boost?** <i class="fa-solid">:solid:</i>Get push notifications when we:
 
-* Release new features
-* Fix bugs
-* Update strategies
-* Improve performance
+- Release new features
+- Fix bugs
+- Update strategies
+- Improve performance
+  {% endhint %}
 
-Follow Our Profile
+---
 
-[![Logo](<../../.gitbook/assets/image (62)>)InfinityAlgo — Trading Ideas and Scripts — TradingViewTradingView](https://www.tradingview.com/u/InfinityAlgo/)
+**Follow Our Profile**
 
-***
+Stay connected for exclusive insights:
 
-📦 Infinity Algo Suite Overview
+{% embed url="<https://www.tradingview.com/u/InfinityAlgo/>" %}
+{% endtab %}
+{% endtabs %}
 
-| Indicator               | Purpose                | Key Features                                                            |
-| ----------------------- | ---------------------- | ----------------------------------------------------------------------- |
-| Infinity Algo           | Main trading signals   | AI-powered signals, Smart/Sniper modes, TP/SL levels                    |
-| Infinity Algo Backtest  | Strategy testing       | Historical performance, optimization, win rates (limited on mobile app) |
-| Infinity Algo Dashboard | Market structure & MTF | Multi-timeframe analysis, market structure, trend overview              |
+---
 
-***
+#### 📦 Infinity Algo Suite Overview
 
-📱 Mobile-Specific Features
+| Indicator                                                  | Purpose                | Key Features                                                            |
+| ---------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------- |
+| <i class="fa-solid">:solid:</i>**Infinity Algo**           | Main trading signals   | AI-powered signals, Smart/Sniper modes, TP/SL levels                    |
+| <i class="fa-solid">:solid:</i>**Infinity Algo Backtest**  | Strategy testing       | Historical performance, optimization, win rates (limited on mobile app) |
+| <i class="fa-solid">:solid:</i>**Infinity Algo Dashboard** | Market structure & MTF | Multi-timeframe analysis, market structure, trend overview              |
 
-Alert Management:
+---
 
-* Push notifications to phone
-* Custom alert sounds
-* Vibration patterns
-* Do Not Disturb scheduling
+#### 📱 Mobile-Specific Features
 
-Quick Access:
+{% columns %}
+{% column width="50%" %}
+**Alert Management:**
 
-* Widget support (iOS/Android)
-* Apple Watch app
-* Face/Touch ID security
-* Quick chart switching
+- Push notifications to phone
+- Custom alert sounds
+- Vibration patterns
+- Do Not Disturb scheduling
+  {% endcolumn %}
 
-***
+{% column %}
+**Quick Access:**
 
-🛠️ Troubleshooting
+- Widget support (iOS/Android)
+- Apple Watch app
+- Face/Touch ID security
+- Quick chart switching
+  {% endcolumn %}
+  {% endcolumns %}
+
+---
+
+#### 🛠️ Troubleshooting
 
 <details>
 
-<summary>Can't see indicators in Invite-only scripts?</summary>
+<summary><strong>Can't see indicators in Invite-only scripts?</strong></summary>
 
-* Force close and restart the app
-* Pull down to refresh the indicators list
-* Log out and log back into your account
-* Verify your username matches your purchase
-* Contact support@infinityalgo.com if issues persist
+1. **Force close** and restart the app
+2. **Pull down** to refresh the indicators list
+3. **Log out** and log back into your account
+4. **Verify** your username matches your purchase
+5. **Contact** <support@infinityalgo.com> if issues persist
 
 </details>
 
 <details>
 
-<summary>App crashes or runs slowly?</summary>
+<summary><strong>App crashes or runs slowly?</strong></summary>
 
-* Update to latest TradingView app version
-* Clear app cache in settings
-* Reduce number of active indicators
-* Restart your device
-* Free up storage space (need 500MB+)
+1. **Update** to latest TradingView app version
+2. **Clear** app cache in settings
+3. **Reduce** number of active indicators
+4. **Restart** your device
+5. **Free up** storage space (need 500MB+)
 
 </details>
 
 <details>
 
-<summary>Alerts not working on mobile?</summary>
+<summary><strong>Alerts not working on mobile?</strong></summary>
 
-* Enable push notifications in phone settings
-* Check Do Not Disturb is off
-* Verify alert is set to "Once Per Bar Close"
-* Test with a simple price alert first
-* Reinstall app if notifications still fail
+1. **Enable** push notifications in phone settings
+2. **Check** Do Not Disturb is off
+3. **Verify** alert is set to "Once Per Bar Close"
+4. **Test** with a simple price alert first
+5. **Reinstall** app if notifications still fail
 
 </details>
 
-***
+---
 
-💡 Pro Tips
+#### 💡 Pro Tips
 
-* Quick Switch: Save multiple chart layouts with different timeframes to quickly switch between them with swipe gestures.
-* Data Saver: Enable "Reduced Data Mode" in app settings when on cellular to minimize data usage.
+{% hint style="success" %}
+**Quick Switch:** Save multiple chart layouts with different timeframes to quickly switch between them with swipe gestures.
+{% endhint %}
 
-***
+{% hint style="info" %}
+**Data Saver:** Enable "Reduced Data Mode" in app settings when on cellular to minimize data usage.
+{% endhint %}
 
-🎯 Mobile vs Desktop Comparison
+---
 
-| Feature        |           Mobile |             Desktop |
-| -------------- | ---------------: | ------------------: |
-| Portability    | ✅ Trade anywhere |    ❌ Fixed location |
-| Screen Size    |       🟡 Limited | ✅ Multiple monitors |
-| Battery Life   |       🟡 Limited |         ✅ Unlimited |
-| Multi-tasking  |     ❌ Single app |  ✅ Multiple windows |
-| Touch Controls |      ✅ Intuitive |   🟡 Mouse required |
-| Backtesting    |           ❌ None |              ✅ Full |
+#### 🎯 Mobile vs Desktop Comparison
 
-***
+| Feature            | Mobile            | Desktop              |
+| ------------------ | ----------------- | -------------------- |
+| **Portability**    | ✅ Trade anywhere | ❌ Fixed location    |
+| **Screen Size**    | 🟡 Limited        | ✅ Multiple monitors |
+| **Battery Life**   | 🟡 Limited        | ✅ Unlimited         |
+| **Multi-tasking**  | ❌ Single app     | ✅ Multiple windows  |
+| **Touch Controls** | ✅ Intuitive      | 🟡 Mouse required    |
+| **Backtesting**    | ❌None            | ✅Full               |
 
-📚 Next Steps
+---
 
-* 🔔 Set Up Alerts — Never miss a trading signal
-* ⚙️ Configure Settings — Optimize Infinity Algo for your trading style
-* 🖥️ Desktop Setup — Set up on computer too
+#### 📚 Next Steps
 
-[Previous🖥️ Desktop Setup](desktop-setup.md) [NextInfinity Algo Features](../../infinity-algo-features/)
+Ready to trade on mobile? Continue with:
 
-***
-
-This site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the [privacy policy](https://infinityalgo.com/privacy/).
+<table data-view="cards"><thead><tr><th>Section</th><th>Description</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🔔 Set Up Alerts</strong></td><td>Never miss a trading signal</td><td><a href="../../../features/infinity-algo-features/alerts">alerts</a></td></tr><tr><td><strong>⚙️ Configure Settings</strong></td><td>Optimize Infinity Algo for your trading style</td><td><a href="../../../features/infinity-algo-features">infinity-algo-features</a></td></tr><tr><td><strong>🖥️ Desktop Setup</strong></td><td>Set up on computer too</td><td><a href="desktop-setup">desktop-setup</a></td></tr></tbody></table>
