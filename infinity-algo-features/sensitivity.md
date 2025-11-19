@@ -1,71 +1,65 @@
 # 🛠️ Sensitivity
 
-[Got ideas?\
-Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
 Adjust how responsive the indicator is to market movements.
 
-![](<../.gitbook/assets/image (71)>)
+![Sensitivity Setting](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FVJdz2CCVZaqVVf9TYMlI%2Fsensitivty.png?alt=media&token=1da4121b-a197-4d51-b03b-e719e5d0cffa)
 
-### Sensitivity Setting
+---
 
-#### 📊 How It Works
+### 📊 How It Works
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#how-it-works
+{% columns %}
+{% column width="50%" %}
 
-**Lower Values (5-15)**
+#### Lower Values (5-15)
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#lower-values-5-15
+**More Signals**
 
-More Signals
+- ✅ More opportunities
+- ✅ Active trading
+- ⚠️ More false signals
+- 📈 Short-term focus
+  {% endcolumn %}
 
-* ✅ More opportunities
-* ✅ Active trading
-* ⚠️ More false signals
-* 📈 Short-term focus
+{% column %}
 
-**Higher Values (16-28)**
+#### Higher Values (16-28)
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#higher-values-16-28
+**Better Quality**
 
-Better Quality
+- ✅ Fewer false signals
+- ✅ Higher conviction
+- ⚠️ Less opportunities
+- 📈 Long-term focus
+  {% endcolumn %}
+  {% endcolumns %}
 
-* ✅ Fewer false signals
-* ✅ Higher conviction
-* ⚠️ Less opportunities
-* 📈 Long-term focus
+---
 
-***
+### 🎯 Settings by Trading Style
 
-#### 🎯 Settings by Trading Style
+| Trading Style   | Timeframe | Sensitivity | Signals/Day |
+| --------------- | --------- | ----------- | ----------- |
+| **Scalping**    | 1-5 min   | 5-10        | Many        |
+| **Day Trading** | 5-30 min  | 10-15       | 5-10        |
+| **Intraday**    | 1H-4H     | 15-20       | 3-5         |
+| **Swing**       | 4H-Daily  | 18-25       | 1-3         |
+| **Position**    | Daily+    | 22-28       | Few         |
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#settings-by-trading-style
+---
 
-Trading Style / Timeframe / Sensitivity / Signals/Day
+### 🤖 Mode-Specific Behavior
 
-* Scalping — 1-5 min — 5-10 — Many
-* Day Trading — 5-30 min — 10-15 — 5-10
-* Intraday — 1H-4H — 15-20 — 3-5
-* Swing — 4H-Daily — 18-25 — 1-3
-* Position — Daily+ — 22-28 — Few
+{% tabs %}
+{% tab title="Normal/Smart" %}
 
-***
+#### Manual Control
 
-#### 🤖 Mode-Specific Behavior
+- **You control** sensitivity directly
+- **Start with:** 14-18 (balanced)
+- **Adjust based** on results
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#mode-specific-behavior
-
-Modes: Normal/Smart, HL Sniper, AI Modes
-
-**Manual Control**
-
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#manual-control
-
-* You control sensitivity directly
-* Start with: 14-18 (balanced)
-* Adjust based on results
-
-Recommended copy:
+{% code title="Recommended" %}
 
 ```
 Scalping: 5-10
@@ -73,94 +67,95 @@ Day Trading: 10-15
 Swing: 18-25
 ```
 
-**Precision Mode**
+{% endcode %}
+{% endtab %}
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#precision-mode
+{% tab title="HL Sniper" %}
 
-* Optimal range: 15-20
-* Works on all timeframes
-* No extremes needed
+#### Precision Mode
 
+- **Optimal range:** 15-20
+- **Works on** all timeframes
+- **No extremes** needed
+
+{% hint style="info" %}
 V3.0 uses advanced algorithm - extreme values no longer recommended
+{% endhint %}
+{% endtab %}
 
-**Automatic**
+{% tab title="AI Modes" %}
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#automatic
+#### Automatic
 
-* Setting ignored — AI controls it
-* Leave at default value
-* AI optimizes continuously
+- **Setting ignored** - AI controls it
+- **Leave at** default value
+- **AI optimizes** continuously
 
+{% hint style="success" %}
 No adjustment needed - AI handles everything
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
-***
+---
 
-#### 📈 Visual Comparison
-
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#visual-comparison
+### 📈 Visual Comparison
 
 Sensitivity = 18 (Balanced):
 
-![](<../.gitbook/assets/image (72)>)
-
-Fewer signals, higher quality
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FCVa7ynhpCE31YwzFtP3G%2Fimage.png?alt=media&#x26;token=d7bd11ea-09f1-4727-9f80-1f15a9f33c31" alt=""><figcaption><p><strong>Fewer signals, higher quality</strong></p></figcaption></figure>
 
 Sensitivity = 5 (Low):
 
-![](<../.gitbook/assets/image (73)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FFYi3Quh2YdQtGBxAxAOV%2Fimage.png?alt=media&#x26;token=756c963d-aa32-4fdc-9ee6-e152449ae703" alt=""><figcaption><p><strong>Many signals, more noise</strong></p></figcaption></figure>
 
-Many signals, more noise
+---
 
-***
-
-#### ⚡ Quick Start Guide
-
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#quick-start-guide
+### ⚡ Quick Start Guide
 
 {% stepper %}
 {% step %}
-### Identify Your Style
+
+#### Identify Your Style
 
 Scalper? Day trader? Swing trader?
 {% endstep %}
 
 {% step %}
-### Use Table Above
+
+#### Use Table Above
 
 Find your timeframe and recommended range
 {% endstep %}
 
 {% step %}
-### Start Middle
+
+#### Start Middle
 
 Begin with middle of your range, adjust from there
 {% endstep %}
 
 {% step %}
-### Fine-Tune
 
-Too many signals? Increase value\
-Too few? Decrease value
+#### Fine-Tune
+
+Too many signals? Increase value Too few? Decrease value
 {% endstep %}
 {% endstepper %}
 
-***
+---
 
-#### 💡 Pro Tips
+### 💡 Pro Tips
 
-https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity#pro-tips
+{% hint style="success" %}
+**Best Practices:**
 
-Best Practices:
+- Lower timeframes → Lower sensitivity
+- Higher timeframes → Higher sensitivity
+- Start conservative, adjust gradually
+- Document what works for each pair
+  {% endhint %}
 
-* Lower timeframes → Lower sensitivity
-* Higher timeframes → Higher sensitivity
-* Start conservative, adjust gradually
-* Document what works for each pair
-
-Remember: Using AI modes? This setting doesn't matter - AI optimizes it automatically
-
-***
-
-Was this helpful?
-
-Last updated 3 months ago
+{% hint style="warning" %}
+**Remember:** Using AI modes? This setting doesn't matter - AI optimizes it automatically
+{% endhint %}

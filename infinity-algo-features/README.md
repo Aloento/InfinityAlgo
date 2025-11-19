@@ -1,106 +1,33 @@
 # Infinity Algo Features
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
-### Guide For Version 3.0
+## Guide For Version 3.0
 
 In this section, we explore all the powerful features that make Infinity Algo your ultimate trading companion.
 
-* 🏁 Exit Type — _Exit Strategy_\
-  Choose between percentage or signal-based exits
-* 🛠️ Sensitivity — _Core Setting_\
-  Adjust signal frequency and responsiveness
-* 📈📉 Upper & Lower Thresholds — _Core Setting_\
-  Define buy/sell levels
-* 📊 EMA Length — _Trend Filter_\
-  Set trend confirmation period
-* 🔔 Show Signals — _Signal Selection_\
-  Choose between Normal, Smart, AI, and Sniper modes
-* 🔁 Toggle Same Signal — _Signal Control_\
-  Allow or block consecutive same-direction signals
-* 🔄 Opposite Signals Only — _Signal Control_\
-  Force alternating buy/sell signals
-* 💪 Peak Profit & Leverage — _Performance Display_\
-  Track maximum profit potential
-* 🧠 AI Optimization — _Advanced_ 🆕\
-  Machine learning-powered auto-optimization
-* 💰 Take Profit Signals — _TP Strategy_\
-  Configure TP signals
-* ⚙️ Take Profit Settings — _TP Levels_\
-  Fine-tune TP signals
-* 🎯 Entry, TP & Stop Loss — _Risk Management_\
-  Complete position management settings
-* 🔮 Possible Coming Trades — _Predictive Display_\
-  Show potential upcoming signals
-* 🎨 Visual Settings — _Customization_\
-  Bar colors, backgrounds, and themes
-* 🔔 Alerts — _Notifications_\
-  Configure trading alerts and automation
-* ⏱️ Upcoming Features — _Roadmap_\
-  What's next for Infinity Algo
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🏁 Exit Type</strong><br><em>Exit Strategy</em> </td><td>Choose between percentage or signal-based exits</td><td></td><td><a href="infinity-algo-features/exit-type">exit-type</a></td></tr><tr><td><strong>🛠️ Sensitivity</strong><br><em>Core Setting</em> </td><td>Adjust signal frequency and responsiveness</td><td></td><td><a href="infinity-algo-features/sensitivity">sensitivity</a></td></tr><tr><td><strong>📈📉 Upper &#x26; Lower Thresholds</strong><br><em>Core Setting</em> </td><td>Define buy/sell levels</td><td></td><td><a href="infinity-algo-features/upper-and-lower-thresholds">upper-and-lower-thresholds</a></td></tr><tr><td><strong>📊 EMA Length</strong><br><em>Trend Filter</em></td><td>Set trend confirmation period</td><td></td><td><a href="infinity-algo-features/ema-length">ema-length</a></td></tr><tr><td><strong>🔔 Show Signals</strong><br><em>Signal Selection</em> </td><td>Choose between Normal, Smart, AI, and Sniper modes</td><td></td><td><a href="infinity-algo-features/show-signals">show-signals</a></td></tr><tr><td><strong>🔁 Toggle Same Signal</strong><br><em>Signal Control</em></td><td>Allow or block consecutive same-direction signals</td><td></td><td><a href="infinity-algo-features/toggle-same-signal-consecutively">toggle-same-signal-consecutively</a></td></tr><tr><td><strong>🔄 Opposite Signals Only</strong><br><em>Signal Control</em></td><td>Force alternating buy/sell signals</td><td></td><td><a href="infinity-algo-features/next-signals-must-be-opposite-signal">next-signals-must-be-opposite-signal</a></td></tr><tr><td><strong>💪 Peak Profit &#x26; Leverage</strong><br><em>Performance Display</em></td><td>Track maximum profit potential</td><td></td><td><a href="infinity-algo-features/peak-profit-leverage">peak-profit-leverage</a></td></tr><tr><td><strong>🧠 AI Optimization</strong><br><em>Advanced</em> 🆕</td><td>Machine learning-powered auto-optimization</td><td></td><td><a href="infinity-algo-features/ai-optimization">ai-optimization</a></td></tr><tr><td><strong>💰 Take Profit Signals</strong><br><em>TP Strategy</em></td><td>Configure TP signals</td><td></td><td><a href="infinity-algo-features/take-profit-signals-settings">take-profit-signals-settings</a></td></tr><tr><td><strong>⚙️ Take Profit Settings</strong><br><em>TP Levels</em> </td><td>Fine-tune TP signals</td><td></td><td><a href="infinity-algo-features/take-profit-settings">take-profit-settings</a></td></tr><tr><td><strong>🎯 Entry, TP &#x26; Stop Loss</strong><br><em>Risk Management</em> </td><td>Complete position management settings</td><td></td><td><a href="infinity-algo-features/entry-take-profit-and-stop-loss">entry-take-profit-and-stop-loss</a></td></tr><tr><td><strong>🔮 Possible Coming Trades</strong><br><em>Predictive Display</em></td><td>Show potential upcoming signals</td><td></td><td><a href="infinity-algo-features/show-possible-coming-trades">show-possible-coming-trades</a></td></tr><tr><td><strong>🎨 Visual Settings</strong><br><em>Customization</em></td><td>Bar colors, backgrounds, and themes</td><td></td><td><a href="infinity-algo-features/visual-settings">visual-settings</a></td></tr><tr><td><strong>🔔 Alerts</strong><br><em>Notifications</em> </td><td>Configure trading alerts and automation</td><td></td><td><a href="infinity-algo-features/alerts">alerts</a></td></tr><tr><td><strong>⏱️ Upcoming Features</strong><br><em>Roadmap</em></td><td>What's next for Infinity Algo</td><td></td><td><a href="infinity-algo-features/feature-requests-and-roadmap">feature-requests-and-roadmap</a></td></tr></tbody></table>
 
-***
+---
 
-#### 📚 Quick Start Guide
+### 📚 Quick Start Guide
 
-Essential Settings (Start Here)
+**Essential Settings (Start Here)**
 
-{% stepper %}
-{% step %}
-### Sensitivity
+1. [**Sensitivity**](https://docs.infinityalgo.com/features/infinity-algo-features/sensitivity)- Determines how often signals appear
+2. [**Show Signals**](https://docs.infinityalgo.com/features/infinity-algo-features/show-signals) - Select your preferred signal type
+3. [**Take Profit Settings**](https://docs.infinityalgo.com/features/infinity-algo-features/take-profit-settings) - Configure your exit strategy
+4. [**Alerts**](https://docs.infinityalgo.com/features/infinity-algo-features/alerts)- Set up notifications
 
-[Learn more »](sensitivity.md)
+**Advanced Features**
 
-Determines how often signals appear.
-{% endstep %}
+- [**AI Optimization** 🆕](https://docs.infinityalgo.com/features/infinity-algo-features/ai-optimization) - Let machine learning optimize for you
+- [**Signal Control Options**](https://docs.infinityalgo.com/features/infinity-algo-features/entry-take-profit-and-stop-loss) - Fine-tune signal behavior
+- [**Visual Customization**](https://docs.infinityalgo.com/features/infinity-algo-features/visual-settings) - Make the indicator yours
 
-{% step %}
-### Show Signals
+---
 
-[Learn more »](show-signals.md)
+### 📖 Need Help?
 
-Select your preferred signal type.
-{% endstep %}
-
-{% step %}
-### Take Profit Settings
-
-[Learn more »](take-profit-settings.md)
-
-Configure your exit strategy.
-{% endstep %}
-
-{% step %}
-### Alerts
-
-[Learn more »](alerts.md)
-
-Set up notifications.
-{% endstep %}
-{% endstepper %}
-
-Advanced Features
-
-* [AI Optimization 🆕](ai-optimization.md) — Let machine learning optimize for you
-* [Signal Control Options](entry-take-profit-and-stop-loss.md) — Fine-tune signal behavior
-* [Visual Customization](visual-settings.md) — Make the indicator yours
-
-***
-
-#### 📖 Need Help?
-
-* New to Infinity Algo? Start with [Desktop Setup](../hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart/desktop-setup.md) or [Mobile Setup](../hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart/mobile-setup.md)
-* Want to Backtest? Check our [Backtest Guide](../backtest-version/)
-* Ready to Automate? See [Trading Guide](../trading-guide/)
-
-<details>
-
-<summary>Have Questions? (FAQ)</summary>
-
-* Visit our [FAQ](../faq-and-troubleshoot/)
-
-</details>
-
-Last updated 2 months ago
-
-This site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the [privacy policy](https://infinityalgo.com/privacy/).
+- **New to Infinity Algo?** Start with [Desktop Setup](https://docs.infinityalgo.com/welcome/hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart/desktop-setup) or [Mobile Setup](https://docs.infinityalgo.com/welcome/hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart/mobile-setup)
+- **Want to Backtest?** Check our [Backtest Guide](https://docs.infinityalgo.com/backtest/backtest-version)
+- **Ready to Automate?** See [Trading Guide](https://docs.infinityalgo.com/trading-guide/trading-guide)
+- **Have Questions?** Visit our [FAQ](https://docs.infinityalgo.com/faq/faq-and-troubleshoot)

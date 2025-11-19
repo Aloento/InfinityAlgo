@@ -1,175 +1,195 @@
 # 🔮 Show possible coming trades
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
 Get advance notice when signals are forming - prepare before they trigger.
 
-***
+---
 
-#### 🎯 What It Does
+### 🎯 What It Does
 
+{% columns %}
+{% column width="50%" %}
 **Shows:** Small `+` icon when conditions approach signal thresholds
 
 **Purpose:** Early warning for potential setups
 
 **Not:** A trade signal itself
+{% endcolumn %}
 
+{% column %}
+{% hint style="warning" %}
 **Important:** This is for preparation only - wait for actual signals to trade
+{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
-***
+---
 
-#### 📊 How It Works
+### 📊 How It Works
 
 {% stepper %}
 {% step %}
-**Monitor Oscillator**
+
+#### Monitor Oscillator
 
 Tracks when price action approaches thresholds
 {% endstep %}
 
 {% step %}
-**Show Warning**
+
+#### Show Warning
 
 Displays `+` icon when close to signal
 {% endstep %}
 
 {% step %}
-**Prepare**
+
+#### Prepare
 
 You analyze and get ready
 {% endstep %}
 
 {% step %}
-**Wait for Signal**
+
+#### Wait for Signal
 
 Only trade on confirmed signals
 {% endstep %}
 {% endstepper %}
 
-***
+---
 
-#### ⚡ Compatibility
+### ⚡ Compatibility
 
-✅ Works With
+{% tabs %}
+{% tab title="✅ Works With" %}
 
-❌ Disabled For
+#### Supported Modes
 
-**Supported Modes**
-
-* Normal Only
-* Smart Only
-* Normal + Smart
+- Normal Only
+- Smart Only
+- Normal + Smart
 
 These modes use threshold-based logic that allows prediction.
+{% endtab %}
 
-**Not Available**
+{% tab title="❌ Disabled For" %}
 
-* AI Mode
-* AI Sniper
-* HL Sniper
+#### Not Available
+
+- AI Mode
+- AI Sniper
+- HL Sniper
 
 These use different logic that doesn't support early warnings.
+{% endtab %}
+{% endtabs %}
 
-***
+---
 
-#### 📈 Visual Examples
+### 📈 Visual Examples
 
-**Long**
+{% columns %}
+{% column width="50%" %}
 
-![Possible Trades Shown](<../.gitbook/assets/image (46)>)
+#### Long
+
+![Possible Trades Shown](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FzMGyisM4gk0DJOzGgbhF%2F2025-08-20_17-19-22.jpg?alt=media&token=3c936db6-0d6a-4740-8b99-6eaac1bd1531)&#x20;
 
 `+` **icon showing potential long**
+{% endcolumn %}
 
-**Short**
+{% column %}
 
-![Possible Trades Shown](<../.gitbook/assets/image (47)>)
+#### Short
 
-`+` **icon showing potential short**
+<img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FdciVLNT9xXEc9mNUUgug%2F2025-08-20_17-20-01.jpg?alt=media&#x26;token=2b1e24f4-b26c-43dc-8f52-8be9bc373304" alt="Possible Trades Shown" data-size="original">&#x20;
 
-***
+`+`**icon showing potential short**
+{% endcolumn %}
+{% endcolumns %}
 
-#### 🎨 When to Use
+---
 
-**✅ Enable For:**
+### 🎨 When to Use
 
-* Planning ahead
-* Setting alerts
-* Preparing analysis
-* Managing multiple charts
-* Less screen time
+{% columns %}
+{% column width="50%" %}
 
-**❌ Disable For:**
+#### ✅ Enable For
 
-* Clean charts
-* Reducing noise
-* AI/Sniper modes
-* Reactive trading
-* Avoiding confusion
+- Planning ahead
+- Setting alerts
+- Preparing analysis
+- Managing multiple charts
+- Less screen time
+  {% endcolumn %}
 
-***
+{% column %}
 
-#### 💡 Trading Workflow
+#### ❌ Disable For
 
-{% stepper %}
-{% step %}
-See `+` icon (warning)
-{% endstep %}
+- Clean charts
+- Reducing noise
+- AI/Sniper modes
+- Reactive trading
+- Avoiding confusion
+  {% endcolumn %}
+  {% endcolumns %}
 
-{% step %}
-Check analysis
-{% endstep %}
+---
 
-{% step %}
-Prepare order/alerts
-{% endstep %}
+### 💡 Trading Workflow
 
-{% step %}
-Wait for actual signal
-{% endstep %}
+#### With This Feature
 
-{% step %}
-Execute trade
-{% endstep %}
-{% endstepper %}
+{% code title="workflow:" %}
 
-***
+```
+1. See + icon (warning)
+   ↓
+2. Check analysis
+   ↓
+3. Prepare order/alerts
+   ↓
+4. Wait for actual signal
+   ↓
+5. Execute trade
+```
+
+{% endcode %}
+
+---
+
+### ⚠️ Important Reminders
 
 {% hint style="danger" %}
-⚠️ Important Reminders
-
-Never trade on `+` icons alone! These are warnings, not signals. Many warnings don't become actual trades.
-
-Pro Tip: Use this to set price alerts near potential entry zones.
+**Never trade on `+` icons alone!** These are warnings, not signals. Many warnings don't become actual trades.
 {% endhint %}
 
-***
+{% hint style="info" %}
+**Pro Tip:** Use this to set price alerts near potential entry zones
+{% endhint %}
 
-<details>
+---
 
-<summary>📊 Quick Reference</summary>
+### 📊 Quick Reference
 
 | Feature           | Purpose       | Action Required      |
 | ----------------- | ------------- | -------------------- |
-| `+` Icon          | Warning only  | Prepare, don't trade |
+| **`+` Icon**      | Warning only  | Prepare, don't trade |
 | **Actual Signal** | Trade entry   | Execute if confirmed |
 | **No Icon**       | No setup near | Continue monitoring  |
 
-</details>
+---
 
-<details>
+### 🎯 Best Practices
 
-<summary>🎯 Best Practices</summary>
+- ✅ Use for preparation and planning
+- ✅ Combine with your own analysis
+- ✅ Set alerts at key levels
+- ❌ Don't trade on warnings alone
+- ❌ Don't chase if signal doesn't confirm
 
-* ✅ Use for preparation and planning
-* ✅ Combine with your own analysis
-* ✅ Set alerts at key levels
-* ❌ Don't trade on warnings alone
-* ❌ Don't chase if signal doesn't confirm
-
-Remember: This gives you time to prepare, not permission to trade early.
-
-</details>
-
-Last updated 3 months ago
-
-This site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the [privacy policy](https://infinityalgo.com/privacy/).
+{% hint style="success" %}
+**Remember:** This gives you time to prepare, not permission to trade early
+{% endhint %}

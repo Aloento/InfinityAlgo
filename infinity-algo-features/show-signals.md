@@ -1,113 +1,138 @@
 # 🔔 Show Signals
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
 Select your signal type based on trading style and market conditions.
 
-![](<../.gitbook/assets/image (26)>)
+![Signal Display Options](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FP1W7CBJYSTCjzTRaXkEn%2Fimage.png?alt=media&token=d3afb87c-67a1-4cc7-9c3f-194e25904d54)
 
-### Signal Display Options
+---
 
-#### Signal Types
+### 📊 Signal Types
 
-* 📈 Normal + Smart
-* 🔄 Normal Only
-* 📉 Smart Only
-* 🎯 HL Sniper
-* 🤖 AI
-* 🎯🤖 AI Sniper
+{% tabs %}
+{% tab title="📈 Normal + Smart" %}
 
-All Signals (Default)\
-Shows: Both trend and counter-trend signals
+#### All Signals (Default)
 
-* ✅ Most opportunities
-* ✅ Works all markets
-* ✅ Best for learning
-* ⚠️ More signals to filter\
-  Use when: You want comprehensive coverage
+**Shows:** Both trend and counter-trend signals
 
-Counter-Trend Signals\
-Shows: Reversal opportunities only
+✅ Most opportunities ✅ Works all markets ✅ Best for learning ⚠️ More signals to filter
 
-* ✅ Catch reversals
-* ✅ Mean reversion
-* ✅ Range trading
-* ⚠️ Against trend risk\
-  Use when: Markets are ranging or oversold/overbought
+**Use when:** You want comprehensive coverage
+{% endtab %}
 
-Trend-Following Signals\
-Shows: With-trend signals only
+{% tab title="🔄 Normal Only" %}
 
-* ✅ Higher probability
-* ✅ Trend aligned
-* ✅ Less noise
-* ⚠️ Fewer signals\
-  Use when: Strong trending markets
+#### Counter-Trend Signals
 
-Precision Entries\
-Shows: Possible reversal signals
+**Shows:** Reversal opportunities only
 
-* ✅ Minimal false signals
-* ✅ Clean entries
-* ✅ Sniping focused
-* ⚠️ High precision entries, but frequent opportunities\
-  Use when: You want to catch Highs and Lows
+✅ Catch reversals ✅ Mean reversion ✅ Range trading ⚠️ Against trend risk
 
-Self-Optimizing ⭐\
-Shows: Adaptive AI signals
+**Use when:** Markets are ranging or oversold/overbought
+{% endtab %}
 
-* ✅ Auto-adjusts
-* ✅ Market adaptive
-* ✅ No manual work
-* ⚠️ Requires AI enabled\
-  Use when: You want hands-off optimization
+{% tab title="📉 Smart Only" %}
 
-Advanced Precision 🎯\
-Shows: AI + Precision combined
+#### Trend-Following Signals
 
-* ✅ High accuracy
-* ✅ Self-optimizing
-* ✅ HL sniper optimized
-* ⚠️ Many signals\
-  Use when: Bottom and Top sniping accuracy is needed
+**Shows:** With-trend signals only
 
-### Quick Selection Guide
+✅ Higher probability ✅ Trend aligned ✅ Less noise ⚠️ Fewer signals
 
-Your Style -> Best Mode -> Second Choice
+**Use when:** Strong trending markets
+{% endtab %}
 
-* Scalping: Normal + Smart → AI
-* Day Trading: AI → Smart Only
-* Swing Trading: HL Sniper → AI Sniper
-* Trend Following: Smart Only → AI
-* Mean Reversion: Normal Only → Normal + Smart
-* Hands-Off: AI → AI Sniper
+{% tab title="🎯 HL Sniper" %}
 
-### Market Conditions
+#### Precision Entries
 
-Trending Markets\
-Best modes:
+**Shows:** Possible reversal signals
 
-* Smart Only
-* AI
-* AI Sniper
+✅ Minimal false signals ✅ Clean entries ✅ Sniping focused ⚠️ High precision entries, but frequent opportunities
 
-Why: Align with trend direction
+**Use when:** You want to catch Highs and Lows
+{% endtab %}
 
-Ranging Markets\
-Best modes:
+{% tab title="🤖 AI" %}
 
-* Normal + Smart
-* Normal Only
-* AI (adapts)
+#### Self-Optimizing ⭐
 
-Why: Catch both directions
+**Shows:** Adaptive AI signals
 
-### Pro Tips
+✅ Auto-adjusts ✅ Market adaptive ✅ No manual work ⚠️ Requires AI enabled
 
-* Getting Started? Start with Normal + Smart to learn signal patterns, then specialize based on what works for you.
-* Using AI Modes? Must enable `🧠 AI Optimization` in settings first. AI modes won't work without it.
-* Quality vs Quantity: More signals ≠ More profit. Sometimes fewer, higher-quality signals perform better.
+**Use when:** You want hands-off optimization
+{% endtab %}
 
-### Legal / Privacy
+{% tab title="🎯🤖 AI Sniper" %}
 
-This documentation references the privacy policy: https://infinityalgo.com/privacy/
+#### Advanced Precision 🎯
+
+**Shows:** AI + Precision combined
+
+✅ High accuracy ✅ Self-optimizing ✅ HL sniper optimized ⚠️ Many signals
+
+**Use when:** Bottom and Top sniping accuracy is needed
+{% endtab %}
+{% endtabs %}
+
+---
+
+### ⚡ Quick Selection Guide
+
+| Your Style          | Best Mode      | Second Choice  |
+| ------------------- | -------------- | -------------- |
+| **Scalping**        | Normal + Smart | AI             |
+| **Day Trading**     | AI             | Smart Only     |
+| **Swing Trading**   | HL Sniper      | AI Sniper      |
+| **Trend Following** | Smart Only     | AI             |
+| **Mean Reversion**  | Normal Only    | Normal + Smart |
+| **Hands-Off**       | AI             | AI Sniper      |
+
+---
+
+### 🎯 Market Conditions
+
+{% columns %}
+{% column width="50%" %}
+
+#### Trending Markets
+
+**Best modes:**
+
+1. Smart Only
+2. AI
+3. AI Sniper
+
+**Why:** Align with trend direction
+{% endcolumn %}
+
+{% column %}
+
+#### Ranging Markets
+
+**Best modes:**
+
+1. Normal + Smart
+2. Normal Only
+3. AI (adapts)
+
+**Why:** Catch both directions
+{% endcolumn %}
+{% endcolumns %}
+
+---
+
+### 💡 Pro Tips
+
+{% hint style="info" %}
+**Getting Started?** Start with **Normal + Smart** to learn signal patterns, then specialize based on what works for you.
+{% endhint %}
+
+{% hint style="success" %}
+**Using AI Modes?** Must enable `🧠 AI Optimization` in settings first. AI modes won't work without it.
+{% endhint %}
+
+{% hint style="warning" %}
+**Quality vs Quantity** More signals ≠ More profit. Sometimes fewer, higher-quality signals perform better.
+{% endhint %}

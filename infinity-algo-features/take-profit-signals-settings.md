@@ -1,143 +1,133 @@
 # 💰 Take Profit Signals Settings
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
+Configure how dynamic exit signals appear when using "Signals" exit type.
 
-Configure how dynamic exit signals appear when using the "Signals" exit type.
+---
 
-***
+### 🎯 Settings Overview
 
-#### 🎯 Settings Overview
-
-* Show TP Signals
-* Higher Level Only
+{% tabs %}
+{% tab title="💹 Show TP Signals" %}
 
 #### Master Switch
 
-Controls whether TP signals appear at all.
+**Controls:** Whether TP signals appear at all
 
-* ✅ Enabled: Shows "TP" icons when momentum suggests taking profit
-* ❌ Disabled: No TP signals displayed
+✅ **Enabled:** Shows "TP" icons when momentum suggests taking profit ❌ **Disabled:** No TP signals displayed
 
 #### Enabled
 
-{% hint style="info" %}
-Shows all TP opportunities (TP signals on)
-{% endhint %}
-
-![TP Signals On](../.gitbook/assets/image)
+![TP Signals On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2F1FsbCrdUAj6wv9jxpu0L%2Fon.png?alt=media&token=15eed396-a4cc-4d0a-a918-172483241a54) **Shows all TP opportunities**
 
 #### Disabled
 
-{% hint style="warning" %}
-No TP signals shown (TP signals off)
-{% endhint %}
+![TP Signals Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FAmEOMFdtiTphNzwyGyt6%2Foff.png?alt=media&token=6b233f92-eae4-4e96-a921-376fe47c3df0) **No TP signals shown**
+{% endtab %}
 
-![TP Signals Off](<../.gitbook/assets/image (1)>)
-
-***
+{% tab title="📈 Higher Level Only" %}
 
 #### Progressive Filter
 
-Controls whether new TP must be at a better (higher profit) price.
+**Controls:** Whether new TP must be at better price
 
-* ✅ Enabled: Only shows TPs at higher profit levels
-* ❌ Disabled: Shows all TPs regardless of level
+✅ **Enabled:** Only shows TPs at higher profit levels ❌ **Disabled:** Shows all TPs regardless of level
 
-**Enabled (Clean)**
+#### Enabled (Clean)
 
-{% hint style="info" %}
-Progressive TPs only
-{% endhint %}
+![Higher Level On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Ff2F3vgCje7HEF9KqNhje%2Fimage.png?alt=media&token=5642400f-b0e2-41ff-94cc-a714c2090ddd) **Progressive TPs only**
 
-![Higher Level On](<../.gitbook/assets/image (2)>)
+#### Disabled (All)
 
-**Disabled (All)**
+![Higher Level Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FGhS75RynaPINRwGxFdGm%2Fimage.png?alt=media&token=6b041085-0875-4e9f-9bdd-8c4252f68093) **Shows every TP signal**
+{% endtab %}
+{% endtabs %}
 
-{% hint style="warning" %}
-Shows every TP signal
-{% endhint %}
+---
 
-![Higher Level Off](<../.gitbook/assets/image (3)>)
+### 📊 Quick Comparison
 
-***
+| Setting               | Purpose        | When Enabled    | When Disabled |
+| --------------------- | -------------- | --------------- | ------------- |
+| **Show TP Signals**   | Master control | TP icons appear | No TP signals |
+| **Higher Level Only** | Filter quality | Progressive TPs | All TPs shown |
 
-#### 📊 Quick Comparison
+---
 
-| Setting           |        Purpose | When Enabled    | When Disabled |
-| ----------------- | -------------: | --------------- | ------------- |
-| Show TP Signals   | Master control | TP icons appear | No TP signals |
-| Higher Level Only | Filter quality | Progressive TPs | All TPs shown |
+### ⚡ Recommended Setup
 
-***
-
-#### ⚡ Recommended Setup
-
-Best Practice: Enable BOTH settings together
+{% hint style="success" %}
+**Best Practice:** Enable BOTH settings together
 
 This gives you:
 
-* ✅ Clean charts
-* ✅ Progressive exits
-* ✅ Quality signals only
-* ✅ No redundant alerts
+- ✅ Clean charts
+- ✅ Progressive exits
+- ✅ Quality signals only
+- ✅ No redundant alerts
+  {% endhint %}
 
-***
+---
 
-#### 🎨 How They Work Together
+### 🎨 How They Work Together
 
-{% stepper %}
-{% step %}
-### Both Enabled (Recommended)
+#### Both Enabled (Recommended)
 
-Example pattern:
+{% code title="signal-pattern.txt" %}
 
 ```
 Entry → TP1 at 1% → TP2 at 2% → TP3 at 3%
          ↑ Each TP at higher profit level
 ```
-{% endstep %}
 
-{% step %}
-### Show TP On, Higher Level Off
+{% endcode %}
 
-Example pattern:
+#### Show TP On, Higher Level Off
+
+{% code title="all-signals.txt" %}
 
 ```
 Entry → TP at 1% → TP at 0.8% → TP at 1.5% → TP at 1.2%
          ↑ Shows all TPs, even lower ones
 ```
-{% endstep %}
-{% endstepper %}
 
-***
+{% endcode %}
 
-#### 💡 Use Cases
+---
 
-Enable Both For:
+### 💡 Use Cases
 
-* Scaling out systematically
-* Clean chart experience
-* Quality over quantity
-* Trend following
+{% columns %}
+{% column width="50%" %}
 
-Disable Filter For:
+#### Enable Both For
 
-* Aggressive profit taking
-* Volatile markets
-* Scalping strategies
-* Maximum signals
+- Scaling out systematically
+- Clean chart experience
+- Quality over quantity
+- Trend following
+  {% endcolumn %}
 
-***
+{% column %}
 
-#### 📈 Visual Impact
+#### Disable Filter For
 
-* Both Enabled — Fewer, cleaner signals; Progressive profit levels; Best for most traders
-* Filter Disabled — More frequent signals; Any profit level; For aggressive traders
+- Aggressive profit taking
+- Volatile markets
+- Scalping strategies
+- Maximum signals
+  {% endcolumn %}
+  {% endcolumns %}
+
+---
+
+### 📈 Visual Impact
+
+| Both Enabled              | Filter Disabled        |
+| ------------------------- | ---------------------- |
+| Fewer, cleaner signals    | More frequent signals  |
+| Progressive profit levels | Any profit level       |
+| Best for most traders     | For aggressive traders |
 
 {% hint style="info" %}
-These settings only work when Exit Type is set to "Signals".
+**Remember:** These settings only work when Exit Type is set to "Signals"
 {% endhint %}
-
-Last updated 3 months ago
-
-This site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the [privacy policy](https://infinityalgo.com/privacy/).

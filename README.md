@@ -29,7 +29,104 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
 
 ### 📚 Documentation Sections
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>🎯 <strong>Getting Started</strong><br>Setup guides for desktop and mobile</td><td></td><td></td><td><a href="hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart">how-to-add-indicators-to-your-chart</a></td></tr><tr><td>⚙️ <strong>Features &#x26; Settings</strong><br>Complete guide to all V3.0 features</td><td></td><td></td><td><a href="../features">features</a></td></tr><tr><td>📊 <strong>Backtesting</strong><br>Strategy testing and optimization</td><td></td><td></td><td><a href="../backtest/backtest-version">backtest-version</a></td></tr><tr><td>📈 <strong>Trading Guide</strong><br>Risk management and best practices</td><td></td><td></td><td><a href="../trading-guide/trading-guide">trading-guide</a></td></tr><tr><td>🤖 <strong>AI Optimization</strong><br>Understanding the AI engine</td><td></td><td></td><td><a href="../features/infinity-algo-features/ai-optimization">ai-optimization</a></td></tr><tr><td>🔔 <strong>Alerts Setup</strong><br>Configure notifications</td><td></td><td></td><td><a href="../features/infinity-algo-features/alerts">alerts</a></td></tr><tr><td>❓ <strong>FAQ &#x26; Troubleshooting</strong><br>Common questions and solutions</td><td></td><td></td><td><a href="../faq/faq-and-troubleshoot">faq-and-troubleshoot</a></td></tr><tr><td>🔗 <strong>Resources</strong><br>Links and additional tools</td><td></td><td></td><td><a href="../links/useful-links">useful-links</a></td></tr><tr><td><p><strong>Feature Requests &#x26; Roadmap 🚀</strong></p><p>New⭐</p></td><td></td><td></td><td><a href="../features/infinity-algo-features/feature-requests-and-roadmap">feature-requests-and-roadmap</a></td></tr></tbody></table>
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        🎯 <strong>Getting Started</strong><br />Setup guides for desktop and
+        mobile
+      </td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart"
+          >how-to-add-indicators-to-your-chart</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ⚙️ <strong>Features &#x26; Settings</strong><br />Complete guide to all
+        V3.0 features
+      </td>
+      <td></td>
+      <td></td>
+      <td><a href="../features">features</a></td>
+    </tr>
+    <tr>
+      <td>
+        📊 <strong>Backtesting</strong><br />Strategy testing and optimization
+      </td>
+      <td></td>
+      <td></td>
+      <td><a href="../backtest/backtest-version">backtest-version</a></td>
+    </tr>
+    <tr>
+      <td>
+        📈 <strong>Trading Guide</strong><br />Risk management and best
+        practices
+      </td>
+      <td></td>
+      <td></td>
+      <td><a href="../trading-guide/trading-guide">trading-guide</a></td>
+    </tr>
+    <tr>
+      <td>
+        🤖 <strong>AI Optimization</strong><br />Understanding the AI engine
+      </td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="../features/infinity-algo-features/ai-optimization"
+          >ai-optimization</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>🔔 <strong>Alerts Setup</strong><br />Configure notifications</td>
+      <td></td>
+      <td></td>
+      <td><a href="../features/infinity-algo-features/alerts">alerts</a></td>
+    </tr>
+    <tr>
+      <td>
+        ❓ <strong>FAQ &#x26; Troubleshooting</strong><br />Common questions and
+        solutions
+      </td>
+      <td></td>
+      <td></td>
+      <td><a href="../faq/faq-and-troubleshoot">faq-and-troubleshoot</a></td>
+    </tr>
+    <tr>
+      <td>🔗 <strong>Resources</strong><br />Links and additional tools</td>
+      <td></td>
+      <td></td>
+      <td><a href="../links/useful-links">useful-links</a></td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Feature Requests &#x26; Roadmap 🚀</strong></p>
+        <p>New⭐</p>
+      </td>
+      <td></td>
+      <td></td>
+      <td>
+        <a
+          href="../features/infinity-algo-features/feature-requests-and-roadmap"
+          >feature-requests-and-roadmap</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### ⚡ Quick Access Troubleshooting
 

@@ -1,77 +1,74 @@
 # 🎯 Entry, Take Profit and Stop Loss
 
-[Got ideas?\
-Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
+![Settings Panel](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fs4Vdtl8fxs226HhSzqpQ%2F2025-08-24_22-58-59.jpg?alt=media&token=2f8b4916-5873-46a0-90df-456cf7d0a5ff)
 
-![](<../.gitbook/assets/image (27)>)
+---
 
-### Settings Panel
+#### 📊 Settings Overview
 
-**📊 Settings Overview**
+{% tabs %}
+{% tab title="📍 Entry Price" %}
+**Entry Level Display**
 
-* 📍 Entry Price
-* 💰 Take Profit
-* 🛑 Stop Loss
-* 🔄 Trailing Stop Loss
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FbmAV4XD5r3SZfSR0HzMk%2Fimage.png?alt=media&#x26;token=7594ac6b-efc6-4f88-abf2-3fd9e6b255d1" alt=""><figcaption></figcaption></figure>
 
-### Entry Level Display
+**Purpose:** Shows your position entry with dotted line
 
-![](<../.gitbook/assets/image (28)>)
+**Enabled**
 
-Purpose: Shows your position entry with dotted line
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FXzpeeNRhn2frhR8NQGz7%2Fimage.png?alt=media&#x26;token=1594f3f0-fcfe-4af0-b95c-e88696b55034" alt=""><figcaption><p>Line visualization Entry Price enabled</p></figcaption></figure>
+{% endtab %}
 
-Enabled
+{% tab title="💰 Take Profit" %}
+**TP Levels Configuration**
 
-![](<../.gitbook/assets/image (29)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FGvI8D8QS2rcwWiFgv07e%2Fimage.png?alt=media&#x26;token=a13943f3-a1ad-443b-988b-ace733f1fb0d" alt="" width="375"><figcaption></figcaption></figure>
 
-### TP Levels Configuration
+{% hint style="warning" %}
+**Important:** TP levels only work with "Percentage" exit type
+{% endhint %}
 
-![](<../.gitbook/assets/image (30)>)
-
-Important: TP levels only work with "Percentage" exit type
-
-Setup Process:
+**Setup Process:**
 
 {% stepper %}
 {% step %}
-### Enable TP Levels
+**Enable TP Level**
 
-Toggle ON the TP levels you want.
+Toggle ON the TP levels you want
 {% endstep %}
 
 {% step %}
-### Set Percentage
+**Set Percentage**
 
-Define profit % for each level.
+Define profit % for each level
 {% endstep %}
 
 {% step %}
-### Assign Position %
+**Assign Position %**
 
-Set how much to exit at each TP.
+Set how much to exit at each TP
 {% endstep %}
 
 {% step %}
-### Verify Total = 100%
+**Verify Total = 100%**
 
-Sum of all exit % must equal 100.
+Sum of all exit % must equal 100
 {% endstep %}
 {% endstepper %}
 
-Configuration Examples:
+**Configuration Examples:**
 
-Single TP
+{% code title="single-tp:" %}
 
-{% code title="Single TP" %}
 ```
 Single TP:
 TP1: 2% profit, exit 100%
 ```
+
 {% endcode %}
 
-Multiple TPs
+{% code title="multiple-tp:" %}
 
-{% code title="Multiple TPs" %}
 ```
 Multiple TPs:
 TP1: 1% profit, exit 50%
@@ -79,77 +76,77 @@ TP2: 2% profit, exit 30%
 TP3: 3% profit, exit 20%
 Total: 100% ✅
 ```
+
 {% endcode %}
 
-Visual Display: Enable "Show TP Prices" for dotted lines on chart
+**Visual Display:** Enable "Show TP Prices" for dotted lines on chart
 
-![](<../.gitbook/assets/image (31)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fk20MvZWwDaYvnaK6fyKc%2Fimage.png?alt=media&#x26;token=cd6e1825-394e-41d5-926f-46805c860242" alt=""><figcaption><p>Line visualization with all 6 TPs enabled</p></figcaption></figure>
+{% endtab %}
 
-Line visualization with all 6 TPs enabled
+{% tab title="🛑 Stop Loss" %}
+**Stop Loss Setup**
 
-### Stop Loss Setup
+**Configure separately for Long and Short positions**
 
-Configure separately for Long and Short positions
+![SL Settings](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FhosipOwLOCvCoE8GSggs%2F2025-08-20_16-21-08.jpg?alt=media&token=19c589ba-ca12-45bc-bbc7-f063c9f41d0e)
 
-![](<../.gitbook/assets/image (32)>)
+**Long Position SL**
 
-SL Settings
+Set % below entry for longs
 
-Long Position SL
+- Example: 2% = Exit if -2%
 
-* Set % below entry for longs
-* Example: 2% = Exit if -2%
+**Short Position SL**
 
-Short Position SL
+Set % above entry for shorts
 
-* Set % above entry for shorts
-* Example: 2% = Exit if -2%
+- Example: 2% = Exit if -2%
 
-Visual Display: Enable "Show SL Price" for dotted line on chart
+**Visual Display:** Enable "Show SL Price" for dotted line on chart
 
-![](<../.gitbook/assets/image (33)>)
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FecvM4PErLl9QtSM4um9n%2Fimage.png?alt=media&#x26;token=953f389b-5bfb-48d7-8704-39df5a955e3d" alt=""><figcaption><p>Line visualization SL enabled</p></figcaption></figure>
+{% endtab %}
 
-Line visualization SL enabled
+{% tab title="🔄 Trailing Stop Loss" %}
+**Advanced SL Management**
 
-### Advanced SL Management
+**Three Trailing Modes Available:**
 
-Three Trailing Modes Available:
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FFh3VQlluQErei97fRKJQ%2Fimage.png?alt=media&#x26;token=6f5839e1-749d-4a3f-846f-6496c8486abc" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/image (34)>)
+| Mode              | Description      | How It Works                          |
+| ----------------- | ---------------- | ------------------------------------- |
+| **None**          | Static stop loss | SL stays at initial level             |
+| **Breakeven**     | Move to entry    | SL moves to entry price after trigger |
+| **Moving Target** | Follow TP levels | SL trails up to previous TP levels    |
 
-Mode — Description — How It Works
-
-* None — Static stop loss — SL stays at initial level
-* Breakeven — Move to entry — SL moves to entry price after trigger
-* Moving Target — Follow TP levels — SL trails up to previous TP levels
-
-Setup Process:
+**Setup Process:**
 
 {% stepper %}
 {% step %}
-### Select Trailing Mode
+**Select Trailing Mode**
 
-Choose from None, Breakeven, or Moving Target.
+Choose from None, Breakeven, or Moving Target
 {% endstep %}
 
 {% step %}
-### Set Trigger Point
+**Set Trigger Point**
 
-Select which TP triggers the trailing (TP1–TP6).
+Select which TP triggers the trailing (TP1-TP6)
 {% endstep %}
 
 {% step %}
-### Monitor Status
+**Monitor Status**
 
-Chart shows (BE) or (TP1), (TP2), etc. next to SL.
+Chart shows (BE) or (TP1), (TP2) etc. next to SL
 {% endstep %}
 {% endstepper %}
 
-Example Configurations:
+**Example Configurations:**
 
-Breakeven Mode
+{% code title="breakeven-setup:" %}
 
-{% code title="Breakeven Mode" %}
 ```
 Breakeven Mode:
 - Mode: Breakeven
@@ -157,11 +154,11 @@ Breakeven Mode:
 - Result: SL moves to entry when TP1 hits
 - Display: "Stop loss (BE)"
 ```
+
 {% endcode %}
 
-Moving Target Mode
+{% code title="moving-target-setup:" %}
 
-{% code title="Moving Target Mode" %}
 ```
 Moving Target Mode:
 - Mode: Moving Target
@@ -172,89 +169,105 @@ Moving Target Mode:
   * After TP4: SL → TP2
 - Display: "Stop loss (TP1)", etc.
 ```
+
 {% endcode %}
 
-Pro Tip: Moving Target mode locks in profits progressively as each TP level is reached
+{% hint style="success" %}
+**Pro Tip:** Moving Target mode locks in profits progressively as each TP level is reached
+{% endhint %}
 
-### Visual Indicators
+**Visual Indicators:**
 
-SL Status — Label Display — Meaning
+| SL Status        | Label Display               | Meaning           |
+| ---------------- | --------------------------- | ----------------- |
+| **Normal**       | "Stop loss: \[price]"       | Static SL active  |
+| **Breakeven**    | "Stop loss (BE): \[price]"  | SL moved to entry |
+| **Trailing TP1** | "Stop loss (TP1): \[price]" | SL at TP1 level   |
+| **Trailing TP2** | "Stop loss (TP2): \[price]" | SL at TP2 level   |
 
-* Normal — "Stop loss: \[price]" — Static SL active
-* Breakeven — "Stop loss (BE): \[price]" — SL moved to entry
-* Trailing TP1 — "Stop loss (TP1): \[price]" — SL at TP1 level
-* Trailing TP2 — "Stop loss (TP2): \[price]" — SL at TP2 level
+{% hint style="info" %}
+**Entry Line Behavior:** When SL is at breakeven, the entry line dims to avoid visual overlap
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
-Entry Line Behavior: When SL is at breakeven, the entry line dims to avoid visual overlap
+---
 
-### Visual Display & Behavior
+#### 📈 Visual Display & Behavior
 
-What shows on chart:
+**What Shows on Chart:**
 
-Entry
+| Level         | Display     | Line Style    | When Visible         | Special Notes             |
+| ------------- | ----------- | ------------- | -------------------- | ------------------------- |
+| **Entry**     | Dotted line | `···········` | When enabled         | Dims when SL at BE        |
+| **TP Levels** | Dotted line | `···········` | Percentage mode only | Replaced by dots when hit |
+| **Stop Loss** | Dotted line | `···········` | When enabled         | Shows trailing status     |
 
-* Display: Dotted line (`···········`)
-* When visible: When enabled
-* Special notes: Dims when SL at BE
+{% hint style="info" %}
+**Dynamic Display:**
 
-TP Levels
+- TP lines disappear and become dot markers when hit
+- SL label updates to show current mode (BE, TP1, TP2, etc.)
+- Entry line dims when SL is at breakeven to reduce clutter
+  {% endhint %}
 
-* Display: Dotted line (`···········`)
-* When visible: Percentage mode only
-* Special notes: Replaced by dots when hit
+**Chart Examples:**
 
-Stop Loss
+{% columns %}
+{% column width="50%" %}
+**Active TP Lines**
 
-* Display: Dotted line (`···········`)
-* When visible: When enabled
-* Special notes: Shows trailing status
+![Before TP Hit](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FbWGbiHuheTXVKJHpX4KW%2F2025-08-20_16-58-38.jpg?alt=media&token=129a1cd9-330d-463c-aaf2-7c35640196a7) **Lines show pending TP levels**
+{% endcolumn %}
 
-Dynamic Display:
+{% column %}
+**TP Hit Markers**
 
-* TP lines disappear and become dot markers when hit
-* SL label updates to show current mode (BE, TP1, TP2, etc.)
-* Entry line dims when SL is at breakeven to reduce clutter
+![After TP Hit](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FDzZ7kGlWG30skuBIDGZG%2F2025-08-20_17-00-02.jpg?alt=media&token=7c845ba8-dcab-4cc0-a990-7e14324a9067) **Dots mark executed TPs**
+{% endcolumn %}
+{% endcolumns %}
 
-Chart Examples:
+---
 
-Active TP Lines\
-![Before TP Hit](<../.gitbook/assets/image (35)>)\
-Lines show pending TP levels
+#### 🎨 Visual Indicators Guide
 
-TP Hit Markers\
-![After TP Hit](<../.gitbook/assets/image (36)>)\
-Dots mark executed TPs
+**TP Level Status:**
 
-### Visual Indicators Guide
+| Status                 | Visual         | Description      | Chart State        |
+| ---------------------- | -------------- | ---------------- | ------------------ |
+| **📊 Pending TP**      | Dotted line    | Ready to trigger | Label shows target |
+| **✅ TP Hit**          | Dot marker (●) | Level executed   | Line disappears    |
+| **🔄 Position Closed** | Dots remain    | Trade complete   | All lines cleared  |
 
-TP Level Status
+**SL Trailing Status:**
 
-* 📊 Pending TP — Dotted line — Ready to trigger (label shows target)
-* ✅ TP Hit — Dot marker (●) — Level executed (line disappears)
-* 🔄 Position Closed — Dots remain — Trade complete (all lines cleared)
+| Status           | Visual                      | Description         | Notes           |
+| ---------------- | --------------------------- | ------------------- | --------------- |
+| **📍 Static**    | "Stop loss: \[price]"       | Fixed SL position   | Initial state   |
+| **🟢 Breakeven** | "Stop loss (BE): \[price]"  | Moved to entry      | Risk-free trade |
+| **📈 Trailing**  | "Stop loss (TP#): \[price]" | Following TP levels | Profits locked  |
 
-SL Trailing Status
+---
 
-* 📍 Static — "Stop loss: \[price]" — Fixed SL position (initial state)
-* 🟢 Breakeven — "Stop loss (BE): \[price]" — Moved to entry (risk-free trade)
-* 📈 Trailing — "Stop loss (TP#): \[price]" — Following TP levels (profits locked)
+#### 🎯 Quick Setup Templates
 
-### Quick Setup Templates
+**Conservative (Single TP + Breakeven)**
 
-Conservative (Single TP + Breakeven)
+{% code title="conservative:" %}
 
-{% code title="Conservative" %}
 ```
 TP1: 2% profit, exit 100%
 SL: 1% loss
 Trailing: Breakeven after TP1
 Risk/Reward: 2:1 → Risk-free after TP
 ```
+
 {% endcode %}
 
-Scaled Exit (Multiple TP + Moving Target)
+**Scaled Exit (Multiple TP + Moving Target)**
 
-{% code title="Scaled Exit" %}
+{% code title="scaled:" %}
+
 ```
 TP1: 1% profit, exit 50%
 TP2: 2% profit, exit 30%
@@ -263,11 +276,13 @@ SL: 2% loss
 Trailing: Moving Target after TP1
 Result: Progressive profit locking
 ```
+
 {% endcode %}
 
-Aggressive (Wide Targets + Late Trailing)
+**Aggressive (Wide Targets + Late Trailing)**
 
-{% code title="Aggressive" %}
+{% code title="aggressive:" %}
+
 ```
 TP1: 3% profit, exit 40%
 TP2: 5% profit, exit 30%
@@ -276,30 +291,35 @@ SL: 3% loss
 Trailing: Moving Target after TP2
 Result: Maximum profit potential
 ```
+
 {% endcode %}
 
-### Pro Tips
+---
 
-Best Practices:
+#### 💡 Pro Tips
 
-* Always verify TP percentages = 100%
-* Use Breakeven mode for conservative trading
-* Use Moving Target to lock in progressive profits
-* Set trailing trigger based on your confidence level
-* Monitor the SL label for current protection status
+{% hint style="success" %}
+**Best Practices:**
 
-Trailing Tips:
+- Always verify TP percentages = 100%
+- Use Breakeven mode for conservative trading
+- Use Moving Target to lock in progressive profits
+- Set trailing trigger based on your confidence level
+- Monitor the SL label for current protection status
+  {% endhint %}
 
-* Breakeven after TP1 = Quick risk elimination
-* Moving Target after TP2 = Balance between profit and protection
-* No trailing = Maximum profit potential but constant risk
+{% hint style="info" %}
+**Trailing Tips:**
 
-Remember:
+- **Breakeven after TP1** = Quick risk elimination
+- **Moving Target after TP2** = Balance between profit and protection
+- **No trailing** = Maximum profit potential but constant risk
+  {% endhint %}
 
-* TP lines only show in "Percentage" exit mode
-* Trailing SL requires at least one TP to be enabled
-* Moving Target mode requires multiple TPs for best results
+{% hint style="warning" %}
+**Remember:**
 
-Last updated 2 months ago
-
-This site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the [privacy policy](https://infinityalgo.com/privacy/).
+- TP lines only show in "Percentage" exit mode
+- Trailing SL requires at least one TP to be enabled
+- Moving Target mode requires multiple TPs for best results
+  {% endhint %}
