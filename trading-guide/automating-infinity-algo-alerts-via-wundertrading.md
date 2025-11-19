@@ -1,418 +1,311 @@
-# 🔄 Automating Infinity Algo Alerts via WunderTrading
+# 🔄 Automating Infinity Algo Alerts via Finandy
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
+---
 
-Connect Infinity Algo signals to WunderTrading for automated trading with flexible position management.
+### 🎯 Integration Method for Indicators
 
-***
+{% tabs %}
+{% tab title="📊 Two-Alert Setup" %}
+**Separate Buy/Sell Alerts (Required for Indicators)**
 
-#### 🎯 Two Trading Workflows
+**What it does:**
 
-**🔄 Swing Trade**
+- Two distinct alerts (Buy & Sell)
+- Clear signal separation
+- Works with any indicator
+- No code access needed
 
-Auto-Flip Positions (Futures Only)
+**Best for:**
 
-What it does:
+- ✅ All Infinity Algo users
+- ✅ Simple setup
+- ✅ Clear control
+- ✅ Testing & production
 
-* Automatic Long ↔ Short flipping
-* Just two alerts needed
-* Bot handles position reversal
-* With Swing Trade ON, Enter-Long/Enter-Short flip positions automatically
-
-Best for:
-
-* ✅ Futures trading only
-* ✅ Trending markets
-* ✅ Minimal alerts
-* ✅ Always in position
-
-Setup Requirements
+{% code title="Alert Requirements" %}
 
 ```
-Swing Trade: ON (Futures only!)
-Alerts: 2 total
-- Buy Signal → Enter-Long
-- Sell Signal → Enter-Short
-(Exit-All only for flattening without opening opposite)
+Alerts: 2 total (indicators can only send one signal type per alert)
+- Buy Signal → side: "buy"
+- Sell Signal → side: "sell"
+Position Side: Both/Long only/Short only
 ```
+
+{% endcode %}
 
 {% hint style="info" %}
-Swing trade functionality is only available for Futures markets.
-{% endhint %}
+**Position Side Options:**
 
-***
-
-**🎯 Explicit Exit**
-
-Manual Position Control
-
-What it does:
-
-* Full control over exits
-* No position overlap
-* Works on Spot & Futures
-* Clear entry/exit separation
-
-Best for:
-
-* ✅ Spot trading
-* ✅ Risk management
-* ✅ Position gaps
-* ✅ More control
-
-Setup Requirements
-
-```
-Swing Trade: OFF
-Alerts: 3+ total
-- Entry → Enter-Long/Enter-Short
-- Exit → Exit-Long/Exit-Short
-- Optional re-entry
-```
-
-Perfect for traders who want complete control over position timing
-
-***
-
-#### ⚙️ Step 1–3: Build Bot, Configure Entries & Create Alerts
-
-{% stepper %}
-{% step %}
-### Step 1 — Build Signal Bot in WunderTrading
-
-Navigate to WunderTrading:
-
-* Log in → Bots → Signal Bot → Create bot
-
-Configure General tab settings:
-
-| Field            | Value                       |
-| ---------------- | --------------------------- |
-| Name             | e.g. `Infinity Algo BTC`    |
-| Exchange/API     | Select your exchange API    |
-| Pairs            | Select up to 10 pairs in UI |
-| Timeframe label  | Any (just a label)          |
-| Multiple entries | ON for scale-ins            |
-| Swing trade      | ON for auto-flip (Futures)  |
-
-Note: Pairs must be selected in the bot UI. JSON cannot override pair selection.
-{% endstep %}
-
-{% step %}
-### Step 2 — Configure Entries & Get Webhook
-
-Entries tab configuration:
-
-| Setting             | Value               |
-| ------------------- | ------------------- |
-| Bot start condition | _TradingView Alert_ |
-| Bot settings format | **JSON**            |
-
-After saving, your bot will display:
-
-* Webhook URL: Copy the exact URL shown in your bot's Alerts tab
-* Alert comments: Copy exactly as shown (default: `Enter-Long`, `Enter-Short`, `Exit-All`)
+- **Both** → Opens Long on buy, Short on sell (reversal in one-way mode)
+- **Long only** → Only long trades
+- **Short only** → Only short trades
+- **Strategy** → For TradingView strategies only (NOT for indicators!)
+  {% endhint %}
+  {% endtab %}
+  {% endtabs %}
 
 {% hint style="warning" %}
-Critical:
-
-* Copy the exact webhook URL from your bot — don't guess the format
-* Comment codes are case-sensitive and may change if you edit bot Name/Exchange/Timeframe/Pair
-* After any bot edits, update your TradingView alerts to match
+**Important:** Since Infinity Algo is an indicator, you MUST create two separate alerts. The `"side"` field must be included with value `"buy"` or `"sell"` (lowercase). Strategy placeholders like `{{strategy.order.action}}` won't work.
 {% endhint %}
-{% endstep %}
 
-{% step %}
-### Step 3 — Create TradingView Alerts
+---
 
-Standard Alert Settings:
+### ⚙️ Step 1: Configure Finandy Webhook
 
-| Field       | Value                                                         |
-| ----------- | ------------------------------------------------------------- |
-| Condition   | Select your Infinity Algo signal (e.g., "Buy Signal - Smart") |
-| Options     | Once Per Bar Close (prevents duplicate orders)                |
-| Webhook URL | Paste the exact URL from your bot's Alerts tab                |
-| Message     | JSON template (see below)                                     |
+**Navigate to Finandy:**
 
-Use the exact comment codes shown in your bot's sidebar (case-sensitive).
-{% endstep %}
-{% endstepper %}
+1. **Log in** → Finandy.com
+2. **Algo-trading** → **TradingView Signals**
+3. **Create new signal (webhook)**
+4. Configure main settings:
 
-***
+| Field             | Value                                    |
+| ----------------- | ---------------------------------------- |
+| **Name**          | e.g. _Infinity Algo Signals_             |
+| **Currency pair** | `{{ticker}}` (one hook for all)          |
+| **Position side** | **Both** or **Long only**/**Short only** |
+| **Save**          | Shows Signal URL & Message               |
 
-#### 📝 JSON Templates
+{% hint style="danger" %}
+**Do NOT select "Strategy" for Position side** - that's only for TradingView strategies, not indicators
+{% endhint %}
 
-Important: Use the exact comment codes shown in your bot's sidebar (e.g., `Enter-Long`, not `ENTER-LONG`)
+---
 
-<details>
+### 📩 Step 2: Get Webhook Credentials
 
-<summary>enter_long.json (Long Entry)</summary>
+After saving, Finandy displays your unique webhook details. Copy exactly as shown:
 
-{% code title="enter_long.json" %}
+- **Signal URL**: Copy the exact URL displayed for your signal
+- **Signal Message**: Copy the template with your secret token
+
+{% hint style="danger" %}
+**Security:** Keep your `secret` token private! By default, Finandy only accepts requests from TradingView IPs.
+{% endhint %}
+
+---
+
+### 📊 Step 3: Create TWO TradingView Alerts
+
+You MUST create two separate alerts - one for buy signals and one for sell signals.
+
+**Alert Configuration**
+
+| Alert field     | Value                                  |
+| --------------- | -------------------------------------- |
+| **Condition**   | Infinity Algo → Choose your signal     |
+| **Options**     | **Once Per Bar Close**                 |
+| **Webhook URL** | Paste the exact Signal URL from Step 2 |
+| **Message**     | JSON template (see below)              |
+
+---
+
+### 📝 JSON Templates for Each Alert
+
+{% tabs %}
+{% tab title="🟢 Alert #1: Buy Signal" %}
+**Create this alert on a Buy condition:**
+
+{% code title="buy\_signal.json" overflow="wrap" %}
+
 ```json
 {
-  "code": "Enter-Long",            // must match your bot's comment EXACTLY
-  "orderType": "market",
-  "amountPerTradeType": "quote",   // quote currency (e.g., USDT on BTC/USDT)
-  "amountPerTrade": 150,
-
-  "takeProfits": [
-    { "priceDeviation": 0.01, "portfolio": 0.25 },
-    { "priceDeviation": 0.02, "portfolio": 0.25 },
-    { "priceDeviation": 0.03, "portfolio": 0.25 },
-    { "priceDeviation": 0.04, "portfolio": 0.15 },
-    { "priceDeviation": 0.05, "portfolio": 0.07 },
-    { "priceDeviation": 0.06, "portfolio": 0.03 }
-  ],
-
-  "stopLoss": { "priceDeviation": 0.01 },
-  "reduceOnly": true,              // prevents exits from increasing size (Futures only)
-  "placeConditionalOrdersOnExchange": false
+  "name": "Infinity Algo Signals",
+  "secret": "YOUR-SECRET",
+  "side": "buy",
+  "symbol": "{{ticker}}"
 }
 ```
+
 {% endcode %}
 
-Note: TP portfolios must sum to exactly 1.0 (100%)
+**Required:** `"side": "buy"` (lowercase)
+{% endtab %}
 
-</details>
+{% tab title="🔴 Alert #2: Sell Signal" %}
+**Create this alert on a Sell condition:**
 
-<details>
+{% code title="sell\_signal.json" overflow="wrap" %}
 
-<summary>enter_short.json (Short Entry)</summary>
-
-{% code title="enter_short.json" %}
 ```json
 {
-  "code": "Enter-Short",
-  "orderType": "market",
-  "amountPerTradeType": "quote",
-  "amountPerTrade": 150,
-
-  "takeProfits": [
-    { "priceDeviation": 0.01, "portfolio": 0.25 },
-    { "priceDeviation": 0.02, "portfolio": 0.25 },
-    { "priceDeviation": 0.03, "portfolio": 0.25 },
-    { "priceDeviation": 0.04, "portfolio": 0.15 },
-    { "priceDeviation": 0.05, "portfolio": 0.07 },
-    { "priceDeviation": 0.06, "portfolio": 0.03 }
-  ],
-
-  "stopLoss": { "priceDeviation": 0.01 },
-  "reduceOnly": true
+  "name": "Infinity Algo Signals",
+  "secret": "YOUR-SECRET",
+  "side": "sell",
+  "symbol": "{{ticker}}"
 }
 ```
+
 {% endcode %}
 
-</details>
+**Required:** `"side": "sell"` (lowercase)
+{% endtab %}
 
-<details>
+{% tab title="🎯 Advanced: Custom TP" %}
+**Override TP settings from alert:**
 
-<summary>exit_long.json (Exit Long)</summary>
+{% code title="custom\_tp.json" overflow="wrap" lineNumbers="true" %}
 
-{% code title="exit_long.json" %}
 ```json
 {
-  "code": "Exit-Long",
-  "orderType": "market",
-  "reduceOnly": true
+  "name": "Infinity Algo Signals",
+  "secret": "YOUR-SECRET",
+  "side": "buy",
+  "symbol": "{{ticker}}",
+  "tp": {
+    "orders": [
+      { "ofs": "1.0", "price": "", "piece": "25" },
+      { "ofs": "2.0", "price": "", "piece": "25" },
+      { "ofs": "3.0", "price": "", "piece": "25" },
+      { "ofs": "4.0", "price": "", "piece": "25" }
+    ],
+    "update": true
+  }
 }
 ```
+
 {% endcode %}
 
-</details>
+**Note:** Tick the TP module checkbox in Finandy UI to accept values from signals, and include `"update": true`
+{% endtab %}
+{% endtabs %}
 
-<details>
+---
 
-<summary>exit_short.json (Exit Short)</summary>
+### 🎯 Step 4: Set TP & SL Inside Finandy (Optional)
 
-{% code title="exit_short.json" %}
-```json
-{
-  "code": "Exit-Short",
-  "orderType": "market",
-  "reduceOnly": true
-}
-```
-{% endcode %}
+{% tabs %}
+{% tab title="📈 Take Profit" %}
 
-</details>
+1. Open the webhook you created → **Take Profit (TP)** tab
+2. Tick **Enable TP** → choose **Limit** or **Market**
+3. **Number of orders** → choose how many levels
+4. **Price offset** (%) and **Order distribution** (%) per tier
+5. **Level re-ordering** keeps percentages intact when you DCA
+6. To accept TP overrides from signals, tick the checkbox to enable
 
-<details>
+All TP orders sit on the exchange; no extra TradingView alerts required.
+{% endtab %}
 
-<summary>exit_all.json (Exit All)</summary>
+{% tab title="🛡️ Stop Loss" %}
 
-{% code title="exit_all.json" %}
-```json
-{
-  "code": "Exit-All",
-  "orderType": "market",
-  "reduceOnly": true
-}
-```
-{% endcode %}
+1. Open webhook → **Stop Loss (SL)** tab
+2. Tick **Enable SL**
+3. Choose **Market** or **Limit**
+4. Set **Price offset** (%)
+5. Optional: Enable **Trailing**
 
-Closes all positions at market.
+SL orders execute on exchange for fastest execution.
+{% endtab %}
 
-</details>
+{% tab title="🔄 Order Types" %}
+**Real vs Virtual Orders:**
 
-Skip exit\_long/exit\_short templates if using Swing Trade ON.
+- **Real** = orders placed on the exchange immediately
+- **Virtual** = managed by terminal until trigger conditions are met
 
-***
+Choose based on your exchange and needs.
+{% endtab %}
+{% endtabs %}
 
-#### ⚡ Quick Comparison
+---
 
-| Feature          |  Swing Trade ON |            Explicit Exit |
-| ---------------- | --------------: | -----------------------: |
-| Market Type      | ⚠️ Futures only |         ✅ Spot & Futures |
-| Alerts Needed    |     2 (minimal) | 3+ (entry/exit/re-entry) |
-| Position Control |  Automatic flip |           Manual control |
-| Position Gaps    |           Never |                 Possible |
-| Complexity       |          Simple |                 Moderate |
+### ⚡ Alert Setup Examples
 
-***
+{% columns %}
+{% column width="50%" %}
+**For "Buy Signal - Smart":**
 
-#### 🎯 Pick Your Workflow
+1. Condition: Infinity Algo → "Buy Signal - Smart"
+2. Webhook URL: Your Finandy Signal URL
+3. Message: Buy JSON with `"side": "buy"`
+   {% endcolumn %}
 
-If you want…
+{% column %}
+**For "Sell Signal - Smart":**
 
-A) Ping-pong (auto flip) — Long → Short → Long with just two alerts
+1. Condition: Infinity Algo → "Sell Signal - Smart"
+2. Webhook URL: Same Finandy Signal URL
+3. Message: Sell JSON with `"side": "sell"`
+   {% endcolumn %}
+   {% endcolumns %}
 
-* Turn Swing trade = ON in bot (Futures only)
-* Buy alert → `Enter-Long` JSON
-* Sell alert → `Enter-Short` JSON
-* Use `Exit-All` only when you want to flatten without opening opposite
+---
 
-B) Explicit exit first — Never overlap positions; more control
+### 🧪 Step 5: Test & Monitor
 
-* Leave Swing trade = OFF
-* Entry alert → `Enter-Long` or `Enter-Short` JSON
-* Exit alert → `Exit-Long` or `Exit-Short` JSON
-* (Optional) second entry alert to reverse
+- **Interface → Signal log** shows every webhook received with "OK" or error code
+- Start with tiny sizes to verify setup
+- Check that both buy AND sell alerts are working
+- Use the Signal Log to see received JSON and actions taken
 
-***
+{% hint style="warning" %}
+**Testing Checklist:** ✅ Created TWO separate alerts ✅ Buy alert has `"side": "buy"` (lowercase) ✅ Sell alert has `"side": "sell"` (lowercase) ✅ Both use same webhook URL and secret ✅ Signal Log shows both types of signals
+{% endhint %}
 
-#### 🚀 Advanced Features
+---
 
-Multiple TPs
+### 🎯 Position Side Configuration
 
-* Add up to **6 TP steps**
-* Portfolios must sum to **1.0**
-* Multi-pair requires `priceDeviation` (decimals, not %)
-* Single-pair can use `price`
+| Your Trading Style          | Position Side Setting | Result                                            |
+| --------------------------- | --------------------- | ------------------------------------------------- |
+| **Long & Short (Reversal)** | Both                  | Closes opposite before opening new (one-way mode) |
+| **Long Only**               | Long only             | Ignores sell signals                              |
+| **Short Only**              | Short only            | Ignores buy signals                               |
+| **Strategy Mode**           | Strategy              | Only for TradingView strategies                   |
 
-Example: 6-Level TP
+{% hint style="danger" %}
+**Hedge Mode Warning:** In hedge mode, use **Long only** or **Short only** for indicators. Position side "Both" won't close correctly in hedge mode - it's designed for one-way mode reversals.
+{% endhint %}
 
-```
-"takeProfits": [
-  { "priceDeviation": 0.01, "portfolio": 0.30 },
-  { "priceDeviation": 0.02, "portfolio": 0.25 },
-  { "priceDeviation": 0.03, "portfolio": 0.20 },
-  { "priceDeviation": 0.04, "portfolio": 0.15 },
-  { "priceDeviation": 0.05, "portfolio": 0.07 },
-  { "priceDeviation": 0.06, "portfolio": 0.03 }
-]
-```
+---
 
-Sum = 1.0 (100%) ✅
+### 🛠️ Troubleshooting Checklist
 
-Multiple Entries
+| Issue              | Solution                                               |
+| ------------------ | ------------------------------------------------------ |
+| **403 error**      | Wrong **secret** or URL missing **https\://**          |
+| **"Unknown side"** | `side` must be exactly `"buy"` or `"sell"` (lowercase) |
+| **No orders**      | Check Position Side isn't set to "Strategy"            |
+| **Only buys work** | Did you create the sell alert?                         |
+| **Wrong pair**     | Verify `{{ticker}}` placeholder                        |
+| **No reversal**    | Check Position Side = "Both" and one-way mode enabled  |
+| **Hedge issues**   | Use Long only/Short only in hedge mode, not "Both"     |
 
-* Enable in bot settings for DCA on consecutive signals, building larger positions, averaging entry price
-* Works with both workflows
+---
 
-amountPerTradeType options:
+### 🔤 JSON Key Reference (Finandy)
 
-Spot markets:
+| Key             | Meaning                | Details                                       |
+| --------------- | ---------------------- | --------------------------------------------- |
+| **`name`**      | Webhook identifier     | Any descriptive name                          |
+| **`secret`**    | Auth token from signal | Keep private!                                 |
+| **`side`**      | Trade direction        | **Required:** `"buy"` or `"sell"` (lowercase) |
+| **`symbol`**    | Trading pair           | Usually `{{ticker}}`                          |
+| **`tp.orders`** | TP levels array        | Optional override                             |
+| **`ofs`**       | % offset from entry    | String: "1.0" = 1%                            |
+| **`piece`**     | % of position          | Percentages that sum to intended total        |
+| **`update`**    | Apply new settings     | `true` to override TP from signal             |
 
-* `quote` — Quote currency (e.g., USDT)
-* `base` — Base currency (e.g., BTC)
-* `percents` — Percentage of balance
+---
 
-Derivatives/Futures:
+### 📚 Resources
 
-* `quote` — Quote currency
-* `contracts` — Number of contracts
-* `percents` — Percentage of balance
+{% hint style="info" %}
+**Official Finandy Documentation:**
 
-***
+- **Main Docs:** <https://docs.finandy.com/>
+- **TradingView Connection:** <https://docs.finandy.com/algo-trading/signals-tradingview/connection-and-configuration/indicator-strategy-connection>
+- **Signal Interface:**[https://docs.finandy.com/algo-trading/signals-tradingview/interface](https://docs.finandy.com/algo-trading/signals-tradingview/interface)
+- **Position Management:** <https://docs.finandy.com/algo-trading/signals/interface/open>
+  {% endhint %}
 
-#### 🧠 Pro Tips
+{% hint style="warning" %}
+**Important Reminders:**
 
-* Multi-pair bots: Use `priceDeviation` (decimals like 0.02 for 2%), not `price` for TP/SL
-* priceDeviation format — Use decimals (0.02) not percentages (2%)
-* Portfolio sum — TP portfolios must add up to exactly 1.0 (100%)
-* reduceOnly — Applies to exits; has no effect on Spot markets
-* Comment codes — Copy exactly from your bot; they change if you edit bot settings
-* Strategy alerts — Use `alert()` function with `{{strategy.order.comment}}` for strategies
-* Paper test first — WunderTrading log shows "Signal executed" if webhook parsed correctly
-
-***
-
-#### 🛠️ Troubleshooting Checklist
-
-| Symptom                     | Likely cause / fix                                                            |
-| --------------------------- | ----------------------------------------------------------------------------- |
-| No deal appears             | `code` in JSON doesn't match bot's Alert comment exactly (check case!)        |
-| Bot opens but doesn't close | Swing trade OFF and you forgot exit alert – or `reduceOnly:false` caused flip |
-| Webhook error 400           | JSON syntax error or using `%` instead of decimals (use `0.02`, not `2%`)     |
-| Duplicate deals             | Alert set to "Once Per Bar" instead of "Once Per Bar Close"                   |
-| Multi-pair TP/SL fails      | Must use `priceDeviation` (decimals), not `price`                             |
-| Comments changed            | Bot edits can change comment codes — update alerts after any bot changes      |
-
-***
-
-#### 🔤 JSON Key Reference
-
-| Key                                | What it does             | Details                                                                                  |
-| ---------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------- |
-| `code`                             | Alert comment identifier | Must match bot's comment exactly (case-sensitive!)                                       |
-| `orderType`                        | Order execution type     | `market` or `limit`                                                                      |
-| `amountPerTradeType`               | Position size unit       | Spot: `quote`/`base`/`percents` — Futures: `quote`/`contracts`/`percents`                |
-| `amountPerTrade`                   | Position size            | Value depends on type above                                                              |
-| `takeProfits`                      | Array of partial exits   | `priceDeviation`: decimal (0.02 = 2%) — `portfolio`: fraction to close (must sum to 1.0) |
-| `stopLoss`                         | Stop loss configuration  | `priceDeviation`: decimal from entry                                                     |
-| `reduceOnly`                       | Prevent size increase    | `true` → exits only decrease position (Futures only, no effect on Spot)                  |
-| `placeConditionalOrdersOnExchange` | Where orders execute     | `false` = managed by bot — `true` = on exchange                                          |
-
-***
-
-#### 🎯 Which Workflow Should You Use?
-
-Choose Swing Trade if:
-
-* Trading Futures only
-* Want minimal alerts
-* Trust your signals
-* Always in position
-
-Choose Explicit Exit if:
-
-* Trading Spot markets
-* Need position control
-* Want gap periods
-* Risk management focus
-
-Pro Tip: Start with Explicit Exit to learn, then switch to Swing Trade for Futures efficiency
-
-***
-
-#### 📚 Resources
-
-Official WunderTrading Documentation:
-
-* Main Docs: https://help.wundertrading.com/en/
-* Signal Bot Form Guide: https://help.wundertrading.com/en/articles/10458409-signal-bot-comprehensive-form-guide
-* JSON Guide: https://help.wundertrading.com/en/articles/10475473-signal-bot-comprehensive-json-guide
-* TradingView Setup: https://help.wundertrading.com/en/articles/5173846-how-to-set-up-a-tradingview-bot-signal-bot-in-wundertrading
-* Troubleshooting: https://help.wundertrading.com/en/articles/5173235-my-signal-bot-does-not-work
-
-Important Reminders:
-
-* WunderTrading is a third-party service with separate subscription costs
-* Always test with small amounts or paper trading first
-* Comment codes are case-sensitive and can change when you edit bot settings
-* Manual trading via TradingView is always available as an alternative
-
-Last updated 2 months ago
-
-Was this helpful?
+- Finandy is a third-party service with separate costs
+- Indicators require TWO alerts (buy and sell separately)
+- The `"side"` field is mandatory and must be lowercase
+- Test with small amounts first
+- Manual trading via TradingView is always available
+  {% endhint %}

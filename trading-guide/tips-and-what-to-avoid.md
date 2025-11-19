@@ -1,147 +1,94 @@
 # ✅ Tips and what to Avoid
 
-<a href="https://infinityalgo.canny.io/?utm_source=docs&#x26;utm_medium=banner" class="button primary" data-icon="plus">Got ideas? Request a feature</a>
-
-### Tips and What to Avoid ✅
+## Tips and What to Avoid ✅
 
 Master these principles to trade like a professional and avoid costly mistakes.
 
-***
+---
 
-#### ✅ Core Best Practices
+### ✅ Core Best Practices
 
-{% stepper %}
-{% step %}
-### Stick to a written trading plan
+{% hint style="success" %}
+**1️⃣ Stick to a written trading plan** Define setups, entry/exit rules, and risk per trade, then follow it religiously.
+{% endhint %}
 
-Define setups, entry/exit rules, and risk per trade, then follow it religiously.
-{% endstep %}
+{% hint style="success" %}
+**2️⃣ Risk ≤ 2% of account per trade** Size every position with `risk $ ÷ stop-distance = trade size`.
+{% endhint %}
 
-{% step %}
-### Risk ≤ 2% of account per trade
+{% hint style="success" %}
+**3️⃣ Journal every trade** Log price, thesis, emotion; review weekly to spot repeat mistakes.
+{% endhint %}
 
-Size every position with `risk $ ÷ stop-distance = trade size`.
-{% endstep %}
+{% hint style="success" %}
+**4️⃣ Keep learning continuously** Markets evolve—read, backtest, and attend webinars each month.
+{% endhint %}
 
-{% step %}
-### Journal every trade
+---
 
-Log price, thesis, emotion; review weekly to spot repeat mistakes.
-{% endstep %}
+### ⚠️ Common Pitfalls
 
-{% step %}
-### Keep learning continuously
+{% hint style="warning" %}
+**5️⃣ Control your emotions** Fear & greed sabotage analysis—use pre-trade checklists to stay objective.
+{% endhint %}
 
-Markets evolve—read, backtest, and attend webinars each month.
-{% endstep %}
-{% endstepper %}
+{% hint style="warning" %}
+**6️⃣ Avoid over-trading** Quality beats quantity; never revenge trade after a loss.
+{% endhint %}
 
-***
+{% hint style="warning" %}
+**7️⃣ Respect leverage carefully** It magnifies losses as easily as gains; scale down in volatile markets.
+{% endhint %}
 
-#### ⚠️ Common Pitfalls
+---
 
-{% stepper %}
-{% step %}
-### Control your emotions
+### 🚨 Critical Rules (Never Break These)
 
-Fear & greed sabotage analysis—use pre-trade checklists to stay objective.
-{% endstep %}
+{% hint style="danger" %}
+**8️⃣ Always set stop-losses** Automation enforces discipline when price moves fast—no exceptions.
+{% endhint %}
 
-{% step %}
-### Avoid over-trading
+{% hint style="danger" %}
+**9️⃣ Never trade money you can't afford to lose** Capital preservation is Rule #1—rent money is not trading capital.
+{% endhint %}
 
-Quality beats quantity; never revenge trade after a loss.
-{% endstep %}
+{% hint style="danger" %}
+**🔟 Never ignore risk management** One bad trade without stops can wipe out months of profits.
+{% endhint %}
 
-{% step %}
-### Respect leverage carefully
+---
 
-It magnifies losses as easily as gains; scale down in volatile markets.
-{% endstep %}
-{% endstepper %}
+### 📊 Market Awareness
 
-***
+{% hint style="info" %}
+**1️⃣1️⃣ Watch the economic calendar** CPI, Fed meetings, and earnings can invalidate technical setups instantly.
+{% endhint %}
 
-#### 🚨 Critical Rules (Never Break These)
+{% hint style="info" %}
+**1️⃣2️⃣ Understand your tools & indicators** Backtest each tweak before going live—know your edge.
+{% endhint %}
 
-{% stepper %}
-{% step %}
-### Always set stop-losses
+{% hint style="info" %}
+**1️⃣3️⃣ Diversify assets & strategies** "Many baskets" lower drawdowns and smooth equity curves.
+{% endhint %}
 
-Automation enforces discipline when price moves fast—no exceptions.
-{% endstep %}
+---
 
-{% step %}
-### Never trade money you can't afford to lose
+### 💡 Quick Reference
 
-Capital preservation is Rule #1—rent money is not trading capital.
-{% endstep %}
+| Do's ✅            | Don'ts ❌            |
+| ------------------ | -------------------- |
+| Plan every trade   | Trade on emotions    |
+| Use stop-losses    | Risk rent money      |
+| Journal results    | Revenge trade        |
+| Risk 1-2% max      | Over-leverage        |
+| Stay educated      | Ignore news events   |
+| Diversify holdings | Put all in one trade |
 
-{% step %}
-### Never ignore risk management
+---
 
-One bad trade without stops can wipe out months of profits.
-{% endstep %}
-{% endstepper %}
+### 🎯 The Golden Rules
 
-***
-
-#### 📊 Market Awareness
-
-{% stepper %}
-{% step %}
-### Watch the economic calendar
-
-CPI, Fed meetings, and earnings can invalidate technical setups instantly.
-{% endstep %}
-
-{% step %}
-### Understand your tools & indicators
-
-Backtest each tweak before going live—know your edge.
-{% endstep %}
-
-{% step %}
-### Diversify assets & strategies
-
-"Many baskets" lower drawdowns and smooth equity curves.
-{% endstep %}
-{% endstepper %}
-
-***
-
-#### 💡 Quick Reference
-
-{% columns %}
-{% column %}
-**Do's ✅**
-
-* Plan every trade
-* Use stop-losses
-* Journal results
-* Risk 1-2% max
-* Stay educated
-* Diversify holdings
-{% endcolumn %}
-
-{% column %}
-**Don'ts ❌**
-
-* Trade on emotions
-* Risk rent money
-* Revenge trade
-* Over-leverage
-* Ignore news events
-* Put all in one trade
-{% endcolumn %}
-{% endcolumns %}
-
-***
-
-#### 🎯 The Golden Rules
-
-Remember: Professional trading is about consistent small wins, not home runs. Follow these rules, and you'll outlast 90% of traders who ignore them.
-
-Last updated 3 months ago
-
-[Privacy policy](https://infinityalgo.com/privacy/)
+{% hint style="success" %}
+**Remember:** Professional trading is about consistent small wins, not home runs. Follow these rules, and you'll outlast 90% of traders who ignore them.
+{% endhint %}

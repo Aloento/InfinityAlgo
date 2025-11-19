@@ -1,220 +1,222 @@
 # 🎯 Essential Guide to Trading and Risk Management
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
+## Essential Guide to Trading & Risk Management 🎯
 
-### Essential Guide to Trading & Risk Management 🎯
-
+{% hint style="info" %}
 **🎓 Complete Beginners Course** → [infinityalgo.com/tools/learn/beginners-guide](https://infinityalgo.com/tools/learn/beginners-guide)
+{% endhint %}
 
-***
+---
 
-#### 📚 Foundation Principles
+### 📚 Foundation Principles
 
-* 🔑 Trading Basics
-* 📊 Technical Skills
-* 💼 Risk Management
-* 🧠 Psychology
+{% tabs %}
+{% tab title="🔑 Trading Basics" %}
 
-**Master the Fundamentals**
+#### Master the Fundamentals
 
 {% stepper %}
 {% step %}
-### Understand Trading
+
+#### Understand Trading
 
 Buy and sell financial instruments (stocks, forex, crypto) to profit from price movements
 {% endstep %}
 
 {% step %}
-### Paper Trade First
+
+#### Paper Trade First
 
 Practice risk-free in demo accounts before using real capital
 {% endstep %}
 
 {% step %}
-### Create Your Plan
+
+#### Create Your Plan
 
 Define goals, capital allocation, and trading rules before you start
-
-**Key Insight:** 90% of traders fail because they skip these foundational steps
 {% endstep %}
 {% endstepper %}
 
-**Build Your Trading Arsenal**
+{% hint style="success" %}
+**Key Insight:** 90% of traders fail because they skip these foundational steps
+{% endhint %}
+{% endtab %}
 
-* Skill — Purpose — Action
+{% tab title="📊 Technical Skills" %}
 
-**🚦 Signal Understanding**
+#### Build Your Trading Arsenal
 
-* Know your indicators
-* Backtest thoroughly
+| Skill                       | Purpose              | Action              |
+| --------------------------- | -------------------- | ------------------- |
+| **🚦 Signal Understanding** | Know your indicators | Backtest thoroughly |
+| **📈 Indicator Knowledge**  | Understand the math  | Don't trade blind   |
+| **🔧 Personal Style**       | Find what fits you   | Customize settings  |
 
-**📈 Indicator Knowledge**
+{% hint style="warning" %}
+**Never follow indicators blindly** - Always understand WHY a signal appears
+{% endhint %}
+{% endtab %}
 
-* Understand the math
-* Don't trade blind
+{% tab title="💼 Risk Management" %}
 
-**🔧 Personal Style**
-
-* Find what fits you
-* Customize settings
-
-Never follow indicators blindly — Always understand WHY a signal appears
-
-**Protect Your Capital**
+#### Protect Your Capital
 
 **Core Rules:**
 
-* ✅ Risk only 1-2% per trade
-* ✅ Use stop-loss orders always
-* ✅ Diversify your portfolio
-* ✅ Never revenge trade
+- ✅ Risk only 1-2% per trade
+- ✅ Use stop-loss orders always
+- ✅ Diversify your portfolio
+- ✅ Never revenge trade
 
 **Why It Matters:**
 
-* 📉 Limits maximum drawdown
-* 🛡️ Protects from emotions
-* 📊 Spreads risk exposure
-* 🧠 Maintains discipline
+- 📉 Limits maximum drawdown
+- 🛡️ Protects from emotions
+- 📊 Spreads risk exposure
+- 🧠 Maintains discipline
 
+{% hint style="danger" %}
 **#1 Rule:** Preserve capital first, seek profits second
+{% endhint %}
+{% endtab %}
 
-**Master Your Mind**
+{% tab title="🧠 Psychology" %}
 
-😌 **Emotional Control**
+#### Master Your Mind
+
+<details>
+
+<summary>😌 <strong>Emotional Control</strong></summary>
 
 Fear and greed are profit killers. Follow your rules systematically:
 
-* Don't chase losing trades
-* Don't increase size after wins
-* Stick to your plan regardless of emotions
+- Don't chase losing trades
+- Don't increase size after wins
+- Stick to your plan regardless of emotions
 
-🕰️ **Patience & Discipline**
+</details>
+
+<details>
+
+<summary>🕰️ <strong>Patience &#x26; Discipline</strong></summary>
 
 Markets reward patience:
 
-* Wait for your setup
-* Don't force trades
-* Quality over quantity
-* Trust the process
+- Wait for your setup
+- Don't force trades
+- Quality over quantity
+- Trust the process
 
-🔍 **Continuous Improvement**
+</details>
+
+<details>
+
+<summary>🔍 <strong>Continuous Improvement</strong></summary>
 
 Review and refine constantly:
 
-* Log every trade
-* Analyze wins AND losses
-* Identify patterns in mistakes
-* Adapt to market changes
+- Log every trade
+- Analyze wins AND losses
+- Identify patterns in mistakes
+- Adapt to market changes
 
-***
+</details>
+{% endtab %}
+{% endtabs %}
 
-#### 🎯 The Trading Success Formula
+---
+
+### 🎯 The Trading Success Formula
 
 {% stepper %}
 {% step %}
-### Foundation
+
+#### Foundation
 
 Paper trade → Learn mechanics → Build confidence
 {% endstep %}
 
 {% step %}
-### Strategy
+
+#### Strategy
 
 Backtest signals → Understand indicators → Customize settings
 {% endstep %}
 
 {% step %}
-### Risk Control
+
+#### Risk Control
 
 Set stop-losses → Limit position size → Diversify holdings
 {% endstep %}
 
 {% step %}
-### Psychology
+
+#### Psychology
 
 Control emotions → Stay patient → Review regularly
 {% endstep %}
 
 {% step %}
-### Evolution
+
+#### Evolution
 
 Keep learning → Adapt strategy → Refine approach
 {% endstep %}
 {% endstepper %}
 
-***
+---
 
-#### 💡 Quick Reference Cards
+### 💡 Quick Reference Cards
 
-| Principle     |       Key Action | Remember                         |
-| ------------- | ---------------: | -------------------------------- |
-| 🎯 Planning   |  Set clear goals | Plan the trade, trade the plan   |
-| 💼 Risk       |   1-2% per trade | Small losses, big wins           |
-| 🛑 Stops      |  Always use them | Hope is not a strategy           |
-| 📊 Diversity  |  Multiple assets | Don't put all eggs in one basket |
-| 🧠 Psychology | Stay disciplined | Emotions = Losses                |
-| 📈 Indicators |  Understand them | Tools, not magic                 |
+| Principle         | Key Action       | Remember                         |
+| ----------------- | ---------------- | -------------------------------- |
+| **🎯 Planning**   | Set clear goals  | Plan the trade, trade the plan   |
+| **💼 Risk**       | 1-2% per trade   | Small losses, big wins           |
+| **🛑 Stops**      | Always use them  | Hope is not a strategy           |
+| **📊 Diversity**  | Multiple assets  | Don't put all eggs in one basket |
+| **🧠 Psychology** | Stay disciplined | Emotions = Losses                |
+| **📈 Indicators** | Understand them  | Tools, not magic                 |
 
-***
+---
 
-#### ⚡ Action Steps
+### ⚡ Action Steps
 
-{% stepper %}
-{% step %}
-### Start Here
+{% hint style="success" %}
+**Start Here:**
 
-Open a demo account today
-{% endstep %}
+1. Open a demo account today
+2. Backtest Infinity Algo on your preferred timeframe
+3. Find YOUR optimal settings
+4. Practice for at least 30 days
+5. Start small when going live
+   {% endhint %}
 
-{% step %}
-### Backtest
-
-Backtest Infinity Algo on your preferred timeframe
-{% endstep %}
-
-{% step %}
-### Optimize
-
-Find YOUR optimal settings
-{% endstep %}
-
-{% step %}
-### Practice
-
-Practice for at least 30 days
-{% endstep %}
-
-{% step %}
-### Go Live
-
-Start small when going live
-{% endstep %}
-{% endstepper %}
-
+{% hint style="info" %}
 **Remember:** Every professional trader was once a beginner. The difference? They never stopped learning.
+{% endhint %}
 
-***
+---
 
-#### 📖 Further Learning
+### 📖 Further Learning
 
+{% columns %}
+{% column width="50%" %}
 **Essential Resources:**
 
-* 📚 [Beginners Guide](https://infinityalgo.com/tools/learn/beginners-guide)
-* 📊 Backtest your settings
-* 📝 Keep a trade journal
-* 🎓 Study market psychology
+- 📚 [Beginners Guide](https://infinityalgo.com/tools/learn/beginners-guide)
+- 📊 Backtest your settings
+- 📝 Keep a trade journal
+- 🎓 Study market psychology
+  {% endcolumn %}
 
+{% column %}
 **Advanced Topics:**
 
-* 🔧 Custom indicator settings
-* 📈 Multi-timeframe analysis
-* 💰 Position sizing strategies
-* 🎯 Risk:Reward optimization
-
-***
-
-[Previous Trading Guide](./) · [Next ✅ Tips and what to Avoid](tips-and-what-to-avoid.md)
-
-Last updated 3 months ago
-
-Was this helpful?
+- 🔧 Custom indicator settings
+- 📈 Multi-timeframe analysis
+- 💰 Position sizing strategies
+- 🎯 Risk:Reward optimization
+  {% endcolumn %}
+  {% endcolumns %}
