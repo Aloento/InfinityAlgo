@@ -444,4 +444,4 @@ The system intelligently calculates optimal periods:
 
 ---
 
-_For additional support, visit our_ [_FAQ_](https://docs.infinityalgo.com/faq) _or_ [_contact support_](https://infinityalgo.com/#contact)_._
+_For additional support, visit our_ [_FAQ_](https://infinity.aloen.to/faq) _or_ [_contact support_](https://infinityalgo.com/#contact)_._

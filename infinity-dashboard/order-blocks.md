@@ -492,4 +492,4 @@ All visual features enabled
 
 ---
 
-_For additional support, visit our_[_FAQ_](https://docs.infinityalgo.com/faq/faq-and-troubleshoot) _or_ [_contact support_](https://infinityalgo.com/#contact)_._
+_For additional support, visit our_[_FAQ_](https://infinity.aloen.to/faq/faq-and-troubleshoot) _or_ [_contact support_](https://infinityalgo.com/#contact)_._

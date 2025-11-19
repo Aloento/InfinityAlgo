@@ -30,10 +30,10 @@ The Infinity Dashboard combines four powerful analysis systems into one comprehe
 
 **Start Here**
 
-1. [**Order Blocks**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/order-blocks)- Set to "Show Nearest Only" for clarity
-2. [**MTF Dashboard**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/mtf-dashboard)- Choose timeframes for your style
-3. [**Cloud Bands**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/cloud-bands) - Use Auto mode for most markets
-4. [**Alerts**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/dashboard-alerts) - Enable MTF alignment alerts
+1. [**Order Blocks**](https://infinity.aloen.to/dashboard/infinity-dashboard/order-blocks)- Set to "Show Nearest Only" for clarity
+2. [**MTF Dashboard**](https://infinity.aloen.to/dashboard/infinity-dashboard/mtf-dashboard)- Choose timeframes for your style
+3. [**Cloud Bands**](https://infinity.aloen.to/dashboard/infinity-dashboard/cloud-bands) - Use Auto mode for most markets
+4. [**Alerts**](https://infinity.aloen.to/dashboard/infinity-dashboard/dashboard-alerts) - Enable MTF alignment alerts
 
 **Advanced Features**
 
@@ -53,4 +53,4 @@ The Infinity Dashboard combines four powerful analysis systems into one comprehe
 
 #### 📖 Need Help?
 
-- **Have Questions?** Visit our [FAQ](https://docs.infinityalgo.com/faq/faq-and-troubleshoot) or [contact support](https://infinityalgo.com/#contact).
+- **Have Questions?** Visit our [FAQ](https://infinity.aloen.to/faq/faq-and-troubleshoot) or [contact support](https://infinityalgo.com/#contact).
