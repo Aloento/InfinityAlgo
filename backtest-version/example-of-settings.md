@@ -1,57 +1,36 @@
 # ⚙️ Example of settings
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
 Master every setting in Infinity Algo V3.0 Backtest. This guide covers all configuration options with practical examples for different trading styles.
 
+{% hint style="info" %}
 **Prerequisites:** Already ran your first backtest? If not, start with the Backtesting Overview first.
+{% endhint %}
 
-***
+---
 
-🎯 Configuration Philosophy
+### 🎯 Configuration Philosophy
 
-Two Approaches
+#### Two Approaches
 
-* 🤖 AI-Optimized
-* 🎯 Manual Control
+{% tabs %}
+{% tab title="🤖 AI-Optimized" %}
 
-Let AI Handle It
+#### Let AI Handle It
 
-How it works:
+**How it works:**
 
-{% stepper %}
-{% step %}
-### Enable AI Optimization
+1. Enable AI Optimization
+2. Select performance metric
+3. AI adjusts sensitivity/thresholds
+4. You control exits and risk
 
-Enable AI Optimization in the settings to let the system tune parameters.
-{% endstep %}
+**Best for:**
 
-{% step %}
-### Select performance metric
+- Most traders
+- Market adaptation
+- Consistent results
 
-Choose the metric (e.g., Total Profit) you want AI to optimize.
-{% endstep %}
-
-{% step %}
-### AI adjusts sensitivity/thresholds
-
-AI will modify sensitivity and thresholds within the configured ranges.
-{% endstep %}
-
-{% step %}
-### You control exits and risk
-
-Keep full control of exits and risk-related parameters while AI handles signals.
-{% endstep %}
-{% endstepper %}
-
-Best for:
-
-* Most traders
-* Market adaptation
-* Consistent results
-
-ai-setup:
+{% code title="ai-setup:" %}
 
 ```
 AI Optimization: ON
@@ -61,50 +40,56 @@ Sensitivity Range: Balanced
 Update Frequency: 1000 bars
 ```
 
-![](<../.gitbook/assets/image (89)>)
+{% endcode %}
 
-Direct Configuration
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FGBUMw9YAKG8RANQxwEEq%2Fimage.png?alt=media&#x26;token=f069b73f-c104-4f59-af54-056a9af3b859" alt=""><figcaption></figcaption></figure>
+{% endtab %}
 
-When to use:
+{% tab title="🎯 Manual Control" %}
 
-* Testing specific ideas
-* Learning parameter impact
-* Personal preference
-* Predictable behavior
+#### Direct Configuration
 
-You control everything:
+**When to use:**
 
-* Sensitivity (5-28)
-* Thresholds (60-80/20-40)
-* All exit parameters
+- Testing specific ideas
+- Learning parameter impact
+- Personal preference
+- Predictable behavior
 
-***
+**You control everything:**
 
-📊 Exit Strategies Explained
+- Sensitivity (5-28)
+- Thresholds (60-80/20-40)
+- All exit parameters
+  {% endtab %}
+  {% endtabs %}
 
-Choose Your Exit Style
+---
 
-* Percentage Exit
-* Signals Exit
-* Opposite Signal
+### 📊 Exit Strategies Explained
 
-Fixed Targets & Stops
+#### Choose Your Exit Style
 
-How it works:
+{% tabs %}
+{% tab title="Percentage Exit" %}
 
-* Exit at predetermined %
-* Up to 6 take profit levels
-* Partial position exits
-* Fixed stop loss
+#### Fixed Targets & Stops
 
-Perfect for:
+**How it works:**
 
-* ✅ Beginners
-* ✅ Scalping
-* ✅ Consistent results
-* ✅ Risk management
+- Exit at predetermined %
+- Up to 6 take profit levels
+- Partial position exits
+- Fixed stop loss
 
-percentage-config.txt
+**Perfect for:**
+
+- ✅ Beginners
+- ✅ Scalping
+- ✅ Consistent results
+- ✅ Risk management
+
+{% code title="percentage-config.txt" %}
 
 ```
 Exit Type: Percentage
@@ -114,24 +99,29 @@ TP3: 3% (exit 20%)
 Stop Loss: 2%
 ```
 
-Configuration Examples
+{% endcode %}
 
-| Style       | TP1  | TP2 | TP3 | Stop Loss |
-| ----------- | ---- | --- | --- | --------- |
-| Scalping    | 0.5% | 1%  | -   | 0.5%      |
-| Day Trading | 1%   | 2%  | 3%  | 1.5%      |
-| Swing       | 3%   | 5%  | 8%  | 3%        |
+#### Configuration Examples
 
-Dynamic Market-Based
+| Style           | TP1  | TP2 | TP3 | Stop Loss |
+| --------------- | ---- | --- | --- | --------- |
+| **Scalping**    | 0.5% | 1%  | -   | 0.5%      |
+| **Day Trading** | 1%   | 2%  | 3%  | 1.5%      |
+| **Swing**       | 3%   | 5%  | 8%  | 3%        |
+| {% endtab %}    |      |     |     |           |
 
-How it works:
+{% tab title="Signals Exit" %}
 
-* Exit on technical signals
-* Adapts to momentum
-* Captures full moves
-* No fixed targets
+#### Dynamic Market-Based
 
-signals-config.txt
+**How it works:**
+
+- Exit on technical signals
+- Adapts to momentum
+- Captures full moves
+- No fixed targets
+
+{% code title="signals-config.txt" %}
 
 ```
 Exit Type: Signals
@@ -140,44 +130,57 @@ Min Profit Before Exit: 0.5%
 Adapt to Volatility: ON
 ```
 
-Best for:
+{% endcode %}
 
-* ✅ Trending markets
-* ✅ Experienced traders
-* ✅ Larger moves
-* ⚠️ Higher variance
+**Best for:**
 
-Maximum Trend Capture
+- ✅ Trending markets
+- ✅ Experienced traders
+- ✅ Larger moves
+- ⚠️ Higher variance
+  {% endtab %}
 
-How it works:
+{% tab title="Opposite Signal" %}
 
-* Hold until reversal signal
-* No profit targets
-* No stop loss
-* Pure trend following
+#### Maximum Trend Capture
 
-Example:
+**How it works:**
 
-* Long exits on Sell signal
-* Short exits on Buy signal
+- Hold until reversal signal
+- No profit targets
+- No stop loss
+- Pure trend following
 
-Advanced only: Requires strong psychology and risk management
+**Example:**
 
-***
+- Long exits on Sell signal
+- Short exits on Buy signal
 
-💰 Position Management
+{% hint style="warning" %}
+**Advanced only:** Requires strong psychology and risk management
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
-Pyramiding (Scaling In)
+---
 
-What is it? Adding to winning positions
+### 💰 Position Management
 
-Settings:
+#### Pyramiding (Scaling In)
 
-* `More Entries`: Enable/Disable
-* `Pyramiding`: 1-10 additions
-* Size per addition
+{% columns %}
+{% column width="50%" %}
+**What is it?** Adding to winning positions
 
-pyramid-setup:
+**Settings:**
+
+- `More Entries`: Enable/Disable
+- `Pyramiding`: 1-10 additions
+- Size per addition
+  {% endcolumn %}
+
+{% column %}
+{% code title="pyramid-setup:" %}
 
 ```
 Pyramiding: 2
@@ -187,27 +190,28 @@ Entry 3: 34% at +2%
 Max Risk: 2% total
 ```
 
-Risk Levels
+{% endcode %}
+{% endcolumn %}
+{% endcolumns %}
 
-| Experience   | Pyramiding | Risk Per Trade | Position Size |
-| ------------ | ---------- | -------------- | ------------- |
-| Beginner     | 0          | 1%             | 100% entry    |
-| Intermediate | 1          | 1.5%           | 50% + 50%     |
-| Advanced     | 2-3        | 2%             | 33% each      |
-| Expert       | 3+         | 2%             | Custom        |
+#### Risk Levels
 
-***
+| Experience       | Pyramiding | Risk Per Trade | Position Size |
+| ---------------- | ---------- | -------------- | ------------- |
+| **Beginner**     | 0          | 1%             | 100% entry    |
+| **Intermediate** | 1          | 1.5%           | 50% + 50%     |
+| **Advanced**     | 2-3        | 2%             | 33% each      |
+| **Expert**       | 3+         | 2%             | Custom        |
 
-🎨 Configuration by Trading Style
+---
 
-Quick Reference Templates
+### 🎨 Configuration by Trading Style
 
-* ⚡ Scalping
-* 📊 Day Trading
-* 📈 Swing Trading
-* 📅 Position Trading
+#### Quick Reference Templates
 
-scalping-config.txt
+{% tabs %}
+{% tab title="⚡ Scalping" %}
+{% code title="scalping-config.txt" %}
 
 ```
 Timeframe: 1-5 min
@@ -219,7 +223,11 @@ Stop Loss: 0.5%
 Pyramiding: 0
 ```
 
-daytrading-config:
+{% endcode %}
+{% endtab %}
+
+{% tab title="📊 Day Trading" %}
+{% code title="daytrading-config:" %}
 
 ```
 Timeframe: 15-60 min
@@ -232,7 +240,11 @@ Stop Loss: 1.5%
 Pyramiding: 0-1
 ```
 
-swing-config:
+{% endcode %}
+{% endtab %}
+
+{% tab title="📈 Swing Trading" %}
+{% code title="swing-config:" %}
 
 ```
 Timeframe: 4H-Daily
@@ -244,7 +256,11 @@ Stop Loss: 3-5%
 Pyramiding: 1-2
 ```
 
-position-config:
+{% endcode %}
+{% endtab %}
+
+{% tab title="📅 Position Trading" %}
+{% code title="position-config:" %}
 
 ```
 Timeframe: Daily-Weekly
@@ -255,69 +271,82 @@ Stop Loss: Optional (5-10%)
 Pyramiding: 2-3
 ```
 
-***
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
-🧪 Testing Your Configuration
+---
 
-Systematic Approach
+### 🧪 Testing Your Configuration
+
+#### Systematic Approach
 
 {% stepper %}
 {% step %}
-### Document settings
 
-Write down every parameter before testing.
+#### Document Settings
+
+Write down every parameter before testing
 {% endstep %}
 
 {% step %}
-### Run baseline
 
-Test on the last 6 months first to get a baseline result.
+#### Run Baseline
+
+Test on last 6 months first
 {% endstep %}
 
 {% step %}
-### Stress test
 
-Test worst market periods (e.g., March 2020, May 2021, 2022 bear market).
+#### Stress Test
+
+Test worst market periods:
+
+- March 2020
+- May 2021
+- 2022 bear market
+  {% endstep %}
+
+{% step %}
+
+#### Compare Results
+
+Look for consistency across periods
 {% endstep %}
 
 {% step %}
-### Compare results
 
-Look for consistency across periods.
-{% endstep %}
+#### Refine One Variable
 
-{% step %}
-### Refine one variable
-
-Change only one setting at a time and retest.
+Change only one setting at a time
 {% endstep %}
 {% endstepper %}
 
-***
+---
 
-📈 Performance Targets by Style
+### 📈 Performance Targets by Style
 
-| Trading Style | Min Profit Factor | Max Drawdown | Win Rate | Avg RRR |
-| ------------- | ----------------- | ------------ | -------- | ------- |
-| Scalping      | 1.3               | 10%          | 60%+     | 1:1     |
-| Day Trading   | 1.5               | 15%          | 50%+     | 1.5:1   |
-| Swing         | 2.0               | 20%          | 40%+     | 2:1     |
-| Position      | 2.5               | 25%          | 35%+     | 3:1     |
+| Trading Style   | Min Profit Factor | Max Drawdown | Win Rate | Avg RRR |
+| --------------- | ----------------- | ------------ | -------- | ------- |
+| **Scalping**    | 1.3               | 10%          | 60%+     | 1:1     |
+| **Day Trading** | 1.5               | 15%          | 50%+     | 1.5:1   |
+| **Swing**       | 2.0               | 20%          | 40%+     | 2:1     |
+| **Position**    | 2.5               | 25%          | 35%+     | 3:1     |
 
-***
+---
 
-❓ Configuration FAQ
+### ❓ Configuration FAQ
 
 <details>
 
-<summary>Which exit type is best for beginners?</summary>
+<summary><strong>Which exit type is best for beginners?</strong></summary>
 
-Start with Percentage Exit:
+Start with **Percentage Exit**:
 
-* Predictable results
-* Easy to understand
-* Better risk control
-* Consistent outcomes
+- Predictable results
+- Easy to understand
+- Better risk control
+- Consistent outcomes
 
 Move to Signals/Opposite after 50+ trades experience.
 
@@ -325,9 +354,9 @@ Move to Signals/Opposite after 50+ trades experience.
 
 <details>
 
-<summary>Should I use pyramiding?</summary>
+<summary><strong>Should I use pyramiding?</strong></summary>
 
-Progressive approach:
+**Progressive approach:**
 
 1. First 30 trades: No pyramiding
 2. After profitable: Add 1 level
@@ -340,29 +369,21 @@ Always keep total risk under 2%.
 
 <details>
 
-<summary>How do I know if settings are over-optimized?</summary>
+<summary><strong>How do I know if settings are over-optimized?</strong></summary>
 
-Warning signs:
+**Warning signs:**
 
-* Small changes = big result differences
-* Amazing backtest, poor live results
-* Only works on one symbol
-* Requires perfect conditions
+- Small changes = big result differences
+- Amazing backtest, poor live results
+- Only works on one symbol
+- Requires perfect conditions
 
-Solution: Test on multiple timeframes and symbols.
+**Solution:** Test on multiple timeframes and symbols.
 
 </details>
 
-***
+---
 
-Next Step: Configure your settings based on your trading style, then test thoroughly. Remember: consistency beats perfection.
-
-[Previous Backtest version](./) · [Next 📋 Settings Spreadsheet](settings-spreadsheet.md)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-This site uses cookies to deliver its service and to analyze traffic. By browsing this site, you accept the [privacy policy](https://infinityalgo.com/privacy/).
-
-Accept Reject
+{% hint style="success" %}
+**Next Step:** Configure your settings based on your trading style, then test thoroughly. Remember: consistency beats perfection.
+{% endhint %}

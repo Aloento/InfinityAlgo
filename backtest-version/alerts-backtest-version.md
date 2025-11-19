@@ -1,68 +1,82 @@
 # 🔔 Alerts - Backtest Version
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
 The **Backtest Version** of Infinity Algo V3.0 includes **automatic alert generation** with structured messages perfect for trading automation. Unlike the standard version, alerts are triggered programmatically without manual setup.
 
-Quick Start: Enable Alerts in settings → Create ONE alert with "Any alert() function call" → Receive automated signals with all TP/SL levels
+{% hint style="success" %}
+**Quick Start:** Enable Alerts in settings → Create ONE alert with "Any alert() function call" → Receive automated signals with all TP/SL levels
+{% endhint %}
 
-***
+---
 
-🚀 Key Differences from Standard Version
+### 🚀 Key Differences from Standard Version
 
-#### Standard Version
+{% columns %}
+{% column width="50%" %}
 
-* Manual setup for each signal type
-* User-defined message format
-* Basic TP/SL alerts only
-* Requires text formatting
-* Multiple alerts needed
+#### 📋 Standard Version
 
-#### Backtest Version
+- Manual setup for each signal type
+- User-defined message format
+- Basic TP/SL alerts only
+- Requires text formatting
+- Multiple alerts needed
+  {% endcolumn %}
 
-* ✅ Automatic via code
-* ✅ Pre-formatted structure
-* ✅ All TP/SL levels included
-* ✅ Ready for automation
-* ✅ Single unified alert
+{% column %}
 
-***
+#### 🤖 Backtest Version
 
-⚙️ How to Enable Automatic Alerts
+- ✅ Automatic via code
+- ✅ Pre-formatted structure
+- ✅ All TP/SL levels included
+- ✅ Ready for automation
+- ✅ Single unified alert
+  {% endcolumn %}
+  {% endcolumns %}
+
+---
+
+### ⚙️ How to Enable Automatic Alerts
 
 {% stepper %}
 {% step %}
-### Add Backtest Indicator
 
-Load the **Backtest Version** to your chart from Invite-only Scripts.
+#### Add Backtest Indicator
+
+Load the **Backtest Version** to your chart from Invite-only Scripts
 {% endstep %}
 
 {% step %}
-### Configure Alert Settings
 
-Navigate to indicator settings and enable: `Enable Alerts?`.
+#### Configure Alert Settings
+
+Navigate to indicator settings and enable: `Enable Alerts?`
 {% endstep %}
 
 {% step %}
-### Create Master Alert
 
-* Right-click chart → **Add Alert**
-* Set condition: **Infinity Algo Backtest** → **Any alert() function call**
-* Configure notifications (webhook, email, mobile)
+#### Create Master Alert
 
-Create **ONLY ONE** alert - all signals flow through this single alert.
+1. Right-click chart → **Add Alert**
+2. Set condition: **Infinity Algo Backtest** → **Any alert() function call**
+3. Configure notifications (webhook, email, mobile)
+
+{% hint style="warning" %}
+Create **ONLY ONE** alert - all signals flow through this single alert
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
-***
+---
 
-📋 Alert Message Format
+### 📋 Alert Message Format
 
 The backtest version generates structured messages perfect for automation, with optional percentage display for exit levels.
 
-Standard Format (example):
+{% tabs %}
+{% tab title="📊 Standard Format" %}
+{% code title="standard-output:" overflow="wrap" %}
 
-{% code title="standard-output" %}
 ```
 Exchange=BINANCE
 Symbol=BTCUSDT
@@ -78,11 +92,13 @@ TP6=47950.00
 SL=43250.00
 SignalType=AI Sniper Buy
 ```
+
 {% endcode %}
+{% endtab %}
 
-With Percentages (example):
+{% tab title="📊 With Percentages" %}
+{% code title="output-with-percentages:" overflow="wrap" %}
 
-{% code title="output-with-percentages" %}
 ```
 Exchange=BINANCE
 Symbol=BTCUSDT
@@ -98,84 +114,123 @@ TP6=47950.00 (3%)
 SL=43250.00 (100%)
 SignalType=AI Sniper Buy
 ```
+
 {% endcode %}
 
-New Feature: Enable `📊 Show Exit % in Alerts?` in settings to include exit percentages directly in alert messages.
+{% hint style="success" %}
+**New Feature:** Enable `📊 Show Exit % in Alerts?` in settings to include exit percentages directly in alert messages
+{% endhint %}
+{% endtab %}
 
-Core Fields (Always Present)
+{% tab title="🎯 Message Components" %}
 
-* `Exchange` → Trading venue (auto-detected)
-* `Symbol` → Trading pair/ticker
-* `Side` → Long or Short position
-* `Leverage` → Position leverage
-* `Entry` → Entry price at signal
+#### Core Fields (Always Present)
 
-Conditional Fields
+- `Exchange` → Trading venue (auto-detected)
+- `Symbol` → Trading pair/ticker
+- `Side` → Long or Short position
+- `Leverage` → Position leverage
+- `Entry` → Entry price at signal
 
-* `TP1-TP6` → Only if enabled in settings
-* `SL` → Only if Stop Loss enabled
-* `SignalType` → For HL/AI Sniper modes
+#### Conditional Fields
 
-Optional Percentages
+- `TP1-TP6` → Only if enabled in settings
+- `SL` → Only if Stop Loss enabled
+- `SignalType` → For HL/AI Sniper modes
 
-* Exit percentages → When `Show Exit % in Alerts?` enabled
-* Format: `Price (XX%)`
-* SL always shows `(100%)`
+#### Optional Percentages
 
-Multiple Take Profit Strategy
+- Exit percentages → When `Show Exit % in Alerts?` enabled
+- Format: `Price (XX%)`
+- SL always shows `(100%)`
+  {% endtab %}
+  {% endtabs %}
 
-* When multiple TPs are enabled, the alert includes all active levels for sophisticated exit strategies:
-  * Partial exits at each TP level based on your configured percentages
-  * Scale out of positions gradually to lock in profits
-  * Risk reduction as price moves favorably
-  * Optional percentages displayed directly in alerts for automation
+#### Multiple Take Profit Strategy
 
-Understanding Exit Percentages
+When multiple TPs are enabled, the alert includes all active levels for sophisticated exit strategies:
 
-Without Percentages (Default):
+- **Partial exits** at each TP level based on your configured percentages
+- **Scale out** of positions gradually to lock in profits
+- **Risk reduction** as price moves favorably
+- **Optional percentages** displayed directly in alerts for automation
 
-* Clean price levels only
-* Bot needs separate configuration for exit sizes
-* Simpler format for manual traders
+<details>
 
-With Percentages Enabled:
+<summary><strong>📊 Understanding Exit Percentages</strong></summary>
 
-* Each level shows `Price (XX%)`
-* Bot can parse exit sizes directly from alert
-* No additional configuration needed
+The `Show Exit % in Alerts?` setting adds position exit percentages to each level, making it easier for bots to parse exit sizes:
 
-Example Use Case: Your bot receives `TP1=45700.00 (30%)` and knows to exit 30% of the position at 45700.00 without needing a separate configuration file.
+**Without Percentages (Default):**
 
-***
+- Clean price levels only
+- Bot needs separate configuration for exit sizes
+- Simpler format for manual traders
 
-💡 Advanced Configuration
+**With Percentages Enabled:**
 
-Customization Options
+- Each level shows `Price (XX%)`
+- Bot can parse exit sizes directly from alert
+- No additional configuration needed
 
-Custom Symbol Override
+{% hint style="info" %}
+**Example Use Case:** Your bot receives `TP1=45700.00 (30%)` and knows to exit 30% of the position at 45700.00 without needing a separate configuration file.
+{% endhint %}
 
-* Use the **Alert Ticker** setting to: send alerts for a different symbol, normalize naming conventions for your broker, handle exchange-specific formatting.
-* Example: Set `XBTUSD` instead of `BTCUSDT` for BitMEX compatibility
+</details>
 
-Leverage Customization
+---
 
-* The **Alert Leverage** setting allows different leverage from display settings, exchange-specific limits (e.g., max 20x), risk management overrides, and position sizing calculations.
+### 💡 Advanced Configuration
 
-***
+#### Customization Options
 
-🛠️ Real-World Setup Examples
+<details>
+
+<summary><strong>🏷️ Custom Symbol Override</strong></summary>
+
+Use the **Alert Ticker** setting to:
+
+- Send alerts for a different symbol
+- Normalize naming conventions for your broker
+- Handle exchange-specific formatting
+
+Example: Set `XBTUSD` instead of `BTCUSDT` for BitMEX compatibility
+
+</details>
+
+<details>
+
+<summary><strong>⚡ Leverage Customization</strong></summary>
+
+The **Alert Leverage** setting allows:
+
+- Different leverage from display settings
+- Exchange-specific limits (e.g., max 20x)
+- Risk management overrides
+- Position sizing calculations
+
+</details>
+
+---
+
+### 🛠️ Real-World Setup Examples
 
 #### Example 1: Simple Long Entry
 
-Configuration:
+{% columns %}
+{% column width="50%" %}
+**Configuration:**
 
-* Exit Type: `Percentage`
-* Only TP1: `2%` enabled
-* Stop Loss: `3%` enabled
-* Leverage: `5x`
-* **Show Exit %:** Disabled ❌
+- Exit Type: `Percentage`
+- Only TP1: `2%` enabled
+- Stop Loss: `3%` enabled
+- Leverage: `5x`
+- **Show Exit %:** `Disabled` ❌
+  {% endcolumn %}
 
-Output:
+{% column %}
+{% code title="Output" %}
 
 ```
 Exchange=BINANCE
@@ -187,17 +242,25 @@ TP1=2295.77
 SL=2183.23
 ```
 
+{% endcode %}
+{% endcolumn %}
+{% endcolumns %}
+
 #### Example 2: Complex Multi-TP Strategy
 
-Configuration:
+{% columns %}
+{% column width="50%" %}
+**Configuration:**
 
-* All 6 TPs enabled
-* Stop Loss enabled
-* Signal Mode: `AI Sniper`
-* Leverage: `10x`
-* **Show Exit %:** Enabled ✅
+- All 6 TPs enabled
+- Stop Loss enabled
+- Signal Mode: `AI Sniper`
+- Leverage: `10x`
+- **Show Exit %:** `Enabled` ✅
+  {% endcolumn %}
 
-Output with Percentages:
+{% column %}
+{% code title="Output with Percentages" %}
 
 ```
 Exchange=BINANCE
@@ -215,142 +278,80 @@ SL=46350.00 (100%)
 SignalType=AI Sniper Sell
 ```
 
-***
+{% endcode %}
+{% endcolumn %}
+{% endcolumns %}
 
-⚠️ Critical Considerations
+---
 
-Must-Know Setup Rules
+### ⚠️ Critical Considerations
 
-One Alert Rules All
+{% hint style="danger" %}
+**Must-Know Setup Rules**
 
-* ✅ Create **ONLY ONE** TradingView alert for each pair and timeframe
-* ✅ Use `Any alert() function call` as trigger
-* ✅ All signals (Long/Short/TP/SL) flow through this single alert
+#### One Alert Rules All
 
-Processing & Timing
+- ✅ Create **ONLY ONE** TradingView alert for each pair and timeframe
+- ✅ Use `Any alert() function call` as trigger
+- ✅ All signals (Long/Short/TP/SL) flow through this single alert
 
-* ⏱️ Alerts fire on **bar close** (confirmed signals)
-* ⏱️ Account for TradingView processing delay (\~1-3 seconds)
-* ⏱️ Consider network latency for webhooks
-* ⏱️ Add retry logic in your automation
+#### Processing & Timing
 
-***
+- ⏱️ Alerts fire on **bar close** (confirmed signals)
+- ⏱️ Account for TradingView processing delay (\~1-3 seconds)
+- ⏱️ Consider network latency for webhooks
+- ⏱️ Add retry logic in your automation
+  {% endhint %}
 
-🔍 Troubleshooting Guide
+---
 
-<details>
+### 🔍 Troubleshooting Guide
 
-<summary>No alerts firing</summary>
+| Issue                     | Possible Causes         | Solution                                                                                                                                                                       |
+| ------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **No alerts firing**      | Settings misconfigured  | <p>• Enable <code>Enable Alerts</code> in settings<br>• Verify alert condition is <code>Any alert() function call</code><br>• Ensure using Backtest version (not standard)</p> |
+| **Wrong symbol**          | Override active         | <p>• Clear <code>Alert Ticker</code> field to use current chart<br>• Check exchange formatting requirements</p>                                                                |
+| **Missing TP/SL levels**  | Not configured          | <p>• Enable desired levels in Exit Settings<br>• Set Exit Type to <code>Percentage</code><br>• Configure TP percentages</p>                                                    |
+| **Webhook not receiving** | Connection issue        | <p>• Test webhook URL with webhook.site<br>• Check message format compatibility<br>• Verify JSON formatting if needed</p>                                                      |
+| **Duplicate alerts**      | Multiple alerts created | <p>• Delete all alerts<br>• Create only ONE master alert<br>• Check alert history</p>                                                                                          |
 
-Possible Causes
+---
 
-* Settings misconfigured
-
-Solution
-
-* Enable `Enable Alerts` in settings
-* Verify alert condition is `Any alert() function call`
-* Ensure using Backtest version (not standard)
-
-</details>
-
-<details>
-
-<summary>Wrong symbol</summary>
-
-Possible Causes
-
-* Override active
-
-Solution
-
-* Clear `Alert Ticker` field to use current chart
-* Check exchange formatting requirements
-
-</details>
-
-<details>
-
-<summary>Missing TP/SL levels</summary>
-
-Possible Causes
-
-* Not configured
-
-Solution
-
-* Enable desired levels in Exit Settings
-* Set Exit Type to `Percentage`
-* Configure TP percentages
-
-</details>
-
-<details>
-
-<summary>Webhook not receiving</summary>
-
-Possible Causes
-
-* Connection issue
-
-Solution
-
-* Test webhook URL with webhook.site
-* Check message format compatibility
-* Verify JSON formatting if needed
-
-</details>
-
-<details>
-
-<summary>Duplicate alerts</summary>
-
-Possible Causes
-
-* Multiple alerts created
-
-Solution
-
-* Delete all alerts
-* Create only ONE master alert
-* Check alert history
-
-</details>
-
-***
-
-🎯 Integration Methods
+### 🎯 Integration Methods
 
 Choose your integration path based on your technical skills and needs:
 
-* 🚀 No-Code (2 min setup)
-* ⚙️ Low-Code (Flexible)
-* 🔧 Pro (Full Control)
+{% tabs %}
+{% tab title="🚀 No-Code (2 min setup)" %}
 
-Fastest Setup - Zero Programming Required
+#### Fastest Setup - Zero Programming Required
 
-Option 1: TradingView → Telegram/Discord via Webhook Bridge
+**Option 1: TradingView → Telegram/Discord via Webhook Bridge**
 
 {% stepper %}
 {% step %}
-### Create Webhook Bridge
 
-1. Go to [tradingview.to](https://tradingview.to/)
+#### Create Webhook Bridge
+
+1. Go to [tradingview.to](https://tradingview.to)
 2. Create free account
 3. Generate webhook URL
 4. Select destination (Telegram/Discord)
-{% endstep %}
+   {% endstep %}
 
 {% step %}
-### Configure TradingView Alert
+
+#### Configure TradingView Alert
 
 1. Create alert with `Any alert() function call`
-2. Paste webhook URL from tradingview.to
+2. Paste webhook URL from tradingview\.to
 3. Done! Messages auto-forward to your channel
-{% endstep %}
-{% endstepper %}
+   {% endstep %}
+   {% endstepper %}
 
-Option 2: Direct Discord Webhook
+**Option 2: Direct Discord Webhook**
+
+{% code title="Discord Setup" %}
 
 ```
 1. Open Discord Server Settings
@@ -359,21 +360,28 @@ Option 2: Direct Discord Webhook
 4. Paste in TradingView alert
 ```
 
-Perfect for: Traders who just want signals in Telegram/Discord without any coding
+{% endcode %}
 
-Visual Automation Tools
+{% hint style="success" %}
+**Perfect for:** Traders who just want signals in Telegram/Discord without any coding
+{% endhint %}
+{% endtab %}
 
-Using Pipedream/Make (formerly Integromat)
+{% tab title="⚙️ Low-Code (Flexible)" %}
 
-Why use this?
+#### Visual Automation Tools
 
-* Reformat messages
-* Add conditional logic
-* Send to multiple destinations
-* Add retry logic
-* No server needed
+**Using Pipedream/Make (formerly Integromat)**
 
-Example Flow
+**Why use this?**
+
+- Reformat messages
+- Add conditional logic
+- Send to multiple destinations
+- Add retry logic
+- No server needed
+
+{% code title="Example Flow" %}
 
 ```
 1. HTTP Webhook trigger (receives from TradingView)
@@ -387,46 +395,58 @@ Example Flow
    - Database
 ```
 
-Sample Pipedream Workflow (parser example)
+{% endcode %}
+
+**Sample Pipedream Workflow**
 
 {% code title="pipedream-parser.js" %}
+
 ```javascript
 export default defineComponent({
   async run({ steps, $ }) {
     // Parse incoming alert
-    const lines = steps.trigger.event.body.split('\n');
+    const lines = steps.trigger.event.body.split("\n");
     const data = {};
 
-    lines.forEach(line => {
-      const [key, value] = line.split('=');
+    lines.forEach((line) => {
+      const [key, value] = line.split("=");
       data[key] = value;
     });
 
     // Format for Discord
     return {
       content: `🔔 ${data.Symbol} Signal`,
-      embeds: [{\
-        title: `${data.Side} Position`,\
-        fields: [\
-          { name: "Entry", value: data.Entry, inline: true },\
-          { name: "TP1", value: data.TP1, inline: true },\
-          { name: "SL", value: data.SL, inline: true }\
-        ],\
-        color: data.Side === "Long" ? 0x00ff00 : 0xff0000\
-      }]
+      embeds: [
+        {
+          title: `${data.Side} Position`,
+          fields: [
+            { name: "Entry", value: data.Entry, inline: true },
+            { name: "TP1", value: data.TP1, inline: true },
+            { name: "SL", value: data.SL, inline: true },
+          ],
+          color: data.Side === "Long" ? 0x00ff00 : 0xff0000,
+        },
+      ],
     };
-  }
+  },
 });
 ```
+
 {% endcode %}
 
-Perfect for: Semi-technical users who want customization without managing servers
+{% hint style="info" %}
+**Perfect for:** Semi-technical users who want customization without managing servers
+{% endhint %}
+{% endtab %}
 
-Custom Server Implementation
+{% tab title="🔧 Pro (Full Control)" %}
+
+#### Custom Server Implementation
 
 For maximum control, run your own webhook endpoint:
 
-{% code title="webhook-server.py" %}
+{% code title="webhook-server.py" lineNumbers="true" %}
+
 ```python
 from fastapi import FastAPI, Request
 import hmac
@@ -456,88 +476,125 @@ async def handle_alert(request: Request):
 
     return {"status": "processed"}
 ```
+
 {% endcode %}
 
-Advanced Features:
+**Advanced Features:**
 
-* Request verification
-* Database logging
-* Multi-exchange execution
-* Custom risk management
-* Retry logic & error handling
+- Request verification
+- Database logging
+- Multi-exchange execution
+- Custom risk management
+- Retry logic & error handling
 
-Perfect for: Developers who need custom logic, authentication, or complex routing
+{% hint style="warning" %}
+**Perfect for:** Developers who need custom logic, authentication, or complex routing
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
-***
+---
 
-🤖 Popular Bot Integrations
+### 🤖 Popular Bot Integrations
 
-Cornix Bot (Automated Trading)
+#### Cornix Bot (Automated Trading)
 
-* Easiest automated execution:
-  1. Get Cornix webhook URL from bot settings
-  2. Paste in TradingView alert webhook field
-  3. Cornix auto-parses and executes trades
+{% columns %}
+{% column width="60%" %}
+**Easiest automated execution:**
 
-Supports:
+1. Get Cornix webhook URL from bot settings
+2. Paste in TradingView alert webhook field
+3. Cornix auto-parses and executes trades
 
-* Multiple exchanges (Binance, Bybit, etc.)
-* Position management
-* Risk settings
-* DCA strategies
+**Supports:**
 
-No coding required! Cornix understands Infinity Algo's format directly
+- Multiple exchanges (Binance, Bybit, etc.)
+- Position management
+- Risk settings
+- DCA strategies
+  {% endcolumn %}
 
-Other Trading Bots (comparison)
+{% column %}
+{% hint style="success" %}
+**No coding required!** Cornix understands Infinity Algo's format directly
+{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
-| Bot Service   | Setup Difficulty | Features        | Best For      |
-| ------------- | ---------------: | --------------- | ------------- |
-| Cornix        |        ⭐ Easiest | Full automation | Beginners     |
-| 3Commas       |          ⭐⭐ Easy | DCA, Grid bots  | Intermediate  |
-| TradersPost   |          ⭐⭐ Easy | Multi-broker    | Stock traders |
-| PineConnector |       ⭐⭐⭐ Medium | MT4/MT5 bridge  | Forex         |
-| Custom Bot    |       ⭐⭐⭐⭐⭐ Hard | Unlimited       | Developers    |
+#### Other Trading Bots
 
-***
+| Bot Service       | Setup Difficulty | Features        | Best For      |
+| ----------------- | ---------------- | --------------- | ------------- |
+| **Cornix**        | ⭐ Easiest       | Full automation | Beginners     |
+| **3Commas**       | ⭐⭐ Easy        | DCA, Grid bots  | Intermediate  |
+| **TradersPost**   | ⭐⭐ Easy        | Multi-broker    | Stock traders |
+| **PineConnector** | ⭐⭐⭐ Medium    | MT4/MT5 bridge  | Forex         |
+| **Custom Bot**    | ⭐⭐⭐⭐⭐ Hard  | Unlimited       | Developers    |
 
-⚠️ Important Limits & Gotchas
+---
 
-* TradingView requires **paid plan** for webhooks
-* Use `Any alert() function call` as condition
-* Max 15 alerts in 3 minutes (TradingView limit)
-* Discord: \~30 messages/minute per webhook
-* Telegram: \~30 messages/second total, 1/second per chat
+### ⚠️ Important Limits & Gotchas
 
-***
+{% hint style="danger" %}
+**Must Know:**
 
-📚 Quick Start Recommendations
+- TradingView requires **paid plan** for webhooks
+- Use `Any alert() function call` as condition
+- Max 15 alerts in 3 minutes (TradingView limit)
+- Discord: \~30 messages/minute per webhook
+- Telegram: \~30 messages/second total, 1/second per chat
+  {% endhint %}
 
-* I just want signals in Telegram/Discord\
-  Use **tradingview.to** (Track A) - 2 minute setup, no coding needed
-* I want to auto-trade on Binance/Bybit\
-  Use **Cornix Bot** - Paste webhook URL, configure risk settings, done
-* I need custom formatting or multiple destinations\
-  Use **Pipedream or Make** (Track B) - Visual workflow builders
-* I'm a developer and need full control\
-  Build custom endpoint (Track C) - See Pro tab for examples
+---
 
-***
+### 📚 Quick Start Recommendations
 
-✅ Summary
+<details>
 
-The Backtest Version provides:
+<summary><strong>I just want signals in Telegram/Discord</strong></summary>
 
-* ✅ Zero manual setup - All alerts handled automatically
-* ✅ Structured format - Parse-ready for any platform
-* ✅ Complete data - All TP/SL levels in one message
-* ✅ Signal identification - Know exactly which strategy triggered
-* ✅ Direct integration - Works with any webhook endpoint
-* ✅ Backtesting accuracy - Realistic alert generation for testing
+Use **tradingview\.to** (Track A) - 2 minute setup, no coding needed
+
+</details>
+
+<details>
+
+<summary><strong>I want to auto-trade on Binance/Bybit</strong></summary>
+
+Use **Cornix Bot** - Paste webhook URL, configure risk settings, done
+
+</details>
+
+<details>
+
+<summary><strong>I need custom formatting or multiple destinations</strong></summary>
+
+Use **Pipedream or Make** (Track B) - Visual workflow builders
+
+</details>
+
+<details>
+
+<summary><strong>I'm a developer and need full control</strong></summary>
+
+Build custom endpoint (Track C) - See Pro tab for examples
+
+</details>
+
+---
+
+### ✅ Summary
+
+{% hint style="info" %}
+**The Backtest Version provides:**
+
+✅ **Zero manual setup** - All alerts handled automatically\
+✅ **Structured format** - Parse-ready for any platform\
+✅ **Complete data** - All TP/SL levels in one message\
+✅ **Signal identification** - Know exactly which strategy triggered\
+✅ **Direct integration** - Works with any webhook endpoint\
+✅ **Backtesting accuracy** - Realistic alert generation for testing
+{% endhint %}
 
 Perfect for automated trading systems, backtesting validation, and hands-free alert management.
-
-[Previous📋 Settings Spreadsheet](settings-spreadsheet.md) [NextInfinity Dashboard](../infinity-dashboard/)
-
-Last updated 2 months ago
-
-[privacy policy](https://infinityalgo.com/privacy/)
