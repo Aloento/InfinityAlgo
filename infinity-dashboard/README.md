@@ -1,102 +1,56 @@
 # Infinity Dashboard
 
-[Got ideas? Request a feature](https://infinityalgo.canny.io/?utm_source=docs\&utm_medium=banner)
-
-#### Professional Trading Analysis Suite
+### Professional Trading Analysis Suite
 
 The Infinity Dashboard combines four powerful analysis systems into one comprehensive overlay for institutional-level market insights.
 
-**📊 MTF Dashboard** _Core Feature_\
-Monitor 8 timeframes simultaneously for trend alignment
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>📊 MTF Dashboard</strong><br><em>Core Feature</em></td><td>Monitor 8 timeframes simultaneously for trend alignment</td><td></td><td><a href="infinity-dashboard/mtf-dashboard">mtf-dashboard</a></td></tr><tr><td><strong>📦 Order Blocks</strong><br><em>Institutional Zones</em></td><td>Identify supply/demand zones with volume analysis</td><td></td><td><a href="infinity-dashboard/order-blocks">order-blocks</a></td></tr><tr><td><strong>🧭 Market Structure</strong><br><em>Trend Analysis</em></td><td>Track BOS/CHoCH for trend changes</td><td></td><td><a href="infinity-dashboard/market-structure">market-structure</a></td></tr><tr><td><strong>☁️ Cloud Bands</strong><br><em>Volatility Envelope</em></td><td>Adaptive bands showing market volatility</td><td></td><td><a href="infinity-dashboard/cloud-bands">cloud-bands</a></td></tr><tr><td><strong>🔔 Alert System</strong><br><em>Notifications</em></td><td>20 pre-configured alerts for all components</td><td></td><td><a href="infinity-dashboard/dashboard-alerts">dashboard-alerts</a></td></tr></tbody></table>
 
-**📦 Order Blocks** _Institutional Zones_\
-Identify supply/demand zones with volume analysis
-
-**🧭 Market Structure** _Trend Analysis_\
-Track BOS/CHoCH for trend changes
-
-**☁️ Cloud Bands** _Volatility Envelope_\
-Adaptive bands showing market volatility
-
-**🔔 Alert System** _Notifications_\
-20 pre-configured alerts for all components
-
-***
+---
 
 #### 🎯 Quick Overview
 
-What It Does
+**What It Does**
 
-* Displays institutional order flow zones
-* Monitors 8 timeframes in real-time
-* Identifies market structure changes
-* Shows adaptive volatility bands
+- Displays institutional order flow zones
+- Monitors 8 timeframes in real-time
+- Identifies market structure changes
+- Shows adaptive volatility bands
 
-Perfect For
+**Perfect For**
 
-* Multi-timeframe traders
-* Institutional order flow analysis
-* Trend-following strategies
-* Support/resistance identification
+- Multi-timeframe traders
+- Institutional order flow analysis
+- Trend-following strategies
+- Support/resistance identification
 
-***
+---
 
 #### 📚 Essential Settings
 
-{% stepper %}
-{% step %}
-### Order Blocks
+**Start Here**
 
-[Open Order Blocks settings](order-blocks.md) — Set to "Show Nearest Only" for clarity.
-{% endstep %}
+1. [**Order Blocks**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/order-blocks)- Set to "Show Nearest Only" for clarity
+2. [**MTF Dashboard**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/mtf-dashboard)- Choose timeframes for your style
+3. [**Cloud Bands**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/cloud-bands) - Use Auto mode for most markets
+4. [**Alerts**](https://docs.infinityalgo.com/dashboard/infinity-dashboard/dashboard-alerts) - Enable MTF alignment alerts
 
-{% step %}
-### MTF Dashboard
+**Advanced Features**
 
-[Open MTF Dashboard settings](mtf-dashboard.md) — Choose timeframes for your style.
-{% endstep %}
+- **Market Structure** - BOS/CHoCH detection
+- **Volume Analysis** - Buy/sell pressure in zones
+- **Theme Customization** - Match your trading environment
 
-{% step %}
-### Cloud Bands
-
-[Open Cloud Bands settings](cloud-bands.md) — Use Auto mode for most markets.
-{% endstep %}
-
-{% step %}
-### Alerts
-
-[Open Alerts settings](dashboard-alerts.md) — Enable MTF alignment alerts.
-{% endstep %}
-{% endstepper %}
-
-Advanced Features
-
-* **Market Structure** — BOS/CHoCH detection
-* **Volume Analysis** — Buy/sell pressure in zones
-* **Theme Customization** — Match your trading environment
-
-***
+---
 
 #### 🔗 Works With
 
-* **Infinity Algo** — Use Dashboard for context, Algo for entries
-* **TradingView Plans** — Free plan compatible (with limitations)
-* **All Markets** — Crypto, Forex, Stocks, Futures
+- **Infinity Algo** - Use Dashboard for context, Algo for entries
+- **TradingView Plans** - Free plan compatible (with limitations)
+- **All Markets** - Crypto, Forex, Stocks, Futures
 
-***
+---
 
 #### 📖 Need Help?
 
-<details>
-
-<summary>Support &#x26; FAQ</summary>
-
-* Have Questions? Visit our [FAQ](../faq-and-troubleshoot/) or [contact support](https://infinityalgo.com/#contact).
-
-</details>
-
-***
-
-Last updated 2 months ago
-
-This content uses links that direct to external resources (privacy policy and support). All links are preserved as in the original.
+- **Have Questions?** Visit our [FAQ](https://docs.infinityalgo.com/faq/faq-and-troubleshoot) or [contact support](https://infinityalgo.com/#contact).
