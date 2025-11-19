@@ -59,7 +59,7 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
       </td>
       <td></td>
       <td></td>
-      <td><a href="../features">features</a></td>
+      <td><a href="../infinity-algo-features">features</a></td>
     </tr>
     <tr>
       <td>
@@ -67,7 +67,7 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
       </td>
       <td></td>
       <td></td>
-      <td><a href="../backtest/backtest-version">backtest-version</a></td>
+      <td><a href="../backtest-version">backtest-version</a></td>
     </tr>
     <tr>
       <td>
@@ -76,7 +76,7 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
       </td>
       <td></td>
       <td></td>
-      <td><a href="../trading-guide/trading-guide">trading-guide</a></td>
+      <td><a href="../trading-guide">trading-guide</a></td>
     </tr>
     <tr>
       <td>
@@ -85,7 +85,7 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
       <td></td>
       <td></td>
       <td>
-        <a href="../features/infinity-algo-features/ai-optimization"
+        <a href="../infinity-algo-features/ai-optimization"
           >ai-optimization</a
         >
       </td>
@@ -94,7 +94,7 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
       <td>🔔 <strong>Alerts Setup</strong><br />Configure notifications</td>
       <td></td>
       <td></td>
-      <td><a href="../features/infinity-algo-features/alerts">alerts</a></td>
+      <td><a href="../infinity-algo-features/alerts">alerts</a></td>
     </tr>
     <tr>
       <td>
@@ -103,13 +103,13 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
       </td>
       <td></td>
       <td></td>
-      <td><a href="../faq/faq-and-troubleshoot">faq-and-troubleshoot</a></td>
+      <td><a href="../faq-and-troubleshoot">faq-and-troubleshoot</a></td>
     </tr>
     <tr>
       <td>🔗 <strong>Resources</strong><br />Links and additional tools</td>
       <td></td>
       <td></td>
-      <td><a href="../links/useful-links">useful-links</a></td>
+      <td><a href="../faq-and-troubleshoot/useful-links">useful-links</a></td>
     </tr>
     <tr>
       <td>
@@ -120,7 +120,7 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
       <td></td>
       <td>
         <a
-          href="../features/infinity-algo-features/feature-requests-and-roadmap"
+          href="../infinity-algo-features/feature-requests-and-roadmap"
           >feature-requests-and-roadmap</a
         >
       </td>

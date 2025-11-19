@@ -216,4 +216,31 @@ Stay connected for exclusive insights:
 
 Ready to trade on mobile? Continue with:
 
-<table data-view="cards"><thead><tr><th>Section</th><th>Description</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🔔 Set Up Alerts</strong></td><td>Never miss a trading signal</td><td><a href="../../../features/infinity-algo-features/alerts">alerts</a></td></tr><tr><td><strong>⚙️ Configure Settings</strong></td><td>Optimize Infinity Algo for your trading style</td><td><a href="../../../features/infinity-algo-features">infinity-algo-features</a></td></tr><tr><td><strong>🖥️ Desktop Setup</strong></td><td>Set up on computer too</td><td><a href="desktop-setup">desktop-setup</a></td></tr></tbody></table>
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Description</th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>🔔 Set Up Alerts</strong></td>
+      <td>Never miss a trading signal</td>
+      <td><a href="../../../infinity-algo-features/alerts">alerts</a></td>
+    </tr>
+    <tr>
+      <td><strong>⚙️ Configure Settings</strong></td>
+      <td>Optimize Infinity Algo for your trading style</td>
+      <td>
+        <a href="../../../infinity-algo-features">infinity-algo-features</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>🖥️ Desktop Setup</strong></td>
+      <td>Set up on computer too</td>
+      <td><a href="desktop-setup">desktop-setup</a></td>
+    </tr>
+  </tbody>
+</table>

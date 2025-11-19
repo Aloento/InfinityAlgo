@@ -149,6 +149,31 @@ Stay connected for exclusive insights and updates:
 
 Ready to start trading? Continue with:
 
-<table data-view="cards"><thead><tr><th>Section</th><th>Description</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>⚙️ Configure Settings</strong></td><td>Optimize Infinity Algo for your trading style</td><td><a href="../../../features">features</a></td></tr><tr><td><strong>🔔 Set Up Alerts</strong></td><td>Never miss a trading signal</td><td><a href="../../../features/infinity-algo-features/alerts">alerts</a></td></tr><tr><td><strong>📱 Mobile Setup</strong></td><td>Trade on the go with mobile</td><td><a href="mobile-setup">mobile-setup</a></td></tr></tbody></table>
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Description</th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>⚙️ Configure Settings</strong></td>
+      <td>Optimize Infinity Algo for your trading style</td>
+      <td><a href="../../../infinity-algo-features">features</a></td>
+    </tr>
+    <tr>
+      <td><strong>🔔 Set Up Alerts</strong></td>
+      <td>Never miss a trading signal</td>
+      <td><a href="../../../infinity-algo-features/alerts">alerts</a></td>
+    </tr>
+    <tr>
+      <td><strong>📱 Mobile Setup</strong></td>
+      <td>Trade on the go with mobile</td>
+      <td><a href="mobile-setup">mobile-setup</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
