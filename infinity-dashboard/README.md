@@ -53,4 +53,4 @@ The Infinity Dashboard combines four powerful analysis systems into one comprehe
 
 #### 📖 Need Help?
 
-- **Have Questions?** Visit our [FAQ](https://infinity.aloen.to/faq/faq-and-troubleshoot) or [contact support](https://infinityalgo.com/#contact).
+- **Have Questions?** Visit our [FAQ](https://infinity.aloen.to/faq-and-troubleshoot) or [contact support](https://infinityalgo.com/#contact).

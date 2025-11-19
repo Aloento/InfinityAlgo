@@ -351,4 +351,4 @@ Select from the 20 available alert conditions listed above
 
 ---
 
-_For additional support with alerts, visit our_[_FAQ_](https://infinity.aloen.to/faq/faq-and-troubleshoot) _or_ [_contact support._](https://infinityalgo.com/#contact)
+_For additional support with alerts, visit our_[_FAQ_](https://infinity.aloen.to/faq-and-troubleshoot) _or_ [_contact support._](https://infinityalgo.com/#contact)

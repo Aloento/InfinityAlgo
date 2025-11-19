@@ -12,22 +12,22 @@ In this section, we explore all the powerful features that make Infinity Algo yo
 
 **Essential Settings (Start Here)**
 
-1. [**Sensitivity**](https://infinity.aloen.to/features/infinity-algo-features/sensitivity)- Determines how often signals appear
-2. [**Show Signals**](https://infinity.aloen.to/features/infinity-algo-features/show-signals) - Select your preferred signal type
-3. [**Take Profit Settings**](https://infinity.aloen.to/features/infinity-algo-features/take-profit-settings) - Configure your exit strategy
-4. [**Alerts**](https://infinity.aloen.to/features/infinity-algo-features/alerts)- Set up notifications
+1. [**Sensitivity**](https://infinity.aloen.to/infinity-algo-features/sensitivity)- Determines how often signals appear
+2. [**Show Signals**](https://infinity.aloen.to/infinity-algo-features/show-signals) - Select your preferred signal type
+3. [**Take Profit Settings**](https://infinity.aloen.to/infinity-algo-features/take-profit-settings) - Configure your exit strategy
+4. [**Alerts**](https://infinity.aloen.to/infinity-algo-features/alerts)- Set up notifications
 
 **Advanced Features**
 
-- [**AI Optimization** 🆕](https://infinity.aloen.to/features/infinity-algo-features/ai-optimization) - Let machine learning optimize for you
-- [**Signal Control Options**](https://infinity.aloen.to/features/infinity-algo-features/entry-take-profit-and-stop-loss) - Fine-tune signal behavior
-- [**Visual Customization**](https://infinity.aloen.to/features/infinity-algo-features/visual-settings) - Make the indicator yours
+- [**AI Optimization** 🆕](https://infinity.aloen.to/infinity-algo-features/ai-optimization) - Let machine learning optimize for you
+- [**Signal Control Options**](https://infinity.aloen.to/infinity-algo-features/entry-take-profit-and-stop-loss) - Fine-tune signal behavior
+- [**Visual Customization**](https://infinity.aloen.to/infinity-algo-features/visual-settings) - Make the indicator yours
 
 ---
 
 ### 📖 Need Help?
 
-- **New to Infinity Algo?** Start with [Desktop Setup](https://infinity.aloen.to/welcome/hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart/desktop-setup) or [Mobile Setup](https://infinity.aloen.to/welcome/hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart/mobile-setup)
-- **Want to Backtest?** Check our [Backtest Guide](https://infinity.aloen.to/backtest/backtest-version)
-- **Ready to Automate?** See [Trading Guide](https://infinity.aloen.to/trading-guide/trading-guide)
-- **Have Questions?** Visit our [FAQ](https://infinity.aloen.to/faq/faq-and-troubleshoot)
+- **New to Infinity Algo?** Start with [Desktop Setup](https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart/desktop-setup) or [Mobile Setup](https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart/mobile-setup)
+- **Want to Backtest?** Check our [Backtest Guide](https://infinity.aloen.to/backtest-version)
+- **Ready to Automate?** See [Trading Guide](https://infinity.aloen.to/trading-guide)
+- **Have Questions?** Visit our [FAQ](https://infinity.aloen.to/faq-and-troubleshoot)

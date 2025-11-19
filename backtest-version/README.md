@@ -6,8 +6,8 @@ The Infinity Algo V3.0 Backtest version enables comprehensive strategy testing w
 **Quick Navigation:**
 
 - **First time?** Start here for overview
-- **Need configuration help?** → [Configuration Guide](https://infinity.aloen.to/backtest/backtest-version/example-of-settings)
-- **Want fixed settings?** → [Settings Spreadsheet](https://infinity.aloen.to/backtest/backtest-version/settings-spreadsheet)
+- **Need configuration help?** → [Configuration Guide](https://infinity.aloen.to/backtest-version/example-of-settings)
+- **Want fixed settings?** → [Settings Spreadsheet](https://infinity.aloen.to/backtest-version/settings-spreadsheet)
   {% endhint %}
 
 ---

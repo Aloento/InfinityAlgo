@@ -10,11 +10,11 @@ Welcome to the official documentation for **Infinity Algo V3.0**, the most advan
 #### Getting Started
 
 1. **Verify Access**: Check your TradingView invite-only scripts
-2. [**Add Indicator**](https://infinity.aloen.to/welcome/hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart): Follow our setup guide
-3. [**Configure Settings**](https://infinity.aloen.to/features/infinity-algo-features): Start with AI mode for automatic optimization
-4. [**Set Alerts**](https://infinity.aloen.to/features/infinity-algo-features/alerts): Configure notifications for your strategy
+2. [**Add Indicator**](https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart): Follow our setup guide
+3. [**Configure Settings**](https://infinity.aloen.to/infinity-algo-features): Start with AI mode for automatic optimization
+4. [**Set Alerts**](https://infinity.aloen.to/infinity-algo-features/alerts): Configure notifications for your strategy
 
-**Recommended first read**: [How to Add Indicators to your chart](https://infinity.aloen.to/welcome/hey-thank-you-and-welcome/how-to-add-indicators-to-your-chart)
+**Recommended first read**: [How to Add Indicators to your chart](https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart)
 {% endtab %}
 
 {% tab title="Existing Users" %}
