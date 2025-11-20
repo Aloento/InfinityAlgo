@@ -1,49 +1,47 @@
-# 🔁 Toggle Same Signal Consecutively
+# 🔁 连续相同信号切换 (Toggle Same Signal Consecutively)
 
-Prevent or allow the same signal type from repeating consecutively.
+防止或允许相同信号类型连续重复出现。
 
 ![Toggle Setting](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FxUcktpcyHPgm1oG5N6QX%2Fimage.png?alt=media&token=468b781b-8de2-4f9c-943b-9b0c144e0e08)
 
----
-
-### 🎯 How It Works
+## 🎯 工作原理
 
 {% tabs %}
-{% tab title="✅ Enabled (Default)" %}
+{% tab title="✅ 启用 (默认)" %}
 
-#### No Consecutive Repeats
+### 无连续重复
 
-**Blocks:** Same signal appearing twice in a row
+**阻止:** 相同信号连续出现两次
 
-✅ Cleaner charts ✅ Less noise ✅ Natural rotation ✅ Filtered signals
+✅ 图表更清晰 ✅ 噪音更少 ✅ 信号自然轮换 ✅ 信号已过滤
 
-**Example:**
+**示例:**
 
 {% code title="enabled-pattern.txt" %}
 
 ```
 Smart Buy ✅ → Normal Sell ✅ → Smart Buy ✅
-              ↑ Different signal required
+              ↑ 需要不同的信号
 ```
 
 {% endcode %}
 {% endtab %}
 
-{% tab title="❌ Disabled" %}
+{% tab title="❌ 禁用" %}
 
-#### Allows Repeats
+### 允许重复
 
-**Allows:** Same signal multiple times
+**允许:** 相同信号多次出现
 
-✅ All valid signals shown ✅ Good for scaling in ✅ More alerts ⚠️ Can be noisy
+✅ 显示所有有效信号 ✅ 适合分批建仓 ✅ 更多警报 ⚠️ 可能产生较多噪音
 
-**Example:**
+**示例:**
 
 {% code title="disabled-pattern.txt" %}
 
 ```
 Smart Buy ✅ → Smart Buy ✅ → Smart Buy ✅
-              ↑ Same signal allowed
+              ↑ 允许相同信号
 ```
 
 {% endcode %}
@@ -52,76 +50,76 @@ Smart Buy ✅ → Smart Buy ✅ → Smart Buy ✅
 
 ---
 
-### 📊 Visual Comparison
+### 📊 视觉对比
 
 {% columns %}
 {% column width="50%" %}
 
-#### Enabled (Clean)
+#### 启用 (清晰)
 
-![Toggle On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FfGrui2cM4nd4WCYnaRzx%2Fonm.png?alt=media&token=5f0f64af-3b01-4ea6-9261-35192543cf06) **Fewer, filtered signals**
+![Toggle On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FfGrui2cM4nd4WCYnaRzx%2Fonm.png?alt=media&token=5f0f64af-3b01-4ea6-9261-35192543cf06) **更少的已过滤信号**
 {% endcolumn %}
 
 {% column %}
 
-#### Disabled (All Signals)
+#### 禁用 (所有信号)
 
-![Toggle Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fd3MMInqWS3fx09s9shqn%2Fonf.png?alt=media&token=cf000650-a486-4a2f-985c-b58be9968214) **More signals, possible repeats**
+![Toggle Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fd3MMInqWS3fx09s9shqn%2Fonf.png?alt=media&token=cf000650-a486-4a2f-985c-b58be9968214) **更多信号，可能有重复**
 {% endcolumn %}
 {% endcolumns %}
 
 ---
 
-### ⚡ Quick Reference
+### ⚡ 快速参考
 
-| Aspect                | Enabled      | Disabled           |
-| --------------------- | ------------ | ------------------ |
-| **Signal Frequency**  | Lower        | Higher             |
-| **Chart Clarity**     | Cleaner      | Busier             |
-| **Best For**          | Most traders | Scaling strategies |
-| **Noise Level**       | Low          | Higher             |
-| **Position Building** | Single entry | Multiple entries   |
+| 方面           | 启用         | 禁用         |
+| -------------- | ------------ | ------------ |
+| **信号频率**   | 较低         | 较高         |
+| **图表清晰度** | 清晰         | 繁忙         |
+| **最适用于**   | 大多数交易者 | 分批建仓策略 |
+| **噪音水平**   | 低           | 较高         |
+| **建仓方式**   | 单次入场     | 多次入场     |
 
 ---
 
-### 🎨 When to Use
+### 🎨 何时使用
 
 {% columns %}
 {% column width="50%" %}
 
-#### Keep Enabled For
+#### 保持启用
 
-- Standard trading
-- Clean charts
-- Single positions
-- Reduced noise
-- Most strategies
+- 标准交易
+- 清晰图表
+- 单个头寸
+- 噪音减少
+- 大多数策略
   {% endcolumn %}
 
 {% column %}
 
-#### Disable Only For
+#### 仅在以下情况禁用
 
-- Scaling into positions
-- DCA strategies
-- Need every signal
-- Aggressive trading
-- Testing purposes
+- 分批建仓 (Scaling into positions)
+- DCA 策略 (Dollar Cost Averaging)
+- 需要每个信号
+- 激进交易
+- 测试目的
   {% endcolumn %}
   {% endcolumns %}
 
 ---
 
-### 💡 Important Notes
+### 💡 重要提示
 
 {% hint style="info" %}
-**Priority System:** If "Next Signal Must Be Opposite" is enabled, it overrides this setting completely.
+**优先级系统:** 如果启用了"Next Signal Must Be Opposite (下一个信号必须相反)"，它将完全覆盖此设置。
 {% endhint %}
 
 {% hint style="success" %}
-**Recommendation:** Keep enabled for cleaner trading experience unless you specifically need repeated signals.
+**建议:** 除非您特别需要重复信号，否则保持启用以获得更清晰的交易体验。
 {% endhint %}
 
 {% hint style="warning" %}
-**Remember:** More signals ≠ better performance. Quality over quantity!
+**记住:** 更多信号 ≠ 更好的性能。质量优于数量！
 {% endhint %}
