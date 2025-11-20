@@ -1,229 +1,257 @@
-# Backtest version
+# 回测版本 (Backtest version)
 
-The Infinity Algo V3.0 Backtest version enables comprehensive strategy testing with automated position management. Test your ideas before risking real capital.
+Infinity Algo V3.0 回测版本 (Backtest version) 支持全面的策略测试和自动头寸管理 (automated position management)。在用真实资金交易前测试您的想法。
 
 {% hint style="success" %}
-**Quick Navigation:**
+**快速导航：**
 
-- **First time?** Start here for overview
-- **Need configuration help?** → [Configuration Guide](https://infinity.aloen.to/backtest-version/example-of-settings)
-- **Want fixed settings?** → [Settings Spreadsheet](https://infinity.aloen.to/backtest-version/settings-spreadsheet)
+- **初次使用？** 从这里开始了解概览
+- **需要配置帮助？** → [配置指南](https://infinity.aloen.to/backtest-version/example-of-settings)
+- **想要预设好的配置？** → [配置电子表格](https://infinity.aloen.to/backtest-version/settings-spreadsheet)
   {% endhint %}
 
 ---
 
-### 🎯 What is Backtesting?
+### 🎯 什么是回测 (Backtesting)？
 
-#### Purpose & Benefits
+#### 目的与优势
 
 {% columns %}
 {% column width="50%" %}
-**Why Backtest:**
+**回测的意义：**
 
-- Test without real money
-- Validate strategy logic
-- Understand drawdowns
-- Build confidence
-- Learn indicator behavior
+- 无需真实资金进行测试
+- 验证策略逻辑
+- 理解最大回撤 (drawdown)
+- 建立交易信心
+- 学习指标 (indicator) 行为
   {% endcolumn %}
 
 {% column %}
-**What You'll Learn:**
+**您将学到：**
 
-- Expected win rate
-- Average profit/loss
-- Maximum drawdown
-- Optimal settings
-- Risk tolerance needed
+- 预期胜率 (win rate)
+- 平均盈亏 (average profit/loss)
+- 最大回撤 (maximum drawdown)
+- 最优设置 (optimal settings)
+- 所需的风险承受能力
   {% endcolumn %}
   {% endcolumns %}
 
-#### ⚠️ Important Disclaimers
+#### ⚠️ 重要免责声明
 
 {% hint style="warning" %}
-**Reality Check:**
+**现实检查：**
 
-- Historical performance ≠ Future results
-- Backtests exclude spreads, slippage, emotions
-- Markets change - strategies must adapt
-- This is education, not financial advice
+- 历史表现 ≠ 未来结果
+- 回测不包含点差 (spreads)、滑点 (slippage)、情绪因素
+- 市场在变化 - 策略也必须适应
+- 这是教育内容，不是财务建议
   {% endhint %}
 
 ---
 
-### 📊 TradingView Plan Limitations
+### 📊 TradingView 计划限制
 
-Your testing power depends on your subscription:
+您的测试能力取决于订阅计划：
 
-| Plan             | Historical Bars | Deep Backtesting | Recommendation                  |
-| ---------------- | --------------- | ---------------- | ------------------------------- |
-| **Basic** (Free) | 5,000           | ❌               | Test concepts only              |
-| **Essential**    | 10,000          | ❌               | Basic validation                |
-| **Plus**         | 10,000          | ❌               | Casual testing                  |
-| **Premium** ⭐   | 20,000          | ✅               | **Minimum for serious testing** |
-| **Expert**       | 25,000          | ✅               | Professional traders            |
-| **Ultimate**     | 40,000          | ✅               | Maximum capability              |
+| 计划                    | 历史数据条数 (Historical Bars) | 深度回测 (Deep Backtesting) | 推荐说明               |
+| ----------------------- | ------------------------------ | --------------------------- | ---------------------- |
+| **基础 (Basic)** (免费) | 5,000                          | ❌                          | 仅限概念测试           |
+| **基础版 (Essential)**  | 10,000                         | ❌                          | 基础验证               |
+| **增强版 (Plus)**       | 10,000                         | ❌                          | 休闲测试               |
+| **专业版 (Premium)** ⭐ | 20,000                         | ✅                          | **严肃测试的最低要求** |
+| **专家版 (Expert)**     | 25,000                         | ✅                          | 专业交易者             |
+| **终极版 (Ultimate)**   | 40,000                         | ✅                          | 最高能力               |
 
 {% hint style="info" %}
-**🚀 Deep Backtesting Feature** (Premium+ only)
+**🚀 深度回测功能 (Deep Backtesting Feature)** (仅限专业版及以上)
 
-Tests on ALL available data (up to 2M bars) instead of just visible chart:
+使用所有可用数据进行测试 (up to 2M bars)，而不仅是可见图表数据：
 
-- Essential for lower timeframes
-- Required for statistical significance
-- Provides reliable results
+- 对低时间框架 (lower timeframes) 至关重要
+- 统计显著性 (statistical significance) 的必要条件
+- 提供可靠的结果
 
-**Without it:** Limited to chart bars only
+**没有该功能：** 仅限于图表显示的数据条数
 {% endhint %}
 
 ---
 
-### 🚀 Quick Start Guide
+### 🚀 快速开始指南
 
 {% stepper %}
 {% step %}
 
-#### Install Backtest Version
+#### 安装回测版本
 
-1. Remove standard Infinity Algo
-2. Add "Infinity Algo V3.0 Backtest" from Invite-Only
-3. You'll see "Strategy Tester" tab appear
+1. 移除标准版 Infinity Algo
+2. 从邀请专用版本中添加 "Infinity Algo V3.0 Backtest"
+3. 您将看到 "Strategy Tester" 选项卡出现
    {% endstep %}
 
 {% step %}
 
-#### Open Strategy Tester
+#### 打开 Strategy Tester
 
-1. Click "Strategy Tester" at bottom
-2. Check "Overview" tab first
-3. Note the date range tested
-4. Verify minimum 30 trades
+1. 点击底部的 "Strategy Tester"
+2. 首先查看 "Overview" 选项卡
+3. 注意测试的日期范围
+4. 验证至少进行了 30 笔交易
    {% endstep %}
 
 {% step %}
 
-#### Run First Test
+#### 运行首次测试
 
-Use defaults initially:
+初始使用默认设置：
 
-- Don't change anything yet
-- Let it run with standard settings
-- Document baseline performance
-- This is your reference point
+- 暂时不更改任何内容
+- 使用标准设置运行
+- 记录基准性能 (baseline performance)
+- 这是您的参考点
   {% endstep %}
 
 {% step %}
 
-#### Review Key Numbers
+#### 查看关键数据
 
-Focus on these first:
+首先关注这些指标：
 
-- **Net Profit** - Is it positive?
-- **Win Rate** - What percentage wins?
-- **Max Drawdown** - Can you handle it?
-- **Total Trades** - Enough data?
+- **净利润 (Net Profit)** - 是否为正数？
+- **胜率 (Win Rate)** - 百分比多少？
+- **最大回撤 (Max Drawdown)** - 您能承受吗？
+- **总交易数 (Total Trades)** - 数据充分吗？
   {% endstep %}
   {% endstepper %}
 
 ---
 
-### 📈 Understanding the Strategy Tester
+### 📈 理解 Strategy Tester
 
-#### Key Tabs Explained
+#### 关键选项卡说明
 
 {% tabs %}
 {% tab title="Overview" %}
-**What you see:**
+**您将看到：**
 
-- Net profit/loss
-- Total trades
-- Win rate percentage
-- Profit factor
-- Max drawdown
+- 净利润/亏损 (Net profit/loss)
+- 总交易数 (Total trades)
+- 胜率百分比 (Win rate percentage)
+- 利润因子 (Profit factor)
+- 最大回撤 (Max drawdown)
 
-**Quick interpretation:**
+**快速解读：**
 
-- Green = profitable
-- 30+ trades = meaningful
-- Check drawdown first
+- 绿色 = 盈利
+- 30 笔以上 = 有统计意义
+- 先检查回撤
   {% endtab %}
 
 {% tab title="Performance Summary" %}
-**Detailed metrics:**
+**详细指标：**
 
-- Average trade
-- Best/worst trade
-- Consecutive wins/losses
-- Risk metrics
-- Time in market
+- 平均交易收益 (Average trade)
+- 最佳/最差交易 (Best/worst trade)
+- 连胜/连败 (Consecutive wins/losses)
+- 风险指标 (Risk metrics)
+- 持仓时间 (Time in market)
 
-**Use for:**
+**用途：**
 
-- Deep analysis
-- Risk assessment
-- Strategy comparison
+- 深度分析
+- 风险评估
+- 策略比较
   {% endtab %}
 
 {% tab title="List of Trades" %}
-**Every trade detailed:**
+**每笔交易详情：**
 
-- Entry/exit prices
-- Profit/loss
-- Duration
-- Signal type
+- 入场/出场价格 (Entry/exit prices)
+- 盈亏 (Profit/loss)
+- 持仓时长 (Duration)
+- 信号类型 (Signal type)
 
-**Use for:**
+**用途：**
 
-- Verify logic
-- Find patterns
-- Debug issues
+- 验证逻辑
+- 发现规律
+- 调试问题
   {% endtab %}
   {% endtabs %}
 
 ---
 
-### ⚡ Backtest vs Live Differences
+### ⚡ 回测 vs 实盘交易的差异
 
-#### What Backtests Include
+#### 回测包括的内容
 
-✅ Historical price data ✅ Your strategy logic ✅ Entry/exit signals ✅ Position sizing
+✅ 历史价格数据 (Historical price data) ✅ 您的策略逻辑 (Your strategy logic) ✅ 入场/出场信号 (Entry/exit signals) ✅ 头寸规模 (Position sizing)
 
-#### What They Don't Include
+#### 回测不包括的内容
 
-❌ Spread costs ❌ Slippage ❌ Commission fees ❌ Emotional decisions ❌ Connection issues ❌ Exchange downtime
+❌ 点差成本 (Spread costs) ❌ 滑点 (Slippage) ❌ 手续费 (Commission fees) ❌ 情绪决策 (Emotional decisions) ❌ 连接问题 (Connection issues) ❌ 交易所停机时间 (Exchange downtime)
 
 {% hint style="danger" %}
-**Rule of Thumb:** Reduce backtest returns by 30-50% for realistic expectations
+**经验法则：** 将回测收益降低 30-50%，以获得更现实的预期
 {% endhint %}
 
 ---
 
-### 🎯 Next Steps
+### 🎯 后续步骤
 
-#### Your Path Forward
+#### 您的学习路径
 
 {% columns %}
 {% column width="50%" %}
-**1. Learn Configuration** → Configuration Guide
+**1. 学习配置** → 配置指南
 
-- Exit strategies
-- Position management
-- Risk settings
+- 出场策略 (Exit strategies)
+- 头寸管理 (Position management)
+- 风险设置
   {% endcolumn %}
 
 {% column %}
-**2. Understand Philosophy** → Why Dynamic Optimization
+**2. 理解理念** → 为什么使用动态优化 (Dynamic Optimization)
 
-- AI vs static settings
-- Market adaptation
-- Common mistakes
+- AI vs 固定设置
+- 市场适应性
+- 常见错误
   {% endcolumn %}
   {% endcolumns %}
 
-#### Related Resources
+#### 相关资源
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Example of settings</strong>⚙️<br>Detailed settings and strategies</td><td></td><td><a href="backtest-version/settings-spreadsheet">settings-spreadsheet</a></td></tr><tr><td><strong>Automated Alerts</strong> 🔔<br>Backtest version alerts</td><td></td><td><a href="backtest-version/alerts-backtest-version">alerts-backtest-version</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>配置示例</strong>⚙️<br />详细配置和策略
+      </td>
+      <td></td>
+      <td>
+        <a href="backtest-version/settings-spreadsheet">settings-spreadsheet</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>自动告警</strong> 🔔<br />回测版本告警</td>
+      <td></td>
+      <td>
+        <a href="backtest-version/alerts-backtest-version"
+          >alerts-backtest-version</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 {% hint style="success" %}
-**Ready to start?** Open Strategy Tester and run your first test with default settings. Document the results - this is your baseline for improvement.
+**准备好开始了吗？** 打开 Strategy Tester，使用默认设置运行首次测试。记录结果 - 这是您改进的基准线。
 {% endhint %}
