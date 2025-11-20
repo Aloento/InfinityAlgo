@@ -1,150 +1,150 @@
-# 🔄 Automating Infinity Algo Alerts via 3Commas
+# 🔄 通过 3Commas 自动化 Infinity Algo 警报
 
-Connect Infinity Algo signals directly to 3Commas for automated trading execution.
+将 Infinity Algo 信号直接连接到 3Commas，实现自动化交易执行。
 
 ---
 
-### 🎯 Three Integration Methods
+### 🎯 三种集成方法
 
 {% tabs %}
-{% tab title="🔄 Reversal Bot" %}
-**Automatic Position Flipping**
+{% tab title="🔄 反向机器人 (Reversal Bot)" %}
+**自动交易方向切换**
 
-**What it does:**
+**功能说明：**
 
-- Switches Long ↔ Short automatically
-- One bot handles both directions
-- Closes opposite position before opening new
+- 自动切换多头 (Long) ↔ 空头 (Short)
+- 单个机器人处理双向交易
+- 开启新仓位前关闭相反仓位
 
-**Best for:**
+**最适用于：**
 
-- ✅ Trending markets
-- ✅ Active trading
-- ✅ Maximum efficiency
-- ✅ Less alert management
+- ✅ 趋势行情
+- ✅ 活跃交易
+- ✅ 最大化效率
+- ✅ 减少警报管理
 
-{% code title="Setup Requirements" %}
+{% code title="设置需求" %}
 
 ```
-Direction: Reversal (both)
-Pairs: Single or Multi-pair (up to 200)
-Alerts: 2 total
-- Buy Signal → enter_long
-- Sell Signal → enter_short
+方向: 反向 (Reversal - 双向)
+交易对: 单对或多对 (最多 200 个)
+警报: 总共 2 个
+- 买入信号 (Buy Signal) → enter_long
+- 卖出信号 (Sell Signal) → enter_short
 ```
 
 {% endcode %}
 
 {% hint style="info" %}
-**Reversal Behavior:**
+**反向交易行为 (Reversal Behavior)：**
 
-- **Spot:** With Reverse position ON, opposite signal closes & flips; OFF ignores opposite signals
-- **Futures Hedge Mode ON:** Enable "Reverse position" to flip positions
-- **Futures Hedge Mode OFF:** Bot automatically closes opposite before opening new
+- **现货 (Spot)：** 启用反向仓位 (Reverse position ON) 时，相反信号会关闭并翻转; 禁用时忽略相反信号
+- **期货对冲模式开启 (Futures Hedge Mode ON)：** 启用"反向仓位"来翻转交易
+- **期货对冲模式关闭 (Futures Hedge Mode OFF)：** 机器人在开启新仓前自动关闭相反仓位
   {% endhint %}
 
-For simplicity, we recommend one pair per bot for reversal workflows.
+为了简化起见，我们建议对反向交易工作流使用一个交易对配对一个机器人。
 {% endtab %}
 
-{% tab title="🎯 Clean Exit" %}
-**Exit Without Disabling Bot**
+{% tab title="🎯 清洁退出 (Clean Exit)" %}
+**无需禁用机器人直接退出**
 
-**What it does:**
+**功能说明：**
 
-- Closes position cleanly
-- Bot stays active for next signal
-- No manual re-enabling needed
+- 干净地关闭仓位
+- 机器人保持活跃状态以接收下一个信号
+- 无需手动重新启用
 
-**Best for:**
+**最适用于：**
 
-- ✅ Continuous trading
-- ✅ Quick re-entry
-- ✅ Automated workflow
-- ✅ Active strategies
+- ✅ 连续交易
+- ✅ 快速重新进场
+- ✅ 自动化工作流
+- ✅ 活跃策略
 
-{% code title="Setup Requirements" %}
+{% code title="设置需求" %}
 
 ```
-Direction: Long or Short
-Alerts: 3 total
-- Entry: enter_long/enter_short
-- Exit: exit_long/exit_short
-- Re-entry: enter_long/enter_short
+方向: 多头 (Long) 或 空头 (Short)
+警报: 总共 3 个
+- 入场: enter_long/enter_short
+- 出场: exit_long/exit_short
+- 重新入场: enter_long/enter_short
 ```
 
 {% endcode %}
 
 {% hint style="success" %}
-**Pro Tip:** Exit signals use market execution only - limit orders on exits will be rejected
+**专业建议 (Pro Tip)：** 退出信号仅使用市价执行 (market execution) - 限价出场订单会被拒绝
 {% endhint %}
 {% endtab %}
 
-{% tab title="⏹️ Panic Stop" %}
-**Disable Bot & Close All**
+{% tab title="⏹️ 紧急停止 (Panic Stop)" %}
+**禁用机器人并关闭所有仓位**
 
-**What it does:**
+**功能说明：**
 
-- Closes all positions at market
-- Disables bot completely
-- Requires manual re-enable
+- 以市价关闭所有仓位
+- 完全禁用机器人
+- 需要手动重新启用
 
-**Best for:**
+**最适用于：**
 
-- ✅ Emergency stops
-- ✅ End of session
-- ✅ Risk events
-- ✅ Manual intervention
+- ✅ 紧急停止
+- ✅ 交易日结束
+- ✅ 风险事件
+- ✅ 手动干预
 
-{% code title="Setup Requirements" %}
+{% code title="设置需求" %}
 
 ```
-Action: disable
-Sub-action: market_close
-Note: Bot must be manually re-enabled
+操作: disable
+子操作: market_close
+注意: 机器人必须手动重新启用
 ```
 
 {% endcode %}
 
 {% hint style="danger" %}
-**Warning:** Bot will NOT auto-restart on next signal - you must manually enable it again
+**警告：** 机器人不会在下一个信号时自动重启 - 你必须手动重新启用
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### ⚙️ Step 1: Configure Signal Bot
+### ⚙️ 步骤 1：配置信号机器人 (Signal Bot)
 
-**Navigate to 3Commas:**
+**导航至 3Commas：**
 
-1. **Log in** → 3Commas.io
-2. **Bots** → **Signal Bot** → **Create Bot**
-3. Configure with these settings:
+1. **登录** → 3Commas.io
+2. **机器人 (Bots)** → **信号机器人 (Signal Bot)** → **创建机器人 (Create Bot)**
+3. 使用以下设置进行配置：
 
-| Setting        | Value                          |
-| -------------- | ------------------------------ |
-| **Name**       | e.g. Infinity Algo BTC         |
-| **Exchange**   | Select your exchange           |
-| **Pairs**      | Single or Multi (up to 200)    |
-| **Alert Type** | Custom Signal                  |
-| **Direction**  | Long / Short / Reversal (both) |
-| **TP/SL**      | Set here or via webhook        |
-| **Risk Caps**  | Max Investment, Leverage       |
+| 设置 (Setting)            | 值 (Value)                                          |
+| ------------------------- | --------------------------------------------------- |
+| **名称 (Name)**           | 例如：Infinity Algo BTC                             |
+| **交易所 (Exchange)**     | 选择你的交易所                                      |
+| **交易对 (Pairs)**        | 单对或多对 (最多 200 个)                            |
+| **警报类型 (Alert Type)** | 自定义信号 (Custom Signal)                          |
+| **方向 (Direction)**      | 多头 (Long) / 空头 (Short) / 反向 (Reversal - 双向) |
+| **止盈/止损 (TP/SL)**     | 在此设置或通过 webhook 设置                         |
+| **风险上限 (Risk Caps)**  | 最大投资额、杠杆 (Leverage)                         |
 
-For multi-pair bots, also set **Max active SmartTrades**.
+对于多对机器人，还需设置**最大活跃智能交易 (Max active SmartTrades)**。
 
 ---
 
-### 📩 Step 2: Get Webhook Credentials
+### 📩 步骤 2：获取 Webhook 凭证
 
-After saving your bot, find **"Message for deal start signal"** and copy:
+保存机器人后，找到**"Message for deal start signal"**并复制：
 
-{% code title="Your Unique Credentials" overflow="wrap" %}
+{% code title="你的唯一凭证 (Your Unique Credentials)" overflow="wrap" %}
 
 ```json
 {
-  "secret": "ab12cd34.ef56gh78…", // Keep this private!
-  "bot_uuid": "f1a2b3c4-…-9d0e1f2a", // Your bot's ID
+  "secret": "ab12cd34.ef56gh78…", // 保持私密！
+  "bot_uuid": "f1a2b3c4-…-9d0e1f2a", // 你的机器人 ID
   "action": "enter_long",
   "tv_exchange": "{{exchange}}",
   "tv_instrument": "{{ticker}}"
@@ -154,36 +154,36 @@ After saving your bot, find **"Message for deal start signal"** and copy:
 {% endcode %}
 
 {% hint style="danger" %}
-**Security:** Never share your `secret` token - it controls your bot! Signal Bots no longer accept old `bot_id`/`email_token` pairs.
+**安全警告：** 不要分享你的 `secret` 令牌 (token) - 它控制着你的机器人！信号机器人不再接受旧的 `bot_id`/`email_token` 配对。
 {% endhint %}
 
 ---
 
-### 📊 Step 3: Create TradingView Alerts
+### 📊 步骤 3：创建 TradingView 警报
 
-**Alert Configuration**
+**警报配置**
 
-| Field           | Value                                          |
-| --------------- | ---------------------------------------------- |
-| **Condition**   | Match your Infinity Algo signal exactly        |
-| **Options**     | ✅ **Once Per Bar Close** (not "Once Per Bar") |
-| **Webhook URL** | `https://api.3commas.io/signal_bots/webhooks`  |
-| **Message**     | JSON template with YOUR-SECRET & YOUR-UUID     |
+| 字段 (Field)         | 值 (Value)                                                           |
+| -------------------- | -------------------------------------------------------------------- |
+| **条件 (Condition)** | 精确匹配你的 Infinity Algo 信号                                      |
+| **选项 (Options)**   | ✅ **柱子收盘时触发一次 (Once Per Bar Close)** (不是 "Once Per Bar") |
+| **Webhook URL**      | `https://api.3commas.io/signal_bots/webhooks`                        |
+| **消息 (Message)**   | JSON 模板，包含你的 YOUR-SECRET 和 YOUR-UUID                         |
 
 {% hint style="info" %}
-**Important:** Alert condition must match your Infinity Algo signal names exactly, including any numeric prefixes
+**重要提示：** 警报条件必须精确匹配你的 Infinity Algo 信号名称，包括任何数字前缀
 {% endhint %}
 
 ---
 
-### 📝 JSON Templates
+### 📝 JSON 模板
 
 {% hint style="warning" %}
-**Required Fields:** All signals must include `secret`, `bot_uuid`, `action`, `tv_exchange`, and `tv_instrument`
+**必需字段：** 所有信号必须包含 `secret`、`bot_uuid`、`action`、`tv_exchange` 和 `tv_instrument`
 {% endhint %}
 
 {% tabs %}
-{% tab title="🟢 Long Entry" %}
+{% tab title="🟢 多头入场 (Long Entry)" %}
 {% code title="enter\_long.json" overflow="wrap" lineNumbers="true" %}
 
 ```json
@@ -224,10 +224,10 @@ After saving your bot, find **"Message for deal start signal"** and copy:
 
 {% endcode %}
 
-**Note:** For limit entry, add `"price"` or `"price_percent"` with optional `"price_percent_ref_type"`
+**注意：** 对于限价入场，添加 `"price"` 或 `"price_percent"`，以及可选的 `"price_percent_ref_type"`
 {% endtab %}
 
-{% tab title="🔴 Short Entry" %}
+{% tab title="🔴 空头入场 (Short Entry)" %}
 {% code title="enter\_short.json" overflow="wrap" lineNumbers="true" %}
 
 ```json
@@ -269,7 +269,7 @@ After saving your bot, find **"Message for deal start signal"** and copy:
 {% endcode %}
 {% endtab %}
 
-{% tab title="✅ Exit Long" %}
+{% tab title="✅ 多头出场 (Exit Long)" %}
 {% code title="exit\_long.json" overflow="wrap" %}
 
 ```json
@@ -293,10 +293,10 @@ After saving your bot, find **"Message for deal start signal"** and copy:
 
 {% endcode %}
 
-**Note:** Exit orders are market-only - don't add `"order_type": "limit"`
+**注意：** 出场订单仅支持市价执行 - 不要添加 `"order_type": "limit"`
 {% endtab %}
 
-{% tab title="❌ Exit Short" %}
+{% tab title="❌ 空头出场 (Exit Short)" %}
 {% code title="exit\_short.json" overflow="wrap" %}
 
 ```json
@@ -321,7 +321,7 @@ After saving your bot, find **"Message for deal start signal"** and copy:
 {% endcode %}
 {% endtab %}
 
-{% tab title="⏹️ Panic Stop" %}
+{% tab title="⏹️ 紧急停止 (Panic Stop)" %}
 {% code title="disable\_bot.json" overflow="wrap" %}
 
 ```json
@@ -343,72 +343,72 @@ After saving your bot, find **"Message for deal start signal"** and copy:
 {% endcode %}
 
 {% hint style="danger" %}
-This disables the bot completely - manual re-enable required!
+这会完全禁用机器人 - 需要手动重新启用！
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### ⚡ Quick Reference
+### ⚡ 快速参考
 
-| Parameter                  | Purpose                   | Values                                                 |
-| -------------------------- | ------------------------- | ------------------------------------------------------ |
-| **price_percent**          | TP distance from entry    | Integer: 1 = 1%, 2 = 2%                                |
-| **volume_percent**         | % of position to close    | Must sum to 100%                                       |
-| **trigger_price_percent**  | Stop loss distance        | Integer: 1 = 1% loss                                   |
-| **currency_type**          | Order size unit           | `quote`, `base`, `margin_percent`, `position_percent`  |
-| **amount**                 | Position size             | Number based on currency_type                          |
-| **max_lag**                | Reject stale signals      | Seconds (300 = 5 min)                                  |
-| **timestamp**              | Signal freshness          | Always use `{{timenow}}`                               |
-| **price_percent_ref_type** | Price reference for limit | `current_price`, `base_entry_price`, `avg_entry_price` |
+| 参数 (Parameter)           | 用途 (Purpose)                             | 值和规则 (Values & Rules)                              |
+| -------------------------- | ------------------------------------------ | ------------------------------------------------------ |
+| **price_percent**          | 止盈距离 (TP distance)                     | 整数：1 = 1%, 2 = 2%                                   |
+| **volume_percent**         | 仓位平仓百分比 (% of position to close)    | 总和必须为 100%                                        |
+| **trigger_price_percent**  | 止损触发距离 (Stop loss distance)          | 整数：1 = 亏损 1%                                      |
+| **currency_type**          | 订单规模单位 (Order size unit)             | `quote`、`base`、`margin_percent`、`position_percent`  |
+| **amount**                 | 仓位大小 (Position size)                   | 基于 `currency_type` 设置的数字                        |
+| **max_lag**                | 拒绝过期信号 (Reject stale signals)        | 秒数 (300 = 5 分钟)                                    |
+| **timestamp**              | 信号新鲜度 (Signal freshness)              | 始终使用 `{{timenow}}`                                 |
+| **price_percent_ref_type** | 限价的价格参考 (Price reference for limit) | `current_price`、`base_entry_price`、`avg_entry_price` |
 
 ---
 
-### 🎯 Which Method Should You Use?
+### 🎯 应该选择哪种方法？
 
-| Feature            | 🔄 Reversal Bot  | 🎯 Clean Exit           | ⏹️ Panic Stop   |
-| ------------------ | ---------------- | ----------------------- | --------------- |
-| **Best For**       | Trending markets | Continuous trading      | Emergency stops |
-| **Alerts Needed**  | 2 (minimal)      | 3 (entry/exit/re-entry) | 1 (stop all)    |
-| **Position State** | Always in        | Flexible gaps           | Fully closed    |
-| **Bot Status**     | ✅ Always active | ✅ Always active        | ❌ Disabled     |
-| **Re-entry**       | Automatic        | Automatic               | Manual required |
-| **Ideal Trader**   | Active/Confident | Flexible/Cautious       | Risk-averse     |
+| 功能特性 (Feature)             | 🔄 反向机器人 (Reversal Bot) | 🎯 清洁退出 (Clean Exit)  | ⏹️ 紧急停止 (Panic Stop) |
+| ------------------------------ | ---------------------------- | ------------------------- | ------------------------ |
+| **最适用于 (Best For)**        | 趋势行情                     | 连续交易                  | 紧急停止                 |
+| **需要的警报 (Alerts Needed)** | 2 个 (最少)                  | 3 个 (入场/出场/重新入场) | 1 个 (停止所有)          |
+| **仓位状态 (Position State)**  | 始终在仓                     | 灵活间隔                  | 完全平仓                 |
+| **机器人状态 (Bot Status)**    | ✅ 始终活跃                  | ✅ 始终活跃               | ❌ 已禁用                |
+| **重新入场 (Re-entry)**        | 自动                         | 自动                      | 手动必需                 |
+| **理想交易者 (Ideal Trader)**  | 活跃/自信                    | 灵活/谨慎                 | 风险厌恶                 |
 
 {% columns %}
 {% column width="50%" %}
-**Choose Reversal if you:**
+**如果你满足以下条件，选择反向机器人：**
 
-- Trade trending pairs
-- Trust your signals
-- Want set-and-forget
+- 交易趋势对
+- 相信你的信号
+- 想要一劳永逸
   {% endcolumn %}
 
 {% column %}
-**Choose Clean Exit if you:**
+**如果你满足以下条件，选择清洁退出：**
 
-- Need position control
-- Trade multiple pairs
-- Want gap periods
+- 需要仓位控制
+- 交易多个对
+- 需要间隔期
   {% endcolumn %}
   {% endcolumns %}
 
 ---
 
-### 🚀 Advanced Features
+### 🚀 高级功能
 
 {% tabs %}
-{% tab title="📈 Multiple TPs" %}
-**Up to 8 Take Profit Levels**
+{% tab title="📈 多个止盈点 (Multiple TPs)" %}
+**最多 8 个止盈级别**
 
-- UI supports up to 4 levels
-- JSON supports up to 8 levels
-- Volumes must total **100%**
-- Can mix limit & market orders
-- Trailing only on last step
+- UI 支持最多 4 个级别
+- JSON 支持最多 8 个级别
+- 交易量必须总计 **100%**
+- 可以混合限价和市价订单
+- 尾随平仓仅在最后一步
 
-{% code title="Example: 8-Level TP with Trailing" %}
+{% code title="示例：8 级止盈含尾随平仓 (Example: 8-Level TP with Trailing)" %}
 
 ```json
 "take_profit": {
@@ -431,10 +431,10 @@ This disables the bot completely - manual re-enable required!
 {% endcode %}
 {% endtab %}
 
-{% tab title="🛡️ Trailing Stop" %}
-**Dynamic Stop Loss**
+{% tab title="🛡️ 尾随止损 (Trailing Stop)" %}
+**动态止损**
 
-{% code title="Trailing Stop Configuration" %}
+{% code title="尾随止损配置 (Trailing Stop Configuration)" %}
 
 ```json
 "stop_loss": {
@@ -450,81 +450,81 @@ This disables the bot completely - manual re-enable required!
 
 {% endcode %}
 
-Trails 0.5% behind highest profit
+在最高利润后跟踪 0.5%
 {% endtab %}
 
-{% tab title="🤖 Bot Filters" %}
-**Price Deviation & Deal Close Conditions**
+{% tab title="🤖 机器人过滤器 (Bot Filters)" %}
+**价格偏差和平仓条件**
 
-In bot configuration (not JSON):
+在机器人配置中（不在 JSON 中）：
 
-- **Price deviation filters**: Prevent unfavorable entries
-- **Minimum profit**: May block exits until profit target met
+- **价格偏差过滤器 (Price deviation filters)：** 防止不利的入场
+- **最小利润 (Minimum profit)：** 可能会阻止平仓直到达到利润目标
 
-If exits don't close, check your bot's **Minimum profit/Deal close conditions**
+如果平仓不起作用，检查你的机器人的 **最小利润/平仓条件 (Minimum profit/Deal close conditions)**
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### 🛠️ Troubleshooting Checklist
+### 🛠️ 故障排查检查清单 (Troubleshooting Checklist)
 
-| ✅ Check                 | Details                                                         |
-| ------------------------ | --------------------------------------------------------------- |
-| **Valid Credentials**    | JSON must include valid `secret` and `bot_uuid`                 |
-| **Required Fields**      | Always include `tv_exchange` and `tv_instrument` in ALL signals |
-| **Correct Webhook URL**  | Must be exactly `https://api.3commas.io/signal_bots/webhooks`   |
-| **Alert Timing**         | Alerts fire **Once Per Bar Close** (not "Once Per Bar")         |
-| **One Alert Per Action** | Never combine entry & exit in one JSON                          |
-| **Field Names**          | Use `price_percent` not `price_deviation`                       |
-| **Volumes Sum to 100**   | All `volume_percent` must total exactly 100                     |
-| **Exit Orders**          | Exit signals use market execution only - no limit orders        |
-| **Signal Freshness**     | Include `max_lag` and `timestamp` to prevent stale signals      |
-| **Bot Re-enabling**      | If using `disable`, must manually re-enable bot                 |
-| **Exit Not Working**     | Check bot's Minimum profit/Deal close conditions                |
-
----
-
-### 📖 JSON Field Glossary
-
-| Field                        | Purpose                  | Values & Rules                                                                            |
-| ---------------------------- | ------------------------ | ----------------------------------------------------------------------------------------- |
-| **`secret`**                 | Private bot token        | **Required** - Copy exactly from Step 2                                                   |
-| **`bot_uuid`**               | Unique Signal Bot ID     | **Required** - Copy from Step 2                                                           |
-| **`action`**                 | Bot command              | **Required** - `enter_long`, `enter_short`, `exit_long`, `exit_short`, `disable`          |
-| **`tv_exchange`**            | TradingView exchange     | **Required** - Always `{{exchange}}`                                                      |
-| **`tv_instrument`**          | TradingView pair         | **Required** - Always `{{ticker}}`                                                        |
-| **`positions_sub_action`**   | When action is `disable` | <p><code>market_close</code> → flatten & disable<br><code>cancel</code> → cancel only</p> |
-| **`order.amount`**           | Position size            | Based on `currency_type` setting                                                          |
-| **`order.order_type`**       | Entry order type         | `market` or `limit` (limit needs `price` or `price_percent`)                              |
-| **`currency_type`**          | Unit for amount          | `quote`, `base`, `margin_percent`, `position_percent`                                     |
-| **`price`**                  | Exact limit price        | For limit orders - exact price value                                                      |
-| **`price_percent`**          | TP/limit distance        | Integer: 1 = 1%, 2 = 2%                                                                   |
-| **`price_percent_ref_type`** | Reference for percent    | `current_price`, `base_entry_price`, `avg_entry_price`                                    |
-| **`volume_percent`**         | % to close at each TP    | 1-100 (must sum to 100%)                                                                  |
-| **`trigger_price_percent`**  | Stop loss trigger        | Integer: 1 = 1% loss                                                                      |
-| **`max_lag`**                | Signal age limit         | Seconds (300 = 5 minutes)                                                                 |
-| **`timestamp`**              | Current time             | Always `{{timenow}}`                                                                      |
+| ✅ 检查 (Check)                              | 详情 (Details)                                                            |
+| -------------------------------------------- | ------------------------------------------------------------------------- |
+| **有效的凭证 (Valid Credentials)**           | JSON 必须包含有效的 `secret` 和 `bot_uuid`                                |
+| **必需字段 (Required Fields)**               | 始终在所有信号中包含 `tv_exchange` 和 `tv_instrument`                     |
+| **正确的 Webhook URL (Correct Webhook URL)** | 必须完全是 `https://api.3commas.io/signal_bots/webhooks`                  |
+| **警报时间 (Alert Timing)**                  | 警报在**柱子收盘时触发一次 (Once Per Bar Close)** （不是 "Once Per Bar"） |
+| **每个操作一个警报 (One Alert Per Action)**  | 永远不要在一个 JSON 中合并入场和出场                                      |
+| **字段名称 (Field Names)**                   | 使用 `price_percent` 而不是 `price_deviation`                             |
+| **交易量总计 100% (Volumes Sum to 100)**     | 所有 `volume_percent` 必须精确总计 100                                    |
+| **退出订单 (Exit Orders)**                   | 出场信号仅使用市价执行 - 无限价订单                                       |
+| **信号新鲜度 (Signal Freshness)**            | 包含 `max_lag` 和 `timestamp` 以防止过期信号                              |
+| **机器人重新启用 (Bot Re-enabling)**         | 如果使用 `disable`，必须手动重新启用机器人                                |
+| **出场不工作 (Exit Not Working)**            | 检查机器人的最小利润/平仓条件                                             |
 
 ---
 
-### 📚 Resources
+### 📖 JSON 字段词汇表 (JSON Field Glossary)
+
+| 字段 (Field)                 | 用途 (Purpose)                                   | 值和规则 (Values & Rules)                                                     |
+| ---------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------- |
+| **`secret`**                 | 私人机器人令牌 (Private bot token)               | **必需** - 从步骤 2 精确复制                                                  |
+| **`bot_uuid`**               | 唯一信号机器人 ID (Unique Signal Bot ID)         | **必需** - 从步骤 2 复制                                                      |
+| **`action`**                 | 机器人命令 (Bot command)                         | **必需** - `enter_long`、`enter_short`、`exit_long`、`exit_short`、`disable`  |
+| **`tv_exchange`**            | TradingView 交易所 (TradingView exchange)        | **必需** - 始终为 `{{exchange}}`                                              |
+| **`tv_instrument`**          | TradingView 交易对 (TradingView pair)            | **必需** - 始终为 `{{ticker}}`                                                |
+| **`positions_sub_action`**   | 当操作为 `disable` 时 (When action is `disable`) | <p><code>market_close</code> → 平仓并禁用<br><code>cancel</code> → 仅取消</p> |
+| **`order.amount`**           | 仓位大小 (Position size)                         | 基于 `currency_type` 设置                                                     |
+| **`order.order_type`**       | 入场订单类型 (Entry order type)                  | `market` 或 `limit` (限价需要 `price` 或 `price_percent`)                     |
+| **`currency_type`**          | 金额单位 (Unit for amount)                       | `quote`、`base`、`margin_percent`、`position_percent`                         |
+| **`price`**                  | 精确限价 (Exact limit price)                     | 限价订单的精确价格值                                                          |
+| **`price_percent`**          | TP/限价距离 (TP/limit distance)                  | 整数：1 = 1%，2 = 2%                                                          |
+| **`price_percent_ref_type`** | 百分比参考 (Reference for percent)               | `current_price`、`base_entry_price`、`avg_entry_price`                        |
+| **`volume_percent`**         | 每个 TP 的平仓百分比 (% to close at each TP)     | 1-100（必须总计 100%）                                                        |
+| **`trigger_price_percent`**  | 止损触发 (Stop loss trigger)                     | 整数：1 = 亏损 1%                                                             |
+| **`max_lag`**                | 信号年龄限制 (Signal age limit)                  | 秒数（300 = 5 分钟）                                                          |
+| **`timestamp`**              | 当前时间 (Current time)                          | 始终为 `{{timenow}}`                                                          |
+
+---
+
+### 📚 资源 (Resources)
 
 {% hint style="info" %}
-**Official 3Commas Documentation:**
+**官方 3Commas 文档 (Official 3Commas Documentation)：**
 
-- **Signal Bot Guide:** [**https://help.3commas.io/en/articles/8529406-signal-bot-custom-signal-type**](https://help.3commas.io/en/articles/8529406-signal-bot-custom-signal-type)
-- **JSON Format Guide:** <https://help.3commas.io/en/articles/8894481-signal-bot-json-file-in-custom-signal-type>
-- **Signal Bot FAQ:** <https://help.3commas.io/en/articles/8637909-signal-bot-faq>
-- **Getting Started:** <https://help.3commas.io/en/collections/3181386-getting-started>
+- **信号机器人指南 (Signal Bot Guide)：** [**https://help.3commas.io/en/articles/8529406-signal-bot-custom-signal-type**](https://help.3commas.io/en/articles/8529406-signal-bot-custom-signal-type)
+- **JSON 格式指南 (JSON Format Guide)：** <https://help.3commas.io/en/articles/8894481-signal-bot-json-file-in-custom-signal-type>
+- **信号机器人常见问题 (Signal Bot FAQ)：** <https://help.3commas.io/en/articles/8637909-signal-bot-faq>
+- **入门指南 (Getting Started)：** <https://help.3commas.io/en/collections/3181386-getting-started>
   {% endhint %}
 
 {% hint style="warning" %}
-**Important Reminders:**
+**重要提醒 (Important Reminders)：**
 
-- 3Commas is a third-party service with separate subscription costs
-- Signal Bots require a paid TradingView plan for webhooks
-- Exit orders are market-only (limit orders will be rejected)
-- Always test with small amounts or Demo account first
-- Manual trading via TradingView is always available as an alternative
+- 3Commas 是一个第三方服务，需要单独的订阅成本
+- 信号机器人需要付费的 TradingView 计划才能使用 webhooks
+- 退出订单仅支持市价执行（限价订单会被拒绝）
+- 始终先用小金额或演示账户进行测试
+- 通过 TradingView 手动交易始终可用作替代方案
   {% endhint %}
