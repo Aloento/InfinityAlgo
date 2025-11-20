@@ -1,214 +1,214 @@
-# ⚙️ Take Profit Settings
+# ⚙️ 止盈设置 (Take Profit Settings)
 
-Advanced controls for Take Profit signal behavior when using "Signals" exit type.
+当使用"信号(Signals)"退出类型时，对止盈信号行为的高级控制。
 
-![TP Settings Panel](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FiDc6ZdeZGnvRvvwpaDBX%2Fimage.png?alt=media&token=becd4d66-1790-4cec-b747-2f1c8f84e2a7)
+![TP 设置面板](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FiDc6ZdeZGnvRvvwpaDBX%2Fimage.png?alt=media&token=becd4d66-1790-4cec-b747-2f1c8f84e2a7)
 
 {% hint style="info" %}
-**Note:** These settings only work when `Show Take Profit Signals?` is enabled
+**注意：** 这些设置仅在启用"显示止盈信号(Show Take Profit Signals)?"时有效
 {% endhint %}
 
 ---
 
-### 🎯 Settings Explained
+## 🎯 设置说明 (Settings Explained)
 
 {% tabs %}
-{% tab title="⏲️ Timeframe" %}
+{% tab title="⏲️ 时间周期 (Timeframe)" %}
 
-#### Higher Timeframe Analysis
+### 更高时间周期分析 (Higher Timeframe Analysis)
 
-**Purpose:** View momentum from bigger picture perspective
+**用途：** 从更大的时间视角观察市场动能
 
-**How it works:**
+**工作原理：**
 
-- Sets calculation timeframe for TP signals
-- Higher TF = More stable signals
-- Filters out market noise
+- 设置计算止盈信号的时间周期
+- 更高的周期 = 更稳定的信号
+- 过滤掉市场噪音
 
-{% code title="recommended:" %}
+{% code title="推荐设置 (recommended):" %}
 
 ```
-Chart TF → TP TF
-1 min    → 3-5 min
-5 min    → 15 min
-15 min   → 30-60 min
-1 hour   → 4 hour
+图表周期 (Chart TF) → 止盈周期 (TP TF)
+1 分钟 (min)       → 3-5 分钟
+5 分钟             → 15 分钟
+15 分钟            → 30-60 分钟
+1 小时 (hour)      → 4 小时
 ```
 
 {% endcode %}
 
 {% hint style="success" %}
-**Best Practice:** Use 2-3x your chart timeframe for reliable signals
+**最佳实践：** 使用图表周期的 2-3 倍作为止盈周期，可获得更可靠的信号
 {% endhint %}
 {% endtab %}
 
-{% tab title="🛠️ Smoothing" %}
+{% tab title="🛠️ 平滑度 (Smoothing)" %}
 
-#### Signal Sensitivity Control
+### 信号敏感度控制 (Signal Sensitivity Control)
 
-**Purpose:** Adjust how reactive TP signals are
+**用途：** 调整止盈信号的反应灵敏度
 
-| Smoothing         | Effect                     | Best For      |
-| ----------------- | -------------------------- | ------------- |
-| **Low (1-5)**     | More signals, sensitive    | Scalping      |
-| **Medium (5-10)** | Balanced                   | Day trading   |
-| **High (10-20)**  | Fewer, significant signals | Swing trading |
+| 平滑度 (Smoothing)       | 效果 (Effect)    | 适用场景 (Best For)      |
+| ------------------------ | ---------------- | ------------------------ |
+| **低 (Low) (1-5)**       | 信号多，敏感反应 | 剥头皮交易 (Scalping)    |
+| **中等 (Medium) (5-10)** | 平衡             | 日内交易 (Day trading)   |
+| **高 (High) (10-20)**    | 信号少，重要信号 | 波段交易 (Swing trading) |
 
-**Visual Impact:**
+**视觉效果：**
 
-{% code title="smoothing-effect:" %}
+{% code title="平滑度效果 (smoothing-effect):" %}
 
 ```
-Low:  TP→TP→TP→TP→TP (many signals)
-High: TP------→TP (few major signals)
+低:  TP→TP→TP→TP→TP (许多信号)
+高:  TP------→TP (少数关键信号)
 ```
 
 {% endcode %}
 {% endtab %}
 
-{% tab title="💸 Price Offset" %}
+{% tab title="💸 价格偏移 (Price Offset)" %}
 
-#### Minimum Profit Filter
+### 最小利润过滤 (Minimum Profit Filter)
 
-**Purpose:** Prevent exits before meaningful profit
+**用途：** 防止在有意义的利润实现前过早平仓
 
-**What it does:**
+**功能：**
 
-- Sets minimum profit % required
-- No TP signals below this level
-- Protects from premature exits
+- 设置所需的最小利润百分比
+- 低于此水平不会产生止盈信号
+- 防止过早平仓
 
-{% code title="examples:" %}
+{% code title="示例 (examples):" %}
 
 ```
-Offset: 0.5%
-Trade at +0.3% → No TP
-Trade at +0.7% → TP allowed
+偏移值 (Offset): 0.5%
+交易收益 +0.3% → 无止盈信号
+交易收益 +0.7% → 允许止盈
 
-Offset: 1.0%
-Trade at +0.9% → No TP
-Trade at +1.2% → TP allowed
+偏移值 (Offset): 1.0%
+交易收益 +0.9% → 无止盈信号
+交易收益 +1.2% → 允许止盈
 ```
 
 {% endcode %}
 
 {% hint style="warning" %}
-**Important:** Match offset to your profit goals and spread costs
+**重要：** 根据你的利润目标和交易成本来设置偏移值
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### ⚡ Quick Setup Guide
+## ⚡ 快速设置指南 (Quick Setup Guide)
 
-#### By Trading Style
+### 按交易风格分类 (By Trading Style)
 
-| Style             | Timeframe | Smoothing | Offset   |
-| ----------------- | --------- | --------- | -------- |
-| **Scalping**      | 2x chart  | 3-5       | 0.2-0.5% |
-| **Day Trading**   | 3x chart  | 5-10      | 0.5-1%   |
-| **Swing Trading** | 4x chart  | 10-15     | 1-2%     |
+| 交易风格 (Style)             | 时间周期 (Timeframe) | 平滑度 (Smoothing) | 偏移值 (Offset) |
+| ---------------------------- | -------------------- | ------------------ | --------------- |
+| **剥头皮 (Scalping)**        | 2x chart             | 3-5                | 0.2-0.5%        |
+| **日内交易 (Day Trading)**   | 3x chart             | 5-10               | 0.5-1%          |
+| **波段交易 (Swing Trading)** | 4x chart             | 10-15              | 1-2%            |
 
 ---
 
-### 📊 Combined Effect
+## 📊 综合效果 (Combined Effect)
 
-#### All Settings Working Together
+### 所有设置协同工作 (All Settings Working Together)
 
 {% stepper %}
 {% step %}
 
-#### Check Offset
+### 检查偏移值 (Check Offset)
 
-Is trade profit > minimum offset?
+交易利润 > 最小偏移值？
 
-- No → No TP signal
-- Yes → Continue
+- 否 → 无止盈信号
+- 是 → 继续
   {% endstep %}
 
 {% step %}
 
-#### Analyze Momentum
+### 分析动能 (Analyze Momentum)
 
-Check higher timeframe momentum
+检查更高时间周期的动能
 
-- Weak → No signal
-- Strong → Continue
+- 弱 → 无信号
+- 强 → 继续
   {% endstep %}
 
 {% step %}
 
-#### Apply Smoothing
+### 应用平滑度 (Apply Smoothing)
 
-Is momentum sustained?
+动能是否持续？
 
-- No → Wait
-- Yes → Show TP signal
+- 否 → 等待
+- 是 → 显示止盈信号
   {% endstep %}
   {% endstepper %}
 
 ---
 
-### 💡 Pro Tips
+## 💡 专业建议 (Pro Tips)
 
 {% columns %}
 {% column width="50%" %}
 
-#### For Clean Signals
+### 获得清晰信号 (For Clean Signals)
 
-- ✅ Higher timeframe (3x+)
-- ✅ More smoothing (10+)
-- ✅ Higher offset (1%+)
+- ✅ 更高时间周期 (3x+)
+- ✅ 更多平滑度 (10+)
+- ✅ 更高偏移值 (1%+)
 
-**Result:** Fewer, quality exits
+**结果：** 更少但质量更好的平仓机会
 {% endcolumn %}
 
 {% column %}
 
-#### For Active Trading
+### 积极交易 (For Active Trading)
 
-- ✅ Lower timeframe (2x)
-- ✅ Less smoothing (5)
-- ✅ Lower offset (0.5%)
+- ✅ 较低时间周期 (2x)
+- ✅ 较少平滑度 (5)
+- ✅ 较低偏移值 (0.5%)
 
-**Result:** More exit opportunities
+**结果：** 更多平仓机会
 {% endcolumn %}
 {% endcolumns %}
 
 ---
 
-### 🎯 Common Configurations
+## 🎯 常见配置 (Common Configurations)
 
 {% hint style="success" %}
-**Conservative Setup:**
+**保守型配置 (Conservative Setup)：**
 
-- Timeframe: 4x chart
-- Smoothing: 15
-- Offset: 1.5%
+- 时间周期 (Timeframe): 4x chart
+- 平滑度 (Smoothing): 15
+- 偏移值 (Offset): 1.5%
 
-**Balanced Setup:**
+**平衡型配置 (Balanced Setup)：**
 
-- Timeframe: 3x chart
-- Smoothing: 10
-- Offset: 0.75%
+- 时间周期 (Timeframe): 3x chart
+- 平滑度 (Smoothing): 10
+- 偏移值 (Offset): 0.75%
 
-**Aggressive Setup:**
+**激进型配置 (Aggressive Setup)：**
 
-- Timeframe: 2x chart
-- Smoothing: 5
-- Offset: 0.3%
+- 时间周期 (Timeframe): 2x chart
+- 平滑度 (Smoothing): 5
+- 偏移值 (Offset): 0.3%
   {% endhint %}
 
 ---
 
-### ⚠️ Important Notes
+## ⚠️ 重要注意事项 (Important Notes)
 
-- These settings work **only** with "Signals" exit type
-- Higher values = Fewer but better signals
-- Test settings in different market conditions
-- Adjust based on your trading results
+- 这些设置 **仅** 适用于"信号(Signals)"退出类型
+- 更高的数值 = 更少但更好的信号
+- 在不同的市场条件下测试设置
+- 根据你的交易结果进行调整
 
 {% hint style="info" %}
-**Remember:** Quality over quantity - better to miss some exits than exit too early
+**记住：** 质量优于数量 - 错过一些平仓机会比过早平仓要更好
 {% endhint %}
