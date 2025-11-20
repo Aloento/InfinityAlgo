@@ -1,83 +1,83 @@
-# 🧭 Market Structure
+# 🧭 市场结构分析 (Market Structure)
 
-Track Break of Structure (BOS) and Change of Character (CHoCH) to identify trend continuations and reversals using institutional price action concepts.
+通过追踪结构突破 (Break of Structure, BOS) 和特征变化 (Change of Character, CHoCH)，利用机构级(Institutional)价格行为概念来识别趋势延续和反转。
 
 ---
 
-### 🎯 What is Market Structure?
+### 🎯 什么是市场结构分析？
 
-Market Structure analysis identifies when price breaks key swing points, signaling either trend continuation (BOS) or trend reversal (CHoCH). This institutional approach helps you stay on the right side of the market by tracking how price respects or violates previous highs and lows.
+市场结构分析可以识别价格何时突破关键摇摆点(Swing Point)，从而信号显示趋势延续 (BOS) 或趋势反转 (CHoCH)。这种机构级方法通过追踪价格如何尊重或违反前期高点和低点，帮助你站在市场正确的一方。
 
 {% columns %}
 {% column width="50%" %}
 
-#### Key Concepts
+#### 核心概念
 
-- **BOS (Break of Structure)** - Trend continuation signal
-- **CHoCH (Change of Character)** - Trend reversal signal
-- **Swing Highs/Lows** - Key levels that define structure
-- **Trend Direction** - Bullish or bearish market flow
+- **BOS (结构突破)** - 趋势延续信号
+- **CHoCH (特征变化)** - 趋势反转信号
+- **摇摆高点/低点 (Swing Highs/Lows)** - 定义结构的关键水平
+- **趋势方向 (Trend Direction)** - 看涨或看跌的市场流动
   {% endcolumn %}
 
 {% column %}
 
-#### Why It Works
+#### 为什么有效
 
-Market structure shows the "footprints" of institutional order flow, revealing when smart money is accumulating or distributing. This gives you a roadmap of market intent.
+市场结构展现了机构订单流(Institutional Order Flow)的"足迹"，揭示聪明钱(Smart Money)何时在积累或分散。这为你提供了市场意图的路线图。
 {% endcolumn %}
 {% endcolumns %}
 
 {% hint style="info" %}
-**Trading Edge:** CHoCH signals are rarer but mark major trend transitions - these are your highest value signals.
+**交易优势：** CHoCH 信号虽然罕见，但标志着重大趋势转变 - 这些是你最高价值的信号。
 {% endhint %}
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FXFCKsDoWTtB87CxVrvsX%2Fimage.png?alt=media&#x26;token=d9b4886b-11b3-43ca-856d-99a3fc2f88b6" alt=""><figcaption></figcaption></figure>
 
 ---
 
-### 📊 Understanding the Signals
+### 📊 理解这些信号
 
 {% tabs %}
-{% tab title="📈 BOS - Break of Structure" %}
+{% tab title="📈 BOS - 结构突破 (Break of Structure)" %}
 
-#### What it means
+#### 含义
 
-- Price breaks a key level in the direction of the current trend
-- Confirms trend strength and continuation
-- Shows institutional commitment to the direction
+- 价格按当前趋势方向突破一个关键水平
+- 确认趋势强度和延续
+- 显示机构对该方向的承诺
 
-#### Visual appearance
+#### 视觉表现
 
-- **Solid line** from swing point to break
-- Label showing **"BOS"**
-- Color matches trend direction
-- Darker shade (lower importance than CHoCH)
+- 从摇摆点到突破的**实线**
+- 显示 **"BOS"** 的标签
+- 颜色与趋势方向相匹配
+- 较深的阴影（重要性低于 CHoCH）
 
-#### Trading implication
+#### 交易含义
 
-Add to existing positions or maintain trend bias
+增加现有头寸或保持趋势偏向
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FnQHpxnBYtWiOcbkFqxfx%2Fimage.png?alt=media&#x26;token=7efa5e8a-e30f-47a9-b80b-16146ff92794" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="🔄 CHoCH - Change of Character" %}
+{% tab title="🔄 CHoCH - 特征变化 (Change of Character)" %}
 
-#### What it means
+#### 含义
 
-- Price breaks structure AGAINST the current trend
-- Signals potential trend reversal
-- More significant than BOS
+- 价格突破与当前趋势相反的结构
+- 信号潜在的趋势反转
+- 比 BOS 更重要
 
-#### Visual appearance
+#### 视觉表现
 
-- **Dashed line** from swing point to break
-- Label showing **"CHoCH"**
-- Brighter color (higher importance)
-- More prominent than BOS
+- 从摇摆点到突破的**虚线**
+- 显示 **"CHoCH"** 的标签
+- 更亮的颜色（重要性更高）
+- 比 BOS 更显著
 
-#### Trading implication
+#### 交易含义
 
-Consider closing counter-trend positions and preparing for reversal
+考虑平仓逆势头寸并为反转做准备
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FpTMx4ksETs2GhRu6LeWT%2Fimage.png?alt=media&#x26;token=c6eb3549-5ea7-45fa-952a-c9a3c06f7a95" alt=""><figcaption></figcaption></figure>
 {% endtab %}
@@ -85,126 +85,126 @@ Consider closing counter-trend positions and preparing for reversal
 
 ---
 
-### 📖 Signal Types & Trading Implications
+### 📖 信号类型与交易含义
 
-| Signal            | Line Style          | Meaning               | Action                       |
-| ----------------- | ------------------- | --------------------- | ---------------------------- |
-| **Bullish BOS**   | Solid green         | Uptrend continuing    | Add to longs / Stay long     |
-| **Bearish BOS**   | Solid red           | Downtrend continuing  | Add to shorts / Stay short   |
-| **Bullish CHoCH** | Dashed bright green | Reversal to uptrend   | Exit shorts / Consider longs |
-| **Bearish CHoCH** | Dashed bright red   | Reversal to downtrend | Exit longs / Consider shorts |
+| 信号           | 线条风格 | 含义           | 行动                    |
+| -------------- | -------- | -------------- | ----------------------- |
+| **看涨 BOS**   | 实绿线   | 上升趋势继续   | 增加多头头寸 / 保持做多 |
+| **看跌 BOS**   | 实红线   | 下降趋势继续   | 增加空头头寸 / 保持做空 |
+| **看涨 CHoCH** | 虚线亮绿 | 反转至上升趋势 | 平仓空头 / 考虑做多     |
+| **看跌 CHoCH** | 虚线亮红 | 反转至下降趋势 | 平仓多头 / 考虑做空     |
 
 {% hint style="success" %}
-**Pro Tip:** CHoCH signals are rarer but more powerful - they mark major trend transitions where institutional bias shifts.
+**专业提示：** CHoCH 信号虽然罕见但更强大 - 它们标志着机构偏向转变的重大趋势转变。
 {% endhint %}
 
 ---
 
-### ⚙️ Configuration Settings
+### ⚙️ 配置设置
 
-#### Basic Settings
+#### 基础设置
 
-| Setting                        | Options | Default | Description                 |
-| ------------------------------ | ------- | ------- | --------------------------- |
-| **🧭 Enable Market Structure** | On/Off  | OFF     | Toggle BOS/CHoCH detection  |
-| **🎨 Color Bars by Structure** | On/Off  | OFF     | Tint candles by trend       |
-| **🔍 Sensitivity**             | 5-50    | 15      | Swing detection sensitivity |
+| 设置                     | 选项      | 默认值 | 描述                |
+| ------------------------ | --------- | ------ | ------------------- |
+| **🧭 启用市场结构**      | 开启/关闭 | 关闭   | 切换 BOS/CHoCH 检测 |
+| **🎨 按结构给 K 线着色** | 开启/关闭 | 关闭   | 按趋势对蜡烛着色    |
+| **🔍 灵敏度**            | 5-50      | 15     | 摇摆检测灵敏度      |
 
-#### Sensitivity Guide
+#### 灵敏度指南
 
 {% stepper %}
 {% step %}
 
-#### Lower (5-15)
+#### 较低 (5-15)
 
-- More signals, faster reaction
-- Catches minor swings
-- More noise and false signals
-- **Best for:** Scalping, fast timeframes
+- 更多信号，反应更快
+- 捕捉较小的摇摆
+- 更多噪声和虚假信号
+- **最适合：** 快速交易(Scalping)、短时间框架
   {% endstep %}
 
 {% step %}
 
-#### Medium (15-25)
+#### 中等 (15-25)
 
-- Balanced signal frequency
-- Standard swing detection
-- Good signal-to-noise ratio
-- **Best for:** Most trading styles
+- 信号频率平衡
+- 标准摇摆检测
+- 良好的信号噪声比(Signal-to-Noise Ratio)
+- **最适合：** 大多数交易风格
   {% endstep %}
 
 {% step %}
 
-#### Higher (25-50)
+#### 较高 (25-50)
 
-- Fewer signals, major swings only
-- Very clean structure
-- May miss smaller moves
-- **Best for:** Higher timeframes, position trading
+- 较少信号，仅检测主要摇摆
+- 非常干净的结构
+- 可能错过较小的波动
+- **最适合：** 高时间框架、头寸交易(Position Trading)
   {% endstep %}
   {% endstepper %}
 
 ---
 
-### 🎯 Trading Strategies
+### 🎯 交易策略
 
-#### Strategy 1: Trend Following with BOS
+#### 策略 1：使用 BOS 进行趋势跟踪
 
-**Setup:**
+**设置：**
 
-1. Identify trend direction from first BOS
-2. Enter/add on each BOS in trend direction
-3. Exit on opposite CHoCH
-4. Re-enter on new trend BOS
+1. 从第一个 BOS 识别趋势方向
+2. 在趋势方向的每个 BOS 处进场/加仓
+3. 在相反 CHoCH 处平仓
+4. 在新趋势 BOS 处重新进场
 
-**Best for:** Strong trending markets
+**最适合：** 强势趋势市场
 
-#### Strategy 2: CHoCH Reversal Trading
+#### 策略 2：CHoCH 反转交易
 
-**Setup:**
+**设置：**
 
-1. Wait for CHoCH signal
-2. Confirm with order block or support/resistance
-3. Enter in new trend direction
-4. Stop below/above structure
+1. 等待 CHoCH 信号
+2. 用订单块(Order Block)或支撑/阻力确认
+3. 按新趋势方向进场
+4. 在结构外设置止损
 
-**Best for:** Range extremes and major reversals
+**最适合：** 范围极端和重大反转
 
-#### Strategy 3: Structure + Order Blocks
+#### 策略 3：结构 + 订单块
 
-**Setup:**
+**设置：**
 
-1. CHoCH occurs at order block
-2. Wait for retest of zone
-3. Enter on rejection
-4. Target next structure level
+1. CHoCH 发生在订单块处
+2. 等待区域的重新测试(Retest)
+3. 在拒绝处进场(Entry on Rejection)
+4. 目标为下一个结构水平
 
-**Best for:** High-probability reversals
+**最适合：** 高概率反转
 
 ---
 
-### 🎨 Bar Coloring
+### 🎨 K 线着色
 
-When **"Color Bars by Market Structure"** is enabled:
+启用 **"按市场结构给 K 线着色"** 时：
 
 {% columns %}
 {% column width="50%" %}
 
-#### Trend Colors
+#### 趋势颜色
 
-- 🟢 **Green tint** - Bullish structure active
-- 🔴 **Red tint** - Bearish structure active
-- ⚪ **Normal** - No clear structure
+- 🟢 **绿色阴影** - 看涨结构活跃
+- 🔴 **红色阴影** - 看跌结构活跃
+- ⚪ **正常** - 没有明确的结构
   {% endcolumn %}
 
 {% column %}
 
-#### Benefits
+#### 优点
 
-- Instant visual trend confirmation
-- Reduces need to analyze swings
-- Helps avoid counter-trend trades
-- Clean chart appearance
+- 即时视觉趋势确认
+- 减少分析摇摆的需要
+- 帮助避免逆势交易
+- 简洁的图表外观
   {% endcolumn %}
   {% endcolumns %}
 
@@ -212,197 +212,197 @@ When **"Color Bars by Market Structure"** is enabled:
 
 ---
 
-### 🔔 Alert Configuration
+### 🔔 提醒配置
 
-| Alert Name        | Triggers When                | Use Case                 | Priority  |
-| ----------------- | ---------------------------- | ------------------------ | --------- |
-| **Bullish CHoCH** | Bearish → Bullish reversal   | Major long entry signal  | 🔥 HIGH   |
-| **Bearish CHoCH** | Bullish → Bearish reversal   | Major short entry signal | 🔥 HIGH   |
-| **Bullish BOS**   | Uptrend continuation break   | Add to longs             | 📊 MEDIUM |
-| **Bearish BOS**   | Downtrend continuation break | Add to shorts            | 📊 MEDIUM |
+| 提醒名称       | 触发条件         | 用例             | 优先级 |
+| -------------- | ---------------- | ---------------- | ------ |
+| **看涨 CHoCH** | 看跌 → 看涨反转  | 重大做多进场信号 | 🔥 高  |
+| **看跌 CHoCH** | 看涨 → 看跌反转  | 重大做空进场信号 | 🔥 高  |
+| **看涨 BOS**   | 上升趋势延续突破 | 增加多头头寸     | 📊 中  |
+| **看跌 BOS**   | 下降趋势延续突破 | 增加空头头寸     | 📊 中  |
 
 {% hint style="info" %}
-**Alert Priority:** CHoCH alerts are more significant than BOS - consider larger position sizes or tighter monitoring when these trigger.
+**提醒优先级：** CHoCH 提醒比 BOS 更重要 - 当这些触发时，考虑更大的头寸规模或更紧密的监控。
 {% endhint %}
 
 ---
 
-### 💡 Pro Tips
+### 💡 专业提示
 
-#### Reading Market Flow
+#### 读取市场流动
 
 {% columns %}
 {% column width="50%" %}
-**Trend Strength Indicators:**
+**趋势强度指标：**
 
-1. **Strong Trend:** Multiple BOS in same direction
-2. **Weakening Trend:** BOS signals getting closer
-3. **Reversal Warning:** Failed BOS attempts
-4. **Reversal Confirmed:** CHoCH with volume
+1. **强势趋势：** 同一方向的多个 BOS
+2. **趋势减弱：** BOS 信号间距缩小
+3. **反转预警：** 失败的 BOS 尝试
+4. **反转确认：** 带有成交量(Volume)的 CHoCH
    {% endcolumn %}
 
 {% column %}
-**Timeframe Coordination:**
+**时间框架协调：**
 
-- **Higher TF CHoCH:** Major trend change
-- **Lower TF BOS:** Entry timing
-- **Aligned structures:** Highest probability
-- **Conflicting structures:** Stay out
+- **高时间框架 CHoCH：** 重大趋势变化
+- **低时间框架 BOS：** 进场时机
+- **对齐的结构：** 最高概率
+- **冲突的结构：** 远离市场
   {% endcolumn %}
   {% endcolumns %}
 
-#### Risk Management
+#### 风险管理
 
-| Component           | Guideline                                 |
-| ------------------- | ----------------------------------------- |
-| **Stop placement**  | Beyond the structure that triggered entry |
-| **Target**          | Next unbroken structure level             |
-| **Position sizing** | Larger on CHoCH, smaller on BOS           |
-| **Risk per trade**  | Lower on BOS, standard on CHoCH           |
+| 组件             | 指南                           |
+| ---------------- | ------------------------------ |
+| **止损位置**     | 超越触发进场的结构             |
+| **目标**         | 下一个未被突破的结构水平       |
+| **头寸规模**     | 在 CHoCH 处较大，在 BOS 处较小 |
+| **每笔交易风险** | BOS 处较低，CHoCH 处标准       |
 
 ---
 
-### ⚠️ Common Mistakes
+### ⚠️ 常见错误
 
 {% hint style="danger" %}
-**Critical Errors to Avoid:**
+**应避免的关键错误：**
 
-1. **Trading every BOS** - Filter with trend and context
-2. **Ignoring CHoCH** - These are major reversal signals
-3. **Wrong sensitivity** - Adjust for your timeframe
-4. **Fighting the structure** - Respect what market shows
-5. **Not waiting for close** - Structure needs candle close confirmation
+1. **交易每个 BOS** - 用趋势和背景进行过滤
+2. **忽视 CHoCH** - 这些是重大反转信号
+3. **错误的灵敏度** - 根据你的时间框架调整
+4. **与结构对抗** - 尊重市场显示的内容
+5. **不等待收盘** - 结构需要 K 线收盘确认
    {% endhint %}
 
 ---
 
-### 🛠️ Troubleshooting
+### 🛠️ 故障排除
 
 <details>
 
-<summary><strong>No BOS/CHoCH signals appearing</strong></summary>
+<summary><strong>没有出现 BOS/CHoCH 信号</strong></summary>
 
-- Enable "Market Structure (BOS/CHoCH)" in settings
-- Check sensitivity (try default 15 first)
-- Ensure enough price history is loaded
-- Some ranging markets won't produce signals
-- Verify the timeframe has enough volatility
+- 在设置中启用"市场结构 (BOS/CHoCH)"
+- 检查灵敏度（首先尝试默认值 15）
+- 确保已加载足够的价格历史
+- 某些区间波动市场不会产生信号
+- 验证时间框架有足够的波动性(Volatility)
 
 </details>
 
 <details>
 
-<summary><strong>Too many signals (noisy)</strong></summary>
+<summary><strong>信号过多（噪声多）</strong></summary>
 
-- Increase sensitivity value (try 20-30)
-- Focus on higher timeframes (15m+)
-- Use bar coloring to filter noise visually
-- Consider disabling on very low timeframes (1-5m)
-
-</details>
-
-<details>
-
-<summary><strong>Signals appear late</strong></summary>
-
-- This is normal - structure needs swing confirmation
-- Lower sensitivity for faster signals (accepts more false signals)
-- Use for trend confirmation, not precise entry timing
-- Combine with Order Blocks for better entries
+- 增加灵敏度值（尝试 20-30）
+- 关注更高时间框架（15 分钟以上）
+- 使用 K 线着色来视觉过滤噪声
+- 考虑在非常低的时间框架（1-5 分钟）禁用
 
 </details>
 
 <details>
 
-<summary><strong>Conflicting with other indicators</strong></summary>
+<summary><strong>信号出现较晚</strong></summary>
 
-- Market structure is trend-based
-- May conflict with mean-reversion indicators
-- Trust structure for trend direction
-- Use other indicators for entry precision
+- 这是正常的 - 结构需要摇摆确认
+- 降低灵敏度以获得更快的信号（接受更多虚假信号）
+- 用于趋势确认，而不是精确进场时机
+- 与订单块结合以获得更好的进场
+
+</details>
+
+<details>
+
+<summary><strong>与其他指标冲突</strong></summary>
+
+- 市场结构是基于趋势的
+- 可能与均值回归(Mean-Reversion)指标冲突
+- 相信结构来确定趋势方向
+- 使用其他指标进行进场精确度
 
 </details>
 
 ---
 
-### 📊 Combining with Other Features
+### 📊 与其他功能的结合
 
-#### Powerful Combinations
+#### 强大的结合方式
 
 {% tabs %}
-{% tab title="With Order Blocks" %}
+{% tab title="与订单块相结合" %}
 
-- **CHoCH at order block** = High-probability reversal
-- **BOS from order block** = Continuation entry
-- **Structure break + fresh OB** = Momentum trade
-- **Failed break at OB** = Reversal setup
+- **订单块处的 CHoCH** = 高概率反转
+- **来自订单块的 BOS** = 延续进场
+- **结构突破 + 新鲜订单块** = 动量交易(Momentum Trade)
+- **在订单块处失败的突破** = 反转设置
   {% endtab %}
 
-{% tab title="With MTF Dashboard" %}
+{% tab title="与 MTF 仪表板相结合" %}
 
-- **Structure break + MTF alignment** = Strong signal
-- **CHoCH + MTF flip** = Major reversal
-- **BOS + 6+ TF aligned** = High conviction
-- **Conflicting signals** = Stay out
+- **结构突破 + MTF 对齐** = 强信号
+- **CHoCH + MTF 翻转** = 重大反转
+- **BOS + 6+ 时间框架对齐** = 高信心
+- **冲突的信号** = 远离市场
   {% endtab %}
 
-{% tab title="With Cloud Bands" %}
+{% tab title="与云带相结合" %}
 
-- **Structure break + Cloud breakout** = Momentum trade
-- **CHoCH at cloud edge** = Reversal setup
-- **BOS within cloud** = Weak signal
-- **Structure + cloud alignment** = Strong trend
+- **结构突破 + 云带突破** = 动量交易
+- **云带边缘处的 CHoCH** = 反转设置
+- **云内的 BOS** = 弱信号
+- **结构 + 云带对齐** = 强趋势
   {% endtab %}
   {% endtabs %}
 
 ---
 
-### 📚 Quick Reference
+### 📚 快速参考
 
-#### Signal Hierarchy
+#### 信号层级
 
-1. **CHoCH** - Most important (reversal)
-2. **BOS** - Trend confirmation
-3. **Failed breaks** - Warning signs
+1. **CHoCH** - 最重要（反转）
+2. **BOS** - 趋势确认
+3. **失败的突破** - 警告信号
 
-#### Visual Cues
+#### 视觉提示
 
 {% columns %}
 {% column width="50%" %}
-**Line Styles:**
+**线条风格：**
 
-- **Solid line** = BOS (continuation)
-- **Dashed line** = CHoCH (reversal)
+- **实线** = BOS（延续）
+- **虚线** = CHoCH（反转）
 
-**Colors:**
+**颜色：**
 
-- **Bright** = Higher importance
-- **Muted** = Lower importance
+- **亮色** = 更高的重要性
+- **暗色** = 较低的重要性
   {% endcolumn %}
 
 {% column %}
-**Labels:**
+**标签：**
 
-- **BOS** = Break of Structure
-- **CHoCH** = Change of Character
+- **BOS** = 结构突破 (Break of Structure)
+- **CHoCH** = 特征变化 (Change of Character)
 
-**Bar Colors:**
+**K 线颜色：**
 
-- **Green tint** = Bullish trend
-- **Red tint** = Bearish trend
+- **绿色阴影** = 看涨趋势
+- **红色阴影** = 看跌趋势
   {% endcolumn %}
   {% endcolumns %}
 
-#### Best Practices Checklist
+#### 最佳实践清单
 
-- [ ] Wait for candle close confirmation
-- [ ] Prioritize CHoCH over BOS signals
-- [ ] Combine with Order Blocks for entries
-- [ ] Match sensitivity to your timeframe
-- [ ] Trust the structure trend direction
-- [ ] Use bar coloring for quick assessment
-- [ ] Set alerts for CHoCH signals
+- [ ] 等待 K 线收盘确认
+- [ ] 优先考虑 CHoCH 而不是 BOS 信号
+- [ ] 与订单块相结合进场
+- [ ] 将灵敏度与你的时间框架相匹配
+- [ ] 信任结构趋势方向
+- [ ] 使用 K 线着色进行快速评估
+- [ ] 为 CHoCH 信号设置提醒
 
 ---
 
-_For additional support, visit our_ [_FAQ_](https://infinity.aloen.to/faq-and-troubleshoot) _or_ [_contact support_](https://infinityalgo.com/#contact)_._
+_如需更多支持，请访问我们的_ [_常见问题_](https://infinity.aloen.to/faq-and-troubleshoot) _或_ [_联系支持_](https://infinityalgo.com/#contact)_。_
