@@ -1,38 +1,38 @@
-# 🏁 Exit Type
+# 🏁 平仓类型 (Exit Type)
 
-Define how your trades exit - with predetermined targets or adaptive market signals.
+定义交易的平仓方式 - 使用预设目标或自适应市场信号。
 
 ![Exit Type Settings](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FZtWSorkaBzHl1BsILnkO%2Fexittype.png?alt=media&token=63289144-6f28-4727-b41e-ab53ab6791ba)
 
 ---
 
-### 📊 Two Exit Strategies
+### 📊 两种平仓策略
 
 {% tabs %}
-{% tab title="📈 Percentage" %}
+{% tab title="📈 百分比 (Percentage)" %}
 
-#### Fixed Profit Targets
+#### 固定利润目标
 
-**What it does:**
+**功能说明：**
 
-- Exit at exact percentage levels
-- Up to 6 take profit points
-- You control every level
+- 在精确的百分比水平平仓
+- 最多可设置 6 个止盈点 (Take Profit)
+- 完全由你自己控制每个水平
 
-**Best for:**
+**适用场景：**
 
-- ✅ Consistent markets
-- ✅ Clear profit goals
-- ✅ Risk management
-- ✅ Beginners
+- ✅ 行情稳定的市场
+- ✅ 利润目标明确
+- ✅ 风险管理
+- ✅ 初学者
 
-{% code title="Example" %}
+{% code title="示例" %}
 
 ```
-TP1: 1% profit
-TP2: 2% profit
-TP3: 3% profit
-Stop Loss: 2%
+TP1: 1% 利润
+TP2: 2% 利润
+TP3: 3% 利润
+止损 (Stop Loss): 2%
 ```
 
 {% endcode %}
@@ -40,25 +40,25 @@ Stop Loss: 2%
 ![Percentage Exit Example](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FtCgML1qTpTQ9Xbaf1zWZ%2Fimage.png?alt=media&token=b59ff0ee-8ba5-4c72-870f-1ac8e528daef)
 {% endtab %}
 
-{% tab title="🎯 Signals" %}
+{% tab title="🎯 信号 (Signals)" %}
 
-#### Dynamic Market Exits
+#### 动态市场平仓
 
-**What it does:**
+**功能说明：**
 
-- Exits based on market conditions
-- Adapts to momentum
-- No fixed targets
+- 根据市场条件平仓
+- 自适应于市场动量 (Momentum)
+- 无固定目标
 
-**Best for:**
+**适用场景：**
 
-- ✅ Volatile markets
-- ✅ Trend following
-- ✅ Maximum gains
-- ✅ Experienced traders
+- ✅ 波动剧烈的市场
+- ✅ 趋势跟踪策略
+- ✅ 最大化收益
+- ✅ 有经验的交易者
 
 {% hint style="info" %}
-Signals adapt to market strength - holding winners longer, cutting losers faster
+信号根据市场强度自适应 - 盈利单子持有更久，亏损单子更快止损
 {% endhint %}
 
 ![Signals Exit Example](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FWY9TEpIXok61F8Gpmlye%2Fimage.png?alt=media&token=788accf7-427f-4e1b-9581-a5bfd3148a33)
@@ -67,42 +67,42 @@ Signals adapt to market strength - holding winners longer, cutting losers faster
 
 ---
 
-### ⚡ Quick Comparison
+### ⚡ 快速对比
 
-| Feature              | Percentage | Signals      |
-| -------------------- | ---------- | ------------ |
-| **Predictability**   | ✅ High    | ❌ Variable  |
-| **Profit Potential** | 🟡 Fixed   | ✅ Unlimited |
-| **Risk Control**     | ✅ Precise | 🟡 Adaptive  |
-| **Best Market**      | Ranging    | Trending     |
-| **Skill Required**   | Beginner   | Intermediate |
+| 功能特性     | 百分比 (Percentage) | 信号 (Signals)      |
+| ------------ | ------------------- | ------------------- |
+| **可预测性** | ✅ 高               | ❌ 变动             |
+| **利润潜力** | 🟡 固定             | ✅ 无上限           |
+| **风险控制** | ✅ 精确             | 🟡 自适应           |
+| **最佳市场** | 区间震荡 (Ranging)  | 趋势行情 (Trending) |
+| **技能要求** | 初学者              | 中级                |
 
 ---
 
-### 🎯 Which Should You Use?
+### 🎯 你应该选择哪一种？
 
 {% columns %}
 {% column width="50%" %}
 
-#### Choose **Percentage** if
+#### 选择**百分比 (Percentage)** 如果
 
-- New to trading
-- Want consistent results
-- Need exact profit targets
-- Trading ranging markets
+- 刚开始交易
+- 希望结果稳定一致
+- 需要精确的利润目标
+- 交易区间震荡市场
   {% endcolumn %}
 
 {% column %}
 
-#### Choose **Signals** if
+#### 选择**信号 (Signals)** 如果
 
-- Experienced trader
-- Want to ride trends
-- Can handle variance
-- Trading volatile markets
+- 有交易经验
+- 想要跟踪趋势
+- 能够承受结果变动
+- 交易波动剧烈的市场
   {% endcolumn %}
   {% endcolumns %}
 
 {% hint style="success" %}
-**Pro Tip:** Start with Percentage to learn, then experiment with Signals as you gain experience
+**专业建议：** 先从百分比模式开始学习，随着经验积累逐步尝试信号模式
 {% endhint %}
