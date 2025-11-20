@@ -1,94 +1,94 @@
-# ✅ Tips and what to Avoid
+# ✅ 交易技巧与风险规避
 
-## Tips and What to Avoid ✅
+## 交易技巧与风险规避 ✅
 
-Master these principles to trade like a professional and avoid costly mistakes.
-
----
-
-### ✅ Core Best Practices
-
-{% hint style="success" %}
-**1️⃣ Stick to a written trading plan** Define setups, entry/exit rules, and risk per trade, then follow it religiously.
-{% endhint %}
-
-{% hint style="success" %}
-**2️⃣ Risk ≤ 2% of account per trade** Size every position with `risk $ ÷ stop-distance = trade size`.
-{% endhint %}
-
-{% hint style="success" %}
-**3️⃣ Journal every trade** Log price, thesis, emotion; review weekly to spot repeat mistakes.
-{% endhint %}
-
-{% hint style="success" %}
-**4️⃣ Keep learning continuously** Markets evolve—read, backtest, and attend webinars each month.
-{% endhint %}
+掌握这些原则，像专业交易者一样交易，避免代价高昂的错误。
 
 ---
 
-### ⚠️ Common Pitfalls
+### ✅ 核心最佳实践
 
-{% hint style="warning" %}
-**5️⃣ Control your emotions** Fear & greed sabotage analysis—use pre-trade checklists to stay objective.
+{% hint style="success" %}
+**1️⃣ 遵守书面交易计划** 制定建仓(setup)、进场/出场规则和每笔交易的风险额度，然后严格执行。
 {% endhint %}
 
+{% hint style="success" %}
+**2️⃣ 单笔交易风险 ≤ 账户的 2%** 用公式 `风险金额 ÷ 止损距离 = 头寸规模` 精确计算每个头寸的大小。
+{% endhint %}
+
+{% hint style="success" %}
+**3️⃣ 记录每笔交易日志** 记录价格点位、交易逻辑(thesis)、情绪状态；每周回顾以发现重复犯的错误。
+{% endhint %}
+
+{% hint style="success" %}
+**4️⃣ 持续学习进步** 市场在演变，每个月要阅读资料、进行回测(backtest)、参加网络研讨会。
+{% endhint %}
+
+---
+
+### ⚠️ 常见陷阱
+
 {% hint style="warning" %}
-**6️⃣ Avoid over-trading** Quality beats quantity; never revenge trade after a loss.
+**5️⃣ 控制情绪** 恐惧和贪婪会破坏分析判断，使用交易前检查清单(pre-trade checklist)保持客观。
 {% endhint %}
 
 {% hint style="warning" %}
-**7️⃣ Respect leverage carefully** It magnifies losses as easily as gains; scale down in volatile markets.
+**6️⃣ 避免过度交易** 质量胜于数量；绝不在亏损后进行复仇交易(revenge trade)。
+{% endhint %}
+
+{% hint style="warning" %}
+**7️⃣ 谨慎对待杠杆** 杠杆既能放大收益也能放大亏损，在波动率高的市场要降低杠杆倍数。
 {% endhint %}
 
 ---
 
-### 🚨 Critical Rules (Never Break These)
+### 🚨 关键规则（绝不违反）
 
 {% hint style="danger" %}
-**8️⃣ Always set stop-losses** Automation enforces discipline when price moves fast—no exceptions.
+**8️⃣ 始终设置止损** 当行情快速波动时，自动化(automation)执行能强制维持纪律性，没有例外。
 {% endhint %}
 
 {% hint style="danger" %}
-**9️⃣ Never trade money you can't afford to lose** Capital preservation is Rule #1—rent money is not trading capital.
+**9️⃣ 绝不用你承受不起的损失的钱进行交易** 资本保护是第一法则，房租钱不是交易资本。
 {% endhint %}
 
 {% hint style="danger" %}
-**🔟 Never ignore risk management** One bad trade without stops can wipe out months of profits.
+**🔟 绝不忽视风险管理** 一笔没有设置止损的糟糕交易可能会抹掉数月的利润。
 {% endhint %}
 
 ---
 
-### 📊 Market Awareness
+### 📊 市场意识
 
 {% hint style="info" %}
-**1️⃣1️⃣ Watch the economic calendar** CPI, Fed meetings, and earnings can invalidate technical setups instantly.
+**1️⃣1️⃣ 关注经济日历** CPI、美联储会议(Fed meetings)和财报(earnings)可能会瞬间使技术面建仓失效。
 {% endhint %}
 
 {% hint style="info" %}
-**1️⃣2️⃣ Understand your tools & indicators** Backtest each tweak before going live—know your edge.
+**1️⃣2️⃣ 理解你的工具和指标** 在上线(go live)前对每个参数调整进行回测，了解你的优势所在(know your edge)。
 {% endhint %}
 
 {% hint style="info" %}
-**1️⃣3️⃣ Diversify assets & strategies** "Many baskets" lower drawdowns and smooth equity curves.
+**1️⃣3️⃣ 分散资产和策略** "多个篮子"能降低最大回撤(drawdown)并平滑收益曲线(equity curve)。
 {% endhint %}
 
 ---
 
-### 💡 Quick Reference
+### 💡 快速参考
 
-| Do's ✅            | Don'ts ❌            |
-| ------------------ | -------------------- |
-| Plan every trade   | Trade on emotions    |
-| Use stop-losses    | Risk rent money      |
-| Journal results    | Revenge trade        |
-| Risk 1-2% max      | Over-leverage        |
-| Stay educated      | Ignore news events   |
-| Diversify holdings | Put all in one trade |
+| 应该做 ✅     | 不应该做 ❌  |
+| ------------- | ------------ |
+| 规划每笔交易  | 凭情绪交易   |
+| 使用止损      | 用房租钱交易 |
+| 记录交易日志  | 复仇交易     |
+| 最高风险 1-2% | 过度杠杆     |
+| 持续学习      | 忽视新闻事件 |
+| 分散持仓      | 孤注一掷     |
 
 ---
 
-### 🎯 The Golden Rules
+### 🎯 黄金法则
 
 {% hint style="success" %}
-**Remember:** Professional trading is about consistent small wins, not home runs. Follow these rules, and you'll outlast 90% of traders who ignore them.
+**记住：** 专业交易是关于持续获取小的利润，而非一鸣惊人。遵循这些规则，你将比 90% 忽视这些规则的交易者活得更久。
 {% endhint %}
