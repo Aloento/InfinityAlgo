@@ -1,195 +1,195 @@
-# 🔮 Show possible coming trades
+# 🔮 显示即将来临的可能交易
 
-Get advance notice when signals are forming - prepare before they trigger.
+在信号形成时提前获得通知 - 在交易触发前做好准备。
 
 ---
 
-### 🎯 What It Does
+### 🎯 功能说明
 
 {% columns %}
 {% column width="50%" %}
-**Shows:** Small `+` icon when conditions approach signal thresholds
+**显示：** 当条件接近信号阈值时显示小的 `+` 图标
 
-**Purpose:** Early warning for potential setups
+**用途：** 对潜在交易设置的提前预警
 
-**Not:** A trade signal itself
+**注意：** 这不是交易信号本身
 {% endcolumn %}
 
 {% column %}
 {% hint style="warning" %}
-**Important:** This is for preparation only - wait for actual signals to trade
+**重要：** 这仅用于准备 - 等待实际信号才能进行交易
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
 
 ---
 
-### 📊 How It Works
+### 📊 工作原理
 
 {% stepper %}
 {% step %}
 
-#### Monitor Oscillator
+#### 监控振荡器 (Monitor Oscillator)
 
-Tracks when price action approaches thresholds
+追踪价格行动何时接近阈值
 {% endstep %}
 
 {% step %}
 
-#### Show Warning
+#### 显示预警
 
-Displays `+` icon when close to signal
+当接近信号时显示 `+` 图标
 {% endstep %}
 
 {% step %}
 
-#### Prepare
+#### 做好准备
 
-You analyze and get ready
+进行分析并准备就绪
 {% endstep %}
 
 {% step %}
 
-#### Wait for Signal
+#### 等待信号
 
-Only trade on confirmed signals
+仅在确认的信号上交易
 {% endstep %}
 {% endstepper %}
 
 ---
 
-### ⚡ Compatibility
+### ⚡ 兼容性
 
 {% tabs %}
-{% tab title="✅ Works With" %}
+{% tab title="✅ 支持的模式" %}
 
-#### Supported Modes
+#### 支持的模式
 
-- Normal Only
-- Smart Only
-- Normal + Smart
+- 普通模式 (Normal Only)
+- 智能模式 (Smart Only)
+- 普通 + 智能 (Normal + Smart)
 
-These modes use threshold-based logic that allows prediction.
+这些模式使用基于阈值的逻辑，允许预测。
 {% endtab %}
 
-{% tab title="❌ Disabled For" %}
+{% tab title="❌ 不支持" %}
 
-#### Not Available
+#### 不可用
 
-- AI Mode
-- AI Sniper
-- HL Sniper
+- 人工智能模式 (AI Mode)
+- 人工智能狙击手 (AI Sniper)
+- 高低狙击手 (HL Sniper)
 
-These use different logic that doesn't support early warnings.
+这些模式使用不同的逻辑，不支持提前预警。
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### 📈 Visual Examples
+### 📈 视觉示例
 
 {% columns %}
 {% column width="50%" %}
 
-#### Long
+#### 做多 (Long)
 
-![Possible Trades Shown](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FzMGyisM4gk0DJOzGgbhF%2F2025-08-20_17-19-22.jpg?alt=media&token=3c936db6-0d6a-4740-8b99-6eaac1bd1531)&#x20;
+![可能的交易显示](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FzMGyisM4gk0DJOzGgbhF%2F2025-08-20_17-19-22.jpg?alt=media&token=3c936db6-0d6a-4740-8b99-6eaac1bd1531)&#x20;
 
-`+` **icon showing potential long**
+`+` **图标显示潜在的做多**
 {% endcolumn %}
 
 {% column %}
 
-#### Short
+#### 做空 (Short)
 
-<img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FdciVLNT9xXEc9mNUUgug%2F2025-08-20_17-20-01.jpg?alt=media&#x26;token=2b1e24f4-b26c-43dc-8f52-8be9bc373304" alt="Possible Trades Shown" data-size="original">&#x20;
+<img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FdciVLNT9xXEc9mNUUgug%2F2025-08-20_17-20-01.jpg?alt=media&#x26;token=2b1e24f4-b26c-43dc-8f52-8be9bc373304" alt="可能的交易显示" data-size="original">&#x20;
 
-`+`**icon showing potential short**
+`+`**图标显示潜在的做空**
 {% endcolumn %}
 {% endcolumns %}
 
 ---
 
-### 🎨 When to Use
+### 🎨 何时使用
 
 {% columns %}
 {% column width="50%" %}
 
-#### ✅ Enable For
+#### ✅ 启用场景
 
-- Planning ahead
-- Setting alerts
-- Preparing analysis
-- Managing multiple charts
-- Less screen time
+- 提前规划
+- 设置警报
+- 准备分析
+- 管理多个图表
+- 减少屏幕使用时间
   {% endcolumn %}
 
 {% column %}
 
-#### ❌ Disable For
+#### ❌ 禁用场景
 
-- Clean charts
-- Reducing noise
-- AI/Sniper modes
-- Reactive trading
-- Avoiding confusion
+- 图表清爽
+- 减少噪音
+- 人工智能/狙击手模式
+- 反应性交易
+- 避免混淆
   {% endcolumn %}
   {% endcolumns %}
 
 ---
 
-### 💡 Trading Workflow
+### 💡 交易工作流程
 
-#### With This Feature
+#### 使用此功能
 
 {% code title="workflow:" %}
 
 ```
-1. See + icon (warning)
+1. 看到 + 图标 (预警)
    ↓
-2. Check analysis
+2. 检查分析
    ↓
-3. Prepare order/alerts
+3. 准备订单/警报
    ↓
-4. Wait for actual signal
+4. 等待实际信号
    ↓
-5. Execute trade
+5. 执行交易
 ```
 
 {% endcode %}
 
 ---
 
-### ⚠️ Important Reminders
+### ⚠️ 重要提醒
 
 {% hint style="danger" %}
-**Never trade on `+` icons alone!** These are warnings, not signals. Many warnings don't become actual trades.
+**不要仅基于 `+` 图标进行交易！** 这些是预警，不是信号。许多预警不会转化为实际交易。
 {% endhint %}
 
 {% hint style="info" %}
-**Pro Tip:** Use this to set price alerts near potential entry zones
+**专业建议：** 在潜在进场区域附近设置价格警报
 {% endhint %}
 
 ---
 
-### 📊 Quick Reference
+### 📊 快速参考
 
-| Feature           | Purpose       | Action Required      |
-| ----------------- | ------------- | -------------------- |
-| **`+` Icon**      | Warning only  | Prepare, don't trade |
-| **Actual Signal** | Trade entry   | Execute if confirmed |
-| **No Icon**       | No setup near | Continue monitoring  |
+| 功能         | 用途       | 所需操作       |
+| ------------ | ---------- | -------------- |
+| **`+` 图标** | 仅预警     | 准备，不交易   |
+| **实际信号** | 交易进场   | 如果确认则执行 |
+| **无图标**   | 附近无设置 | 继续监控       |
 
 ---
 
-### 🎯 Best Practices
+### 🎯 最佳实践
 
-- ✅ Use for preparation and planning
-- ✅ Combine with your own analysis
-- ✅ Set alerts at key levels
-- ❌ Don't trade on warnings alone
-- ❌ Don't chase if signal doesn't confirm
+- ✅ 用于准备和规划
+- ✅ 结合自己的分析
+- ✅ 在关键价位设置警报
+- ❌ 不要仅基于预警交易
+- ❌ 如果信号未确认，不要追单
 
 {% hint style="success" %}
-**Remember:** This gives you time to prepare, not permission to trade early
+**记住：** 这给你时间做准备，而不是提前交易的许可证
 {% endhint %}
