@@ -1,156 +1,156 @@
-# FAQ & Troubleshoot
+# 常见问题 & 故障排除 (FAQ & Troubleshoot)
 
 {% hint style="info" %}
-**Tip:** For instant assistance try the live-chat widget on our website—it solves \~90 % of questions in under a minute.
+**提示：** 需要即时帮助？请尝试我们网站上的在线客服小组件 (live-chat widget)——可以在一分钟内解决约 90% 的问题。
 {% endhint %}
 
 ---
 
-**1 Indicator not showing up — username mismatch**
+## 1 指标不显示 — 用户名不匹配
 
-- The TradingView **username** you entered at checkout must match the one you are logged in with now.
-- Find the name on your invoice email or in TradingView **Profile → Settings → Username**.
-- If they differ, email **<support@infinityalgo.com>** with the correct username and we'll update your licence.
-
----
-
-**2 Red lock icon next to the script — script still locked**
-
-- 90 % of the time the username is wrong or the purchase isn't finished.
-- Enter the correct username (see Q 1), wait 30 s, then reload the chart.
-- When the lock turns **green**, the script is ready to load (see Q 3).
+- 结账时输入的 TradingView **用户名** 必须与当前登录的用户名相同。
+- 在发票邮件或 TradingView **个人资料 (Profile) → 设置 (Settings) → 用户名 (Username)** 中查找。
+- 如果不匹配，请发送邮件至 **<support@infinityalgo.com>**，附上正确的用户名，我们将更新您的许可证 (licence)。
 
 ---
 
-**3 How do I unlock the indicator?**
+## 2 脚本旁出现红色锁定图标 — 脚本仍然被锁定
 
-- A **green lock** means the licence is recognised.
-- Click the script name under **Invite-only Scripts** to add it to the chart.
-- If the lock stays red, go back to Q 2.
-
----
-
-**4 Indicator timeout error**
-
-- TradingView shows timeout when calculations take too long (usually on lower timeframes or with AI enabled).
-- **Quick fix:** Open settings (⚙️) → toggle any input → click OK. This forces a refresh.
-- **Alternative:** Remove the indicator (×) and re-add from **Invite-only Scripts**.
-- Consider using **Static** mode or higher **Update Frequency** if using AI optimization.
+- 90% 的情况下是用户名错误或购买未完成。
+- 输入正确的用户名（参见问题 1），等待 30 秒，然后重新加载图表。
+- 当锁定变为 **绿色** 时，脚本已准备好加载（参见问题 3）。
 
 ---
 
-**5 Cannot load – "Too many indicators"**
+## 3 如何解锁指标？
 
-- TradingView limits active indicators per chart:
-  - Free = 2 Essential = 5 Plus = 10 Premium = 25 Expert = 30 Ultimate = 50
-- Remove unused indicators (× in the legend) and reload, or upgrade your plan/split across multiple charts.
-
----
-
-**6 Open the indicator settings**
-
-- Click the **gear (⚙️)** icon next to the script name in the legend.
-- All inputs, colours and alert toggles are here.
-- **Reset to Default** is bottom-left inside that window (see Q 12).
+- **绿色锁** 表示许可证 (licence) 已被识别。
+- 点击 **仅限邀请脚本 (Invite-only Scripts)** 下的脚本名称，将其添加到图表。
+- 如果锁定仍为红色，返回查看问题 2。
 
 ---
 
-**7 "Study Not Auth" error**
+## 4 指标超时错误 (Indicator timeout error)
 
-- The script could not verify your licence.
-- Refresh the page (F5)—fixes \~30 % of cases.
-- Re-check username spelling (Q 1).
-- Occasionally TradingView's auth server is busy; wait a few minutes and reload.
-- Still failing? Send a screenshot and your username to support.
-
----
-
-**8 "Internal Server Study Error"**
-
-- Temporary TradingView server issue or cached script.
-- Hard-refresh (**Ctrl + Shift + R**) or open a new tab / the desktop app.
-- Check [**https://status.tradingview.com/**](https://status.tradingview.com/)—if components are red, wait for green.
+- 当计算耗时过长时，TradingView 会显示超时错误（通常在较低时间框架或启用 AI 时出现）。
+- **快速修复：** 打开设置 (⚙️) → 切换任何输入 → 点击确定。这将强制刷新。
+- **替代方案：** 删除指标 (×)，然后从 **仅限邀请脚本 (Invite-only Scripts)** 重新添加。
+- 如果使用 AI 优化 (AI optimization)，请考虑使用 **静态 (Static)** 模式或更高的 **更新频率 (Update Frequency)**。
 
 ---
 
-**9 TradingView asks me to pay again**
+## 5 无法加载 – "指标过多" (Too many indicators)
 
-- It's a quota notice, **not** a payment request.
-- You've reached your indicator limit (see Q 5).
-- Remove one script or upgrade your TradingView plan; the prompt disappears.
-
----
-
-**10 Does the indicator repaint?**
-
-- **No.** Once a bar closes, its signals and values never change.
-- Values can "breathe" while the current bar is still forming—normal for any real-time calculation.
+- TradingView 限制每个图表上的活跃指标数量：
+  - 免费 (Free) = 2 基础 (Essential) = 5 加强 (Plus) = 10 专业 (Premium) = 25 专家 (Expert) = 30 终极 (Ultimate) = 50
+- 删除未使用的指标（图例中的 ×）并重新加载，或升级您的计划/在多个图表上分散使用。
 
 ---
 
-**11 How do I get the latest version?**
+## 6 打开指标设置
 
-- Updates are pushed automatically.
-- If you boosted the script you'll receive an email titled **"Infinity Algo – new version."**
-- Remove the old copy and re-add it from **Invite-only Scripts** to load the newest build.
-- Existing alert templates stay intact unless TradingView flags an input change.
-
----
-
-**12 Reset settings to factory defaults**
-
-- Open settings (⚙️) → **Reset to Default Inputs** → OK.
-- Colours can be reset under the **Style** tab.
+- 点击图例中脚本名称旁边的 **齿轮 (gear)** 图标 (⚙️)。
+- 所有输入、颜色和告警切换 (alert toggles) 都在这里。
+- **重置为默认值 (Reset to Default)** 位于该窗口的左下角（参见问题 12）。
 
 ---
 
-**13 My alerts don't fire**
+## 7 "研究未授权" (Study Not Auth) 错误
 
-**Quick checklist**
-
-1. Alert created on the **correct indicator version**?
-2. **Condition** set to **Once per bar close** (recommended).
-3. Alert quota: Free = 3 Essential = 20 Plus = 100 Premium = 400 Expert = 600 Ultimate = 1 000
-4. Browser tab closed? Use TradingView desktop or server-side alerts (paid plans).
-5. Follow the step-by-step alert guide in the docs.
+- 脚本无法验证您的许可证 (licence)。
+- 刷新页面 (F5)——可以解决约 30% 的情况。
+- 重新检查用户名拼写（问题 1）。
+- 有时 TradingView 的认证服务器繁忙；请等待几分钟后重新加载。
+- 仍然失败？请发送屏幕截图和用户名至支持团队。
 
 ---
 
-**14 No backtest data for futures**
+## 8 "内部服务器研究错误" (Internal Server Study Error)
 
-- Futures require a different order size setting in TradingView.
-- **Fix:** Open settings (⚙️) → **Properties** → change **Order Size** from "USD" to **"Contracts"** or **"Quantity"**.
-- This applies to all futures symbols: ES, MES, NQ, MNQ, YM, RTY, CL, GC, etc.
-- Futures trade in contracts/lots, not USD position sizing.
-
----
-
-**15 Remove the indicator from a chart**
-
-- In the legend click the × next to the script name.
-- The licence remains in **Invite-only Scripts**—you can re-add it any time.
+- TradingView 服务器临时故障或脚本缓存问题。
+- 强制刷新（**Ctrl + Shift + R**）或打开新标签页/桌面应用程序。
+- 查看 [**https://status.tradingview.com/**](https://status.tradingview.com/)——如果组件显示为红色，请等待变为绿色。
 
 ---
 
-**16 What are the optimal settings?**
+## 9 TradingView 要求我再次支付
 
-- **Optimal settings** vary by market, timeframe, and trading style. Utilize our **backtesting** to discover what works **best** for you.
-
----
-
-**17 Can I change my TradingView username after purchase?**
-
-- Yes, email <support@infinityalgo.com> with your new username. One free change per license.
+- 这是配额通知 (quota notice)，**不是** 付款请求。
+- 您已达到指标限制（参见问题 5）。
+- 删除一个脚本或升级您的 TradingView 计划；提示将消失。
 
 ---
 
-**18 Can I share my indicator with others?**
+## 10 指标会重绘吗？(Does the indicator repaint?)
 
-- **No.** The license is tied to your specific **TradingView username** and is non-transferable.
+- **否。** 一旦 K 线柱 (bar) 关闭，其信号和数值永远不会改变。
+- 当前 K 线柱仍在形成时，数值可能会"呼吸" (breathe)——这对任何实时计算都是正常的。
 
 ---
 
-**19 Still need help?**
+## 11 如何获取最新版本？
 
-- **Live chat** – bottom-right of our site (fastest).
-- **Email** – <support@infinityalgo.com> (responses within 24 h on business days).
+- 更新会自动推送。
+- 如果您已订阅脚本，您将收到标题为 **"Infinity Algo – 新版本"** 的邮件。
+- 删除旧副本，然后从 **仅限邀请脚本 (Invite-only Scripts)** 重新添加以加载最新版本。
+- 除非 TradingView 标记输入 (input) 有变化，否则现有告警模板 (alert templates) 保持不变。
+
+---
+
+## 12 将设置重置为出厂默认值
+
+- 打开设置 (⚙️) → **重置为默认输入 (Reset to Default Inputs)** → 确定。
+- 颜色可在 **样式 (Style)** 标签中重置。
+
+---
+
+## 13 我的告警没有触发
+
+### 快速检查清单
+
+1. 告警是在 **正确的指标版本** 上创建的吗？
+2. **条件 (Condition)** 是否设置为 **K 线柱关闭时一次 (Once per bar close)**（推荐）？
+3. 告警配额 (Alert quota)：免费 (Free) = 3 基础 (Essential) = 20 加强 (Plus) = 100 专业 (Premium) = 400 专家 (Expert) = 600 终极 (Ultimate) = 1,000
+4. 浏览器标签页关闭？使用 TradingView 桌面版或服务器端告警 (server-side alerts)（付费计划）。
+5. 遵循文档中的分步告警指南。
+
+---
+
+## 14 期货没有回测数据 (No backtest data for futures)
+
+- 期货 (Futures) 需要在 TradingView 中设置不同的订单大小 (order size)。
+- **修复：** 打开设置 (⚙️) → **属性 (Properties)** → 将 **订单大小 (Order Size)** 从"美元 (USD)"更改为 **"合约 (Contracts)"** 或 **"数量 (Quantity)"**。
+- 这适用于所有期货合约代码：ES、MES、NQ、MNQ、YM、RTY、CL、GC 等。
+- 期货以合约/手数 (contracts/lots) 交易，而不是美元头寸规模 (USD position sizing)。
+
+---
+
+## 15 从图表中删除指标
+
+- 在图例中点击脚本名称旁的 ×。
+- 许可证 (licence) 仍保留在 **仅限邀请脚本 (Invite-only Scripts)** 中——您可以随时重新添加。
+
+---
+
+## 16 最优设置是什么？
+
+- **最优设置** 因市场、时间框架 (timeframe) 和交易风格而异。利用我们的 **回测 (backtesting)** 功能来发现最适合您的设置。
+
+---
+
+## 17 购买后可以更改 TradingView 用户名吗？
+
+- 可以，发送邮件至 <support@infinityalgo.com>，附上您的新用户名。每个许可证可免费更改一次。
+
+---
+
+## 18 我可以与他人共享我的指标吗？
+
+- **不可以。** 许可证 (license) 与您特定的 **TradingView 用户名** 绑定，不可转让。
+
+---
+
+## 19 仍需要帮助？
+
+- **在线客服 (Live chat)** – 我们网站右下角（最快）。
+- **邮件 (Email)** – <support@infinityalgo.com>（工作日内 24 小时内回复）。
