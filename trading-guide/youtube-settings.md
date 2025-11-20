@@ -1,65 +1,65 @@
-# 🔴 Youtube Settings
+# 🔴 YouTube 设置
 
 {% hint style="success" %}
-**🔴**These exact settings are used in our 24/7 YouTube streams
+**🔴** 这些正是我们在 24/7 YouTube 直播中使用的设置
 {% endhint %}
 
 ---
 
-### 📊 Reference Table
+### 📊 参考表
 
 {% tabs %}
-{% tab title="🪙 Crypto" %}
+{% tab title="🪙 加密货币 (Crypto)" %}
 
-| Symbol       | Timeframe | Sensitivity | Chart Type  |
-| ------------ | --------- | ----------- | ----------- |
-| **BTCUSDT**  | 5m        | 10          | Heikin Ashi |
-| **ETHUSDT**  | 5m        | 12          | Heikin Ashi |
-| **XRPUSDT**  | 5m        | 12          | Heikin Ashi |
-| **SOLUSDT**  | 5m        | 14          | Heikin Ashi |
-| {% endtab %} |           |             |             |
+| 交易对 (Symbol) | 时间框架 (Timeframe) | 灵敏度 (Sensitivity) | 图表类型 (Chart Type) |
+| --------------- | -------------------- | -------------------- | --------------------- |
+| **BTCUSDT**     | 5m                   | 10                   | Heikin Ashi           |
+| **ETHUSDT**     | 5m                   | 12                   | Heikin Ashi           |
+| **XRPUSDT**     | 5m                   | 12                   | Heikin Ashi           |
+| **SOLUSDT**     | 5m                   | 14                   | Heikin Ashi           |
+| {% endtab %}    |                      |                      |                       |
 
-{% tab title="💰 Forex & Gold" %}
+{% tab title="💰 外汇与黄金 (Forex & Gold)" %}
 
-| Symbol            | Timeframe | Sensitivity | Chart Type  |
-| ----------------- | --------- | ----------- | ----------- |
-| **GOLD (XAUUSD)** | 5m        | 15          | Heikin Ashi |
-| **EURUSD**        | 5m        | 13          | Heikin Ashi |
-| **GBPUSD**        | 5m        | 12          | Heikin Ashi |
-| **GBPJPY**        | 5m        | 14          | Heikin Ashi |
-| **USDJPY**        | 5m        | 12          | Heikin Ashi |
-| {% endtab %}      |           |             |             |
+| 交易对 (Symbol)        | 时间框架 (Timeframe) | 灵敏度 (Sensitivity) | 图表类型 (Chart Type) |
+| ---------------------- | -------------------- | -------------------- | --------------------- |
+| **黄金 (GOLD/XAUUSD)** | 5m                   | 15                   | Heikin Ashi           |
+| **EURUSD**             | 5m                   | 13                   | Heikin Ashi           |
+| **GBPUSD**             | 5m                   | 12                   | Heikin Ashi           |
+| **GBPJPY**             | 5m                   | 14                   | Heikin Ashi           |
+| **USDJPY**             | 5m                   | 12                   | Heikin Ashi           |
+| {% endtab %}           |                      |                      |                       |
 
-{% tab title="📈 Stocks" %}
+{% tab title="📈 股票 (Stocks)" %}
 
-| Symbol       | Timeframe | Sensitivity | Chart Type  |
-| ------------ | --------- | ----------- | ----------- |
-| **AAPL**     | 5m        | 12          | Heikin Ashi |
-| **TSLA**     | 5m        | 14          | Heikin Ashi |
-| {% endtab %} |           |             |             |
+| 交易对 (Symbol) | 时间框架 (Timeframe) | 灵敏度 (Sensitivity) | 图表类型 (Chart Type) |
+| --------------- | -------------------- | -------------------- | --------------------- |
+| **AAPL**        | 5m                   | 12                   | Heikin Ashi           |
+| **TSLA**        | 5m                   | 14                   | Heikin Ashi           |
+| {% endtab %}    |                      |                      |                       |
 
-{% tab title="📊 Indices" %}
+{% tab title="📊 指数 (Indices)" %}
 
-| Symbol           | Timeframe | Sensitivity | Chart Type  |
-| ---------------- | --------- | ----------- | ----------- |
-| **US100 (NQ1!)** | 5m        | 10          | Heikin Ashi |
-| **SP500 (ES1!)** | 5m        | 10          | Heikin Ashi |
-| **NIFTY 50**     | 1m        | 17          | Heikin Ashi |
-| **NIFTY BANK**   | 1m        | 17          | Heikin Ashi |
-| {% endtab %}     |           |             |             |
-| {% endtabs %}    |           |             |             |
+| 交易对 (Symbol)  | 时间框架 (Timeframe) | 灵敏度 (Sensitivity) | 图表类型 (Chart Type) |
+| ---------------- | -------------------- | -------------------- | --------------------- |
+| **US100 (NQ1!)** | 5m                   | 10                   | Heikin Ashi           |
+| **SP500 (ES1!)** | 5m                   | 10                   | Heikin Ashi           |
+| **NIFTY 50**     | 1m                   | 17                   | Heikin Ashi           |
+| **NIFTY BANK**   | 1m                   | 17                   | Heikin Ashi           |
+| {% endtab %}     |                      |                      |                       |
+| {% endtabs %}    |                      |                      |                       |
 
 ---
 
-### 🎯 Take Profit Settings by Asset
+### 🎯 按资产类别设置止盈 (Take Profit Settings by Asset)
 
 {% hint style="info" %}
-**Click any category below** to view the specific TP settings for that asset class
+**点击下面任何分类** 查看该资产类别的特定止盈 (TP) 设置
 {% endhint %}
 
 <details>
 
-<summary><strong>Bitcoin &#x26; Ethereum Settings</strong></summary>
+<summary><strong>比特币 (Bitcoin) 与以太坊 (Ethereum) 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2F2ECnVzkZrVlKBl2adqH9%2F2025-10-16_16-06-27.png?alt=media&token=b989d7d2-0da9-439c-a653-d0bf66d93dd9)
 
@@ -67,7 +67,7 @@
 
 <details>
 
-<summary><strong>XRP &#x26; Solana Settings</strong></summary>
+<summary><strong>XRP 与 Solana 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fflgp04QRHL8L2THQf0s2%2Fimage.png?alt=media&token=1c57c9f7-8264-4b62-a244-84a7de5bf054)
 
@@ -75,7 +75,7 @@
 
 <details>
 
-<summary><strong>Gold (XAUUSD) Settings</strong></summary>
+<summary><strong>黄金 (XAUUSD) 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FZvCy8jM7XmGHscylqI64%2Fimage.png?alt=media&token=03c520b5-0b92-4f46-a6af-21d9d0110f41)
 
@@ -83,7 +83,7 @@
 
 <details>
 
-<summary><strong>US Stocks (AAPL &#x26; TSLA) Settings</strong></summary>
+<summary><strong>美国股票 (AAPL & TSLA) 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FUmRC45jU2YxFjvpi34Y5%2Fimage.png?alt=media&token=aea298c9-b8d1-4948-a317-06d05a6819cb)
 
@@ -91,7 +91,7 @@
 
 <details>
 
-<summary><strong>US Indices (NQ &#x26; ES) Settings</strong></summary>
+<summary><strong>美国指数 (NQ & ES) 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FRKdJTFF4KYYLp51FYbIQ%2Fimage.png?alt=media&token=4c3b3e93-018f-4992-a9fd-2ef90cdf5a3b)
 
@@ -99,7 +99,7 @@
 
 <details>
 
-<summary><strong>Major Pairs (EUR/USD &#x26; GBP/USD) Settings</strong></summary>
+<summary><strong>主要货币对 (EUR/USD & GBP/USD) 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FgTQTU5XdSarzJvqio7dK%2Fimage.png?alt=media&token=73d8be3e-c565-4735-bec7-cf1986cc208b)
 
@@ -107,7 +107,7 @@
 
 <details>
 
-<summary><strong>JPY Pairs (GBP/JPY &#x26; USD/JPY) Settings</strong></summary>
+<summary><strong>日元货币对 (GBP/JPY & USD/JPY) 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FK6tYjjEBaGw4wPkCjWYP%2Fimage.png?alt=media&token=08921846-7d25-4de6-bd9a-ea85f5bf9021)
 
@@ -115,7 +115,7 @@
 
 <details>
 
-<summary><strong>NIFTY 50 &#x26; Bank NIFTY Settings</strong></summary>
+<summary><strong>NIFTY 50 与 Bank NIFTY 设置</strong></summary>
 
 ![](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FPcsTIB5U4RGMFH1pCgfC%2Fimage.png?alt=media&token=46286940-a04e-4b6c-bc70-251ad9e61dd5)
 
@@ -123,10 +123,10 @@
 
 ---
 
-### ⚙️ Universal Settings (All Assets)
+### ⚙️ 通用设置 (All Assets)
 
 {% hint style="info" %}
-**These settings remain constant across ALL symbols** - only Sensitivity and TP levels change
+**这些设置在所有交易对中保持不变** - 仅灵敏度 (Sensitivity) 和止盈 (TP) 水平会改变
 {% endhint %}
 
 {% columns %}
@@ -151,40 +151,40 @@
 
 ---
 
-### 🔄 How to Apply
+### 🔄 如何应用 (How to Apply)
 
 {% stepper %}
 {% step %}
 
-#### Copy Universal Settings
+#### 复制通用设置 (Copy Universal Settings)
 
-Start with the base configuration shown above
+从上面显示的基础配置开始
 {% endstep %}
 
 {% step %}
 
-#### Set Your Sensitivity
+#### 设置你的灵敏度 (Set Your Sensitivity)
 
-Use the table value for your chosen asset
+使用表格中你选择的资产的值
 {% endstep %}
 
 {% step %}
 
-#### Configure TP Levels
+#### 配置止盈水平 (Configure TP Levels)
 
-Apply the specific TP settings from the tabs
+应用标签页中的特定止盈设置
 {% endstep %}
 
 {% step %}
 
-#### Enable Heikin Ashi
+#### 启用 Heikin Ashi
 
-Click on Dropdown Chevron → Heikin Ashi
+点击下拉箭头 (Dropdown Chevron) → Heikin Ashi
 {% endstep %}
 {% endstepper %}
 
 ---
 
 {% hint style="info" %}
-**📺 Watch Live:** See these settings in action on our [YouTube channel](https://youtube.com/@infinityalgo) every trading day!
+**📺 实时观看 (Watch Live):** 在我们的 [YouTube 频道](https://youtube.com/@infinityalgo)上每个交易日都能看到这些设置的实际应用！
 {% endhint %}
