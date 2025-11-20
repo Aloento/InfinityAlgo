@@ -1,161 +1,161 @@
-# 🛠️ Sensitivity
+# 🛠️ 灵敏度 (Sensitivity)
 
-Adjust how responsive the indicator is to market movements.
+调整指标对市场波动的响应程度。
 
-![Sensitivity Setting](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FVJdz2CCVZaqVVf9TYMlI%2Fsensitivty.png?alt=media&token=1da4121b-a197-4d51-b03b-e719e5d0cffa)
+![灵敏度设置](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FVJdz2CCVZaqVVf9TYMlI%2Fsensitivty.png?alt=media&token=1da4121b-a197-4d51-b03b-e719e5d0cffa)
 
 ---
 
-### 📊 How It Works
+## 📊 工作原理
 
 {% columns %}
 {% column width="50%" %}
 
-#### Lower Values (5-15)
+### 较低数值 (5-15)
 
-**More Signals**
+更多信号
 
-- ✅ More opportunities
-- ✅ Active trading
-- ⚠️ More false signals
-- 📈 Short-term focus
+- ✅ 交易机会更多
+- ✅ 活跃交易
+- ⚠️ 虚假信号较多
+- 📈 短期关注
   {% endcolumn %}
 
 {% column %}
 
-#### Higher Values (16-28)
+### 较高数值 (16-28)
 
-**Better Quality**
+更好的质量
 
-- ✅ Fewer false signals
-- ✅ Higher conviction
-- ⚠️ Less opportunities
-- 📈 Long-term focus
+- ✅ 虚假信号更少
+- ✅ 信号确定性更高
+- ⚠️ 交易机会较少
+- 📈 长期关注
   {% endcolumn %}
   {% endcolumns %}
 
 ---
 
-### 🎯 Settings by Trading Style
+### 🎯 按交易风格的设置
 
-| Trading Style   | Timeframe | Sensitivity | Signals/Day |
-| --------------- | --------- | ----------- | ----------- |
-| **Scalping**    | 1-5 min   | 5-10        | Many        |
-| **Day Trading** | 5-30 min  | 10-15       | 5-10        |
-| **Intraday**    | 1H-4H     | 15-20       | 3-5         |
-| **Swing**       | 4H-Daily  | 18-25       | 1-3         |
-| **Position**    | Daily+    | 22-28       | Few         |
+| 交易风格 (Trading Style)   | 时间周期 (Timeframe) | 灵敏度 (Sensitivity) | 每日信号数 (Signals/Day) |
+| -------------------------- | -------------------- | -------------------- | ------------------------ |
+| **剥头皮 (Scalping)**      | 1-5 分钟             | 5-10                 | 多个                     |
+| **日内交易 (Day Trading)** | 5-30 分钟            | 10-15                | 5-10                     |
+| **盘中交易 (Intraday)**    | 1 小时-4 小时        | 15-20                | 3-5                      |
+| **波段交易 (Swing)**       | 4 小时-日线          | 18-25                | 1-3                      |
+| **头寸交易 (Position)**    | 日线及以上           | 22-28                | 较少                     |
 
 ---
 
-### 🤖 Mode-Specific Behavior
+### 🤖 各模式特定行为
 
 {% tabs %}
-{% tab title="Normal/Smart" %}
+{% tab title="标准 (Normal)/智能 (Smart)" %}
 
-#### Manual Control
+#### 手动控制
 
-- **You control** sensitivity directly
-- **Start with:** 14-18 (balanced)
-- **Adjust based** on results
+- **您可以直接控制**灵敏度
+- **建议起点：** 14-18（平衡设置）
+- **根据结果调整**
 
-{% code title="Recommended" %}
+{% code title="推荐设置" %}
 
 ```
-Scalping: 5-10
-Day Trading: 10-15
-Swing: 18-25
+剥头皮 (Scalping): 5-10
+日内交易 (Day Trading): 10-15
+波段交易 (Swing): 18-25
 ```
 
 {% endcode %}
 {% endtab %}
 
-{% tab title="HL Sniper" %}
+{% tab title="HL 狙击手 (HL Sniper)" %}
 
-#### Precision Mode
+#### 精准模式 (Precision Mode)
 
-- **Optimal range:** 15-20
-- **Works on** all timeframes
-- **No extremes** needed
+- **最优范围：** 15-20
+- **适用于**所有时间周期
+- **无需极端数值**
 
 {% hint style="info" %}
-V3.0 uses advanced algorithm - extreme values no longer recommended
+V3.0 采用先进算法 - 不再推荐使用极端数值
 {% endhint %}
 {% endtab %}
 
-{% tab title="AI Modes" %}
+{% tab title="人工智能 (AI) 模式" %}
 
-#### Automatic
+#### 自动化
 
-- **Setting ignored** - AI controls it
-- **Leave at** default value
-- **AI optimizes** continuously
+- **设置被忽略** - AI 负责控制
+- **保留**默认值
+- **AI 持续优化**
 
 {% hint style="success" %}
-No adjustment needed - AI handles everything
+无需调整 - AI 处理一切
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### 📈 Visual Comparison
+### 📈 视觉对比
 
-Sensitivity = 18 (Balanced):
+灵敏度 (Sensitivity) = 18（平衡设置）：
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FCVa7ynhpCE31YwzFtP3G%2Fimage.png?alt=media&#x26;token=d7bd11ea-09f1-4727-9f80-1f15a9f33c31" alt=""><figcaption><p><strong>Fewer signals, higher quality</strong></p></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FCVa7ynhpCE31YwzFtP3G%2Fimage.png?alt=media&#x26;token=d7bd11ea-09f1-4727-9f80-1f15a9f33c31" alt=""><figcaption><p><strong>信号较少，质量更高</strong></p></figcaption></figure>
 
-Sensitivity = 5 (Low):
+灵敏度 (Sensitivity) = 5（低值）：
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FFYi3Quh2YdQtGBxAxAOV%2Fimage.png?alt=media&#x26;token=756c963d-aa32-4fdc-9ee6-e152449ae703" alt=""><figcaption><p><strong>Many signals, more noise</strong></p></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FFYi3Quh2YdQtGBxAxAOV%2Fimage.png?alt=media&#x26;token=756c963d-aa32-4fdc-9ee6-e152449ae703" alt=""><figcaption><p><strong>信号众多，噪音较多</strong></p></figcaption></figure>
 
 ---
 
-### ⚡ Quick Start Guide
+### ⚡ 快速入门指南
 
 {% stepper %}
 {% step %}
 
-#### Identify Your Style
+#### 确定您的交易风格
 
-Scalper? Day trader? Swing trader?
+剥头皮交易者？日内交易者？波段交易者？
 {% endstep %}
 
 {% step %}
 
-#### Use Table Above
+#### 使用上方表格
 
-Find your timeframe and recommended range
+找到您的时间周期和推荐范围
 {% endstep %}
 
 {% step %}
 
-#### Start Middle
+#### 从中间开始
 
-Begin with middle of your range, adjust from there
+从您范围的中间值开始，然后从那里调整
 {% endstep %}
 
 {% step %}
 
-#### Fine-Tune
+#### 微调
 
-Too many signals? Increase value Too few? Decrease value
+信号过多？增加数值。信号过少？降低数值。
 {% endstep %}
 {% endstepper %}
 
 ---
 
-### 💡 Pro Tips
+### 💡 专业提示
 
 {% hint style="success" %}
-**Best Practices:**
+**最佳实践：**
 
-- Lower timeframes → Lower sensitivity
-- Higher timeframes → Higher sensitivity
-- Start conservative, adjust gradually
-- Document what works for each pair
+- 较短时间周期 → 较低灵敏度
+- 较长时间周期 → 较高灵敏度
+- 从保守设置开始，逐步调整
+- 记录每个交易对的有效设置
   {% endhint %}
 
 {% hint style="warning" %}
-**Remember:** Using AI modes? This setting doesn't matter - AI optimizes it automatically
+**记住：**使用 AI 模式？此设置无关紧要 - AI 会自动优化
 {% endhint %}
