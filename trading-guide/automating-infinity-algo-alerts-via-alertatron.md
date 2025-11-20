@@ -1,124 +1,126 @@
-# 🔄 Automating Infinity Algo Alerts via Alertatron
+# 🔄 通过 Alertatron 自动化 Infinity Algo 警报
 
 {% hint style="danger" %}
-**CRITICAL: Alertatron has TWO different systems. DO NOT MIX THEM:**
+**重要提示：Alertatron 有两个不同的系统。不要混合使用：**
 
-- **Signals Lite** - JSON messages only, no scripts
-- **Script Bots** - Full scripting with `MyKeys{...} #bot`
+- **Signals Lite** - 仅支持 JSON 消息，无脚本
+- **Script Bots** - 完整脚本支持，使用 `MyKeys{...} #bot` 标签
 
-**Signals Lite does NOT use `MyKeys{...}` or `#bot` tags!**
+**Signals Lite 不使用 `MyKeys{...}` 或 `#bot` 标签！**
 
-Choose ONE system and follow ONLY that guide below.
+选择其中一个系统，并严格按照下方的对应指南操作。
 {% endhint %}
 
 ---
 
-### 🎯 Which System Should You Use?
+### 🎯 你应该使用哪个系统？
 
 {% tabs %}
-{% tab title="Most Users → Signals Lite" %}
-**Choose Signals Lite if you want:**
+{% tab title="大多数用户 → Signals Lite" %}
+**如果您想要以下功能，选择 Signals Lite：**
 
-- ✅ Quick 5-minute setup
-- ✅ Visual configuration (no coding)
-- ✅ Simple long/short automation
-- ✅ Lower chance of errors
-- ✅ Easy to modify settings
+- ✅ 快速 5 分钟设置
+- ✅ 可视化配置（无需编码）
+- ✅ 简单的多头/空头自动化
+- ✅ 错误风险更低
+- ✅ 易于修改设置
 
-**Perfect for:**
+**适用于：**
 
-- New to automation
-- Basic buy/sell/close needs
-- Want it working fast
-  {% endtab %}
+- 自动化新手
+- 基本买入/卖出/平仓需求
+- 希望快速启动
 
-{% tab title="Power Users → Script Bots" %}
-**Choose Script Bots if you need:**
+{% endtab %}
 
-- ✅ Complex order logic
-- ✅ Multi-step TP ladders
-- ✅ Conditional execution
-- ✅ Position pyramiding
-- ✅ Custom OCO groups
-- ✅ Timing delays
+{% tab title="高级用户 → Script Bots" %}
+**如果您需要以下功能，选择 Script Bots：**
 
-**Required skills:**
+- ✅ 复杂的订单逻辑
+- ✅ 多步骤止盈梯度（Multi-step TP ladders）
+- ✅ 条件执行
+- ✅ 仓位加仓（Position pyramiding）
+- ✅ 自定义 OCO 组
+- ✅ 时间延迟
 
-- Comfortable with code
-- Can debug scripts
-- Need advanced features
-  {% endtab %}
-  {% endtabs %}
+**所需技能：**
+
+- 熟悉代码
+- 能够调试脚本
+- 需要高级功能
+
+{% endtab %}
+{% endtabs %}
 
 ---
 
-## 📘 Option 1: Signals Lite (Recommended)
+## 📘 方案 1：Signals Lite（推荐）
 
-Simple JSON signal-based automation with visual configuration.
+基于 JSON 信号的自动化，支持可视化配置。
 
-### ⚙️ Step 1: Create Signals Lite Bot
+### ⚙️ 第 1 步：创建 Signals Lite 机器人
 
-1. Navigate to **Signals Lite → Your Bots**
-2. Click **"Create new automated bot..."**
-3. Configure your bot:
+1. 导航至 **Signals Lite → Your Bots**
+2. 点击 **"Create new automated bot..."**
+3. 配置你的机器人：
 
-| Field        | What to enter            |
+| 字段         | 需要输入的内容           |
 | ------------ | ------------------------ |
-| **Bot name** | e.g. `Infinity Algo BTC` |
-| **Exchange** | Select your exchange     |
-| **Symbol**   | e.g. `BTCUSDT` or `BTC`  |
-| **Access**   | Set to Private           |
+| **Bot name** | 例如 `Infinity Algo BTC` |
+| **Exchange** | 选择你的交易所           |
+| **Symbol**   | 例如 `BTCUSDT` 或 `BTC`  |
+| **Access**   | 设置为 Private           |
 
-4. Click **Create Bot**
+4. 点击 **Create Bot**
 
-### 🔑 Step 2: Configure Bot Settings
+### 🔑 第 2 步：配置机器人设置
 
-After creating your bot:
+创建机器人后：
 
 {% tabs %}
-{% tab title="API Keys" %}
+{% tab title="API 密钥" %}
 
-1. Click on your bot name to expand
-2. Find **"API Keys"** section
-3. Add your exchange API credentials
-4. **Save** configuration
+1. 点击你的机器人名称进行展开
+2. 找到 **"API Keys"** 部分
+3. 添加你的交易所 API 凭证
+4. **保存** 配置
 
 {% hint style="warning" %}
-Never enable withdrawal permissions for trading bots
+切勿为交易机器人启用提现权限
 {% endhint %}
 {% endtab %}
 
-{% tab title="Signal Settings" %}
-Configure default behavior that can be overridden per alert:
+{% tab title="信号设置" %}
+配置默认行为，可以按警报覆盖：
 
-- **Position Size**: % of balance or fixed amount
-- **Leverage**: Your preferred leverage
-- **Order Type**: Market or Limit
-- **Take Profit**: Enable and set offset %
-- **Stop Loss**: Set risk %
-- **Hedge Mode**: If supported by exchange
+- **Position Size**（仓位大小）：账户余额百分比或固定金额
+- **Leverage**（杠杆倍数）：你的首选杠杆
+- **Order Type**（订单类型）：市价或限价
+- **Take Profit**（止盈）：启用并设置偏移百分比
+- **Stop Loss**（止损）：设置风险百分比
+- **Hedge Mode**（对冲模式）：如果交易所支持
 
 {% hint style="info" %}
-You can override any of these per alert with JSON. See [Override signal settings](https://alertatron.com/docs/signals-lite/override-signal-settings)
+你可以使用 JSON 为每个警报覆盖任何这些字段。参见 [Override signal settings](https://alertatron.com/docs/signals-lite/override-signal-settings)
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
-### 📩 Step 3: Get Your Webhook
+### 📩 第 3 步：获取你的 Webhook
 
 {% hint style="warning" %}
-**Copy the exact webhook shown on your bot page.** Don't guess the path—formats can change.
+**复制机器人页面上显示的确切 webhook。** 不要猜测路径——格式可能会改变。
 {% endhint %}
 
-Your bot page will display a unique webhook URL. Copy it exactly as shown - you'll need it for TradingView.
+你的机器人页面将显示一个唯一的 webhook URL。完全按照显示的内容复制——你需要它来在 TradingView 中使用。
 
-### 📊 Step 4: Create TradingView Alerts
+### 📊 第 4 步：创建 TradingView 警报
 
-#### Available Infinity Algo Alerts
+#### 可用的 Infinity Algo 警报
 
 {% tabs %}
-{% tab title="Entry Signals" %}
-**Buy Signals:**
+{% tab title="入场信号（Entry Signals）" %}
+**买入信号：**
 
 - `1.0 Buy Signal - Normal`
 - `1.1 Buy Signal - Smart`&#x20;
@@ -126,62 +128,64 @@ Your bot page will display a unique webhook URL. Copy it exactly as shown - you'
 - `1.3 Buy Signal - HL Sniper`
 - `1.4 Buy Signal - AI`
 
-**Sell Signals:**
+**卖出信号：**
 
 - `1.5 Sell Signal - Normal`
 - `1.6 Sell Signal - Smart`&#x20;
 - `1.7 Normal or Smart Sell`
 - `1.8 Sell Signal - HL Sniper`
 - `1.9 Sell Signal - AI`
-  {% endtab %}
 
-{% tab title="Exit Signals" %}
-**Management:**
+{% endtab %}
+
+{% tab title="出场信号（Exit Signals）" %}
+**管理：**
 
 - `2.0 Take Profit Long`
 - `2.1 Take Profit Short`
 - `2.2 Stop Loss Long Hit`
 - `2.3 Stop Loss Short Hit`
-- `2.4 Possible Long Coming` (info only)
-- `2.5 Possible Short Coming` (info only)
-  {% endtab %}
-  {% endtabs %}
+- `2.4 Possible Long Coming`（仅供参考）
+- `2.5 Possible Short Coming`（仅供参考）
 
-#### Alert Configuration
+{% endtab %}
+{% endtabs %}
 
-1. Open your Infinity Algo chart
-2. Create alert (Alt+A)
-3. Configure:
+#### 警报配置
 
-| Field           | Value                                         |
-| --------------- | --------------------------------------------- |
-| **Condition**   | e.g. "1.1 Buy Signal - Smart"                 |
-| **Options**     | **Once Per Bar Close** (prevents duplicates!) |
-| **Alert name**  | e.g. "IA Smart Buy"                           |
-| **Message**     | JSON template (see below)                     |
-| **Webhook URL** | Your bot's webhook from Step 3                |
+1. 打开你的 Infinity Algo 图表
+2. 创建警报（Alt+A）
+3. 配置：
 
-### 📝 Signals Lite Message Templates
+| 字段                       | 值                                                      |
+| -------------------------- | ------------------------------------------------------- |
+| **Condition**（条件）      | 例如 "1.1 Buy Signal - Smart"                           |
+| **Options**（选项）        | **Once Per Bar Close**（每根 K 线闭合一次，防止重复！） |
+| **Alert name**（警报名称） | 例如 "IA Smart Buy"                                     |
+| **Message**（消息）        | JSON 模板（见下方）                                     |
+| **Webhook URL**            | 你的机器人 webhook（来自第 3 步）                       |
+
+### 📝 Signals Lite 消息模板
 
 {% hint style="danger" %}
-**Messages MUST be valid JSON.** Start simple (side + amount) and optionally override defaults such as TP/SL, hedge mode, or closing the opposite side.
+**消息必须是有效的 JSON 格式。** 从简单开始（side + amount），可选择覆盖默认值如 TP/SL、对冲模式或平仓对手方。
 {% endhint %}
 
 {% tabs %}
-{% tab title="Basic JSON" %}
-**Minimal Long Entry:**
+{% tab title="基础 JSON" %}
+**最小多头入场：**
 
 ```json
 { "side": "long", "amount": "25%" }
 ```
 
-**Minimal Short Entry:**
+**最小空头入场：**
 
 ```json
 { "side": "short", "amount": "25%" }
 ```
 
-**Close Position:**
+**平仓：**
 
 ```json
 { "side": "close" }
@@ -189,8 +193,8 @@ Your bot page will display a unique webhook URL. Copy it exactly as shown - you'
 
 {% endtab %}
 
-{% tab title="With Overrides" %}
-**Long with TP/SL override:**
+{% tab title="带覆盖参数" %}
+**多头带 TP/SL 覆盖：**
 
 ```json
 {
@@ -204,7 +208,7 @@ Your bot page will display a unique webhook URL. Copy it exactly as shown - you'
 }
 ```
 
-**Short with leverage:**
+**空头带杠杆：**
 
 ```json
 {
@@ -218,8 +222,8 @@ Your bot page will display a unique webhook URL. Copy it exactly as shown - you'
 
 {% endtab %}
 
-{% tab title="Dynamic Values" %}
-**Using TradingView placeholders:**
+{% tab title="动态值" %}
+**使用 TradingView 占位符：**
 
 ```json
 {
@@ -231,126 +235,126 @@ Your bot page will display a unique webhook URL. Copy it exactly as shown - you'
 ```
 
 {% hint style="info" %}
-Don't include `symbol` - it's already set in your bot configuration
+不要包含 `symbol` - 它已经在机器人配置中设置
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
-#### Available Override Fields
+#### 可用的覆盖字段
 
-See full documentation: [Override signal settings](https://alertatron.com/docs/signals-lite/override-signal-settings)
+完整文档参见：[Override signal settings](https://alertatron.com/docs/signals-lite/override-signal-settings)
 
-| Field              | Type    | Description                        |
-| ------------------ | ------- | ---------------------------------- |
-| `side`             | string  | "long", "short", or "close"        |
-| `amount`           | string  | Position size (e.g., "50%", "100") |
-| `takeProfit`       | boolean | Enable take profit                 |
-| `takeProfitOffset` | string  | TP distance (e.g., "2%")           |
-| `stopLoss`         | boolean | Enable stop loss                   |
-| `stopLossOffset`   | string  | SL distance (e.g., "1%")           |
-| `closeExisting`    | boolean | Close opposite position first      |
-| `useHedgeMode`     | boolean | Use hedge mode if available        |
-| `leverage`         | number  | Override leverage                  |
-| `entry`            | string  | "market" or "limit"                |
-| `price`            | string  | Limit price (if entry="limit")     |
+| 字段               | 类型    | 描述                          |
+| ------------------ | ------- | ----------------------------- |
+| `side`             | string  | "long"、"short" 或 "close"    |
+| `amount`           | string  | 仓位大小（例如 "50%"、"100"） |
+| `takeProfit`       | boolean | 启用止盈                      |
+| `takeProfitOffset` | string  | TP 距离（例如 "2%"）          |
+| `stopLoss`         | boolean | 启用止损                      |
+| `stopLossOffset`   | string  | SL 距离（例如 "1%"）          |
+| `closeExisting`    | boolean | 先平仓对手方                  |
+| `useHedgeMode`     | boolean | 使用对冲模式（如果可用）      |
+| `leverage`         | number  | 覆盖杠杆倍数                  |
+| `entry`            | string  | "market" 或 "limit"           |
+| `price`            | string  | 限价（如果 entry="limit"）    |
 
 {% hint style="info" %}
-For multi-pair bots, use **percent/offset fields** (e.g., `takeProfitOffset`), not fixed prices.
+对于多交易对机器人，使用**百分比/偏移字段**（例如 `takeProfitOffset`），而不是固定价格。
 {% endhint %}
 
 {% hint style="success" %}
-**That's it!** Your Signals Lite bot is ready. Test with small amounts first.
+**就是这样！** 你的 Signals Lite 机器人已准备好。先用小额测试。
 {% endhint %}
 
 ---
 
-## 📗 Option 2: Script Bots (Advanced)
+## 📗 方案 2：Script Bots（高级）
 
-Full scripting control with complex order logic and multi-step TP ladders.
+完整的脚本控制，支持复杂订单逻辑和多步骤 TP 梯度。
 
 {% hint style="warning" %}
-**Prerequisites:** Understand basic scripting and can debug syntax errors. If not, use Signals Lite above.
+**先决条件：** 理解基础脚本编程，能够调试语法错误。否则，请使用上方的 Signals Lite。
 {% endhint %}
 
-### ⚙️ Step 1: Configure Script Bot Infrastructure
+### ⚙️ 第 1 步：配置 Script Bot 基础设施
 
-#### A. Add API Keys First
+#### A. 首先添加 API 密钥
 
-1. Go to **Scripting Signals → Script Bot Config → Script Bot API Keys**
-2. Click **"Add API Keys"**
-3. Configure:
-   - **Name**: e.g. `MyKeys` (remember this exactly!)
-   - **Exchange**: Your exchange
-   - **API Key & Secret**: Your credentials
-4. **Save** your keys
+1. 转到 **Scripting Signals → Script Bot Config → Script Bot API Keys**
+2. 点击 **"Add API Keys"**
+3. 配置：
+   - **Name**（名称）：例如 `MyKeys`（记住这个确切的名称！）
+   - **Exchange**（交易所）：你的交易所
+   - **API Key & Secret**：你的凭证
+4. **保存** 你的密钥
 
-#### B. Get Your Account Webhook
+#### B. 获取你的账户 Webhook
 
-1. Go to **Account → Webhook Details**
-2. **Copy the exact webhook shown** (don't guess the format)
+1. 转到 **Account → Webhook Details**
+2. **复制显示的确切 webhook**（不要猜测格式）
 
-#### C. Configure Bot Group
+#### C. 配置机器人组
 
-1. Go to **Scripting Signals → Trading Bot Settings**
-2. Set up a group that filters for `#bot`
-3. Route this group to the trading engine
+1. 转到 **Scripting Signals → Trading Bot Settings**
+2. 设置一个用于过滤 `#bot` 的组
+3. 将此组路由到交易引擎
 
 {% hint style="info" %}
-Script Bots route through your account webhook using the `#bot` tag, not a separate bot webhook
+Script Bots 通过你的账户 webhook 使用 `#bot` 标签进行路由，而不是单独的机器人 webhook
 {% endhint %}
 
-### 📊 Step 2: Available Alert Conditions
+### 📊 第 2 步：可用的警报条件
 
-Same as Signals Lite - all 16 alerts available:
+与 Signals Lite 相同 - 所有 16 个警报可用：
 
 <details>
 
-<summary>Click to see full alert list</summary>
+<summary>点击查看完整警报列表</summary>
 
-**Buy Entries:**
+**买入入场：**
 
-- 1.0 through 1.4&#x20;
+- 1.0 至 1.4
 
-**Sell Entries:**
+**卖出入场：**
 
-- 1.5 through 1.9
+- 1.5 至 1.9
 
-**Management:**
+**管理：**
 
-- 2.0 through 2.3
+- 2.0 至 2.3
 
 </details>
 
-### 📋 Step 3: Create TradingView Alerts
+### 📋 第 3 步：创建 TradingView 警报
 
-Configuration is similar but the **message contains scripts**:
+配置类似，但**消息包含脚本**：
 
-| Field           | Value                                         |
-| --------------- | --------------------------------------------- |
-| **Condition**   | Your chosen signal                            |
-| **Options**     | **Once Per Bar Close** (prevents duplicates!) |
-| **Message**     | Your script (see templates)                   |
-| **Webhook URL** | Your account webhook (NOT Signals Lite!)      |
+| 字段                  | 值                                                      |
+| --------------------- | ------------------------------------------------------- |
+| **Condition**（条件） | 你选择的信号                                            |
+| **Options**（选项）   | **Once Per Bar Close**（每根 K 线闭合一次，防止重复！） |
+| **Message**（消息）   | 你的脚本（见模板）                                      |
+| **Webhook URL**       | 你的账户 webhook（不是 Signals Lite！）                 |
 
-### 📝 Script Bot Templates
+### 📝 Script Bot 模板
 
 {% hint style="danger" %}
-**Every script MUST end with `#bot` or it won't execute!**
+**每个脚本必须以 `#bot` 结尾，否则不会执行！**
 {% endhint %}
 
 {% tabs %}
-{% tab title="🟢 Long Entry" %}
-{% code title="long\_entry.txt" overflow="wrap" lineNumbers="true" %}
+{% tab title="🟢 多头入场" %}
+{% code title="long_entry.txt" overflow="wrap" lineNumbers="true" %}
 
 ```
 MyKeys({{ticker}}) {
-  # Enter long with 100% of available balance
+  # 用 100% 可用余额入场多头
   market(side=buy, amount=100%a);
 
-  # Stop loss 1% below entry
+  # 止损设在入场价下方 1%
   stopOrder(side=sell, amount=100%p, stop=e-1%, reduceOnly=true);
 
-  # Multi-step TP ladder with OCO
+  # 带 OCO 的多步骤止盈梯度
   oneCancelsOther(which=all);
     limit(position=75%p, offset=e1%, reduceOnly=true);
     limit(position=50%p, offset=e2%, reduceOnly=true);
@@ -363,21 +367,21 @@ MyKeys({{ticker}}) {
 
 {% endcode %}
 
-**This multi-step TP ladder is ONLY possible with Script Bots!**
+**这种多步骤止盈梯度仅在 Script Bots 中可用！**
 {% endtab %}
 
-{% tab title="🔴 Short Entry" %}
-{% code title="short\_entry.txt" overflow="wrap" lineNumbers="true" %}
+{% tab title="🔴 空头入场" %}
+{% code title="short_entry.txt" overflow="wrap" lineNumbers="true" %}
 
 ```
 MyKeys({{ticker}}) {
-  # Enter short
+  # 入场空头
   market(side=sell, amount=100%a);
 
-  # Stop loss 1% above entry
+  # 止损设在入场价上方 1%
   stopOrder(side=buy, amount=100%p, stop=e+1%, reduceOnly=true);
 
-  # Multi-step TP ladder (negative values for short)
+  # 带 OCO 的多步骤止盈梯度（空头用负值）
   oneCancelsOther(which=all);
     limit(position=-75%p, offset=e-1%, reduceOnly=true);
     limit(position=-50%p, offset=e-2%, reduceOnly=true);
@@ -391,15 +395,15 @@ MyKeys({{ticker}}) {
 {% endcode %}
 {% endtab %}
 
-{% tab title="⏹️ Flatten" %}
-{% code title="close\_position.txt" overflow="wrap" %}
+{% tab title="⏹️ 平仓" %}
+{% code title="close_position.txt" overflow="wrap" %}
 
 ```
 MyKeys({{ticker}}) {
-  # Close any position
+  # 平仓任何头寸
   limit(position=0, offset=1, reduceOnly=true);
 
-  # Cancel all orders
+  # 取消所有订单
   cancel(which=all);
 }
 #bot
@@ -408,18 +412,18 @@ MyKeys({{ticker}}) {
 {% endcode %}
 {% endtab %}
 
-{% tab title="⚡ Ping-Pong" %}
-{% code title="flip\_position.txt" overflow="wrap" %}
+{% tab title="⚡ 乒乓交易" %}
+{% code title="flip_position.txt" overflow="wrap" %}
 
 ```
 MyKeys({{ticker}}) {
-  # Cancel existing orders
+  # 取消现有订单
   cancel(which=all);
 
-  # Flip to long (closes short if exists)
+  # 翻转至多头（如果存在空头则平仓）
   market(position=100%a);
 
-  # Single SL and TP
+  # 单一止损和止盈
   stopOrder(side=sell, amount=100%p, stop=e-2%, reduceOnly=true);
   limit(side=sell, amount=100%p, offset=e3%, reduceOnly=true);
 }
@@ -429,18 +433,18 @@ MyKeys({{ticker}}) {
 {% endcode %}
 {% endtab %}
 
-{% tab title="🔧 Advanced" %}
-{% code title="conditional\_pyramid.txt" overflow="wrap" lineNumbers="true" %}
+{% tab title="🔧 高级" %}
+{% code title="conditional_pyramid.txt" overflow="wrap" lineNumbers="true" %}
 
 ```
 MyKeys({{ticker}}) {
-  # Only add if position < 10000
+  # 仅在仓位 < 10000 时添加
   continue(if=positionLessThan, value=10000);
 
-  # Add to position
+  # 加仓
   market(side=buy, amount=1000);
 
-  # Trailing stop
+  # 尾随止损
   trailingStop(side=sell, amount=100%p, offset=e-1.5%,
                trailingMethod=stepped, stepSize=0.5%, maxSteps=3);
 }
@@ -449,17 +453,17 @@ MyKeys({{ticker}}) {
 
 {% endcode %}
 
-{% code title="delayed\_entry.txt" overflow="wrap" %}
+{% code title="delayed_entry.txt" overflow="wrap" %}
 
 ```
 MyKeys({{ticker}}) {
-  # Wait 5 minutes
+  # 等待 5 分钟
   wait(5m);
 
-  # Then enter
+  # 然后入场
   market(side=buy, amount=50%a);
 
-  # Add protection
+  # 添加保护
   stopOrder(side=sell, amount=100%p, stop=e-1%, reduceOnly=true);
 }
 #bot
@@ -469,82 +473,86 @@ MyKeys({{ticker}}) {
 {% endtab %}
 {% endtabs %}
 
-### 🔤 Script Command Reference
+### 🔤 脚本命令参考
 
 <details>
 
-<summary>Click to expand full command list</summary>
+<summary>点击展开完整命令列表</summary>
 
-| Command             | Purpose             | Example                            |
-| ------------------- | ------------------- | ---------------------------------- |
-| `market()`          | Market order        | `market(side=buy, amount=100%a)`   |
-| `limit()`           | Limit order         | `limit(position=50%p, offset=e2%)` |
-| `stopOrder()`       | Stop loss           | `stopOrder(side=sell, stop=e-1%)`  |
-| `aggressive()`      | Smart limit entry   | `aggressive(position=90%a)`        |
-| `wait()`            | Delay               | `wait(10m)`                        |
-| `cancel()`          | Cancel orders       | `cancel(which=all)`                |
-| `oneCancelsOther()` | OCO group           | `oneCancelsOther(which=all)`       |
-| `continue()`        | Conditional proceed | `continue(if=positionLong)`        |
-| `stop()`            | Conditional halt    | `stop(if=positionShort)`           |
-| `trailingStop()`    | Trailing stop       | `trailingStop(offset=e-1%)`        |
+| 命令                | 用途                        | 示例                               |
+| ------------------- | --------------------------- | ---------------------------------- |
+| `market()`          | 市价单                      | `market(side=buy, amount=100%a)`   |
+| `limit()`           | 限价单                      | `limit(position=50%p, offset=e2%)` |
+| `stopOrder()`       | 止损                        | `stopOrder(side=sell, stop=e-1%)`  |
+| `aggressive()`      | 智能限价入场                | `aggressive(position=90%a)`        |
+| `wait()`            | 延迟                        | `wait(10m)`                        |
+| `cancel()`          | 取消订单                    | `cancel(which=all)`                |
+| `oneCancelsOther()` | OCO 组（One Cancels Other） | `oneCancelsOther(which=all)`       |
+| `continue()`        | 条件继续                    | `continue(if=positionLong)`        |
+| `stop()`            | 条件停止                    | `stop(if=positionShort)`           |
+| `trailingStop()`    | 尾随止损                    | `trailingStop(offset=e-1%)`        |
 
-**Position Sizing:**
+**仓位大小：**
 
-- `100%a` = 100% available balance
-- `100%p` = 100% current position
-- `100` = Fixed amount
-- `position=0` = Close position
-- `offset=e2%` = 2% from entry
+- `100%a` = 100% 可用余额
+- `100%p` = 100% 当前仓位
+- `100` = 固定金额
+- `position=0` = 平仓
+- `offset=e2%` = 距入场价 2%
 
 </details>
 
 ---
 
-## 🛠️ Troubleshooting
+## 🛠️ 故障排除
 
 {% tabs %}
-{% tab title="Signals Lite Issues" %}
+{% tab title="Signals Lite 问题" %}
 
-| Problem            | Solution                                   |
-| ------------------ | ------------------------------------------ |
-| Bot not responding | Check webhook URL is exactly copied        |
-| Invalid message    | Must be valid JSON format                  |
-| Wrong size         | Verify % vs fixed amount in JSON           |
-| No TP/SL           | Set in bot or override with JSON fields    |
-| Duplicate orders   | Ensure "Once Per Bar Close" in TradingView |
-| {% endtab %}       |                                            |
+| 问题         | 解决方案                                         |
+| ------------ | ------------------------------------------------ |
+| 机器人无响应 | 检查 webhook URL 是否完全复制                    |
+| 消息无效     | 必须是有效的 JSON 格式                           |
+| 错误的大小   | 验证 JSON 中的 % 对比固定金额                    |
+| 无止盈/止损  | 在机器人中设置或使用 JSON 字段覆盖               |
+| 重复订单     | 确保在 TradingView 中设置了 "Once Per Bar Close" |
 
-{% tab title="Script Bot Issues" %}
+{% endtab %}
 
-| Problem             | Solution                                  |
-| ------------------- | ----------------------------------------- |
-| Script ignored      | Missing `#bot` tag at end                 |
-| Invalid keys        | Check key alias spelling (case-sensitive) |
-| Parse error         | Check Alertatron inbox for error details  |
-| Orders size 0       | Missing `%` on sizing (`%a` or `%p`)      |
-| TP/SL not canceling | Need `oneCancelsOther()` wrapper          |
-| {% endtab %}        |                                           |
-| {% endtabs %}       |                                           |
+{% tab title="Script Bot 问题" %}
+
+| 问题         | 解决方案                             |
+| ------------ | ------------------------------------ |
+| 脚本被忽略   | 末尾缺少 `#bot` 标签                 |
+| 无效密钥     | 检查密钥别名拼写（区分大小写）       |
+| 解析错误     | 检查 Alertatron 收件箱中的错误详情   |
+| 订单大小为 0 | 缺少大小调整中的 `%`（`%a` 或 `%p`） |
+| TP/SL 不取消 | 需要 `oneCancelsOther()` 包装        |
+
+{% endtab %}
+{% endtabs %}
 
 ---
 
-## 📚 Resources
+## 📚 资源
 
 {% hint style="info" %}
-**Official Documentation:**
+**官方文档：**
 
-- **Main: Docs:** [**https://alertatron.com/docs/all/guide**](https://alertatron.com/docs/all/guide)
-- **Signals Lite Getting Started**: <https://alertatron.com/docs/getting-started-with-signals-lite>
-- **Override Settings Reference**: <https://alertatron.com/docs/signals-lite/override-signal-settings>
-- **Script Bots Basics**: <https://alertatron.com/docs/automated-trading/basic-concepts>
-- **Script Command Reference**: <https://alertatron.com/docs/automated-trading/market-order>
-  {% endhint %}
+- **主文档：** [**https://alertatron.com/docs/all/guide**](https://alertatron.com/docs/all/guide)
+- **Signals Lite 入门指南**：<https://alertatron.com/docs/getting-started-with-signals-lite>
+- **覆盖设置参考**：<https://alertatron.com/docs/signals-lite/override-signal-settings>
+- **Script Bots 基础**：<https://alertatron.com/docs/automated-trading/basic-concepts>
+- **脚本命令参考**：<https://alertatron.com/docs/automated-trading/market-order>
+
+{% endhint %}
 
 {% hint style="warning" %}
-**Remember:**
+**记住：**
 
-- Alertatron is a third-party service with separate costs
-- Always test with small amounts first
-- Use exchange testnet when available
-- Manual trading via TradingView is always an option
-  {% endhint %}
+- Alertatron 是第三方服务，有单独的成本
+- 始终先用小额测试
+- 如果可用，使用交易所模拟交易
+- 通过 TradingView 的手动交易始终是一个选项
+
+{% endhint %}
