@@ -1,34 +1,34 @@
-# ⚙️ Example of settings
+# ⚙️ 设置示例
 
-Master every setting in Infinity Algo V3.0 Backtest. This guide covers all configuration options with practical examples for different trading styles.
+掌握 Infinity Algo V3.0 回测版本 (Backtest) 中的每个设置。本指南涵盖所有配置选项,并为不同的交易风格提供实用示例。
 
 {% hint style="info" %}
-**Prerequisites:** Already ran your first backtest? If not, start with the Backtesting Overview first.
+**前提条件:** 已经运行过第一次回测了吗? 如果没有,请先从回测概述 (Backtesting Overview) 开始。
 {% endhint %}
 
 ---
 
-### 🎯 Configuration Philosophy
+### 🎯 配置理念 (Configuration Philosophy)
 
-#### Two Approaches
+#### 两种方法
 
 {% tabs %}
-{% tab title="🤖 AI-Optimized" %}
+{% tab title="🤖 AI 优化" %}
 
-#### Let AI Handle It
+#### 让 AI 处理
 
-**How it works:**
+**工作原理:**
 
-1. Enable AI Optimization
-2. Select performance metric
-3. AI adjusts sensitivity/thresholds
-4. You control exits and risk
+1. 启用 AI 优化 (AI Optimization)
+2. 选择性能指标 (Performance Metric)
+3. AI 调整灵敏度/阈值
+4. 您控制退出和风险
 
-**Best for:**
+**最适合:**
 
-- Most traders
-- Market adaptation
-- Consistent results
+- 大多数交易者
+- 市场适应
+- 一致的结果
 
 {% code title="ai-setup:" %}
 
@@ -45,49 +45,49 @@ Update Frequency: 1000 bars
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FGBUMw9YAKG8RANQxwEEq%2Fimage.png?alt=media&#x26;token=f069b73f-c104-4f59-af54-056a9af3b859" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="🎯 Manual Control" %}
+{% tab title="🎯 手动控制" %}
 
-#### Direct Configuration
+#### 直接配置
 
-**When to use:**
+**何时使用:**
 
-- Testing specific ideas
-- Learning parameter impact
-- Personal preference
-- Predictable behavior
+- 测试特定想法
+- 学习参数影响
+- 个人偏好
+- 可预测的行为
 
-**You control everything:**
+**您控制一切:**
 
-- Sensitivity (5-28)
-- Thresholds (60-80/20-40)
-- All exit parameters
+- 灵敏度 (Sensitivity) (5-28)
+- 阈值 (Thresholds) (60-80/20-40)
+- 所有退出参数
   {% endtab %}
   {% endtabs %}
 
 ---
 
-### 📊 Exit Strategies Explained
+### 📊 退出策略详解 (Exit Strategies Explained)
 
-#### Choose Your Exit Style
+#### 选择您的退出风格
 
 {% tabs %}
-{% tab title="Percentage Exit" %}
+{% tab title="百分比退出 (Percentage Exit)" %}
 
-#### Fixed Targets & Stops
+#### 固定目标与止损
 
-**How it works:**
+**工作原理:**
 
-- Exit at predetermined %
-- Up to 6 take profit levels
-- Partial position exits
-- Fixed stop loss
+- 在预定百分比处退出
+- 最多 6 个止盈 (Take Profit) 水平
+- 部分仓位退出
+- 固定止损 (Stop Loss)
 
-**Perfect for:**
+**完美适合:**
 
-- ✅ Beginners
-- ✅ Scalping
-- ✅ Consistent results
-- ✅ Risk management
+- ✅ 初学者
+- ✅ 剥头皮交易 (Scalping)
+- ✅ 一致的结果
+- ✅ 风险管理
 
 {% code title="percentage-config.txt" %}
 
@@ -101,25 +101,25 @@ Stop Loss: 2%
 
 {% endcode %}
 
-#### Configuration Examples
+#### 配置示例
 
-| Style           | TP1  | TP2 | TP3 | Stop Loss |
-| --------------- | ---- | --- | --- | --------- |
-| **Scalping**    | 0.5% | 1%  | -   | 0.5%      |
-| **Day Trading** | 1%   | 2%  | 3%  | 1.5%      |
-| **Swing**       | 3%   | 5%  | 8%  | 3%        |
-| {% endtab %}    |      |     |     |           |
+| 风格                       | TP1  | TP2 | TP3 | 止损 (Stop Loss) |
+| -------------------------- | ---- | --- | --- | ---------------- |
+| **剥头皮 (Scalping)**      | 0.5% | 1%  | -   | 0.5%             |
+| **日内交易 (Day Trading)** | 1%   | 2%  | 3%  | 1.5%             |
+| **波段交易 (Swing)**       | 3%   | 5%  | 8%  | 3%               |
+| {% endtab %}               |      |     |     |                  |
 
-{% tab title="Signals Exit" %}
+{% tab title="信号退出 (Signals Exit)" %}
 
-#### Dynamic Market-Based
+#### 基于市场的动态退出
 
-**How it works:**
+**工作原理:**
 
-- Exit on technical signals
-- Adapts to momentum
-- Captures full moves
-- No fixed targets
+- 根据技术信号退出
+- 适应动量 (Momentum)
+- 捕捉完整走势
+- 无固定目标
 
 {% code title="signals-config.txt" %}
 
@@ -132,51 +132,51 @@ Adapt to Volatility: ON
 
 {% endcode %}
 
-**Best for:**
+**最适合:**
 
-- ✅ Trending markets
-- ✅ Experienced traders
-- ✅ Larger moves
-- ⚠️ Higher variance
+- ✅ 趋势市场
+- ✅ 有经验的交易者
+- ✅ 更大的走势
+- ⚠️ 更高的波动性 (Variance)
   {% endtab %}
 
-{% tab title="Opposite Signal" %}
+{% tab title="反向信号 (Opposite Signal)" %}
 
-#### Maximum Trend Capture
+#### 最大化趋势捕捉
 
-**How it works:**
+**工作原理:**
 
-- Hold until reversal signal
-- No profit targets
-- No stop loss
-- Pure trend following
+- 持有直到反转信号出现
+- 无止盈目标
+- 无止损
+- 纯趋势跟随 (Trend Following)
 
-**Example:**
+**示例:**
 
-- Long exits on Sell signal
-- Short exits on Buy signal
+- 多头在卖出 (Sell) 信号时退出
+- 空头在买入 (Buy) 信号时退出
 
 {% hint style="warning" %}
-**Advanced only:** Requires strong psychology and risk management
+**仅限高级用户:** 需要强大的心理素质和风险管理
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### 💰 Position Management
+### 💰 仓位管理 (Position Management)
 
-#### Pyramiding (Scaling In)
+#### 金字塔加仓 (Pyramiding) (逐步增仓 Scaling In)
 
 {% columns %}
 {% column width="50%" %}
-**What is it?** Adding to winning positions
+**这是什么?** 在盈利仓位上加仓
 
-**Settings:**
+**设置:**
 
-- `More Entries`: Enable/Disable
-- `Pyramiding`: 1-10 additions
-- Size per addition
+- `More Entries(更多入场)`: 启用/禁用
+- `Pyramiding(金字塔加仓)`: 1-10 次加仓
+- 每次加仓的规模
   {% endcolumn %}
 
 {% column %}
@@ -194,23 +194,23 @@ Max Risk: 2% total
 {% endcolumn %}
 {% endcolumns %}
 
-#### Risk Levels
+#### 风险等级
 
-| Experience       | Pyramiding | Risk Per Trade | Position Size |
-| ---------------- | ---------- | -------------- | ------------- |
-| **Beginner**     | 0          | 1%             | 100% entry    |
-| **Intermediate** | 1          | 1.5%           | 50% + 50%     |
-| **Advanced**     | 2-3        | 2%             | 33% each      |
-| **Expert**       | 3+         | 2%             | Custom        |
+| 经验水平                | 金字塔加仓 | 每笔交易风险 | 仓位规模        |
+| ----------------------- | ---------- | ------------ | --------------- |
+| **初学者 (Beginner)**   | 0          | 1%           | 100% 入场       |
+| **中级 (Intermediate)** | 1          | 1.5%         | 50% + 50%       |
+| **高级 (Advanced)**     | 2-3        | 2%           | 各 33%          |
+| **专家 (Expert)**       | 3+         | 2%           | 自定义 (Custom) |
 
 ---
 
-### 🎨 Configuration by Trading Style
+### 🎨 按交易风格的配置
 
-#### Quick Reference Templates
+#### 快速参考模板
 
 {% tabs %}
-{% tab title="⚡ Scalping" %}
+{% tab title="⚡ 剥头皮 (Scalping)" %}
 {% code title="scalping-config.txt" %}
 
 ```
@@ -226,7 +226,7 @@ Pyramiding: 0
 {% endcode %}
 {% endtab %}
 
-{% tab title="📊 Day Trading" %}
+{% tab title="📊 日内交易 (Day Trading)" %}
 {% code title="daytrading-config:" %}
 
 ```
@@ -243,7 +243,7 @@ Pyramiding: 0-1
 {% endcode %}
 {% endtab %}
 
-{% tab title="📈 Swing Trading" %}
+{% tab title="📈 波段交易 (Swing Trading)" %}
 {% code title="swing-config:" %}
 
 ```
@@ -259,7 +259,7 @@ Pyramiding: 1-2
 {% endcode %}
 {% endtab %}
 
-{% tab title="📅 Position Trading" %}
+{% tab title="📅 仓位交易 (Position Trading)" %}
 {% code title="position-config:" %}
 
 ```
@@ -277,113 +277,113 @@ Pyramiding: 2-3
 
 ---
 
-### 🧪 Testing Your Configuration
+### 🧪 测试您的配置
 
-#### Systematic Approach
+#### 系统方法
 
 {% stepper %}
 {% step %}
 
-#### Document Settings
+#### 记录设置
 
-Write down every parameter before testing
+测试前写下每个参数
 {% endstep %}
 
 {% step %}
 
-#### Run Baseline
+#### 运行基准测试 (Baseline)
 
-Test on last 6 months first
+先在过去 6 个月上测试
 {% endstep %}
 
 {% step %}
 
-#### Stress Test
+#### 压力测试 (Stress Test)
 
-Test worst market periods:
+在最糟糕的市场时期测试:
 
-- March 2020
-- May 2021
-- 2022 bear market
+- 2020 年 3 月
+- 2021 年 5 月
+- 2022 年熊市
   {% endstep %}
 
 {% step %}
 
-#### Compare Results
+#### 比较结果
 
-Look for consistency across periods
+寻找不同时期的一致性
 {% endstep %}
 
 {% step %}
 
-#### Refine One Variable
+#### 细化一个变量
 
-Change only one setting at a time
+一次只更改一个设置
 {% endstep %}
 {% endstepper %}
 
 ---
 
-### 📈 Performance Targets by Style
+### 📈 按风格划分的性能目标
 
-| Trading Style   | Min Profit Factor | Max Drawdown | Win Rate | Avg RRR |
-| --------------- | ----------------- | ------------ | -------- | ------- |
-| **Scalping**    | 1.3               | 10%          | 60%+     | 1:1     |
-| **Day Trading** | 1.5               | 15%          | 50%+     | 1.5:1   |
-| **Swing**       | 2.0               | 20%          | 40%+     | 2:1     |
-| **Position**    | 2.5               | 25%          | 35%+     | 3:1     |
+| 交易风格                   | 最低盈利因子 (Min Profit Factor) | 最大回撤 (Max Drawdown) | 胜率 (Win Rate) | 平均风报比 (Avg RRR) |
+| -------------------------- | -------------------------------- | ----------------------- | --------------- | -------------------- |
+| **剥头皮 (Scalping)**      | 1.3                              | 10%                     | 60%+            | 1:1                  |
+| **日内交易 (Day Trading)** | 1.5                              | 15%                     | 50%+            | 1.5:1                |
+| **波段交易 (Swing)**       | 2.0                              | 20%                     | 40%+            | 2:1                  |
+| **仓位交易 (Position)**    | 2.5                              | 25%                     | 35%+            | 3:1                  |
 
 ---
 
-### ❓ Configuration FAQ
+### ❓ 配置常见问题 (Configuration FAQ)
 
 <details>
 
-<summary><strong>Which exit type is best for beginners?</strong></summary>
+<summary><strong>哪种退出类型最适合初学者?</strong></summary>
 
-Start with **Percentage Exit**:
+从**百分比退出 (Percentage Exit)** 开始:
 
 - Predictable results
 - Easy to understand
 - Better risk control
 - Consistent outcomes
 
-Move to Signals/Opposite after 50+ trades experience.
+在 50+笔交易经验后再转向信号/反向信号退出。
 
 </details>
 
 <details>
 
-<summary><strong>Should I use pyramiding?</strong></summary>
+<summary><strong>我应该使用金字塔加仓 (Pyramiding) 吗?</strong></summary>
 
-**Progressive approach:**
+**渐进方法:**
 
-1. First 30 trades: No pyramiding
-2. After profitable: Add 1 level
-3. After 100 trades: Consider 2
-4. Expert only: 3+
+1. 前 30 笔交易: 不使用金字塔加仓
+2. 盈利后: 添加 1 个级别
+3. 100 笔交易后: 考虑 2 个级别
+4. 仅限专家: 3+ 个级别
 
-Always keep total risk under 2%.
+始终将总风险控制在 2% 以下。
 
 </details>
 
 <details>
 
-<summary><strong>How do I know if settings are over-optimized?</strong></summary>
+<summary><strong>如何知道设置是否过度优化 (Over-optimized)?</strong></summary>
 
-**Warning signs:**
+**警告信号:**
 
-- Small changes = big result differences
-- Amazing backtest, poor live results
-- Only works on one symbol
-- Requires perfect conditions
+- 小的更改 = 大的结果差异
+- 回测表现惊人,实盘结果很差
+- 只在一个商品上有效
+- 需要完美的条件
 
-**Solution:** Test on multiple timeframes and symbols.
+**解决方案:** 在多个时间框架和商品上测试。
 
 </details>
 
 ---
 
 {% hint style="success" %}
-**Next Step:** Configure your settings based on your trading style, then test thoroughly. Remember: consistency beats perfection.
+**下一步:** 根据您的交易风格配置设置,然后彻底测试。记住:一致性胜过完美。
 {% endhint %}
