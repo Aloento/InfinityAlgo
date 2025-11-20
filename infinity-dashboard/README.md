@@ -22,13 +22,13 @@ Infinity 仪表盘将四个强大的分析系统整合为一个综合叠加层�
       </td>
       <td>同时监控 8 个时间框架以实现趋势对齐</td>
       <td></td>
-      <td><a href="infinity-dashboard/mtf-dashboard">mtf-dashboard</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-dashboard/mtf-dashboard">mtf-dashboard</a></td>
     </tr>
     <tr>
       <td><strong>📦 订单块（Order Blocks）</strong><br /><em>机构区域</em></td>
       <td>通过成交量分析识别供给/需求区域</td>
       <td></td>
-      <td><a href="infinity-dashboard/order-blocks">order-blocks</a></td>
+      <td><a href="https://infinity.aloen.to/nfinity-dashboard/order-blocks">order-blocks</a></td>
     </tr>
     <tr>
       <td>
@@ -37,7 +37,7 @@ Infinity 仪表盘将四个强大的分析系统整合为一个综合叠加层�
       <td>追踪 BOS/CHoCH（突破结构/改变高点）以发现趋势变化</td>
       <td></td>
       <td>
-        <a href="infinity-dashboard/market-structure">market-structure</a>
+        <a href="https://infinity.aloen.to/infinity-dashboard/market-structure">market-structure</a>
       </td>
     </tr>
     <tr>
@@ -46,14 +46,14 @@ Infinity 仪表盘将四个强大的分析系统整合为一个综合叠加层�
       </td>
       <td>自适应带状线显示市场波动性</td>
       <td></td>
-      <td><a href="infinity-dashboard/cloud-bands">cloud-bands</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-dashboard/cloud-bands">cloud-bands</a></td>
     </tr>
     <tr>
       <td><strong>🔔 警报系统（Alert System）</strong><br /><em>通知</em></td>
       <td>为所有组件提供 20 个预配置警报</td>
       <td></td>
       <td>
-        <a href="infinity-dashboard/dashboard-alerts">dashboard-alerts</a>
+        <a href="https://infinity.aloen.to/infinity-dashboard/dashboard-alerts">dashboard-alerts</a>
       </td>
     </tr>
   </tbody>

@@ -57,7 +57,7 @@
       </td>
       <td></td>
       <td></td>
-      <td><a href="../infinity-algo-features">features</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features">features</a></td>
     </tr>
     <tr>
       <td>
@@ -65,7 +65,7 @@
       </td>
       <td></td>
       <td></td>
-      <td><a href="../backtest-version">backtest-version</a></td>
+      <td><a href="https://infinity.aloen.to/backtest-version">backtest-version</a></td>
     </tr>
     <tr>
       <td>
@@ -73,7 +73,7 @@
       </td>
       <td></td>
       <td></td>
-      <td><a href="../trading-guide">trading-guide</a></td>
+      <td><a href="https://infinity.aloen.to/trading-guide">trading-guide</a></td>
     </tr>
     <tr>
       <td>
@@ -82,7 +82,7 @@
       <td></td>
       <td></td>
       <td>
-        <a href="../infinity-algo-features/ai-optimization"
+        <a href="https://infinity.aloen.to/infinity-algo-features/ai-optimization"
           >ai-optimization</a
         >
       </td>
@@ -91,7 +91,7 @@
       <td>🔔 <strong>提醒设置</strong><br />配置通知</td>
       <td></td>
       <td></td>
-      <td><a href="../infinity-algo-features/alerts">alerts</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/alerts">alerts</a></td>
     </tr>
     <tr>
       <td>
@@ -99,13 +99,13 @@
       </td>
       <td></td>
       <td></td>
-      <td><a href="../faq-and-troubleshoot">faq-and-troubleshoot</a></td>
+      <td><a href="https://infinity.aloen.to/faq-and-troubleshoot">faq-and-troubleshoot</a></td>
     </tr>
     <tr>
       <td>🔗 <strong>资源</strong><br />链接和其他工具</td>
       <td></td>
       <td></td>
-      <td><a href="../faq-and-troubleshoot/useful-links">useful-links</a></td>
+      <td><a href="https://infinity.aloen.to/faq-and-troubleshoot/useful-links">useful-links</a></td>
     </tr>
     <tr>
       <td>
@@ -116,7 +116,7 @@
       <td></td>
       <td>
         <a
-          href="../infinity-algo-features/feature-requests-and-roadmap"
+          href="https://infinity.aloen.to/infinity-algo-features/feature-requests-and-roadmap"
           >feature-requests-and-roadmap</a
         >
       </td>

@@ -228,19 +228,19 @@ Boost(推荐) 可确保您直接在手机上收到更新的推送通知 (Push No
     <tr>
       <td><strong>🔔 设置提醒</strong></td>
       <td>不要错过任何交易信号</td>
-      <td><a href="../../../infinity-algo-features/alerts">alerts</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/alerts">alerts</a></td>
     </tr>
     <tr>
       <td><strong>⚙️ 配置设置</strong></td>
       <td>根据您的交易风格优化 Infinity Algo</td>
       <td>
-        <a href="../../../infinity-algo-features">infinity-algo-features</a>
+        <a href="https://infinity.aloen.to/infinity-algo-features">infinity-algo-features</a>
       </td>
     </tr>
     <tr>
       <td><strong>🖥️ 桌面端设置</strong></td>
       <td>也在电脑上设置</td>
-      <td><a href="desktop-setup">desktop-setup</a></td>
+      <td><a href="https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart/desktop-setup">desktop-setup</a></td>
     </tr>
   </tbody>
 </table>

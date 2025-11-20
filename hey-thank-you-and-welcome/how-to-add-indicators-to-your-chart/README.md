@@ -20,7 +20,7 @@
       <td><strong>🖥️ 桌面端设置</strong><br />全功能交易工作站</td>
       <td>高级分析、多显示器设置、日内交易 (Day Trading)</td>
       <td>
-        <a href="how-to-add-indicators-to-your-chart/desktop-setup"
+        <a href="https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart/desktop-setup"
           >desktop-setup</a
         >
       </td>
@@ -30,39 +30,7 @@
       <td><strong>📱 移动端设置</strong><br />随时随地交易</td>
       <td>移动交易、快速查看、提醒管理</td>
       <td>
-        <a href="how-to-add-indicators-to-your-chart/mobile-setup"
-          >mobile-setup</a
-        >
-      </td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<table data-card-size="large" data-view="cards">
-  <thead>
-    <tr>
-      <th>平台</th>
-      <th>最适合</th>
-      <th data-hidden data-card-target data-type="content-ref"></th>
-      <th data-hidden data-card-cover data-type="files"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>🖥️ 桌面端设置</strong><br />全功能交易工作站</td>
-      <td>高级分析、多显示器设置、日内交易 (Day Trading)</td>
-      <td>
-        <a href="how-to-add-indicators-to-your-chart/desktop-setup"
-          >desktop-setup</a
-        >
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><strong>📱 移动端设置</strong><br />随时随地交易</td>
-      <td>移动交易、快速查看、提醒管理</td>
-      <td>
-        <a href="how-to-add-indicators-to-your-chart/mobile-setup"
+        <a href="https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart/mobile-setup"
           >mobile-setup</a
         >
       </td>

@@ -161,17 +161,17 @@ Boost(推荐) 我们的脚本可确保您在我们发布更新或新功能时收
     <tr>
       <td><strong>⚙️ 配置设置</strong></td>
       <td>根据您的交易风格优化 Infinity Algo</td>
-      <td><a href="../../../infinity-algo-features">features</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features">features</a></td>
     </tr>
     <tr>
       <td><strong>🔔 设置提醒</strong></td>
       <td>不要错过任何交易信号</td>
-      <td><a href="../../../infinity-algo-features/alerts">alerts</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/alerts">alerts</a></td>
     </tr>
     <tr>
       <td><strong>📱 移动端设置</strong></td>
       <td>使用移动端随时随地交易</td>
-      <td><a href="mobile-setup">mobile-setup</a></td>
+      <td><a href="https://infinity.aloen.to/readme/how-to-add-indicators-to-your-chart/mobile-setup">mobile-setup</a></td>
     </tr>
   </tbody>
 </table>

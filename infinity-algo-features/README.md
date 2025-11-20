@@ -18,13 +18,13 @@
       <td><strong>🏁 退出类型 (Exit Type)</strong><br /><em>退出策略 (Exit Strategy)</em></td>
       <td>选择百分比或基于信号的退出方式</td>
       <td></td>
-      <td><a href="infinity-algo-features/exit-type">exit-type</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/exit-type">exit-type</a></td>
     </tr>
     <tr>
       <td><strong>🛠️ 灵敏度 (Sensitivity)</strong><br /><em>核心设置 (Core Setting)</em></td>
       <td>调整信号频率和响应速度</td>
       <td></td>
-      <td><a href="infinity-algo-features/sensitivity">sensitivity</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/sensitivity">sensitivity</a></td>
     </tr>
     <tr>
       <td>
@@ -35,7 +35,7 @@
       <td>定义买入/卖出等级</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/upper-and-lower-thresholds"
+        <a href="https://infinity.aloen.to/infinity-algo-features/upper-and-lower-thresholds"
           >upper-and-lower-thresholds</a
         >
       </td>
@@ -44,13 +44,13 @@
       <td><strong>📊 EMA 周期长度 (EMA Length)</strong><br /><em>趋势过滤器 (Trend Filter)</em></td>
       <td>设置趋势确认周期</td>
       <td></td>
-      <td><a href="infinity-algo-features/ema-length">ema-length</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/ema-length">ema-length</a></td>
     </tr>
     <tr>
       <td><strong>🔔 显示信号 (Show Signals)</strong><br /><em>信号选择 (Signal Selection)</em></td>
       <td>选择普通 (Normal)、智能 (Smart)、AI 或狙击手 (Sniper) 模式</td>
       <td></td>
-      <td><a href="infinity-algo-features/show-signals">show-signals</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/show-signals">show-signals</a></td>
     </tr>
     <tr>
       <td>
@@ -59,7 +59,7 @@
       <td>允许或阻止连续相同方向的信号</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/toggle-same-signal-consecutively"
+        <a href="https://infinity.aloen.to/infinity-algo-features/toggle-same-signal-consecutively"
           >toggle-same-signal-consecutively</a
         >
       </td>
@@ -71,7 +71,7 @@
       <td>强制交替的买入/卖出信号</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/next-signals-must-be-opposite-signal"
+        <a href="https://infinity.aloen.to/infinity-algo-features/next-signals-must-be-opposite-signal"
           >next-signals-must-be-opposite-signal</a
         >
       </td>
@@ -85,7 +85,7 @@
       <td>追踪最大获利潜力</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/peak-profit-leverage"
+        <a href="https://infinity.aloen.to/infinity-algo-features/peak-profit-leverage"
           >peak-profit-leverage</a
         >
       </td>
@@ -95,7 +95,7 @@
       <td>由机器学习驱动的自动优化</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/ai-optimization">ai-optimization</a>
+        <a href="https://infinity.aloen.to/infinity-algo-features/ai-optimization">ai-optimization</a>
       </td>
     </tr>
     <tr>
@@ -103,7 +103,7 @@
       <td>配置止盈信号</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/take-profit-signals-settings"
+        <a href="https://infinity.aloen.to/infinity-algo-features/take-profit-signals-settings"
           >take-profit-signals-settings</a
         >
       </td>
@@ -113,7 +113,7 @@
       <td>微调止盈信号</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/take-profit-settings"
+        <a href="https://infinity.aloen.to/infinity-algo-features/take-profit-settings"
           >take-profit-settings</a
         >
       </td>
@@ -127,7 +127,7 @@
       <td>完整的头寸管理设置</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/entry-take-profit-and-stop-loss"
+        <a href="https://infinity.aloen.to/infinity-algo-features/entry-take-profit-and-stop-loss"
           >entry-take-profit-and-stop-loss</a
         >
       </td>
@@ -141,7 +141,7 @@
       <td>显示潜在的即将来临的信号</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/show-possible-coming-trades"
+        <a href="https://infinity.aloen.to/infinity-algo-features/show-possible-coming-trades"
           >show-possible-coming-trades</a
         >
       </td>
@@ -151,21 +151,21 @@
       <td>K线颜色、背景和主题</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/visual-settings">visual-settings</a>
+        <a href="https://infinity.aloen.to/infinity-algo-features/visual-settings">visual-settings</a>
       </td>
     </tr>
     <tr>
       <td><strong>🔔 警报 (Alerts)</strong><br /><em>通知 (Notifications)</em></td>
       <td>配置交易警报和自动化</td>
       <td></td>
-      <td><a href="infinity-algo-features/alerts">alerts</a></td>
+      <td><a href="https://infinity.aloen.to/infinity-algo-features/alerts">alerts</a></td>
     </tr>
     <tr>
       <td><strong>⏱️ 即将推出的功能 (Upcoming Features)</strong><br /><em>路线图 (Roadmap)</em></td>
       <td>Infinity Algo 的下一步计划</td>
       <td></td>
       <td>
-        <a href="infinity-algo-features/feature-requests-and-roadmap"
+        <a href="https://infinity.aloen.to/infinity-algo-features/feature-requests-and-roadmap"
           >feature-requests-and-roadmap</a
         >
       </td>

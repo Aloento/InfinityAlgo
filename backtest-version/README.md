@@ -237,14 +237,14 @@ Infinity Algo V3.0 回测版本 (Backtest version) 支持全面的策略测试�
       </td>
       <td></td>
       <td>
-        <a href="backtest-version/settings-spreadsheet">settings-spreadsheet</a>
+        <a href="https://infinity.aloen.to/backtest-version/settings-spreadsheet">settings-spreadsheet</a>
       </td>
     </tr>
     <tr>
       <td><strong>自动告警</strong> 🔔<br />回测版本告警</td>
       <td></td>
       <td>
-        <a href="backtest-version/alerts-backtest-version"
+        <a href="https://infinity.aloen.to/backtest-version/alerts-backtest-version"
           >alerts-backtest-version</a
         >
       </td>
