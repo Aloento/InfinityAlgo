@@ -1,138 +1,138 @@
-# 🔔 Show Signals
+# 🔔 信号显示（Show Signals）
 
-Select your signal type based on trading style and market conditions.
+根据交易风格和市场条件选择您的信号类型。
 
 ![Signal Display Options](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FP1W7CBJYSTCjzTRaXkEn%2Fimage.png?alt=media&token=d3afb87c-67a1-4cc7-9c3f-194e25904d54)
 
 ---
 
-### 📊 Signal Types
+### 📊 信号类型
 
 {% tabs %}
-{% tab title="📈 Normal + Smart" %}
+{% tab title="📈 常规 + 智能（Normal + Smart）" %}
 
-#### All Signals (Default)
+#### 所有信号（默认）
 
-**Shows:** Both trend and counter-trend signals
+**显示内容：** 趋势信号和反向趋势信号两者
 
-✅ Most opportunities ✅ Works all markets ✅ Best for learning ⚠️ More signals to filter
+✅ 交易机会最多 ✅ 适用所有市场 ✅ 最适合学习 ⚠️ 需要过滤的信号较多
 
-**Use when:** You want comprehensive coverage
+**使用场景：** 需要全面的交易覆盖时
 {% endtab %}
 
-{% tab title="🔄 Normal Only" %}
+{% tab title="🔄 常规模式（Normal Only）" %}
 
-#### Counter-Trend Signals
+#### 反向趋势信号
 
-**Shows:** Reversal opportunities only
+**显示内容：** 仅反转（Reversal）机会
 
-✅ Catch reversals ✅ Mean reversion ✅ Range trading ⚠️ Against trend risk
+✅ 捕捉反转 ✅ 均值回归（Mean Reversion） ✅ 区间交易（Range Trading） ⚠️ 逆趋势交易风险
 
-**Use when:** Markets are ranging or oversold/overbought
+**使用场景：** 市场处于震荡或超卖/超买状态时
 {% endtab %}
 
-{% tab title="📉 Smart Only" %}
+{% tab title="📉 智能模式（Smart Only）" %}
 
-#### Trend-Following Signals
+#### 趋势跟随信号
 
-**Shows:** With-trend signals only
+**显示内容：** 仅顺趋势信号
 
-✅ Higher probability ✅ Trend aligned ✅ Less noise ⚠️ Fewer signals
+✅ 胜率更高 ✅ 与趋势对齐 ✅ 噪音更少 ⚠️ 信号较少
 
-**Use when:** Strong trending markets
+**使用场景：** 强势趋势市场中
 {% endtab %}
 
-{% tab title="🎯 HL Sniper" %}
+{% tab title="🎯 HL 狙击模式（HL Sniper）" %}
 
-#### Precision Entries
+#### 精确入场
 
-**Shows:** Possible reversal signals
+**显示内容：** 可能的反转信号
 
-✅ Minimal false signals ✅ Clean entries ✅ Sniping focused ⚠️ High precision entries, but frequent opportunities
+✅ 虚假信号最少 ✅ 清晰的入场点 ✅ 专注狙击精确性 ⚠️ 高精度入场，但交易机会频繁
 
-**Use when:** You want to catch Highs and Lows
+**使用场景：** 需要捕捉最高点和最低点（Highs and Lows）时
 {% endtab %}
 
-{% tab title="🤖 AI" %}
+{% tab title="🤖 人工智能（AI）" %}
 
-#### Self-Optimizing ⭐
+#### 自动优化 ⭐
 
-**Shows:** Adaptive AI signals
+**显示内容：** 自适应 AI 信号
 
-✅ Auto-adjusts ✅ Market adaptive ✅ No manual work ⚠️ Requires AI enabled
+✅ 自动调整 ✅ 市场自适应 ✅ 无需手动干预 ⚠️ 需启用 AI 功能
 
-**Use when:** You want hands-off optimization
+**使用场景：** 需要完全自动化优化时
 {% endtab %}
 
-{% tab title="🎯🤖 AI Sniper" %}
+{% tab title="🎯🤖 AI 狙击模式（AI Sniper）" %}
 
-#### Advanced Precision 🎯
+#### 高级精确模式 🎯
 
-**Shows:** AI + Precision combined
+**显示内容：** AI + 精确模式组合
 
-✅ High accuracy ✅ Self-optimizing ✅ HL sniper optimized ⚠️ Many signals
+✅ 高准确度 ✅ 自动优化 ✅ HL 狙击优化 ⚠️ 信号较多
 
-**Use when:** Bottom and Top sniping accuracy is needed
+**使用场景：** 需要底部和顶部狙击精确性时
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### ⚡ Quick Selection Guide
+### ⚡ 快速选择指南
 
-| Your Style          | Best Mode      | Second Choice  |
-| ------------------- | -------------- | -------------- |
-| **Scalping**        | Normal + Smart | AI             |
-| **Day Trading**     | AI             | Smart Only     |
-| **Swing Trading**   | HL Sniper      | AI Sniper      |
-| **Trend Following** | Smart Only     | AI             |
-| **Mean Reversion**  | Normal Only    | Normal + Smart |
-| **Hands-Off**       | AI             | AI Sniper      |
+| 交易风格                        | 最佳模式    | 次选模式    |
+| ------------------------------- | ----------- | ----------- |
+| **剥头皮交易（Scalping）**      | 常规 + 智能 | AI          |
+| **日内交易（Day Trading）**     | AI          | 智能模式    |
+| **波段交易（Swing Trading）**   | HL 狙击     | AI 狙击     |
+| **趋势跟随（Trend Following）** | 智能模式    | AI          |
+| **均值回归（Mean Reversion）**  | 常规模式    | 常规 + 智能 |
+| **完全自动（Hands-Off）**       | AI          | AI 狙击     |
 
 ---
 
-### 🎯 Market Conditions
+### 🎯 市场条件
 
 {% columns %}
 {% column width="50%" %}
 
-#### Trending Markets
+#### 趋势市场（Trending Markets）
 
-**Best modes:**
+**最佳模式：**
 
-1. Smart Only
+1. 智能模式（Smart Only）
 2. AI
-3. AI Sniper
+3. AI 狙击模式（AI Sniper）
 
-**Why:** Align with trend direction
+**原因：** 与趋势方向对齐
 {% endcolumn %}
 
 {% column %}
 
-#### Ranging Markets
+#### 震荡市场（Ranging Markets）
 
-**Best modes:**
+**最佳模式：**
 
-1. Normal + Smart
-2. Normal Only
-3. AI (adapts)
+1. 常规 + 智能
+2. 常规模式
+3. AI（自适应）
 
-**Why:** Catch both directions
+**原因：** 捕捉双向机会
 {% endcolumn %}
 {% endcolumns %}
 
 ---
 
-### 💡 Pro Tips
+### 💡 专业提示
 
 {% hint style="info" %}
-**Getting Started?** Start with **Normal + Smart** to learn signal patterns, then specialize based on what works for you.
+**初学者？** 从**常规 + 智能**模式开始学习信号模式，然后根据实际效果进行专业化选择。
 {% endhint %}
 
 {% hint style="success" %}
-**Using AI Modes?** Must enable `🧠 AI Optimization` in settings first. AI modes won't work without it.
+**使用 AI 模式？** 必须先在设置中启用 `🧠 AI 优化（AI Optimization）`。不启用 AI 优化功能，AI 模式将无法工作。
 {% endhint %}
 
 {% hint style="warning" %}
-**Quality vs Quantity** More signals ≠ More profit. Sometimes fewer, higher-quality signals perform better.
+**质量 vs 数量（Quality vs Quantity）** 信号越多 ≠ 利润越多。有时候信号较少但质量更高的表现更好。
 {% endhint %}
