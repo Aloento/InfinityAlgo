@@ -1,70 +1,70 @@
-# ☁️ Cloud Bands
+# ☁️ 云形乐队 (Cloud Bands)
 
-Adaptive volatility envelope that expands and contracts with market conditions, providing dynamic support/resistance levels and trend direction.
+自适应波动率包络线（Adaptive Volatility Envelope），随市场条件扩张和收缩，提供动态支撑/阻力位（Support/Resistance）和趋势方向。
 
 ---
 
-### 🎯 What are Cloud Bands?
+### 🎯 什么是云形乐队?
 
-Cloud Bands create a dynamic volatility envelope around price action, automatically adjusting to market conditions. The bands expand during volatile periods and contract during consolidation, helping you identify trend direction, support/resistance levels, and potential breakout zones.
+云形乐队在价格行为周围创建动态波动率包络线，自动调整以适应市场条件。在波动期间乐队会扩张，在盘整期间会收缩，帮助你识别趋势方向、支撑/阻力位和潜在突破区域。
 
 {% columns %}
 {% column width="50%" %}
 
-#### Key Components
+#### 核心组件
 
-- 🔴 **Upper Cloud** - Resistance and overbought zone
-- 🟢 **Lower Cloud** - Support and oversold zone
-- ➖ **Midband** - Dynamic equilibrium level
-- 🎨 **Gradient Layers** - Volatility intensity visualization
+- 🔴 **上乐队 (Upper Cloud)** - 阻力位和超买区域
+- 🟢 **下乐队 (Lower Cloud)** - 支撑位和超卖区域
+- ➖ **中线 (Midband)** - 动态均衡位
+- 🎨 **渐变层 (Gradient Layers)** - 波动率强度可视化
   {% endcolumn %}
 
 {% column %}
 
-#### Why They Work
+#### 为什么有效
 
-Cloud bands adapt to market volatility in real-time, providing context-aware support and resistance levels that static indicators miss. The multi-layered gradient shows strength levels at a glance.
+云形乐队实时适应市场波动率，提供关键感知的支撑和阻力位，这是静态指标无法做到的。多层渐变一目了然地显示强度水平。
 {% endcolumn %}
 {% endcolumns %}
 
 {% hint style="info" %}
-**Trading Edge:** The adaptive nature means you're always working with relevant levels - not fixed lines that ignore current market conditions.
+**交易优势：** 自适应特性意味着你总是在使用相关的位置 - 而非忽视当前市场条件的固定线。
 {% endhint %}
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FqJItacDDygXusobVuCA9%2Fimage.png?alt=media&#x26;token=c36852fd-2b24-4e4a-8df4-ad1202c1a63e" alt=""><figcaption></figcaption></figure>
 
 ---
 
-### 📊 Understanding the Cloud Structure
+### 📊 理解云形结构
 
-#### Cloud Layers
+#### 云层
 
-The cloud consists of multiple bands creating a gradient effect:
+云形由多个乐队组成，创建渐变效果：
 
-| Layer             | Location            | Meaning                     | Trading Use     |
-| ----------------- | ------------------- | --------------------------- | --------------- |
-| **Outer Band**    | Furthest from price | Extreme overbought/oversold | Reversal zones  |
-| **Middle Layers** | Gradient zones      | Increasing strength levels  | Partial profits |
-| **Inner Band**    | Closest to price    | Initial support/resistance  | First targets   |
-| **Midband**       | Center line         | Dynamic equilibrium         | Bias filter     |
+| 层级                       | 位置       | 含义          | 交易用途   |
+| -------------------------- | ---------- | ------------- | ---------- |
+| **外层乐队 (Outer Band)**  | 远离价格   | 极端超买/超卖 | 反转区域   |
+| **中间层 (Middle Layers)** | 渐变区域   | 强度水平递增  | 部分止盈   |
+| **内层乐队 (Inner Band)**  | 最靠近价格 | 初始支撑/阻力 | 首个目标   |
+| **中线 (Midband)**         | 中心线     | 动态均衡      | 偏差过滤器 |
 
-#### Dynamic Midband Color Coding
+#### 动态中线颜色编码
 
 {% columns %}
 {% column width="50%" %}
-**Price Position Indication:**
+**价格位置指示：**
 
-- 🟢 **Green tint** - Price above (bullish)
-- 🔴 **Red tint** - Price below (bearish)
-- ⚪ **Neutral** - Price at equilibrium
+- 🟢 **绿色** - 价格在上方（看涨）
+- 🔴 **红色** - 价格在下方（看跌）
+- ⚪ **中立** - 价格在均衡
   {% endcolumn %}
 
 {% column %}
-**Trading Application:**
+**交易应用：**
 
-- Green = Look for longs
-- Red = Look for shorts
-- Neutral = Wait for direction
+- 绿色 = 寻找做多机会
+- 红色 = 寻找做空机会
+- 中立 = 等待方向确认
   {% endcolumn %}
   {% endcolumns %}
 
@@ -72,376 +72,376 @@ The cloud consists of multiple bands creating a gradient effect:
 
 ---
 
-### ⚙️ Configuration Settings
+### ⚙️ 配置设置
 
-#### Basic Settings
+#### 基本设置
 
-| Setting                   | Options     | Default | Description                      |
-| ------------------------- | ----------- | ------- | -------------------------------- |
-| **☁️ Show Cloud Bands**   | On/Off      | ON      | Toggle cloud visibility          |
-| **⏱ Cloud Period Mode**   | Auto/Manual | Auto    | Adaptive or fixed period         |
-| **⏳ Manual Period**      | 5-400       | 80      | Custom period (Manual mode only) |
-| **〰️ Show Cloud Midline** | On/Off      | ON      | Display center equilibrium line  |
+| 设置                | 选项      | 默认值 | 描述                     |
+| ------------------- | --------- | ------ | ------------------------ |
+| **☁️ 显示云形乐队** | 开启/关闭 | 开启   | 切换云形可见性           |
+| **⏱ 云形周期模式**  | 自动/手动 | 自动   | 自适应或固定周期         |
+| **⏳ 手动周期**     | 5-400     | 80     | 自定义周期（仅手动模式） |
+| **〰️ 显示云形中线** | 开启/关闭 | 开启   | 显示中心均衡线           |
 
-#### Period Mode Guide
+#### 周期模式指南
 
 {% tabs %}
-{% tab title="🤖 Auto Mode (Recommended)" %}
-**Automatic adaptation based on timeframe:**
+{% tab title="🤖 自动模式 (推荐)" %}
+**基于时间框架 (Timeframe) 的自动调整：**
 
-The system intelligently calculates optimal periods:
+系统智能计算最优周期：
 
-- **1-5 min:** Ultra-responsive settings
-- **15-60 min:** Balanced intraday
-- **4H-Daily:** Smooth swing trading
-- **Weekly+:** Major trends only
+- **1-5 分钟：** 超快响应设置
+- **15-60 分钟：** 平衡的日内交易 (Intraday)
+- **4 小时-日线：** 平滑的波段交易 (Swing Trading)
+- **周线及以上：** 仅主要趋势
 
-**Benefits:**
+**优势：**
 
-- No manual adjustment needed
-- Optimized for each timeframe
-- Reduces false signals
+- 无需手动调整
+- 每个时间框架都已优化
+- 减少虚假信号
 
-**Best for:** 95% of traders
+**最适合：** 95% 的交易者
 {% endtab %}
 
-{% tab title="⚙️ Manual Mode" %}
-**Fixed period settings guide:**
+{% tab title="⚙️ 手动模式" %}
+**固定周期设置指南：**
 
-| Period Range | Characteristics               | Best For         |
-| ------------ | ----------------------------- | ---------------- |
-| **20-40**    | Very responsive, many signals | Scalping         |
-| **60-80**    | Balanced sensitivity          | Day trading      |
-| **100-150**  | Smooth, fewer whipsaws        | Swing trading    |
-| **200+**     | Major trends only             | Position trading |
+| 周期范围    | 特点               | 最适合                      |
+| ----------- | ------------------ | --------------------------- |
+| **20-40**   | 反应灵敏，信号频繁 | 超短线交易 (Scalping)       |
+| **60-80**   | 平衡敏感度         | 日内交易 (Day Trading)      |
+| **100-150** | 平滑，虚假突破少   | 波段交易 (Swing Trading)    |
+| **200+**    | 仅主要趋势         | 持仓交易 (Position Trading) |
 
-**When to use:**
+**何时使用：**
 
-- Specific strategy requirements
-- Backtesting consistency
-- Personal preference
+- 特定策略要求
+- 回测一致性
+- 个人偏好
 
-**Best for:** Advanced users with specific needs
+**最适合：** 有特定需求的高级用户
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### 🎯 Trading Signals
+### 🎯 交易信号
 
 {% stepper %}
 {% step %}
 
-#### Cloud Breakouts
+#### 云形突破 (Cloud Breakouts)
 
-**Bullish Breakout:**
+**看涨突破：**
 
-- Price closes above upper cloud
-- Cloud is sloping upward
-- Volume confirmation ideal
+- 价格收盘在上乐队上方
+- 云形向上倾斜
+- 成交量确认最佳
 
-**Bearish Breakout:**
+**看跌突破：**
 
-- Price closes below lower cloud
-- Cloud is sloping downward
-- Strong momentum signal
+- 价格收盘在下乐队下方
+- 云形向下倾斜
+- 强势动量信号
   {% endstep %}
 
 {% step %}
 
-#### Cloud Squeeze
+#### 云形挤压 (Cloud Squeeze)
 
-**Characteristics:**
+**特点：**
 
-- Cloud bands converge (narrow)
-- Low volatility period
-- Energy building for move
+- 云形乐队收敛（变窄）
+- 低波动率期间
+- 能量为大幅波动积蓄
 
-**Trading approach:**
+**交易方法：**
 
-- Mark the squeeze zone
-- Wait for expansion direction
-- Trade the breakout with tight stops
+- 标记挤压区域
+- 等待扩张方向
+- 以紧密的止损进行突破交易
   {% endstep %}
 
 {% step %}
 
-#### Midband Crosses
+#### 中线穿越 (Midband Crosses)
 
-**Signals:**
+**信号：**
 
-- Cross above = Bullish bias shift
-- Cross below = Bearish bias shift
-- Multiple tests = Strong level
+- 穿越上方 = 看涨偏差转变
+- 穿越下方 = 看跌偏差转变
+- 多次触及 = 强支撑位
 
-**Confirmation:**
+**确认方式：**
 
-- Check cloud slope
-- Verify MTF alignment
-- Look for volume
+- 检查云形斜率
+- 验证多时间框架 (MTF) 对齐
+- 查找成交量
   {% endstep %}
   {% endstepper %}
 
 ---
 
-### 📈 Trading Strategies
+### 📈 交易策略
 
-#### Strategy 1: Cloud Edge Bounce
+#### 策略 1：云边反弹
 
-**Setup:**
+**配置：**
 
-1. Price approaches cloud edge in trending market
-2. Look for rejection candles
-3. Enter on bounce with tight stop
-4. Target opposite cloud edge or midband
+1. 价格在趋势市场中接近云形边缘
+2. 寻找拒绝 K 线 (Rejection Candles)
+3. 以紧密止损进行反弹入场
+4. 目标为对面云形边缘或中线
 
-**Best for:** Trending markets with clear cloud slope
+**最适合：** 具有明确云形斜率的趋势市场
 
-#### Strategy 2: Breakout Trading
+#### 策略 2：突破交易
 
-**Setup:**
+**配置：**
 
-1. Identify cloud squeeze (narrow bands)
-2. Wait for decisive break with volume
-3. Enter on retest of cloud edge
-4. Stop below/above cloud
-5. Target = 2x cloud width
+1. 识别云形挤压（乐队变窄）
+2. 等待成交量支持的决定性突破
+3. 在云形边缘回测时进场
+4. 止损在云形下方/上方
+5. 目标 = 2 倍云形宽度
 
-**Best for:** Range breakouts and momentum trades
+**最适合：** 范围突破和动量交易
 
-#### Strategy 3: Mean Reversion
+#### 策略 3：均值回归 (Mean Reversion)
 
-**Setup:**
+**配置：**
 
-1. Price at outer cloud extreme
-2. Look for reversal patterns
-3. Enter targeting midband
-4. Stop beyond cloud extreme
+1. 价格在外层云形极端
+2. 寻找反转形态
+3. 进场目标为中线
+4. 止损在云形极端之外
 
-**Best for:** Overextended markets
+**最适合：** 超高/超低市场
 
 ---
 
-### 🎨 Visual Interpretation
+### 🎨 视觉解读
 
-#### Cloud Colors and Opacity
+#### 云形颜色和不透明度
 
 {% columns %}
 {% column width="50%" %}
-**Color Intensity:**
+**颜色强度：**
 
-- **Darker/opaque** = Higher volatility
-- **Lighter/transparent** = Lower volatility
-- **Red gradient** = Resistance zones
-- **Green gradient** = Support zones
+- **深色/不透明** = 高波动率
+- **浅色/透明** = 低波动率
+- **红色渐变** = 阻力区域
+- **绿色渐变** = 支撑区域
   {% endcolumn %}
 
 {% column %}
-**Trading Meaning:**
+**交易含义：**
 
-- Dark = Use wider stops
-- Light = Tighten risk
-- Red = Sell zones
-- Green = Buy zones
+- 深色 = 使用更宽的止损
+- 浅色 = 收紧风险
+- 红色 = 卖出区域
+- 绿色 = 买入区域
   {% endcolumn %}
   {% endcolumns %}
 
-#### Cloud Slope Analysis
+#### 云形斜率分析
 
-| Slope           | Visual    | Meaning          | Trading Bias    |
-| --------------- | --------- | ---------------- | --------------- |
-| **Steep up**    | 📈 45°+   | Strong uptrend   | Long only       |
-| **Gentle up**   | ↗️ 15-45° | Weak uptrend     | Long preferred  |
-| **Flat**        | ➡️ 0-15°  | Ranging market   | Both directions |
-| **Gentle down** | ↘️ 15-45° | Weak downtrend   | Short preferred |
-| **Steep down**  | 📉 45°+   | Strong downtrend | Short only      |
+| 斜率         | 视觉      | 含义       | 交易偏差 |
+| ------------ | --------- | ---------- | -------- |
+| **陡峭向上** | 📈 45°+   | 强上升趋势 | 仅做多   |
+| **温和向上** | ↗️ 15-45° | 弱上升趋势 | 偏好做多 |
+| **平坦**     | ➡️ 0-15°  | 盘整市场   | 双向交易 |
+| **温和向下** | ↘️ 15-45° | 弱下降趋势 | 偏好做空 |
+| **陡峭向下** | 📉 45°+   | 强下降趋势 | 仅做空   |
 
 ---
 
-### 🔔 Alert Configuration
+### 🔔 警报配置
 
-| Alert Name              | Triggers When                  | Use Case              | Setup                  |
-| ----------------------- | ------------------------------ | --------------------- | ---------------------- |
-| **Cloud Breakout Up**   | Price breaks above upper cloud | Momentum long entry   | Slope must be up       |
-| **Cloud Breakout Down** | Price breaks below lower cloud | Momentum short entry  | Slope must be down     |
-| **Cloud Midband ↑**     | Price crosses above midband    | Bias shift to bullish | Watch for confirmation |
-| **Cloud Midband ↓**     | Price crosses below midband    | Bias shift to bearish | Watch for confirmation |
+| 警报名称         | 触发条件         | 使用场景       | 设置         |
+| ---------------- | ---------------- | -------------- | ------------ |
+| **云形突破向上** | 价格突破上乐队   | 看涨动量进场   | 斜率必须向上 |
+| **云形突破向下** | 价格突破下乐队   | 看跌动量进场   | 斜率必须向下 |
+| **云形中线 ↑**   | 价格穿越中线上方 | 偏差转变为看涨 | 等待确认     |
+| **云形中线 ↓**   | 价格穿越中线下方 | 偏差转变为看跌 | 等待确认     |
 
 {% hint style="success" %}
-**Alert Tip:** Combine cloud breakout alerts with slope confirmation for highest quality signals.
+**警报提示：** 结合云形突破和斜率确认可获得最高质量的信号。
 {% endhint %}
 
 ---
 
-### 💡 Pro Tips
+### 💡 专业技巧
 
-#### Reading Market Conditions
+#### 读取市场条件
 
 {% tabs %}
-{% tab title="Volatility States" %}
+{% tab title="波动率状态" %}
 
-| Cloud Width     | Market State          | Strategy                 |
-| --------------- | --------------------- | ------------------------ |
-| **Very Wide**   | High volatility       | Wide stops, smaller size |
-| **Normal**      | Balanced              | Standard approach        |
-| **Narrow**      | Low volatility        | Breakout pending         |
-| **Expanding**   | Volatility increasing | Trend starting           |
-| **Contracting** | Consolidation         | Prepare for move         |
-| {% endtab %}    |                       |                          |
+| 云形宽度     | 市场状态   | 策略           |
+| ------------ | ---------- | -------------- |
+| **非常宽**   | 高波动率   | 宽止损，小头寸 |
+| **正常**     | 平衡       | 标准方法       |
+| **变窄**     | 低波动率   | 突破待命       |
+| **扩张中**   | 波动率增加 | 趋势启动       |
+| **收缩中**   | 盘整       | 准备波动       |
+| {% endtab %} |            |                |
 
-{% tab title="Timeframe Coordination" %}
+{% tab title="时间框架协调" %}
 
-- **Higher TF cloud:** Major trend direction
-- **Current TF cloud:** Trade execution
-- **Lower TF cloud:** Fine-tuning entries
-- **All aligned:** Highest probability
-- **Mixed:** Stay cautious
+- **更高 TF 的云形：** 主要趋势方向
+- **当前 TF 的云形：** 交易执行
+- **更低 TF 的云形：** 微调进场
+- **全部对齐：** 最高概率
+- **混合信号：** 保持谨慎
   {% endtab %}
 
-{% tab title="Risk Management" %}
+{% tab title="风险管理" %}
 
-| Component           | Guideline              |
-| ------------------- | ---------------------- |
-| **Stop placement**  | Beyond cloud extreme   |
-| **Position sizing** | Inverse to cloud width |
-| **Take profit 1**   | Midband                |
-| **Take profit 2**   | Opposite cloud edge    |
-| **Trail stop**      | Along midband          |
-| {% endtab %}        |                        |
-| {% endtabs %}       |                        |
+| 组成部分      | 指南             |
+| ------------- | ---------------- |
+| **止损位置**  | 在云形极端之外   |
+| **头寸大小**  | 与云形宽度成反比 |
+| **止盈 1**    | 中线             |
+| **止盈 2**    | 对面云形边缘     |
+| **追踪止损**  | 沿中线           |
+| {% endtab %}  |                  |
+| {% endtabs %} |                  |
 
 ---
 
-### 📊 Combining with Other Features
+### 📊 与其他功能组合
 
-#### Powerful Combinations
+#### 强大的组合
 
 {% columns %}
 {% column width="50%" %}
-**With Order Blocks:**
+**与订单块 (Order Blocks) 结合：**
 
-- Cloud edge + Order block = High-probability reversal
-- Breakout + Clear block = Momentum continuation
-- Squeeze at OB = Explosive move pending
+- 云边 + 订单块 = 高概率反转
+- 突破 + 明确块 = 动量延续
+- 在订单块处挤压 = 爆发性波动待命
   {% endcolumn %}
 
 {% column %}
-**With Market Structure:**
+**与市场结构 (Market Structure) 结合：**
 
-- CHoCH at cloud extreme = Major reversal
-- BOS with cloud breakout = Strong trend
-- Structure within cloud = Weak signal
+- 云形极端处的变点 (CHoCH) = 重大反转
+- 破坏支撑 (BOS) + 云形突破 = 强趋势
+- 云形内的结构 = 信号较弱
   {% endcolumn %}
   {% endcolumns %}
 
-**With MTF Dashboard:**
+**与 MTF 仪表盘 (MTF Dashboard) 结合：**
 
-- Cloud breakout + 6+ TF aligned = Highest conviction
-- Midband cross + MTF flip = Trend change confirmed
-- Squeeze + MTF divergence = Stay out
+- 云形突破 + 6+ 个 TF 对齐 = 最高置信度
+- 中线穿越 + MTF 反转 = 趋势变化确认
+- 挤压 + MTF 背离 = 保持观望
 
 ---
 
-### ⚠️ Common Mistakes
+### ⚠️ 常见错误
 
 {% hint style="danger" %}
-**Critical Errors to Avoid:**
+**关键错误需避免：**
 
-1. **Trading against cloud slope** - Respect the trend direction
-2. **Ignoring squeeze setups** - These offer best risk/reward
-3. **Wrong period setting** - Start with Auto mode
-4. **Entering at mid-cloud** - Wait for edges for best entries
-5. **Not adjusting stops for width** - Wide cloud needs wide stops
+1. **与云形斜率交易相反** - 尊重趋势方向
+2. **忽视挤压配置** - 这些提供最佳风险/收益比
+3. **错误的周期设置** - 从自动模式开始
+4. **在云形中部进场** - 在边缘进场以获得最佳入场
+5. **不根据宽度调整止损** - 宽云形需要宽止损
    {% endhint %}
 
 ---
 
-### 🛠️ Troubleshooting
+### 🛠️ 故障排除
 
 <details>
 
-<summary><strong>Cloud not showing</strong></summary>
+<summary><strong>云形不显示</strong></summary>
 
-- Check "Show Cloud Bands" is enabled
-- Ensure sufficient price history loaded
-- Try switching between Auto/Manual mode
-- Verify chart has enough data points
-- Some instruments may need manual period adjustment
+- 检查 "显示云形乐队" 已启用
+- 确保加载了足够的价格历史数据
+- 尝试在自动/手动模式之间切换
+- 验证图表是否有足够的数据点
+- 某些工具可能需要手动调整周期
 
 </details>
 
 <details>
 
-<summary><strong>Cloud too wide/narrow</strong></summary>
+<summary><strong>云形太宽/太窄</strong></summary>
 
-- **Auto mode:** Adapts automatically - if still wrong, try Manual
-- **Manual mode adjustments:**
-  - Too wide → Decrease period (try -20)
-  - Too narrow → Increase period (try +20)
-- Consider your timeframe (lower TF = lower period typically)
-
-</details>
-
-<details>
-
-<summary><strong>Midband not visible</strong></summary>
-
-- Enable "Show Cloud Midline" in settings
-- May be hidden behind price candles
-- Check if it's the same color as background
-- Try zooming in/out
+- **自动模式：** 自动调整 - 如果仍然不对，尝试手动模式
+- **手动模式调整：**
+  - 太宽 → 降低周期（尝试 -20）
+  - 太窄 → 提高周期（尝试 +20）
+- 考虑你的时间框架（低 TF = 通常较低周期）
 
 </details>
 
 <details>
 
-<summary><strong>Cloud appears choppy</strong></summary>
+<summary><strong>中线不可见</strong></summary>
 
-- Normal on very low timeframes (1-5m)
-- Solutions:
-  - Increase period in manual mode
-  - Use higher timeframe (15m+)
-  - Switch to Auto mode
-  - Enable smoothing if available
+- 在设置中启用 "显示云形中线"
+- 可能被价格 K 线隐藏
+- 检查是否与背景色相同
+- 尝试放大/缩小
+
+</details>
+
+<details>
+
+<summary><strong>云形显示不平稳</strong></summary>
+
+- 在非常低的时间框架 (1-5 分钟) 上正常
+- 解决方案：
+  - 在手动模式中提高周期
+  - 使用更高时间框架 (15 分钟+)
+  - 切换到自动模式
+  - 如果可用，启用平滑处理
 
 </details>
 
 ---
 
-### 📚 Quick Reference
+### 📚 快速参考
 
-#### Visual Cues at a Glance
+#### 一览的视觉线索
 
 {% columns %}
 {% column width="50%" %}
-**Cloud Width:**
+**云形宽度：**
 
-- Wide = High volatility
-- Narrow = Low volatility (squeeze)
-- Expanding = Trend starting
-- Contracting = Range forming
+- 宽 = 高波动率
+- 窄 = 低波动率（挤压）
+- 扩张 = 趋势启动
+- 收缩 = 形成范围
   {% endcolumn %}
 
 {% column %}
-**Colors & Slope:**
+**颜色和斜率：**
 
-- Green midband = Bullish bias
-- Red midband = Bearish bias
-- Steep slope = Strong trend
-- Flat cloud = Range-bound
+- 绿色中线 = 看涨偏差
+- 红色中线 = 看跌偏差
+- 陡峭斜率 = 强趋势
+- 平坦云形 = 范围内
   {% endcolumn %}
   {% endcolumns %}
 
-#### Trading Rules Checklist
+#### 交易规则检查清单
 
-- [ ] Trade with the cloud slope direction
-- [ ] Enter at edges, not middle
-- [ ] Adjust stop width to cloud width
-- [ ] Watch for squeeze setups
-- [ ] Use midband as bias filter
-- [ ] Confirm with other features
-- [ ] Respect cloud extremes
+- [ ] 按云形斜率方向交易
+- [ ] 在边缘进场，不在中部
+- [ ] 根据云形宽度调整止损宽度
+- [ ] 关注挤压配置
+- [ ] 用中线作为偏差过滤器
+- [ ] 用其他功能确认
+- [ ] 尊重云形极端
 
 ---
 
-_For additional support, visit our_ [_FAQ_](https://infinity.aloen.to/faq) _or_ [_contact support_](https://infinityalgo.com/#contact)_._
+_如需其他支持，请访问我们的_ [_常见问题_](https://infinity.aloen.to/faq) _或_ [_联系支持_](https://infinityalgo.com/#contact)_。_
