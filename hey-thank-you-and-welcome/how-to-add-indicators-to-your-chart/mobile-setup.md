@@ -1,90 +1,90 @@
-# 📱Mobile Setup
+# 📱 移动端设置
 
-Get Infinity Algo running on TradingView mobile app in minutes with our step-by-step guide.
+通过我们的分步指南,在几分钟内在 TradingView 移动应用上运行 Infinity Algo。
 
 ---
 
-#### 🚀 Quick Setup Process
+#### 🚀 快速设置流程
 
 {% tabs %}
-{% tab title="📊 Add Indicators" %}
-**Step 1: Launch TradingView App**
+{% tab title="📊 添加指标" %}
+**步骤 1: 启动 TradingView 应用**
 
-Open the **TradingView app** on your iOS or Android device.
+在您的 iOS 或 Android 设备上打开 **TradingView 应用**。
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FiXfHmA4C7byPs1OEiPeo%2FIMG_0634.jpg?alt=media&#x26;token=53c118e7-8fbe-4391-bb6c-83a309af6cf0" alt="TradingView App" width="111"><figcaption></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FiXfHmA4C7byPs1OEiPeo%2FIMG_0634.jpg?alt=media&#x26;token=53c118e7-8fbe-4391-bb6c-83a309af6cf0" alt="TradingView 应用" width="111"><figcaption></figcaption></figure>
 
-<p align="center"><em>Available on App Store and Google Play</em></p>
-
----
-
-**Step 2: Access Chart Settings**
-
-Navigate to **Chart** view and tap the **Settings** icon.
-
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FXQw7hZnYCxMggFOWUuTo%2Fimage.png?alt=media&#x26;token=697fd8ea-e00d-4930-aca1-c08caca1f442" alt="TradingView mobile settings icon" width="375"><figcaption><p>Settings icon in top toolbar</p></figcaption></figure>
+<p align="center"><em>可在 App Store 和 Google Play 下载</em></p>
 
 ---
 
-**Step 3: Open Indicators Menu**
+**步骤 2: 访问图表设置 (Chart Settings)**
 
-Tap on **Indicators** to view available trading tools.
+导航到 **Chart(图表)** 视图并点击 **Settings(设置)** 图标。
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FZNm7qs9lHzcCM96tzVZC%2Fimage.png?alt=media&#x26;token=2076c0ff-e299-440b-8b3c-2f2a9f00c105" alt="Indicators menu in mobile app" width="375"><figcaption><p>Indicators option in settings menu</p></figcaption></figure>
-
----
-
-**Step 4: Navigate to Invite-only Scripts**
-
-Select the **Invite-only scripts** tab to access your exclusive indicators.
-
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FQzQ2NbGZu0YoDFGRGun3%2Fimage.png?alt=media&#x26;token=74d30aca-c3de-4653-a537-32f42d9defb7" alt="Invite-only scripts tab selection" width="375"><figcaption><p>Invite-only scripts tab at the top</p></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FXQw7hZnYCxMggFOWUuTo%2Fimage.png?alt=media&#x26;token=697fd8ea-e00d-4930-aca1-c08caca1f442" alt="TradingView 移动端设置图标" width="375"><figcaption><p>顶部工具栏中的设置图标</p></figcaption></figure>
 
 ---
 
-**Step 5: Add Infinity Algo Suite**
+**步骤 3: 打开指标菜单 (Indicators Menu)**
 
-Tap to add all three indicators to your chart:
+点击 **Indicators(指标)** 以查看可用的交易工具。
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FPTyWg0bhUQ9TrawJRekB%2Fimage.png?alt=media&#x26;token=fd195889-93fc-4e80-be85-e3001da2b6b3" alt="Infinity Algo scripts in the invite-only section" width="375"><figcaption><p>Select all three Infinity Algo indicators</p></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FZNm7qs9lHzcCM96tzVZC%2Fimage.png?alt=media&#x26;token=2076c0ff-e299-440b-8b3c-2f2a9f00c105" alt="移动应用中的指标菜单" width="375"><figcaption><p>设置菜单中的指标选项</p></figcaption></figure>
+
+---
+
+**步骤 4: 导航到仅限邀请脚本 (Invite-only Scripts)**
+
+选择 **Invite-only scripts(仅限邀请脚本)** 标签页以访问您的专属指标。
+
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FQzQ2NbGZu0YoDFGRGun3%2Fimage.png?alt=media&#x26;token=74d30aca-c3de-4653-a537-32f42d9defb7" alt="仅限邀请脚本标签页选择" width="375"><figcaption><p>顶部的仅限邀请脚本标签页</p></figcaption></figure>
+
+---
+
+**步骤 5: 添加 Infinity Algo 套件**
+
+点击以将所有三个指标添加到您的图表:
+
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FPTyWg0bhUQ9TrawJRekB%2Fimage.png?alt=media&#x26;token=fd195889-93fc-4e80-be85-e3001da2b6b3" alt="仅限邀请部分中的 Infinity Algo 脚本" width="375"><figcaption><p>选择所有三个 Infinity Algo 指标</p></figcaption></figure>
 
 {% hint style="success" %}
-**Pro Tip:** Tap the star icon ⭐ next to each indicator to add them to favorites for instant access!
+**专业提示:** 点击每个指标旁边的星星图标 ⭐ 将它们添加到收藏夹以便快速访问!
 {% endhint %}
 {% endtab %}
 
-{% tab title="⚙️ Optimize Display" %}
-**Mobile Chart Optimization**
+{% tab title="⚙️ 优化显示" %}
+**移动端图表优化**
 
-**Tips for better mobile experience:**
+**更好移动体验的技巧:**
 
-- **Rotate to landscape** for wider chart view
-- **Hide toolbar** for maximum chart space
-- **Use 1-2 indicators** at a time for clarity
-- **Adjust text size** in settings for readability
+- **横向旋转 (Rotate to landscape)** 以获得更宽的图表视图
+- **隐藏工具栏 (Hide toolbar)** 以获得最大图表空间
+- **一次使用 1-2 个指标** 以保持清晰
+- **调整文字大小 (Text size)** 在设置中以提高可读性
 
 ---
 
-**Gesture Controls:**
+**手势控制 (Gesture Controls):**
 
-| Gesture        | Action              |
-| -------------- | ------------------- |
-| **Pinch**      | Zoom in/out         |
-| **Swipe**      | Scroll through time |
-| **Long press** | Open quick menu     |
-| **Double tap** | Reset zoom          |
+| 手势                  | 操作         |
+| --------------------- | ------------ |
+| **捏合 (Pinch)**      | 放大/缩小    |
+| **滑动 (Swipe)**      | 浏览时间轴   |
+| **长按 (Long press)** | 打开快捷菜单 |
+| **双击 (Double tap)** | 重置缩放     |
 
 {% hint style="info" %}
-**Battery Tip:** Enable "Low Power Mode" in app settings to conserve battery during extended trading sessions.
+**电池提示:** 在应用设置中启用 "Low Power Mode(低电量模式)" 以在长时间交易期间节省电池。
 {% endhint %}
 {% endtab %}
 
-{% tab title="🔔 Get Updates" %}
-**Boost Our Scripts for Notifications**
+{% tab title="🔔 获取更新" %}
+**Boost 我们的脚本以获取通知**
 
-Boosting ensures you receive push notifications for updates directly to your phone!
+Boost(推荐) 可确保您直接在手机上收到更新的推送通知 (Push Notifications)!
 
-**Tap to boost each script:**
+**点击以 Boost 每个脚本:**
 
 {% embed url="<https://www.tradingview.com/script/1cxxjBoY-Infinity-Algo/>" %}
 
@@ -93,19 +93,19 @@ Boosting ensures you receive push notifications for updates directly to your pho
 {% embed url="<https://www.tradingview.com/script/OHwMnBp7-Infinity-Algo-Dashboard/>" %}
 
 {% hint style="info" %}
-**Why boost?** <i class="fa-solid">:solid:</i>Get push notifications when we:
+**为什么要 Boost?** <i class="fa-solid">:solid:</i>在我们进行以下操作时收到推送通知:
 
-- Release new features
-- Fix bugs
-- Update strategies
-- Improve performance
+- 发布新功能
+- 修复错误 (Bug)
+- 更新策略
+- 改进性能
   {% endhint %}
 
 ---
 
-**Follow Our Profile**
+**关注我们的主页**
 
-Stay connected for exclusive insights:
+保持连接以获取独家见解:
 
 {% embed url="<https://www.tradingview.com/u/InfinityAlgo/>" %}
 {% endtab %}
@@ -113,133 +113,133 @@ Stay connected for exclusive insights:
 
 ---
 
-#### 📦 Infinity Algo Suite Overview
+#### 📦 Infinity Algo 套件概览
 
-| Indicator                                                  | Purpose                | Key Features                                                            |
-| ---------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------- |
-| <i class="fa-solid">:solid:</i>**Infinity Algo**           | Main trading signals   | AI-powered signals, Smart/Sniper modes, TP/SL levels                    |
-| <i class="fa-solid">:solid:</i>**Infinity Algo Backtest**  | Strategy testing       | Historical performance, optimization, win rates (limited on mobile app) |
-| <i class="fa-solid">:solid:</i>**Infinity Algo Dashboard** | Market structure & MTF | Multi-timeframe analysis, market structure, trend overview              |
+| 指标                                                       | 用途                       | 主要功能                                                 |
+| ---------------------------------------------------------- | -------------------------- | -------------------------------------------------------- |
+| <i class="fa-solid">:solid:</i>**Infinity Algo**           | 主要交易信号               | AI 驱动的信号、Smart/Sniper 模式、止盈/止损 (TP/SL) 水平 |
+| <i class="fa-solid">:solid:</i>**Infinity Algo Backtest**  | 策略测试                   | 历史表现、优化、胜率 (Win Rate)(移动应用功能受限)        |
+| <i class="fa-solid">:solid:</i>**Infinity Algo Dashboard** | 市场结构与多时间框架 (MTF) | 多时间框架分析、市场结构、趋势概览                       |
 
 ---
 
-#### 📱 Mobile-Specific Features
+#### 📱 移动端特定功能
 
 {% columns %}
 {% column width="50%" %}
-**Alert Management:**
+**提醒管理 (Alert Management):**
 
-- Push notifications to phone
-- Custom alert sounds
-- Vibration patterns
-- Do Not Disturb scheduling
+- 推送通知到手机
+- 自定义提醒声音
+- 振动模式
+- 勿扰模式 (Do Not Disturb) 计划
   {% endcolumn %}
 
 {% column %}
-**Quick Access:**
+**快速访问 (Quick Access):**
 
-- Widget support (iOS/Android)
-- Apple Watch app
-- Face/Touch ID security
-- Quick chart switching
+- 小部件 (Widget) 支持 (iOS/Android)
+- Apple Watch 应用
+- 面容/触控 ID (Face/Touch ID) 安全
+- 快速图表切换
   {% endcolumn %}
   {% endcolumns %}
 
 ---
 
-#### 🛠️ Troubleshooting
+#### 🛠️ 故障排除
 
 <details>
 
-<summary><strong>Can't see indicators in Invite-only scripts?</strong></summary>
+<summary><strong>在仅限邀请脚本中看不到指标?</strong></summary>
 
-1. **Force close** and restart the app
-2. **Pull down** to refresh the indicators list
-3. **Log out** and log back into your account
-4. **Verify** your username matches your purchase
-5. **Contact** <support@infinityalgo.com> if issues persist
+1. **强制关闭 (Force close)** 并重启应用
+2. **下拉刷新 (Pull down)** 以刷新指标列表
+3. **登出 (Log out)** 并重新登录您的账户
+4. **验证** 您的用户名与购买时匹配
+5. **联系** <support@infinityalgo.com> 如果问题仍然存在
 
 </details>
 
 <details>
 
-<summary><strong>App crashes or runs slowly?</strong></summary>
+<summary><strong>应用崩溃或运行缓慢?</strong></summary>
 
-1. **Update** to latest TradingView app version
-2. **Clear** app cache in settings
-3. **Reduce** number of active indicators
-4. **Restart** your device
-5. **Free up** storage space (need 500MB+)
+1. **更新** 到最新的 TradingView 应用版本
+2. **清除** 设置中的应用缓存 (Cache)
+3. **减少** 活动指标的数量
+4. **重启** 您的设备
+5. **释放** 存储空间(需要 500MB+)
 
 </details>
 
 <details>
 
-<summary><strong>Alerts not working on mobile?</strong></summary>
+<summary><strong>提醒在移动端不工作?</strong></summary>
 
-1. **Enable** push notifications in phone settings
-2. **Check** Do Not Disturb is off
-3. **Verify** alert is set to "Once Per Bar Close"
-4. **Test** with a simple price alert first
-5. **Reinstall** app if notifications still fail
+1. **启用** 手机设置中的推送通知 (Push Notifications)
+2. **检查** 勿扰模式 (Do Not Disturb) 是否关闭
+3. **验证** 提醒设置为 "Once Per Bar Close(每根 K 线收盘一次)"
+4. **测试** 先使用简单的价格提醒
+5. **重新安装** 应用,如果通知仍然失败
 
 </details>
 
 ---
 
-#### 💡 Pro Tips
+#### 💡 专业提示
 
 {% hint style="success" %}
-**Quick Switch:** Save multiple chart layouts with different timeframes to quickly switch between them with swipe gestures.
+**快速切换 (Quick Switch):** 保存多个不同时间框架的图表布局,以便通过滑动手势快速切换。
 {% endhint %}
 
 {% hint style="info" %}
-**Data Saver:** Enable "Reduced Data Mode" in app settings when on cellular to minimize data usage.
+**数据节省 (Data Saver):** 使用蜂窝数据时,在应用设置中启用 "Reduced Data Mode(减少数据模式)" 以最小化数据使用。
 {% endhint %}
 
 ---
 
-#### 🎯 Mobile vs Desktop Comparison
+#### 🎯 移动端与桌面端对比
 
-| Feature            | Mobile            | Desktop              |
-| ------------------ | ----------------- | -------------------- |
-| **Portability**    | ✅ Trade anywhere | ❌ Fixed location    |
-| **Screen Size**    | 🟡 Limited        | ✅ Multiple monitors |
-| **Battery Life**   | 🟡 Limited        | ✅ Unlimited         |
-| **Multi-tasking**  | ❌ Single app     | ✅ Multiple windows  |
-| **Touch Controls** | ✅ Intuitive      | 🟡 Mouse required    |
-| **Backtesting**    | ❌None            | ✅Full               |
+| 功能                   | 移动端      | 桌面端      |
+| ---------------------- | ----------- | ----------- |
+| **便携性**             | ✅ 随处交易 | ❌ 固定位置 |
+| **屏幕尺寸**           | 🟡 有限     | ✅ 多显示器 |
+| **电池续航**           | 🟡 有限     | ✅ 无限     |
+| **多任务处理**         | ❌ 单应用   | ✅ 多窗口   |
+| **触控操作**           | ✅ 直观     | 🟡 需要鼠标 |
+| **回测 (Backtesting)** | ❌ 无       | ✅ 完整     |
 
 ---
 
-#### 📚 Next Steps
+#### 📚 后续步骤
 
-Ready to trade on mobile? Continue with:
+准备好在移动端交易了吗? 继续以下内容:
 
 <table data-view="cards">
   <thead>
     <tr>
-      <th>Section</th>
-      <th>Description</th>
+      <th>章节</th>
+      <th>描述</th>
       <th data-hidden data-card-target data-type="content-ref"></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>🔔 Set Up Alerts</strong></td>
-      <td>Never miss a trading signal</td>
+      <td><strong>🔔 设置提醒</strong></td>
+      <td>不要错过任何交易信号</td>
       <td><a href="../../../infinity-algo-features/alerts">alerts</a></td>
     </tr>
     <tr>
-      <td><strong>⚙️ Configure Settings</strong></td>
-      <td>Optimize Infinity Algo for your trading style</td>
+      <td><strong>⚙️ 配置设置</strong></td>
+      <td>根据您的交易风格优化 Infinity Algo</td>
       <td>
         <a href="../../../infinity-algo-features">infinity-algo-features</a>
       </td>
     </tr>
     <tr>
-      <td><strong>🖥️ Desktop Setup</strong></td>
-      <td>Set up on computer too</td>
+      <td><strong>🖥️ 桌面端设置</strong></td>
+      <td>也在电脑上设置</td>
       <td><a href="desktop-setup">desktop-setup</a></td>
     </tr>
   </tbody>
