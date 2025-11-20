@@ -1,68 +1,68 @@
-# 🎯 Entry, Take Profit and Stop Loss
+# 🎯 入场价格、止盈和止损 (Entry, Take Profit and Stop Loss)
 
-![Settings Panel](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fs4Vdtl8fxs226HhSzqpQ%2F2025-08-24_22-58-59.jpg?alt=media&token=2f8b4916-5873-46a0-90df-456cf7d0a5ff)
+![设置面板](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fs4Vdtl8fxs226HhSzqpQ%2F2025-08-24_22-58-59.jpg?alt=media&token=2f8b4916-5873-46a0-90df-456cf7d0a5ff)
 
 ---
 
-#### 📊 Settings Overview
+#### 📊 设置概览
 
 {% tabs %}
-{% tab title="📍 Entry Price" %}
-**Entry Level Display**
+{% tab title="📍 入场价格 (Entry Price)" %}
+**入场水平显示**
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FbmAV4XD5r3SZfSR0HzMk%2Fimage.png?alt=media&#x26;token=7594ac6b-efc6-4f88-abf2-3fd9e6b255d1" alt=""><figcaption></figcaption></figure>
 
-**Purpose:** Shows your position entry with dotted line
+**功能：** 使用虚线显示您的持仓入场点
 
-**Enabled**
+**启用**
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FXzpeeNRhn2frhR8NQGz7%2Fimage.png?alt=media&#x26;token=1594f3f0-fcfe-4af0-b95c-e88696b55034" alt=""><figcaption><p>Line visualization Entry Price enabled</p></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FXzpeeNRhn2frhR8NQGz7%2Fimage.png?alt=media&#x26;token=1594f3f0-fcfe-4af0-b95c-e88696b55034" alt=""><figcaption><p>启用入场价格 (Entry Price) 线条可视化</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="💰 Take Profit" %}
-**TP Levels Configuration**
+{% tab title="💰 止盈 (Take Profit)" %}
+**止盈水平 (TP Levels) 配置**
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FGvI8D8QS2rcwWiFgv07e%2Fimage.png?alt=media&#x26;token=a13943f3-a1ad-443b-988b-ace733f1fb0d" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-**Important:** TP levels only work with "Percentage" exit type
+**重要提示：** 止盈水平仅在"百分比"(Percentage) 出场类型下有效
 {% endhint %}
 
-**Setup Process:**
+**设置过程：**
 
 {% stepper %}
 {% step %}
-**Enable TP Level**
+**启用止盈水平**
 
-Toggle ON the TP levels you want
+切换启用所需的止盈水平
 {% endstep %}
 
 {% step %}
-**Set Percentage**
+**设置百分比**
 
-Define profit % for each level
+为每个水平定义利润百分比
 {% endstep %}
 
 {% step %}
-**Assign Position %**
+**分配头寸百分比**
 
-Set how much to exit at each TP
+设置每个止盈点出场多少头寸
 {% endstep %}
 
 {% step %}
-**Verify Total = 100%**
+**验证总和 = 100%**
 
-Sum of all exit % must equal 100
+所有出场百分比之和必须等于 100
 {% endstep %}
 {% endstepper %}
 
-**Configuration Examples:**
+**配置示例：**
 
 {% code title="single-tp:" %}
 
 ```
-Single TP:
-TP1: 2% profit, exit 100%
+单一止盈 (Single TP)：
+TP1: 2% 利润，出场 100%
 ```
 
 {% endcode %}
@@ -70,89 +70,89 @@ TP1: 2% profit, exit 100%
 {% code title="multiple-tp:" %}
 
 ```
-Multiple TPs:
-TP1: 1% profit, exit 50%
-TP2: 2% profit, exit 30%
-TP3: 3% profit, exit 20%
-Total: 100% ✅
+多重止盈 (Multiple TPs)：
+TP1: 1% 利润，出场 50%
+TP2: 2% 利润，出场 30%
+TP3: 3% 利润，出场 20%
+总计：100% ✅
 ```
 
 {% endcode %}
 
-**Visual Display:** Enable "Show TP Prices" for dotted lines on chart
+**可视化显示：** 启用"显示止盈价格"(Show TP Prices) 在图表上显示虚线
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fk20MvZWwDaYvnaK6fyKc%2Fimage.png?alt=media&#x26;token=cd6e1825-394e-41d5-926f-46805c860242" alt=""><figcaption><p>Line visualization with all 6 TPs enabled</p></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Fk20MvZWwDaYvnaK6fyKc%2Fimage.png?alt=media&#x26;token=cd6e1825-394e-41d5-926f-46805c860242" alt=""><figcaption><p>启用全部 6 个止盈水平的线条可视化</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="🛑 Stop Loss" %}
-**Stop Loss Setup**
+{% tab title="🛑 止损 (Stop Loss)" %}
+**止损设置**
 
-**Configure separately for Long and Short positions**
+**为多头和空头头寸分别配置**
 
-![SL Settings](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FhosipOwLOCvCoE8GSggs%2F2025-08-20_16-21-08.jpg?alt=media&token=19c589ba-ca12-45bc-bbc7-f063c9f41d0e)
+![止损设置](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FhosipOwLOCvCoE8GSggs%2F2025-08-20_16-21-08.jpg?alt=media&token=19c589ba-ca12-45bc-bbc7-f063c9f41d0e)
 
-**Long Position SL**
+**多头头寸 (Long Position) 止损**
 
-Set % below entry for longs
+设置低于入场价格的百分比
 
-- Example: 2% = Exit if -2%
+- 示例：2% = 当亏损 -2% 时出场
 
-**Short Position SL**
+**空头头寸 (Short Position) 止损**
 
-Set % above entry for shorts
+设置高于入场价格的百分比
 
-- Example: 2% = Exit if -2%
+- 示例：2% = 当亏损 -2% 时出场
 
-**Visual Display:** Enable "Show SL Price" for dotted line on chart
+**可视化显示：** 启用"显示止损价格"(Show SL Price) 在图表上显示虚线
 
-<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FecvM4PErLl9QtSM4um9n%2Fimage.png?alt=media&#x26;token=953f389b-5bfb-48d7-8704-39df5a955e3d" alt=""><figcaption><p>Line visualization SL enabled</p></figcaption></figure>
+<figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FecvM4PErLl9QtSM4um9n%2Fimage.png?alt=media&#x26;token=953f389b-5bfb-48d7-8704-39df5a955e3d" alt=""><figcaption><p>启用止损线条可视化</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="🔄 Trailing Stop Loss" %}
-**Advanced SL Management**
+{% tab title="🔄 跟踪止损 (Trailing Stop Loss)" %}
+**高级止损管理**
 
-**Three Trailing Modes Available:**
+**三种跟踪模式可用：**
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FFh3VQlluQErei97fRKJQ%2Fimage.png?alt=media&#x26;token=6f5839e1-749d-4a3f-846f-6496c8486abc" alt=""><figcaption></figcaption></figure>
 
-| Mode              | Description      | How It Works                          |
-| ----------------- | ---------------- | ------------------------------------- |
-| **None**          | Static stop loss | SL stays at initial level             |
-| **Breakeven**     | Move to entry    | SL moves to entry price after trigger |
-| **Moving Target** | Follow TP levels | SL trails up to previous TP levels    |
+| 模式 (Mode)                  | 描述         | 工作原理                 |
+| ---------------------------- | ------------ | ------------------------ |
+| **无 (None)**                | 静态止损     | 止损保持在初始水平       |
+| **保本 (Breakeven)**         | 移至入场     | 触发后将止损移至入场价格 |
+| **移动目标 (Moving Target)** | 跟踪止盈水平 | 止损跟随至之前的止盈水平 |
 
-**Setup Process:**
+**设置过程：**
 
 {% stepper %}
 {% step %}
-**Select Trailing Mode**
+**选择跟踪模式**
 
-Choose from None, Breakeven, or Moving Target
+从"无"、"保本"或"移动目标"中选择
 {% endstep %}
 
 {% step %}
-**Set Trigger Point**
+**设置触发点**
 
-Select which TP triggers the trailing (TP1-TP6)
+选择哪个止盈水平触发跟踪 (TP1-TP6)
 {% endstep %}
 
 {% step %}
-**Monitor Status**
+**监控状态**
 
-Chart shows (BE) or (TP1), (TP2) etc. next to SL
+图表在止损旁显示 (BE) 或 (TP1), (TP2) 等
 {% endstep %}
 {% endstepper %}
 
-**Example Configurations:**
+**配置示例：**
 
 {% code title="breakeven-setup:" %}
 
 ```
-Breakeven Mode:
-- Mode: Breakeven
-- Trigger: After TP1
-- Result: SL moves to entry when TP1 hits
-- Display: "Stop loss (BE)"
+保本 (Breakeven) 模式：
+- 模式：保本
+- 触发：TP1 后
+- 结果：TP1 触发时止损移至入场点
+- 显示："Stop loss (BE)"
 ```
 
 {% endcode %}
@@ -160,166 +160,166 @@ Breakeven Mode:
 {% code title="moving-target-setup:" %}
 
 ```
-Moving Target Mode:
-- Mode: Moving Target
-- Trigger: After TP2
-- Result:
-  * After TP2: SL → Entry
-  * After TP3: SL → TP1
-  * After TP4: SL → TP2
-- Display: "Stop loss (TP1)", etc.
+移动目标 (Moving Target) 模式：
+- 模式：移动目标
+- 触发：TP2 后
+- 结果：
+  * TP2 后：止损 → 入场点
+  * TP3 后：止损 → TP1
+  * TP4 后：止损 → TP2
+- 显示："Stop loss (TP1)"，等等
 ```
 
 {% endcode %}
 
 {% hint style="success" %}
-**Pro Tip:** Moving Target mode locks in profits progressively as each TP level is reached
+**专业建议：** 移动目标 (Moving Target) 模式能在每个止盈水平触发时逐步锁定利润
 {% endhint %}
 
-**Visual Indicators:**
+**可视化指标：**
 
-| SL Status        | Label Display               | Meaning           |
-| ---------------- | --------------------------- | ----------------- |
-| **Normal**       | "Stop loss: \[price]"       | Static SL active  |
-| **Breakeven**    | "Stop loss (BE): \[price]"  | SL moved to entry |
-| **Trailing TP1** | "Stop loss (TP1): \[price]" | SL at TP1 level   |
-| **Trailing TP2** | "Stop loss (TP2): \[price]" | SL at TP2 level   |
+| 止损状态     | 标签显示                    | 含义             |
+| ------------ | --------------------------- | ---------------- |
+| **正常**     | "Stop loss: \[price]"       | 静态止损激活     |
+| **保本**     | "Stop loss (BE): \[price]"  | 止损已移至入场点 |
+| **跟踪 TP1** | "Stop loss (TP1): \[price]" | 止损在 TP1 水平  |
+| **跟踪 TP2** | "Stop loss (TP2): \[price]" | 止损在 TP2 水平  |
 
 {% hint style="info" %}
-**Entry Line Behavior:** When SL is at breakeven, the entry line dims to avoid visual overlap
+**入场线表现：** 当止损处于保本时，入场线会变暗以避免视觉重叠
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ---
 
-#### 📈 Visual Display & Behavior
+#### 📈 可视化显示与行为
 
-**What Shows on Chart:**
+**图表上显示的内容：**
 
-| Level         | Display     | Line Style    | When Visible         | Special Notes             |
-| ------------- | ----------- | ------------- | -------------------- | ------------------------- |
-| **Entry**     | Dotted line | `···········` | When enabled         | Dims when SL at BE        |
-| **TP Levels** | Dotted line | `···········` | Percentage mode only | Replaced by dots when hit |
-| **Stop Loss** | Dotted line | `···········` | When enabled         | Shows trailing status     |
+| 水平 (Level) | 显示 (Display) | 线条样式      | 何时可见     | 特殊说明           |
+| ------------ | -------------- | ------------- | ------------ | ------------------ |
+| **入场点**   | 虚线           | `···········` | 启用时       | 止损在保本时变暗   |
+| **止盈水平** | 虚线           | `···········` | 仅百分比模式 | 触发时被点标记替换 |
+| **止损**     | 虚线           | `···········` | 启用时       | 显示跟踪状态       |
 
 {% hint style="info" %}
-**Dynamic Display:**
+**动态显示：**
 
-- TP lines disappear and become dot markers when hit
-- SL label updates to show current mode (BE, TP1, TP2, etc.)
-- Entry line dims when SL is at breakeven to reduce clutter
+- 止盈线在触发时消失并变成点标记
+- 止损标签更新以显示当前模式 (BE, TP1, TP2 等)
+- 当止损处于保本时，入场线会变暗以减少混乱
   {% endhint %}
 
-**Chart Examples:**
+**图表示例：**
 
 {% columns %}
 {% column width="50%" %}
-**Active TP Lines**
+**活跃的止盈线**
 
-![Before TP Hit](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FbWGbiHuheTXVKJHpX4KW%2F2025-08-20_16-58-38.jpg?alt=media&token=129a1cd9-330d-463c-aaf2-7c35640196a7) **Lines show pending TP levels**
+![触发前](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FbWGbiHuheTXVKJHpX4KW%2F2025-08-20_16-58-38.jpg?alt=media&token=129a1cd9-330d-463c-aaf2-7c35640196a7) **线条显示待处理的止盈水平**
 {% endcolumn %}
 
 {% column %}
-**TP Hit Markers**
+**止盈触发标记**
 
-![After TP Hit](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FDzZ7kGlWG30skuBIDGZG%2F2025-08-20_17-00-02.jpg?alt=media&token=7c845ba8-dcab-4cc0-a990-7e14324a9067) **Dots mark executed TPs**
+![触发后](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FDzZ7kGlWG30skuBIDGZG%2F2025-08-20_17-00-02.jpg?alt=media&token=7c845ba8-dcab-4cc0-a990-7e14324a9067) **点标记已执行的止盈**
 {% endcolumn %}
 {% endcolumns %}
 
 ---
 
-#### 🎨 Visual Indicators Guide
+#### 🎨 可视化指标指南
 
-**TP Level Status:**
+**止盈水平状态：**
 
-| Status                 | Visual         | Description      | Chart State        |
-| ---------------------- | -------------- | ---------------- | ------------------ |
-| **📊 Pending TP**      | Dotted line    | Ready to trigger | Label shows target |
-| **✅ TP Hit**          | Dot marker (●) | Level executed   | Line disappears    |
-| **🔄 Position Closed** | Dots remain    | Trade complete   | All lines cleared  |
+| 状态              | 可视化     | 描述       | 图表状态     |
+| ----------------- | ---------- | ---------- | ------------ |
+| **📊 待处理止盈** | 虚线       | 准备触发   | 标签显示目标 |
+| **✅ 止盈已触发** | 点标记 (●) | 水平已执行 | 线条消失     |
+| **🔄 持仓已平仓** | 点保留     | 交易完成   | 所有线条清除 |
 
-**SL Trailing Status:**
+**止损跟踪状态：**
 
-| Status           | Visual                      | Description         | Notes           |
-| ---------------- | --------------------------- | ------------------- | --------------- |
-| **📍 Static**    | "Stop loss: \[price]"       | Fixed SL position   | Initial state   |
-| **🟢 Breakeven** | "Stop loss (BE): \[price]"  | Moved to entry      | Risk-free trade |
-| **📈 Trailing**  | "Stop loss (TP#): \[price]" | Following TP levels | Profits locked  |
+| 状态        | 可视化                      | 描述         | 说明       |
+| ----------- | --------------------------- | ------------ | ---------- |
+| **📍 静态** | "Stop loss: \[price]"       | 固定止损位置 | 初始状态   |
+| **🟢 保本** | "Stop loss (BE): \[price]"  | 移至入场     | 无风险交易 |
+| **📈 跟踪** | "Stop loss (TP#): \[price]" | 跟随止盈水平 | 利润已锁定 |
 
 ---
 
-#### 🎯 Quick Setup Templates
+#### 🎯 快速设置模板
 
-**Conservative (Single TP + Breakeven)**
+**保守型 (单一止盈 + 保本)**
 
 {% code title="conservative:" %}
 
 ```
-TP1: 2% profit, exit 100%
-SL: 1% loss
-Trailing: Breakeven after TP1
-Risk/Reward: 2:1 → Risk-free after TP
+TP1: 2% 利润，出场 100%
+止损：1% 亏损
+跟踪：TP1 后保本
+风险/收益：2:1 → TP 后无风险
 ```
 
 {% endcode %}
 
-**Scaled Exit (Multiple TP + Moving Target)**
+**分级出场 (多重止盈 + 移动目标)**
 
 {% code title="scaled:" %}
 
 ```
-TP1: 1% profit, exit 50%
-TP2: 2% profit, exit 30%
-TP3: 3% profit, exit 20%
-SL: 2% loss
-Trailing: Moving Target after TP1
-Result: Progressive profit locking
+TP1: 1% 利润，出场 50%
+TP2: 2% 利润，出场 30%
+TP3: 3% 利润，出场 20%
+止损：2% 亏损
+跟踪：TP1 后移动目标
+结果：逐步锁定利润
 ```
 
 {% endcode %}
 
-**Aggressive (Wide Targets + Late Trailing)**
+**激进型 (宽目标 + 晚期跟踪)**
 
 {% code title="aggressive:" %}
 
 ```
-TP1: 3% profit, exit 40%
-TP2: 5% profit, exit 30%
-TP3: 8% profit, exit 30%
-SL: 3% loss
-Trailing: Moving Target after TP2
-Result: Maximum profit potential
+TP1: 3% 利润，出场 40%
+TP2: 5% 利润，出场 30%
+TP3: 8% 利润，出场 30%
+止损：3% 亏损
+跟踪：TP2 后移动目标
+结果：最大利润潜力
 ```
 
 {% endcode %}
 
 ---
 
-#### 💡 Pro Tips
+#### 💡 专业建议
 
 {% hint style="success" %}
-**Best Practices:**
+**最佳实践：**
 
-- Always verify TP percentages = 100%
-- Use Breakeven mode for conservative trading
-- Use Moving Target to lock in progressive profits
-- Set trailing trigger based on your confidence level
-- Monitor the SL label for current protection status
+- 始终验证止盈百分比 = 100%
+- 使用保本模式进行保守交易
+- 使用移动目标逐步锁定利润
+- 根据您的信心水平设置跟踪触发
+- 监控止损标签以获取当前保护状态
   {% endhint %}
 
 {% hint style="info" %}
-**Trailing Tips:**
+**跟踪建议：**
 
-- **Breakeven after TP1** = Quick risk elimination
-- **Moving Target after TP2** = Balance between profit and protection
-- **No trailing** = Maximum profit potential but constant risk
+- **TP1 后保本** = 快速消除风险
+- **TP2 后移动目标** = 利润与保护之间的平衡
+- **无跟踪** = 最大利润潜力但风险持续
   {% endhint %}
 
 {% hint style="warning" %}
-**Remember:**
+**记住：**
 
-- TP lines only show in "Percentage" exit mode
-- Trailing SL requires at least one TP to be enabled
-- Moving Target mode requires multiple TPs for best results
+- 止盈线仅在"百分比"出场模式中显示
+- 跟踪止损需要至少启用一个止盈水平
+- 移动目标模式需要多个止盈水平以获得最佳结果
   {% endhint %}
