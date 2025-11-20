@@ -1,133 +1,133 @@
-# 💰 Take Profit Signals Settings
+# 💰 止盈信号 (Take Profit Signals) 设置
 
-Configure how dynamic exit signals appear when using "Signals" exit type.
+配置使用"信号 (Signals)"出场方式时，动态出场信号的显示方式。
 
 ---
 
-### 🎯 Settings Overview
+### 🎯 设置概览
 
 {% tabs %}
-{% tab title="💹 Show TP Signals" %}
+{% tab title="💹 显示止盈信号 (Show TP Signals)" %}
 
-#### Master Switch
+#### 主开关 (Master Switch)
 
-**Controls:** Whether TP signals appear at all
+**控制:** 是否显示止盈信号
 
-✅ **Enabled:** Shows "TP" icons when momentum suggests taking profit ❌ **Disabled:** No TP signals displayed
+✅ **启用:** 当动量 (Momentum) 提示获利时显示"止盈 (TP)"图标 ❌ **禁用:** 不显示任何止盈信号
 
-#### Enabled
+#### 启用
 
-![TP Signals On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2F1FsbCrdUAj6wv9jxpu0L%2Fon.png?alt=media&token=15eed396-a4cc-4d0a-a918-172483241a54) **Shows all TP opportunities**
+![TP Signals On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2F1FsbCrdUAj6wv9jxpu0L%2Fon.png?alt=media&token=15eed396-a4cc-4d0a-a918-172483241a54) **显示所有止盈机会**
 
-#### Disabled
+#### 禁用
 
-![TP Signals Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FAmEOMFdtiTphNzwyGyt6%2Foff.png?alt=media&token=6b233f92-eae4-4e96-a921-376fe47c3df0) **No TP signals shown**
+![TP Signals Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FAmEOMFdtiTphNzwyGyt6%2Foff.png?alt=media&token=6b233f92-eae4-4e96-a921-376fe47c3df0) **不显示任何止盈信号**
 {% endtab %}
 
-{% tab title="📈 Higher Level Only" %}
+{% tab title="📈 仅显示更高级别 (Higher Level Only)" %}
 
-#### Progressive Filter
+#### 递进式筛选 (Progressive Filter)
 
-**Controls:** Whether new TP must be at better price
+**控制:** 新的止盈是否必须在更好的价格
 
-✅ **Enabled:** Only shows TPs at higher profit levels ❌ **Disabled:** Shows all TPs regardless of level
+✅ **启用:** 仅显示更高获利水平的止盈 ❌ **禁用:** 显示所有止盈信号，不分级别
 
-#### Enabled (Clean)
+#### 启用 (清洁)
 
-![Higher Level On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Ff2F3vgCje7HEF9KqNhje%2Fimage.png?alt=media&token=5642400f-b0e2-41ff-94cc-a714c2090ddd) **Progressive TPs only**
+![Higher Level On](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2Ff2F3vgCje7HEF9KqNhje%2Fimage.png?alt=media&token=5642400f-b0e2-41ff-94cc-a714c2090ddd) **仅显示递进式止盈**
 
-#### Disabled (All)
+#### 禁用 (全部)
 
-![Higher Level Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FGhS75RynaPINRwGxFdGm%2Fimage.png?alt=media&token=6b041085-0875-4e9f-9bdd-8c4252f68093) **Shows every TP signal**
+![Higher Level Off](https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FGhS75RynaPINRwGxFdGm%2Fimage.png?alt=media&token=6b041085-0875-4e9f-9bdd-8c4252f68093) **显示每个止盈信号**
 {% endtab %}
 {% endtabs %}
 
 ---
 
-### 📊 Quick Comparison
+### 📊 快速对比
 
-| Setting               | Purpose        | When Enabled    | When Disabled |
-| --------------------- | -------------- | --------------- | ------------- |
-| **Show TP Signals**   | Master control | TP icons appear | No TP signals |
-| **Higher Level Only** | Filter quality | Progressive TPs | All TPs shown |
+| 设置                                   | 用途     | 启用时       | 禁用时       |
+| -------------------------------------- | -------- | ------------ | ------------ |
+| **显示止盈信号 (Show TP Signals)**     | 主控制   | 显示止盈图标 | 无止盈信号   |
+| **仅显示更高级别 (Higher Level Only)** | 质量筛选 | 递进式止盈   | 显示所有止盈 |
 
 ---
 
-### ⚡ Recommended Setup
+### ⚡ 推荐配置
 
 {% hint style="success" %}
-**Best Practice:** Enable BOTH settings together
+**最佳实践 (Best Practice):** 同时启用两个设置
 
-This gives you:
+这将为您提供:
 
-- ✅ Clean charts
-- ✅ Progressive exits
-- ✅ Quality signals only
-- ✅ No redundant alerts
+- ✅ 清洁的图表
+- ✅ 递进式出场
+- ✅ 仅显示质量信号
+- ✅ 无冗余警报
   {% endhint %}
 
 ---
 
-### 🎨 How They Work Together
+### 🎨 它们如何配合工作
 
-#### Both Enabled (Recommended)
+#### 同时启用 (推荐)
 
 {% code title="signal-pattern.txt" %}
 
 ```
-Entry → TP1 at 1% → TP2 at 2% → TP3 at 3%
-         ↑ Each TP at higher profit level
+入场 → 止盈1在1% → 止盈2在2% → 止盈3在3%
+       ↑ 每个止盈在更高获利水平
 ```
 
 {% endcode %}
 
-#### Show TP On, Higher Level Off
+#### 显示止盈开启，更高级别关闭
 
 {% code title="all-signals.txt" %}
 
 ```
-Entry → TP at 1% → TP at 0.8% → TP at 1.5% → TP at 1.2%
-         ↑ Shows all TPs, even lower ones
+入场 → 止盈在1% → 止盈在0.8% → 止盈在1.5% → 止盈在1.2%
+       ↑ 显示所有止盈，甚至更低的
 ```
 
 {% endcode %}
 
 ---
 
-### 💡 Use Cases
+### 💡 使用场景
 
 {% columns %}
 {% column width="50%" %}
 
-#### Enable Both For
+#### 同时启用以实现
 
-- Scaling out systematically
-- Clean chart experience
-- Quality over quantity
-- Trend following
+- 系统性地分批出场 (Scaling Out)
+- 清洁的图表体验
+- 质量优于数量
+- 趋势跟踪 (Trend Following)
   {% endcolumn %}
 
 {% column %}
 
-#### Disable Filter For
+#### 禁用筛选以实现
 
-- Aggressive profit taking
-- Volatile markets
-- Scalping strategies
-- Maximum signals
+- 激进的获利操作
+- 波动性市场
+- 剥头皮策略 (Scalping)
+- 最大化信号数量
   {% endcolumn %}
   {% endcolumns %}
 
 ---
 
-### 📈 Visual Impact
+### 📈 视觉效果对比
 
-| Both Enabled              | Filter Disabled        |
-| ------------------------- | ---------------------- |
-| Fewer, cleaner signals    | More frequent signals  |
-| Progressive profit levels | Any profit level       |
-| Best for most traders     | For aggressive traders |
+| 同时启用         | 筛选禁用         |
+| ---------------- | ---------------- |
+| 信号更少，更清洁 | 信号更频繁       |
+| 递进式获利水平   | 任何获利水平     |
+| 适合大多数交易者 | 适合激进的交易者 |
 
 {% hint style="info" %}
-**Remember:** These settings only work when Exit Type is set to "Signals"
+**记住:** 这些设置仅在出场类型 (Exit Type) 设置为"信号 (Signals)"时有效
 {% endhint %}
