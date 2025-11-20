@@ -1,125 +1,125 @@
-# 🎯 Essential Guide to Trading and Risk Management
+# 🎯 交易和风险管理必读指南
 
-## Essential Guide to Trading & Risk Management 🎯
+## 交易和风险管理必读指南 🎯
 
 {% hint style="info" %}
-**🎓 Complete Beginners Course** → [infinityalgo.com/tools/learn/beginners-guide](https://infinityalgo.com/tools/learn/beginners-guide)
+**🎓 完整新手课程** → [infinityalgo.com/tools/learn/beginners-guide](https://infinityalgo.com/tools/learn/beginners-guide)
 {% endhint %}
 
 ---
 
-### 📚 Foundation Principles
+### 📚 基础原理
 
 {% tabs %}
-{% tab title="🔑 Trading Basics" %}
+{% tab title="🔑 交易基础知识" %}
 
-#### Master the Fundamentals
+#### 掌握基本面
 
 {% stepper %}
 {% step %}
 
-#### Understand Trading
+#### 理解交易
 
-Buy and sell financial instruments (stocks, forex, crypto) to profit from price movements
+买卖金融工具（股票、外汇、加密货币）以从价格变动中获利
 {% endstep %}
 
 {% step %}
 
-#### Paper Trade First
+#### 先进行模拟交易（Paper Trade）
 
-Practice risk-free in demo accounts before using real capital
+在使用真实资金前，先在模拟账户中无风险地练习
 {% endstep %}
 
 {% step %}
 
-#### Create Your Plan
+#### 制定计划
 
-Define goals, capital allocation, and trading rules before you start
+开始交易前，定义目标、资金分配和交易规则
 {% endstep %}
 {% endstepper %}
 
 {% hint style="success" %}
-**Key Insight:** 90% of traders fail because they skip these foundational steps
+**关键洞察：** 90% 的交易者失败是因为他们跳过了这些基础步骤
 {% endhint %}
 {% endtab %}
 
-{% tab title="📊 Technical Skills" %}
+{% tab title="📊 技术技能" %}
 
-#### Build Your Trading Arsenal
+#### 建立你的交易工具库
 
-| Skill                       | Purpose              | Action              |
-| --------------------------- | -------------------- | ------------------- |
-| **🚦 Signal Understanding** | Know your indicators | Backtest thoroughly |
-| **📈 Indicator Knowledge**  | Understand the math  | Don't trade blind   |
-| **🔧 Personal Style**       | Find what fits you   | Customize settings  |
+| 技能                                    | 用途             | 行动                     |
+| --------------------------------------- | ---------------- | ------------------------ |
+| **🚦 信号理解（Signal Understanding）** | 了解你的指标     | 充分进行回测（Backtest） |
+| **📈 指标知识（Indicator Knowledge）**  | 理解数学原理     | 不要盲目交易             |
+| **🔧 个人风格（Personal Style）**       | 找到适合你的方法 | 自定义设置               |
 
 {% hint style="warning" %}
-**Never follow indicators blindly** - Always understand WHY a signal appears
+**永远不要盲目跟随指标** - 始终理解信号出现的原因（WHY）
 {% endhint %}
 {% endtab %}
 
-{% tab title="💼 Risk Management" %}
+{% tab title="💼 风险管理" %}
 
-#### Protect Your Capital
+#### 保护你的资金
 
-**Core Rules:**
+**核心规则：**
 
-- ✅ Risk only 1-2% per trade
-- ✅ Use stop-loss orders always
-- ✅ Diversify your portfolio
-- ✅ Never revenge trade
+- ✅ 每笔交易只风险 1-2%
+- ✅ 始终使用止损单（Stop-Loss）
+- ✅ 分散投资组合
+- ✅ 永远不要复仇交易（Revenge Trading）
 
-**Why It Matters:**
+**为什么很重要：**
 
-- 📉 Limits maximum drawdown
-- 🛡️ Protects from emotions
-- 📊 Spreads risk exposure
-- 🧠 Maintains discipline
+- 📉 限制最大回撤（Drawdown）
+- 🛡️ 防止情绪化交易
+- 📊 分散风险敞口（Risk Exposure）
+- 🧠 保持交易纪律
 
 {% hint style="danger" %}
-**#1 Rule:** Preserve capital first, seek profits second
+**第 1 条规则：** 首先保护资金，其次才是寻求利润
 {% endhint %}
 {% endtab %}
 
-{% tab title="🧠 Psychology" %}
+{% tab title="🧠 心理素质" %}
 
-#### Master Your Mind
+#### 掌握你的心理
 
 <details>
 
-<summary>😌 <strong>Emotional Control</strong></summary>
+<summary>😌 <strong>情绪控制</strong></summary>
 
-Fear and greed are profit killers. Follow your rules systematically:
+恐惧和贪婪是利润的杀手。系统地遵循你的规则：
 
-- Don't chase losing trades
-- Don't increase size after wins
-- Stick to your plan regardless of emotions
+- 不要追逐亏损的交易
+- 赢利后不要增加头寸大小
+- 无论如何都坚持你的计划
 
 </details>
 
 <details>
 
-<summary>🕰️ <strong>Patience &#x26; Discipline</strong></summary>
+<summary>🕰️ <strong>耐心和纪律</strong></summary>
 
-Markets reward patience:
+市场奖励耐心：
 
-- Wait for your setup
-- Don't force trades
-- Quality over quantity
-- Trust the process
+- 等待你的交易机会（Setup）
+- 不要强行进场交易
+- 质量优于数量
+- 相信这个过程
 
 </details>
 
 <details>
 
-<summary>🔍 <strong>Continuous Improvement</strong></summary>
+<summary>🔍 <strong>持续改进</strong></summary>
 
-Review and refine constantly:
+不断评审和完善：
 
-- Log every trade
-- Analyze wins AND losses
-- Identify patterns in mistakes
-- Adapt to market changes
+- 记录每一笔交易
+- 分析赢利和亏损的交易
+- 找出错误的规律
+- 适应市场变化
 
 </details>
 {% endtab %}
@@ -127,96 +127,96 @@ Review and refine constantly:
 
 ---
 
-### 🎯 The Trading Success Formula
+### 🎯 交易成功公式
 
 {% stepper %}
 {% step %}
 
-#### Foundation
+#### 基础阶段
 
-Paper trade → Learn mechanics → Build confidence
+模拟交易 → 学习机制 → 建立信心
 {% endstep %}
 
 {% step %}
 
-#### Strategy
+#### 策略阶段
 
-Backtest signals → Understand indicators → Customize settings
+回测信号 → 理解指标 → 自定义设置
 {% endstep %}
 
 {% step %}
 
-#### Risk Control
+#### 风险控制
 
-Set stop-losses → Limit position size → Diversify holdings
+设置止损 → 限制头寸大小 → 分散持仓
 {% endstep %}
 
 {% step %}
 
-#### Psychology
+#### 心理建设
 
-Control emotions → Stay patient → Review regularly
+控制情绪 → 保持耐心 → 定期复盘
 {% endstep %}
 
 {% step %}
 
-#### Evolution
+#### 不断演进
 
-Keep learning → Adapt strategy → Refine approach
+持续学习 → 适应策略 → 完善方法
 {% endstep %}
 {% endstepper %}
 
 ---
 
-### 💡 Quick Reference Cards
+### 💡 快速参考表
 
-| Principle         | Key Action       | Remember                         |
-| ----------------- | ---------------- | -------------------------------- |
-| **🎯 Planning**   | Set clear goals  | Plan the trade, trade the plan   |
-| **💼 Risk**       | 1-2% per trade   | Small losses, big wins           |
-| **🛑 Stops**      | Always use them  | Hope is not a strategy           |
-| **📊 Diversity**  | Multiple assets  | Don't put all eggs in one basket |
-| **🧠 Psychology** | Stay disciplined | Emotions = Losses                |
-| **📈 Indicators** | Understand them  | Tools, not magic                 |
+| 原则          | 关键行动      | 记住                         |
+| ------------- | ------------- | ---------------------------- |
+| **🎯 计划**   | 设定清晰目标  | 计划交易，交易计划           |
+| **💼 风险**   | 每笔交易 1-2% | 小亏损，大赢利               |
+| **🛑 止损**   | 始终使用      | 希望不是策略                 |
+| **📊 多样化** | 多种资产      | 不要把所有鸡蛋放在一个篮子里 |
+| **🧠 心理**   | 保持纪律      | 情绪 = 亏损                  |
+| **📈 指标**   | 理解它们      | 工具，不是魔法               |
 
 ---
 
-### ⚡ Action Steps
+### ⚡ 行动步骤
 
 {% hint style="success" %}
-**Start Here:**
+**从这里开始：**
 
-1. Open a demo account today
-2. Backtest Infinity Algo on your preferred timeframe
-3. Find YOUR optimal settings
-4. Practice for at least 30 days
-5. Start small when going live
+1. 今天打开一个模拟账户
+2. 在你偏好的时间周期上进行 Infinity Algo 回测
+3. 找到最适合你的设置
+4. 至少练习 30 天
+5. 实盘时从小额开始
    {% endhint %}
 
 {% hint style="info" %}
-**Remember:** Every professional trader was once a beginner. The difference? They never stopped learning.
+**记住：** 每位专业交易者都曾是初学者。区别在于：他们从不停止学习。
 {% endhint %}
 
 ---
 
-### 📖 Further Learning
+### 📖 进一步学习
 
 {% columns %}
 {% column width="50%" %}
-**Essential Resources:**
+**基本资源：**
 
-- 📚 [Beginners Guide](https://infinityalgo.com/tools/learn/beginners-guide)
-- 📊 Backtest your settings
-- 📝 Keep a trade journal
-- 🎓 Study market psychology
+- 📚 [新手指南（Beginners Guide）](https://infinityalgo.com/tools/learn/beginners-guide)
+- 📊 回测你的设置
+- 📝 保持交易日志
+- 🎓 学习市场心理学
   {% endcolumn %}
 
 {% column %}
-**Advanced Topics:**
+**进阶主题：**
 
-- 🔧 Custom indicator settings
-- 📈 Multi-timeframe analysis
-- 💰 Position sizing strategies
-- 🎯 Risk:Reward optimization
+- 🔧 自定义指标设置
+- 📈 多时间框架分析（Multi-Timeframe Analysis）
+- 💰 头寸规模策略（Position Sizing）
+- 🎯 风险回报优化（Risk:Reward Optimization）
   {% endcolumn %}
   {% endcolumns %}
