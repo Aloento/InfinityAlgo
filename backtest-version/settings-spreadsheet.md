@@ -1,277 +1,277 @@
-# 📋 Settings Spreadsheet
+# 📋 配置电子表格 (Settings Spreadsheet)
 
-We don't provide a settings spreadsheet - and that's by design. This page explains why dynamic optimization is superior to static settings.
+我们不提供配置电子表格 - 这是有意设计的。本页面解释为什么动态优化 (dynamic optimization) 优于静态配置 (static settings)。
 
 {% hint style="info" %}
-**TL;DR:** Markets change constantly. Static settings that worked yesterday fail today. Use AI Optimization or develop your own adaptive approach through continuous testing.
+**简读版 (TL;DR)：** 市场不断变化。昨天有效的静态配置今天就会失效。使用 AI 优化 (AI Optimization) 或通过持续测试开发您自己的自适应方法。
 {% endhint %}
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FDOYZoBeaHBkFF6U9d42d%2Fimage.png?alt=media&#x26;token=f97508a0-3651-49eb-85c8-8ed47ce880bc" alt="AI optimization On"><figcaption></figcaption></figure>
 
 ---
 
-### ❌ The Static Settings Trap
+### ❌ 静态配置的陷阱
 
-#### Why Spreadsheets Don't Work
+#### 为什么电子表格不起作用
 
 {% columns %}
 {% column width="50%" %}
-**The Problem:**
+**问题所在：**
 
-- Markets evolve daily
-- Volatility changes
-- Correlations shift
-- Liquidity varies
+- 市场每日演变
+- 波动率 (volatility) 变化
+- 相关性 (correlations) 变化
+- 流动性 (liquidity) 波动
   {% endcolumn %}
 
 {% column %}
-**The False Promise:**
+**虚假承诺：**
 
-- "Best settings for BTCUSDT"
-- "Copy my profitable settings"
-- "Universal parameters"
-- "Set and forget"
+- "BTCUSDT 的最佳配置"
+- "复制我的盈利配置"
+- "通用参数"
+- "一劳永逸 (set and forget)"
   {% endcolumn %}
   {% endcolumns %}
 
-#### Real Market Example
+#### 真实市场案例
 
 {% hint style="warning" %}
-**Case Study: Bitcoin 2024-2025**
+**案例研究：比特币 (Bitcoin) 2024-2025**
 
-**January 2024 Settings:**
+**2024 年 1 月配置：**
 
-- Sensitivity: 14
-- Works great in trending market
-- 70% win rate
+- 灵敏度 (Sensitivity)：14
+- 在趋势市场 (trending market) 中表现良好
+- 70% 胜率 (win rate)
 
-**March 2024 Same Settings:**
+**2024 年 3 月相同配置：**
 
-- Market turns choppy
-- 30% win rate
-- Account down 20%
+- 市场转变为盘整 (choppy)
+- 30% 胜率
+- 账户下跌 20%
 
-**Lesson:** What worked for 2 months failed completely when conditions changed.
+**启示：** 运行 2 个月的配置在市场条件变化时完全失效。
 {% endhint %}
 
 ---
 
-### 🤖 The Solution: Dynamic Optimization
+### 🤖 解决方案：动态优化
 
-#### Static vs Dynamic Comparison
+#### 静态配置 vs 动态 AI 对比
 
-| Static Settings           | Dynamic AI              | Winner    |
-| ------------------------- | ----------------------- | --------- |
-| Fixed parameters          | Adapts every N bars     | **AI** ✅ |
-| Manual updates            | Automatic optimization  | **AI** ✅ |
-| Works until it doesn't    | Continuously evolves    | **AI** ✅ |
-| One-size-fits-all         | Personalized to metrics | **AI** ✅ |
-| Hope markets don't change | Responds to changes     | **AI** ✅ |
+| 静态配置 (Static Settings)                    | 动态 AI (Dynamic AI)                     | 胜者 (Winner) |
+| --------------------------------------------- | ---------------------------------------- | ------------- |
+| 固定参数 (Fixed parameters)                   | 每 N 根柱子自适应 (Adapts every N bars)  | **AI** ✅     |
+| 手动更新 (Manual updates)                     | 自动优化 (Automatic optimization)        | **AI** ✅     |
+| 能用就用，直到不能用 (Works until it doesn't) | 持续进化 (Continuously evolves)          | **AI** ✅     |
+| 一刀切 (One-size-fits-all)                    | 根据指标个性化 (Personalized to metrics) | **AI** ✅     |
+| 祈祷市场不变 (Hope markets don't change)      | 响应市场变化 (Responds to changes)       | **AI** ✅     |
 
-#### How AI Optimization Works
+#### AI 优化如何运作
 
 {% stepper %}
 {% step %}
 
-#### Continuous Testing
+#### 持续测试
 
-AI tests 1000s of combinations in background
+AI 在后台测试数千种组合
 {% endstep %}
 
 {% step %}
 
-#### Performance Scoring
+#### 性能评分
 
-Each combination scored by your chosen metric
+根据您选择的指标对每种组合进行评分
 {% endstep %}
 
 {% step %}
 
-#### Automatic Selection
+#### 自动选择
 
-Best performing settings applied automatically
+最佳表现的配置自动应用
 {% endstep %}
 
 {% step %}
 
-#### Regular Updates
+#### 定期更新
 
-Process repeats every update cycle
+每个更新周期重复该流程
 {% endstep %}
 {% endstepper %}
 
 ---
 
-### 🎯 What Actually Matters
+### 🎯 真正重要的是什么
 
-#### Success Factors (Ranked)
+#### 成功因素（按重要性排序）
 
 {% columns %}
 {% column width="60%" %}
-**1. Risk Management** (40%)
+**1. 风险管理 (Risk Management)** (40%)
 
-- Position sizing
-- Stop losses
-- Portfolio balance
+- 头寸规模 (Position sizing)
+- 止损 (Stop losses)
+- 投资组合平衡 (Portfolio balance)
 
-**2. Market Context** (30%)
+**2. 市场环境 (Market Context)** (30%)
 
-- Trend identification
-- Support/resistance
-- Volume analysis
+- 趋势识别 (Trend identification)
+- 支撑/阻力 (Support/resistance)
+- 成交量分析 (Volume analysis)
 
-**3. Psychology** (20%)
+**3. 心理素质 (Psychology)** (20%)
 
-- Discipline
-- Patience
-- Emotional control
+- 纪律性 (Discipline)
+- 耐心 (Patience)
+- 情绪控制 (Emotional control)
 
-**4. Settings** (10%)
+**4. 配置 (Settings)** (10%)
 
-- Just 10% of success!
+- 仅占成功的 10%！
   {% endcolumn %}
 
 {% column %}
 {% hint style="success" %}
-**Reality Check**
+**现实检查**
 
-Perfect settings + Poor risk management = **Blown account**
+完美配置 + 糟糕的风险管理 = **爆仓 (Blown account)**
 
-Average settings + Good risk management = **Consistent profits**
+一般配置 + 良好的风险管理 = **持续盈利 (Consistent profits)**
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
 
 ---
 
-### 📊 The "Best Settings" Myths
+### 📊 "最佳配置"的误区
 
-#### Myth #1: High Win Rate = Profitable
+#### 误区 #1：高胜率 = 盈利
 
 {% columns %}
 {% column width="50%" %}
-**90% Win Rate Strategy**
+**90% 胜率策略**
 
-- Win: $10 (90% of time)
-- Loss: $100 (10% of time)
-- **Result: LOSING STRATEGY**
+- 盈利：$10（90% 的时间）
+- 亏损：$100（10% 的时间）
+- **结果：亏损策略**
   {% endcolumn %}
 
 {% column %}
-**30% Win Rate Strategy**
+**30% 胜率策略**
 
-- Win: $100 (30% of time)
-- Loss: $20 (70% of time)
-- **Result: PROFITABLE**
+- 盈利：$100（30% 的时间）
+- 亏损：$20（70% 的时间）
+- **结果：盈利**
   {% endcolumn %}
   {% endcolumns %}
 
-#### Myth #2: Copy Successful Traders
+#### 误区 #2：复制成功交易者
 
-**Why it fails:**
+**为什么会失败：**
 
-- Different risk tolerance
-- Different capital
-- Different schedule
-- Different psychology
-- Different market conditions when they traded
+- 风险承受能力不同
+- 交易资金不同
+- 交易时间表不同
+- 心理素质不同
+- 他们交易时的市场条件不同
 
-#### Myth #3: Backtest = Future
+#### 误区 #3：回测 = 未来
 
 {% hint style="danger" %}
-**Overfitting Example:**
+**过度优化 (Overfitting) 案例：**
 
-- Backtest: 500% profit
-- Live trading: -50% loss
+- 回测：500% 利润
+- 实盘交易 (Live trading)：-50% 亏损
 
-Why? Optimized perfectly for past data that won't repeat exactly.
+为什么？完美优化了不会精确重复的历史数据。
 {% endhint %}
 
 ---
 
-### ✅ The Better Way
+### ✅ 更好的方式
 
-#### Develop Your Edge
+#### 发展您的交易优势 (Edge)
 
 {% tabs %}
-{% tab title="Option 1: Use AI" %}
-**Easiest approach:**
+{% tab title="选项 1：使用 AI" %}
+**最简单的方法：**
 
-1. Enable AI Optimization
-2. Select your metric
-3. Let it adapt continuously
-4. Focus on risk management
+1. 启用 AI 优化
+2. 选择您的指标 (metric)
+3. 让它持续自适应
+4. 专注于风险管理
 
-**Time required:** 5 minutes **Skill required:** Minimal **Effectiveness:** High
+**所需时间：** 5 分钟 **所需技能：** 最小化 **有效性：** 高
 {% endtab %}
 
-{% tab title="Option 2: Manual Adaptation" %}
-**For control freaks:**
+{% tab title="选项 2：手动适应" %}
+**对于完美主义者：**
 
-1. Test weekly
-2. Document what works
-3. Adjust for market conditions
-4. Never "set and forget"
+1. 每周测试
+2. 记录什么有效
+3. 根据市场条件调整
+4. 永远不要 "一劳永逸"
 
-**Time required:** Hours weekly **Skill required:** High **Effectiveness:** Variable
+**所需时间：** 每周数小时 **所需技能：** 高 **有效性：** 可变
 {% endtab %}
 {% endtabs %}
 
-#### Focus Your Energy
+#### 集中您的精力
 
-**Instead of searching for settings:**
+**与其搜索配置：**
 
-- ✅ Learn risk management
-- ✅ Study market structure
-- ✅ Practice with small size
-- ✅ Build trading discipline
-- ✅ Develop patience
+- ✅ 学习风险管理
+- ✅ 研究市场结构 (market structure)
+- ✅ 小额练习交易
+- ✅ 建立交易纪律
+- ✅ 培养耐心
 
-**Your time allocation:**
+**您的时间分配：**
 
-- 60% Risk management
-- 30% Market analysis
-- 10% Settings/tools
+- 60% 风险管理
+- 30% 市场分析
+- 10% 配置/工具
 
 ---
 
-### ❓ Common Questions
+### ❓ 常见问题
 
 <details>
 
-<summary><strong>But other indicators provide settings!</strong></summary>
+<summary><strong>但其他指标提供配置啊！</strong></summary>
 
-Most indicators are static tools without AI. They NEED manual settings because they can't adapt.
+大多数指标都是没有 AI 的静态工具。它们需要手动配置是因为无法自适应。
 
-Infinity Algo V3.0 has AI that makes static settings obsolete. It's like comparing a manual camera (need to set everything) to a modern smartphone (auto-adjusts for perfect shots).
+Infinity Algo V3.0 拥有使静态配置过时的 AI。这就像比较手动相机（需要设置所有内容）和现代智能手机（自动调整以获得完美照片）的区别。
 
 </details>
 
 <details>
 
-<summary><strong>Can you just share what's working now?</strong></summary>
+<summary><strong>能否分享一下现在正在用的配置？</strong></summary>
 
-What's working NOW:
+现在正在用的配置：
 
-- **For me:** Won't work for you (different everything)
-- **Today:** Won't work tomorrow (markets change)
-- **On BTCUSDT:** Won't work on ETHUSDT (different behavior)
+- **对我有效：** 对您无效（完全不同）
+- **今天有效：** 明天可能无效（市场变化）
+- **在 BTCUSDT 上有效：** 在 ETHUSDT 上无效（行为不同）
 
-Instead: Use AI mode or test yourself weekly.
+相反：使用 AI 模式或每周自己测试。
 
 </details>
 
 <details>
 
-<summary><strong>I found profitable settings, should I share?</strong></summary>
+<summary><strong>我找到了盈利配置，应该分享吗？</strong></summary>
 
-Ask yourself:
+问自己：
 
-- How long have they worked?
-- In what market conditions?
-- What's the sample size?
-- What's the maximum drawdown?
+- 它们运行了多长时间？
+- 在什么市场条件下运行？
+- 样本量是多少？
+- 最大回撤 (maximum drawdown) 是多少？
 
-If less than 100 trades across different conditions, it's luck, not edge.
+如果在不同条件下的交易少于 100 笔，那是运气，不是优势 (edge)。
 
 </details>
