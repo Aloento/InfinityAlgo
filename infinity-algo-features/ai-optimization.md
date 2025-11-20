@@ -1,155 +1,155 @@
-# 🧠 AI Optimization
+# 🧠 AI 优化 (AI Optimization)
 
-Transform Infinity Algo into a self-improving system that adapts to markets automatically.
+将 Infinity Algo 转变为自我改进的系统，能够自动适应市场变化。
 
 {% hint style="success" %}
-**Quick Start:** Enable AI → Select mode (Static/Walk-Forward) → Choose metric → Let AI optimize
+**快速开始:** 启用 AI → 选择模式 (Static/Walk-Forward) → 选择指标 → 让 AI 进行优化
 {% endhint %}
 
 ---
 
-#### 🚀 Quick Setup
+#### 🚀 快速设置
 
 {% stepper %}
 {% step %}
-**Enable AI**
+**启用 AI (Enable AI)**
 
-Turn ON `🧠 Enable AI Optimization` in settings
+在设置中打开 `🧠 启用 AI 优化 (Enable AI Optimization)`
 {% endstep %}
 
 {% step %}
-**Choose Mode**
+**选择模式 (Choose Mode)**
 
-- **Backtesting?** → `Static (Full History)`
-- **Live Trading?** → `Walk-Forward`
+- **回测? (Backtesting?)** → `静态 (Static - 完整历史 / Full History)`
+- **实盘交易? (Live Trading?)** → `走向前进 (Walk-Forward)`
   {% endstep %}
 
 {% step %}
-**Select Signal Type**
+**选择信号类型 (Select Signal Type)**
 
-Choose `AI` or `AI Sniper` in Signal Mode
+在 "信号模式 (Signal Mode)" 中选择 `AI` 或 `AI 狙击手 (AI Sniper)`
 {% endstep %}
 {% endstepper %}
 
-**That's it!** Default settings work for most users.
+**就这样!** 默认设置对大多数用户都有效。
 
 ---
 
-#### 🎯 How AI Works
+#### 🎯 AI 工作原理
 
-| 1️⃣ **Simulate**                            | 2️⃣ **Evaluate**               | 3️⃣ **Apply**                  |
-| ------------------------------------------ | ----------------------------- | ----------------------------- |
-| Tests 100s-1000s of parameter combinations | Scores each using your metric | Implements best configuration |
+| 1️⃣ **模拟 (Simulate)**   | 2️⃣ **评估 (Evaluate)**     | 3️⃣ **应用 (Apply)** |
+| ------------------------ | -------------------------- | ------------------- |
+| 测试数百到数千个参数组合 | 使用您的指标对每个进行评分 | 实施最佳配置        |
 
-**Walk-Forward:** Periodically re-optimizes on a rolling in-sample window and validates out-of-sample, reducing overfitting.
+**走向前进 (Walk-Forward):** 定期在滚动的样本内(In-Sample)窗口中重新优化，并进行样本外(Out-of-Sample)验证，以减少过度拟合(Overfitting)。
 
 ---
 
-#### ⚙️ Core Settings
+#### ⚙️ 核心设置
 
 {% tabs %}
-{% tab title="🧠 AI Modes" %}
-**Optimization Modes**
+{% tab title="🧠 AI 模式" %}
+**优化模式 (Optimization Modes)**
 
-| Mode             | How It Works          | Use For      |
-| ---------------- | --------------------- | ------------ |
-| **Walk-Forward** | Updates every N bars  | Live trading |
-| **Static**       | Optimizes once, locks | Backtesting  |
+| 模式                        | 工作原理            | 用于     |
+| --------------------------- | ------------------- | -------- |
+| **走向前进 (Walk-Forward)** | 每 N 根柱线更新一次 | 实盘交易 |
+| **静态 (Static)**           | 优化一次，锁定结果  | 回测     |
 
 {% hint style="info" %}
-**Tip:** Start with Static for testing, switch to Walk-Forward for live
+**提示:** 先从静态模式进行测试，然后切换到走向前进模式进行实盘交易
 {% endhint %}
 {% endtab %}
 
-{% tab title="🔄 Update Frequency" %}
-**Walk-Forward Only**
+{% tab title="🔄 更新频率 (Update Frequency)" %}
+**仅限走向前进模式 (Walk-Forward Only)**
 
-{% code title="frequency-guide.txt" %}
+{% code title="频率指南 (frequency-guide.txt)" %}
 
 ```
-100 bars (default) → Ultra-responsive (high CPU)
-200-1000 bars     → Balanced ✅
-1000-5000 bars    → Very stable, slower to adapt
+100 根柱线 (默认) → 超快响应 (高 CPU 占用)
+200-1000 根柱线     → 平衡 ✅
+1000-5000 根柱线    → 非常稳定，适应较慢
 
-Examples on 1h chart:
-- 100 bars = ~4 days
-- 1000 bars = ~42 days
-- 5000 bars = ~208 days
+1小时图表示例:
+- 100 根 = ~4 天
+- 1000 根 = ~42 天
+- 5000 根 = ~208 天
 ```
 
 {% endcode %}
 
-Lower = More responsive but intensive | Higher = More stable and efficient
+越小 = 响应更快但资源消耗大 | 越大 = 更稳定且高效
 {% endtab %}
 
-{% tab title="🧪 Sensitivity Range" %}
-**Parameter Space**
+{% tab title="🧪 敏感性范围 (Sensitivity Range)" %}
+**参数空间 (Parameter Space)**
 
-| Range           | Values | Best For         |
-| --------------- | ------ | ---------------- |
-| **Very Fast**   | 5-9    | Scalping         |
-| **Fast**        | 10-14  | Day Trading      |
-| **Balanced** ✅ | 10-20  | Most Strategies  |
-| **Medium**      | 15-21  | Swing Trading    |
-| **Slow**        | 22-28  | Position Trading |
-| **Auto**        | 5-28   | Full exploration |
-| {% endtab %}    |        |                  |
+| 范围                   | 数值  | 最适合                      |
+| ---------------------- | ----- | --------------------------- |
+| **超快速 (Very Fast)** | 5-9   | 高频交易 (Scalping)         |
+| **快速 (Fast)**        | 10-14 | 日内交易 (Day Trading)      |
+| **平衡 (Balanced)** ✅ | 10-20 | 大多数策略                  |
+| **中等 (Medium)**      | 15-21 | 波段交易 (Swing Trading)    |
+| **缓慢 (Slow)**        | 22-28 | 头寸交易 (Position Trading) |
+| **自动 (Auto)**        | 5-28  | 全面探索                    |
+| {% endtab %}           |       |                             |
 
-{% tab title="📊 Optimization Metric" %}
-**Choose Your Goal**
+{% tab title="📊 优化指标 (Optimization Metric)" %}
+**选择您的目标 (Choose Your Goal)**
 
-**Quick Selection:**
+**快速选择 (Quick Selection):**
 
-| Your Style      | Use This Metric | Why                 |
-| --------------- | --------------- | ------------------- |
-| **Scalping**    | Win Rate        | Consistency matters |
-| **Day Trading** | Sharpe Ratio    | Balance risk/return |
-| **Swing**       | Sortino Ratio   | Downside protection |
-| **Position**    | Calmar Ratio    | Avoid drawdowns     |
+| 您的交易风格               | 使用此指标                 | 原因          |
+| -------------------------- | -------------------------- | ------------- |
+| **高频交易 (Scalping)**    | 胜率 (Win Rate)            | 一致性很重要  |
+| **日内交易 (Day Trading)** | 夏普比率 (Sharpe Ratio)    | 平衡风险/收益 |
+| **波段交易 (Swing)**       | 索提诺比率 (Sortino Ratio) | 下行风险保护  |
+| **头寸交易 (Position)**    | 卡玛比率 (Calmar Ratio)    | 避免最大回撤  |
 
-**All Available Metrics:**
+**所有可用指标 (All Available Metrics):**
 
-- **Classic:** Total Profit, Win Rate, Average P\&L, Gain-to-Pain
-- **Risk-Adjusted:** Sharpe, Sortino, Calmar, Martin
-- **Advanced:** SQN (System Quality Number), Robust ML Score
+- **经典指标 (Classic):** 总利润、胜率 (Win Rate)、平均损益 (Average P&L)、收益-痛苦比 (Gain-to-Pain)
+- **风险调整指标 (Risk-Adjusted):** 夏普比率 (Sharpe)、索提诺比率 (Sortino)、卡玛比率 (Calmar)、马丁比率 (Martin)
+- **高级指标 (Advanced):** SQN (系统质量数字 / System Quality Number)、稳健机器学习评分 (Robust ML Score)
 
 {% hint style="warning" %}
-**Important:** High win rate ≠ profitability. A 90% win rate with large losses can be unprofitable.
+**重要:** 高胜率 ≠ 盈利。90% 的胜率伴随大额亏损可能导致不盈利。
 {% endhint %}
 
 {% hint style="info" %}
-Not sure? Use **Total Profit** for testing, **Sharpe Ratio** for live trading
+不确定? 使用 **总利润 (Total Profit)** 进行测试，**夏普比率 (Sharpe Ratio)** 进行实盘交易
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ---
 
-#### 📈 Simulation Settings
+#### 📈 模拟设置 (Simulation Settings)
 
-**AI Sim TP% (Testing Only)**
+**AI 模拟止盈% (AI Sim TP% - 仅用于测试)**
 
 {% hint style="warning" %}
-**Note:** These are internal simulation parameters - they do NOT create real orders
+**注意:** 这些是内部模拟参数 - 它们**不会**创建真实订单
 {% endhint %}
 
 {% columns %}
 {% column width="60%" %}
-**What they do:**
+**它们做什么 (What they do):**
 
-- Help AI evaluate strategies
-- Set internal profit targets
-- Default: 1.0% both directions
+- 帮助 AI 评估策略
+- 设置内部止盈目标
+- 默认值: 双向都是 1.0%
   {% endcolumn %}
 
 {% column %}
-{% code title="sim-settings:" %}
+{% code title="模拟设置 (sim-settings:)" %}
 
 ```
-Long TP: 1.0%
-Short TP: 1.0%
-Purpose: AI testing only
-Real trades: Not affected
+多头止盈 (Long TP): 1.0%
+空头止盈 (Short TP): 1.0%
+目的 (Purpose): AI 测试仅用
+实际交易 (Real trades): 不受影响
 ```
 
 {% endcode %}
@@ -158,180 +158,180 @@ Real trades: Not affected
 
 ---
 
-#### 📊 Dashboard Display
+#### 📊 仪表板显示 (Dashboard Display)
 
-**Live Monitoring**
+**实时监控 (Live Monitoring)**
 
-When enabled, see:
+启用后，可以看到:
 
-- ✅ Current optimal sensitivity
-- ✅ Selected thresholds
-- ✅ Win rate & metrics
-- ✅ Confidence score
-- ✅ Mode status
+- ✅ 当前最优敏感性 (Current optimal sensitivity)
+- ✅ 选定的阈值 (Selected thresholds)
+- ✅ 胜率和指标 (Win rate & metrics)
+- ✅ 置信度评分 (Confidence score)
+- ✅ 模式状态 (Mode status)
 
-**Status Indicators:**
+**状态指示符 (Status Indicators):**
 
-- `STATIC (LOCKED)` - One-time optimization complete
-- `OPTIMIZING` - Currently calculating
-- `SIMULATED` - Results ready
+- `静态 (已锁定) (STATIC - LOCKED)` - 一次性优化完成
+- `正在优化 (OPTIMIZING)` - 当前正在计算
+- `已模拟 (SIMULATED)` - 结果已准备
 
 <figure><img src="https://2387257950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5cf3dRpPzq1Qbyc8GksH%2Fuploads%2FyXoT69oiyDH6NCl2F5SM%2Fimage.png?alt=media&#x26;token=5061bb2e-8f38-48b3-84be-3f1f094a376a" alt="" width="486"><figcaption></figcaption></figure>
 
 ---
 
-#### 💡 Best Practices
+#### 💡 最佳实践 (Best Practices)
 
 {% tabs %}
-{% tab title="🎯 Getting Started" %}
+{% tab title="🎯 快速入门 (Getting Started)" %}
 
-1. Use **Static** for initial testing
-2. Select **Balanced** sensitivity
-3. Default 100 bar frequency
-4. Match metric to goals
-5. **Walk-Forward needs \~535 bars** for first optimization
-6. **Static needs \~5000 bars** total
+1. 初始测试使用 **静态 (Static)** 模式
+2. 选择 **平衡 (Balanced)** 敏感性
+3. 默认 100 根柱线频率
+4. 将指标与目标相匹配
+5. **走向前进模式需要约 535 根柱线**才能进行首次优化
+6. **静态模式需要约 5000 根柱线**总计
    {% endtab %}
 
-{% tab title="⚡ Optimization" %}
+{% tab title="⚡ 优化 (Optimization)" %}
 
-- **Lower timeframes** → Complex calculations
-- **Monitor dashboard** → Track selections
-- **Small adjustments** → Better results
-- **Patience required** → AI needs time
+- **较低的时间框架 (Lower timeframes)** → 复杂计算
+- **监控仪表板 (Monitor dashboard)** → 追踪选择
+- **小幅调整 (Small adjustments)** → 更好的结果
+- **需要耐心 (Patience required)** → AI 需要时间
   {% endtab %}
 
-{% tab title="📈 Performance" %}
-**Limits:**
+{% tab title="📈 性能 (Performance)" %}
+**限制条件 (Limits):**
 
-- Max lookback: 5000 bars
-- Lower frequency = Higher CPU
-- Static = One calculation only at bar 4900
-- Higher TF = Better performance
+- 最大回顾: 5000 根柱线
+- 较低频率 = 更高 CPU 占用
+- 静态 = 在第 4900 根柱线时仅计算一次
+- 更高时间框架 = 更佳性能
   {% endtab %}
   {% endtabs %}
 
 ---
 
-#### 🔧 Troubleshooting
+#### 🔧 故障排除 (Troubleshooting)
 
-| Problem          | Solution                         |
-| ---------------- | -------------------------------- |
-| **Timeout**      | Use Static or increase frequency |
-| **No signals**   | Check AI Optimization is ON      |
-| **Poor results** | Try different metric/range       |
-| **No dashboard** | Enable in settings               |
-| **Static fails** | Need 5000+ bars data             |
+| 问题                        | 解决方案               |
+| --------------------------- | ---------------------- |
+| **超时 (Timeout)**          | 使用静态模式或增加频率 |
+| **无信号 (No signals)**     | 检查 AI 优化是否已打开 |
+| **结果不佳 (Poor results)** | 尝试不同的指标/范围    |
+| **无仪表板 (No dashboard)** | 在设置中启用           |
+| **静态失败 (Static fails)** | 需要 5000+ 根柱线数据  |
 
 ---
 
-#### ⚡ Quick Reference
+#### ⚡ 快速参考 (Quick Reference)
 
 {% columns %}
 {% column width="50%" %}
-**For Testing**
+**用于测试 (For Testing)**
 
-- Mode: `Static`
-- Range: `Balanced`
-- Metric: `Total Profit`
-- Frequency: N/A
-- Min bars: 5000
+- 模式: `静态 (Static)`
+- 范围: `平衡 (Balanced)`
+- 指标: `总利润 (Total Profit)`
+- 频率: N/A
+- 最少柱线: 5000
   {% endcolumn %}
 
 {% column %}
-**For Live Trading**
+**用于实盘交易 (For Live Trading)**
 
-- Mode: `Walk-Forward`
-- Range: `Balanced`
-- Metric: Your preference
-- Frequency: `100` (default)
-- Min bars: 535
+- 模式: `走向前进 (Walk-Forward)`
+- 范围: `平衡 (Balanced)`
+- 指标: 您的偏好
+- 频率: `100` (默认)
+- 最少柱线: 535
   {% endcolumn %}
   {% endcolumns %}
 
 ---
 
-#### 📚 Understanding Performance Metrics
+#### 📚 理解性能指标 (Understanding Performance Metrics)
 
 <details>
 
-<summary><strong>Detailed Metric Explanations</strong></summary>
+<summary><strong>详细指标说明 (Detailed Metric Explanations)</strong></summary>
 
 {% hint style="info" %}
-**Note:** Infinity Algo computes metrics on **per-trade returns** with risk-free rate and MAR = 0. Industry definitions typically use time-series (daily/monthly) returns.
+**注意:** Infinity Algo 基于**单笔交易收益率 (Per-Trade Returns)** 计算指标，使用无风险利率 (Risk-Free Rate) 和平均必要回报率 (MAR) = 0。行业定义通常使用时间序列(时间序列收益率/Daily or Monthly Returns)。
 {% endhint %}
 
-**Classic Metrics**
+**经典指标 (Classic Metrics)**
 
-| Metric           | Formula                   | Best For            |
-| ---------------- | ------------------------- | ------------------- |
-| **Total Profit** | Sum of all P\&L           | Quick assessment    |
-| **Win Rate**     | Wins ÷ Total trades × 100 | Consistency check   |
-| **Average P\&L** | Total P\&L ÷ Trades       | Trade quality       |
-| **Gain-to-Pain** | Σ gains / \|Σ losses\|    | Risk/reward balance |
-
----
-
-**Risk-Adjusted Metrics**
-
-**Sharpe Ratio - Industry Standard**
-
-- **Formula:** Excess return (over risk-free) ÷ Standard deviation
-- **Infinity Algo:** Uses risk-free = 0
-- **Pros:** Most widely used, easy comparison, considers total volatility
-- **Cons:** Penalizes upside volatility, assumes normal distribution
-- **Benchmarks:** \~1 = Good | \~2 = Very good | 3+ = Outstanding
-
-**Sortino Ratio - Downside Focus**
-
-- **Formula:** Excess return (over target/MAR) ÷ Downside deviation
-- **Infinity Algo:** Uses MAR = 0
-- **Pros:** Only penalizes bad volatility, better for trend following
-- **Cons:** Requires defining target return, less standardized
-- **Benchmarks:** >1 = Good | >2 = Very good | >3 = Excellent
-
-**Calmar Ratio - Drawdown Protection**
-
-- **Formula:** CAGR ÷ Maximum drawdown (commonly 36 months)
-- **Pros:** Focus on capital preservation, easy to understand
-- **Cons:** Based on single worst event, backward-looking
-- **Benchmarks:** >1 = Good | 3-5 = Strong
-
-**Martin Ratio - Ulcer Performance**
-
-- **Formula:** Excess return ÷ Ulcer Index (RMS of drawdowns)
-- **Pros:** Considers all drawdowns, smooth equity curve focus
-- **Cons:** Less known/comparable, complex calculation
-- **Use:** Compare across your strategies
-
-**SQN - System Quality Number**
-
-- **Formula:** (Expectancy ÷ Std Dev) × √Number of trades
-- **Pros:** Accounts for sample size, good for system comparison
-- **Cons:** Requires sufficient trades for validity
-- **Benchmarks:** >2 = Good | >3 = Excellent | >5 = Superb
+| 指标                           | 公式                    | 最适合        |
+| ------------------------------ | ----------------------- | ------------- |
+| **总利润 (Total Profit)**      | 所有损益之和            | 快速评估      |
+| **胜率 (Win Rate)**            | 胜利数 ÷ 总交易数 × 100 | 一致性检查    |
+| **平均损益 (Average P&L)**     | 总损益 ÷ 交易数         | 交易质量      |
+| **收益-痛苦比 (Gain-to-Pain)** | Σ 收益 / \|Σ 亏损\|     | 风险/收益平衡 |
 
 ---
 
-**Choosing by Trading Style**
+**风险调整指标 (Risk-Adjusted Metrics)**
 
-| Style                | Primary Metrics   | Secondary Metrics |
-| -------------------- | ----------------- | ----------------- |
-| **Scalping**         | Win Rate + Sharpe | Total Profit      |
-| **Day Trading**      | Sharpe + Win Rate | Average P\&L      |
-| **Swing Trading**    | Sortino + Calmar  | Gain-to-Pain      |
-| **Position Trading** | Calmar + Martin   | Sortino           |
+**夏普比率 (Sharpe Ratio) - 行业标准**
+
+- **公式:** 超额收益 (高于无风险利率) ÷ 标准差
+- **Infinity Algo:** 使用无风险利率 = 0
+- **优点:** 最广泛使用，易于比较，考虑总波动性
+- **缺点:** 对上行波动性进行惩罚，假设正态分布
+- **基准值:** \~1 = 良好 | \~2 = 非常好 | 3+ = 优秀
+
+**索提诺比率 (Sortino Ratio) - 下行风险关注**
+
+- **公式:** 超额收益 (高于目标/MAR) ÷ 下行偏差 (Downside Deviation)
+- **Infinity Algo:** 使用 MAR = 0
+- **优点:** 仅对不利波动性进行惩罚，更适合趋势跟踪
+- **缺点:** 需要定义目标收益率，标准化程度较低
+- **基准值:** >1 = 良好 | >2 = 非常好 | >3 = 优秀
+
+**卡玛比率 (Calmar Ratio) - 最大回撤保护**
+
+- **公式:** 年复合增长率 (CAGR) ÷ 最大回撤 (Maximum Drawdown - 通常 36 个月)
+- **优点:** 关注资本保护，易于理解
+- **缺点:** 基于单一最坏事件，向后看
+- **基准值:** >1 = 良好 | 3-5 = 强势
+
+**马丁比率 (Martin Ratio) - 溃疡指数性能**
+
+- **公式:** 超额收益 ÷ 溃疡指数 (Ulcer Index - 回撤的均方根 / RMS of Drawdowns)
+- **优点:** 考虑所有回撤，关注平滑的资产曲线 (Smooth Equity Curve)
+- **缺点:** 知名度较低/可比性较差，计算复杂
+- **用途:** 比较您的不同策略
+
+**SQN - 系统质量数字 (System Quality Number)**
+
+- **公式:** (期望值 (Expectancy) ÷ 标准差) × √ 交易数量
+- **优点:** 考虑样本量，适合系统比较
+- **缺点:** 需要足够的交易数据以确保有效性
+- **基准值:** >2 = 良好 | >3 = 优秀 | >5 = 超级优秀 (Superb)
+
+---
+
+**按交易风格选择 (Choosing by Trading Style)**
+
+| 风格                            | 主要指标                                 | 次要指标             |
+| ------------------------------- | ---------------------------------------- | -------------------- |
+| **高频交易 (Scalping)**         | 胜率 (Win Rate) + 夏普比率 (Sharpe)      | 总利润               |
+| **日内交易 (Day Trading)**      | 夏普比率 (Sharpe) + 胜率 (Win Rate)      | 平均损益             |
+| **波段交易 (Swing Trading)**    | 索提诺比率 (Sortino) + 卡玛比率 (Calmar) | 收益-痛苦比          |
+| **头寸交易 (Position Trading)** | 卡玛比率 (Calmar) + 马丁比率 (Martin)    | 索提诺比率 (Sortino) |
 
 {% hint style="warning" %}
-**Remember:** Win rate alone is misleading. A strategy with 30% win rate but 3:1 reward/risk is more profitable than 70% win rate with 1:3 reward/risk.
+**记住:** 单纯胜率是具有误导性的。30% 胜率但风险回报比为 3:1 的策略比 70% 胜率但风险回报比为 1:3 的策略更有利可图。
 {% endhint %}
 
 {% hint style="info" %}
-**AI Mode Selection:**
+**AI 模式选择 (AI Mode Selection):**
 
-- **Intraday/Mean-reversion:** Optimizes for Sharpe + Win Rate
-- **Trend/Swing trading:** Prioritizes Sortino + Calmar
-- **Multi-metric:** Balances all metrics for robust performance
+- **日内/均值反转 (Intraday/Mean-reversion):** 为夏普比率 (Sharpe) + 胜率 (Win Rate) 优化
+- **趋势/波段交易 (Trend/Swing trading):** 优先考虑索提诺比率 (Sortino) + 卡玛比率 (Calmar)
+- **多指标 (Multi-metric):** 平衡所有指标以获得稳健的性能
   {% endhint %}
 
 </details>
@@ -339,5 +339,5 @@ When enabled, see:
 ---
 
 {% hint style="success" %}
-**Bottom Line:** Let AI handle optimization while you focus on trading decisions and risk management.
+**底线:** 让 AI 处理优化，而您专注于交易决策和风险管理。
 {% endhint %}
